@@ -1,3 +1,6 @@
 [submodule "breakpad"]
 	path = breakpad
 	url = https://github.com/google/breakpad
+[submodule "lss"]
+	path = lss
+	url = https://chromium.googlesource.com/linux-syscall-support
