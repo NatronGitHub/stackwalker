@@ -1,8 +1,8 @@
-BREAKPAD_SRCDIR := ../stackwalk/src
-BREAKPAD_OBJDIR := ../stackwalk
+BREAKPAD_SRCDIR := ../breakpad/src
+BREAKPAD_OBJDIR := ../breakpad
 BREAKPAD_LIBS := \
-  $(BREAKPAD_OBJDIR)/lib/libbreakpad.a \
-  $(BREAKPAD_OBJDIR)/lib/libdisasm.a \
+  $(BREAKPAD_SRCDIR)/libbreakpad.a \
+  $(BREAKPAD_SRCDIR)/third_party/libdisasm//libdisasm.a \
   $(NULL)
 
 JSON_DIR := jsoncpp-src-0.5.0
