@@ -5,7 +5,7 @@ BREAKPAD_LIBS := \
   $(BREAKPAD_SRCDIR)/third_party/libdisasm//libdisasm.a \
   $(NULL)
 
-JSON_DIR := jsoncpp-src-0.5.0
+JSON_DIR := ../jsoncpp
 JSON_SRCDIR := $(JSON_DIR)/src/lib_json
 JSON_INCLUDEDIR := $(JSON_DIR)/include
 
