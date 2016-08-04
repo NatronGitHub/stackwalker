@@ -7,13 +7,13 @@ import json
 import urllib
 import random
 import urlparse
+from cStringIO import StringIO
 
 import pyquery
 import mock
-
-from cStringIO import StringIO
 from nose.tools import eq_, ok_, assert_raises
 from nose.plugins.skip import SkipTest
+
 from django.test.client import RequestFactory
 from django.test.utils import override_settings
 from django.conf import settings
@@ -21,7 +21,6 @@ from django.contrib.auth import REDIRECT_FIELD_NAME
 from django.utils import timezone
 from django.contrib.auth.models import (
     User,
-    AnonymousUser,
     Group,
     Permission
 )
@@ -46,41 +45,8 @@ from .test_models import Response
 
 SAMPLE_STATUS = {
     'breakpad_revision': '1035',
-    'hits': [
-        {
-            'date_oldest_job_queued': '2012-09-28T20:39:33+00:00',
-            'date_recently_completed': '2012-09-28T20:40:00+00:00',
-            'processors_count': 1,
-            'avg_wait_sec': 16.407,
-            'waiting_job_count': 56,
-            'date_created': '2012-09-28T20:40:02+00:00',
-            'id': 410655,
-            'avg_process_sec': 0.914149
-        },
-        {
-            'date_oldest_job_queued': '2012-09-28T20:34:33+00:00',
-            'date_recently_completed': '2012-09-28T20:35:00+00:00',
-            'processors_count': 1,
-            'avg_wait_sec': 13.8293,
-            'waiting_job_count': 48,
-            'date_created': '2012-09-28T20:35:01+00:00',
-            'id': 410654,
-            'avg_process_sec': 1.24177
-        },
-        {
-            'date_oldest_job_queued': '2012-09-28T20:29:32+00:00',
-            'date_recently_completed': '2012-09-28T20:30:01+00:00',
-            'processors_count': 1,
-            'avg_wait_sec': 14.8803,
-            'waiting_job_count': 1,
-            'date_created': '2012-09-28T20:30:01+00:00',
-            'id': 410653,
-            'avg_process_sec': 1.19637
-        }
-    ],
-    'total': 12,
     'socorro_revision': '017d7b3f7042ce76bc80949ae55b41d1e915ab62',
-    'schema_revision': 'schema_12345'
+    'schema_revision': 'schema_12345',
 }
 
 _SAMPLE_META = {
@@ -498,10 +464,10 @@ class BaseTestViews(DjangoTestCase):
         # once like they are in unit test running.
         SocorroCommon.clear_implementations_cache()
 
-    def _login(self):
-        user = User.objects.create_user('test', 'test@mozilla.com', 'secret')
-        assert self.client.login(username='test', password='secret')
-        return user
+    def _login(self, username='test', password='s', email='test@mozilla.com'):
+        User.objects.create_user(username, email, password)
+        assert self.client.login(username=username, password=password)
+        return User.objects.get(username=username)
 
     def _logout(self):
         self.client.logout()
@@ -581,8 +547,6 @@ class TestViews(BaseTestViews):
 
         # to make a mock call to the django view functions you need a request
         fake_request = RequestFactory().request(**{'wsgi.input': None})
-        # Need a fake user for the persona bits on crashstats_base
-        fake_request.user = AnonymousUser()
 
         # the reason for first causing an exception to be raised is because
         # the handler500 function is only called by django when an exception
@@ -1191,6 +1155,14 @@ class TestViews(BaseTestViews):
         # if you try to mess with the paginator it should just load page 1
         response = self.client.get(url, {'page': 'meow'})
         eq_(response.status_code, 200)
+
+        # If you cease to be active, access should be revoked automatically
+        user.is_active = False
+        user.save()
+        assert not user.has_perm('crashstats.view_exploitability')
+        response = self.client.get(url)
+        ok_(settings.LOGIN_URL in response['Location'] + '?next=%s' % url)
+        eq_(response.status_code, 302)
 
     @mock.patch('crashstats.crashstats.models.Bugs.get')
     @mock.patch('requests.get')
@@ -1805,6 +1777,61 @@ class TestViews(BaseTestViews):
         ok_(is_percentage(first_row[3]))  # throttle
         ok_(is_percentage(first_row[4]))  # ratio
 
+    @mock.patch('requests.get')
+    def test_crashes_per_day_failing_shards(self, rget):
+        url = reverse('crashstats:crashes_per_day')
+
+        def mocked_adi_get(**options):
+            return {
+                'total': 0,
+                'hits': []
+            }
+
+        models.ADI.implementation().get.side_effect = mocked_adi_get
+
+        def mocked_product_build_types_get(**options):
+            return {
+                'hits': {
+                    'release': 0.1,
+                    'beta': 1.0,
+                }
+            }
+
+        models.ProductBuildTypes.implementation().get.side_effect = (
+            mocked_product_build_types_get
+        )
+
+        def mocked_supersearch_get(**params):
+            return {
+                'facets': {
+                    'histogram_date': [],
+                    'signature': [],
+                    'version': []
+                },
+                'hits': [],
+                'total': 21187,
+                'errors': [
+                    {
+                        'type': 'shards',
+                        'index': 'socorro201001',
+                        'shards_count': 2,
+                    }
+                ],
+            }
+
+        SuperSearchUnredacted.implementation().get.side_effect = (
+            mocked_supersearch_get
+        )
+
+        response = self.client.get(url, {
+            'p': 'WaterWolf',
+            'v': ['20.0', '19.0']
+        })
+        eq_(response.status_code, 200)
+
+        ok_('Our database is experiencing troubles' in response.content)
+        ok_('week of 2010-01-04 is ~40% lower' in response.content)
+
     def test_crashes_per_day_legacy_by_build_date(self):
         url = reverse('crashstats:crashes_per_day')
 
@@ -2298,13 +2325,11 @@ class TestViews(BaseTestViews):
         eq_(response.status_code, 301)
         ok_(response['location'].endswith(correct_url))
 
-    @mock.patch('requests.get')
-    def test_status_revision(self, rget):
-        def mocked_get(url, **options):
-            assert '/server_status' in url, url
-            return Response(SAMPLE_STATUS)
+    def test_status_revision(self):
+        def mocked_get(**options):
+            return SAMPLE_STATUS
 
-        rget.side_effect = mocked_get
+        models.Status.implementation().get.side_effect = mocked_get
 
         url = reverse('crashstats:status_revision')
         response = self.client.get(url)
@@ -2321,25 +2346,6 @@ class TestViews(BaseTestViews):
         eq_(response.status_code, 302)
         ok_(settings.LOGIN_URL in response['Location'] + '?next=%s' % url)
 
-    @mock.patch('requests.get')
-    def test_status_json(self, rget):
-        def mocked_get(**options):
-            assert '/server_status' in options['url'], options['url']
-            return Response(SAMPLE_STATUS)
-
-        rget.side_effect = mocked_get
-
-        url = reverse('crashstats:status_json')
-        response = self.client.get(url)
-        eq_(response.status_code, 200)
-
-        ok_(response.content.strip().startswith('{'))
-        ok_('017d7b3f7042ce76bc80949ae55b41d1e915ab62' in response.content)
-        ok_('1035' in response.content)
-        ok_('2012-09-28T20:30:01+00:00' in response.content)
-        ok_('application/json' in response['Content-Type'])
-        eq_('*', response['Access-Control-Allow-Origin'])
-
     def test_crontabber_state(self):
         url = reverse('crashstats:crontabber_state')
         response = self.client.get(url)
@@ -2350,7 +2356,7 @@ class TestViews(BaseTestViews):
     def test_report_index(self, rget, rpost):
         dump = 'OS|Mac OS X|10.6.8 10K549\nCPU|amd64|family 6 mod|1'
         comment0 = 'This is a comment\nOn multiple lines'
-        comment0 += '\npeterbe@mozilla.com'
+        comment0 += '\npeterbe@example.com'
         comment0 += '\nwww.p0rn.com'
 
         rpost.side_effect = mocked_post_threeothersigs
@@ -2401,13 +2407,13 @@ class TestViews(BaseTestViews):
         comment_transformed = (
             comment0
             .replace('\n', '<br />')
-            .replace('peterbe@mozilla.com', '(email removed)')
+            .replace('peterbe@example.com', '(email removed)')
             .replace('www.p0rn.com', '(URL removed)')
         )
 
         ok_(comment_transformed in response.content)
         # but the email should have been scrubbed
-        ok_('peterbe@mozilla.com' not in response.content)
+        ok_('peterbe@example.com' not in response.content)
         ok_(_SAMPLE_META['Email'] not in response.content)
         ok_(_SAMPLE_META['URL'] not in response.content)
         ok_(
@@ -2431,7 +2437,7 @@ class TestViews(BaseTestViews):
         assert user.has_perm('crashstats.view_pii')
 
         response = self.client.get(url)
-        ok_('peterbe@mozilla.com' in response.content)
+        ok_('peterbe@example.com' in response.content)
         ok_(_SAMPLE_META['Email'] in response.content)
         ok_(_SAMPLE_META['URL'] in response.content)
         ok_('&#34;sensitive&#34;' in response.content)
@@ -2441,6 +2447,15 @@ class TestViews(BaseTestViews):
         # Ensure fields have their description in title.
         ok_('No description for this field.' in response.content)
         ok_('Description of the signature field' in response.content)
+
+        # If the user ceases to be active, these PII fields should disappear
+        user.is_active = False
+        user.save()
+        response = self.client.get(url)
+        eq_(response.status_code, 200)
+        ok_('peterbe@example.com' not in response.content)
+        ok_(_SAMPLE_META['Email'] not in response.content)
+        ok_(_SAMPLE_META['URL'] not in response.content)
 
     @mock.patch('crashstats.crashstats.models.Bugs.get')
     @mock.patch('requests.get')

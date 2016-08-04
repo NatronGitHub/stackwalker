@@ -3,6 +3,10 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 import datetime
+import json
+import time
+
+import requests_mock
 from nose.tools import assert_raises, eq_, ok_
 
 from socorrolib.lib import BadArgumentError, datetimeutil
@@ -762,6 +766,59 @@ class IntegrationTestSuperSearch(ElasticsearchTestCase):
             self.api.get,
             _facets=['unknownfield']
         )
+
+    @minimum_es_version('1.0')
+    def test_get_with_no_facets(self):
+        self.index_crash({
+            'signature': 'js::break_your_browser',
+            'product': 'WaterWolf',
+            'os_name': 'Windows NT',
+            'date_processed': self.now,
+        })
+        self.index_crash({
+            'signature': 'js::break_your_browser',
+            'product': 'WaterWolf',
+            'os_name': 'Linux',
+            'date_processed': self.now,
+        })
+        self.index_crash({
+            'signature': 'js::break_your_browser',
+            'product': 'NightTrain',
+            'os_name': 'Linux',
+            'date_processed': self.now,
+        })
+        self.index_crash({
+            'signature': 'foo(bar)',
+            'product': 'EarthRacoon',
+            'os_name': 'Linux',
+            'date_processed': self.now,
+        })
+
+        # Index a lot of distinct values to test the results limit.
+        number_of_crashes = 5
+        processed_crash = {
+            'version': '10.%s',
+            'date_processed': self.now,
+        }
+        self.index_many_crashes(
+            number_of_crashes,
+            processed_crash,
+            loop_field='version',
+        )
+        # Note: index_many_crashes does the index refreshing.
+
+        # Test 0 facets
+        kwargs = {
+            '_facets': ['signature'],
+            '_aggs.product': ['version'],
+            '_aggs.platform': ['_histogram.date'],
+            '_facets_size': 0
+        }
+        res = self.api.get(**kwargs)
+        eq_(res['facets'], {})
+        # hits should still work as normal
+        ok_(res['hits'])
+        eq_(len(res['hits']), res['total'])
 
     @minimum_es_version('1.0')
     def test_get_with_cardinality(self):
@@ -1741,7 +1798,9 @@ class IntegrationTestSuperSearch(ElasticsearchTestCase):
         }
 
         res = api.get(**params)
-        eq_(res, {'total': 0, 'hits': [], 'facets': {}})
+        eq_(res['total'], 0)
+        eq_(len(res['hits']), 0)
+        eq_(len(res['errors']), 3)  # 3 weeks are missing
 
     def test_get_too_large_date_range(self):
         # this is a whole year apart
@@ -1769,6 +1828,9 @@ class IntegrationTestSuperSearch(ElasticsearchTestCase):
 
     @minimum_es_version('1.0')
     def test_get_with_zero(self):
+        # !FIXME Wait for Elasticsearch to be ready.
+        time.sleep(0.1)
+
         res = self.api.get(
             _results_number=0,
         )
@@ -1781,3 +1843,112 @@ class IntegrationTestSuperSearch(ElasticsearchTestCase):
             self.api.get,
             _results_number=1001,
         )
+
+    @minimum_es_version('1.0')
+    @requests_mock.Mocker(real_http=True)
+    def test_get_with_failing_shards(self, mock_requests):
+        # !FIXME Wait for Elasticsearch to be ready.
+        time.sleep(0.1)
+
+        # Test with one failing shard.
+        es_results = {
+            'hits': {
+                'hits': [],
+                'total': 0,
+                'max_score': None,
+            },
+            'timed_out': False,
+            'took': 194,
+            '_shards': {
+                'successful': 9,
+                'failed': 1,
+                'total': 10,
+                'failures': [
+                    {
+                        'status': 500,
+                        'index': 'fake_index',
+                        'reason': 'foo bar gone bad',
+                        'shard': 3,
+                    }
+                ]
+            },
+        }
+
+        mock_requests.get(
+            'http://localhost:9200/{}/crash_reports/_search'.format(
+                self.config.elasticsearch.elasticsearch_index
+            ),
+            text=json.dumps(es_results)
+        )
+
+        res = self.api.get()
+        ok_('errors' in res)
+
+        errors_exp = [
+            {
+                'type': 'shards',
+                'index': 'fake_index',
+                'shards_count': 1,
+            }
+        ]
+        eq_(res['errors'], errors_exp)
+
+        # Test with several failures.
+        es_results = {
+            'hits': {
+                'hits': [],
+                'total': 0,
+                'max_score': None,
+            },
+            'timed_out': False,
+            'took': 194,
+            '_shards': {
+                'successful': 9,
+                'failed': 3,
+                'total': 10,
+                'failures': [
+                    {
+                        'status': 500,
+                        'index': 'fake_index',
+                        'reason': 'foo bar gone bad',
+                        'shard': 2,
+                    },
+                    {
+                        'status': 500,
+                        'index': 'fake_index',
+                        'reason': 'foo bar gone bad',
+                        'shard': 3,
+                    },
+                    {
+                        'status': 500,
+                        'index': 'other_index',
+                        'reason': 'foo bar gone bad',
+                        'shard': 1,
+                    },
+                ]
+            },
+        }
+
+        mock_requests.get(
+            'http://localhost:9200/{}/crash_reports/_search'.format(
+                self.config.elasticsearch.elasticsearch_index
+            ),
+            text=json.dumps(es_results)
+        )
+
+        res = self.api.get()
+        ok_('errors' in res)
+
+        errors_exp = [
+            {
+                'type': 'shards',
+                'index': 'fake_index',
+                'shards_count': 2,
+            },
+            {
+                'type': 'shards',
+                'index': 'other_index',
+                'shards_count': 1,
+            },
+        ]
+        eq_(res['errors'], errors_exp)

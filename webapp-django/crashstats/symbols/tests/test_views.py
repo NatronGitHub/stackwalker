@@ -105,11 +105,6 @@ class TestViews(BaseTestViews):
         self.patcher.stop()
         settings.SYMBOLS_COMPRESS_EXTENSIONS = self.symbols_compress_extensions
 
-    def _login(self):
-        user = User.objects.create_user('test', 'test@mozilla.com', 'secret')
-        assert self.client.login(username='test', password='secret')
-        return user
-
     def test_unpack_and_upload_misconfigured(self):
         with self.settings(AWS_ACCESS_KEY=''):
             assert_raises(
@@ -150,7 +145,7 @@ class TestViews(BaseTestViews):
             response,
             reverse('crashstats:login') + '?next=%s' % url
         )
-        self._login()
+        user = self._login()
         with self.settings(SYMBOLS_PERMISSION_HINT_LINK=None):
             response = self.client.get(url)
             eq_(response.status_code, 200)
@@ -165,6 +160,16 @@ class TestViews(BaseTestViews):
 
             ok_(link['url'] in response.content)
             ok_(link['label'] in response.content)
+
+        # The access should disappear if you cease to be active
+        user.is_active = False
+        user.save()
+        response = self.client.get(url)
+        eq_(response.status_code, 302)
+        self.assertRedirects(
+            response,
+            reverse('crashstats:login') + '?next=%s' % url
+        )
 
     def test_home_with_previous_uploads(self):
         url = reverse('symbols:home')

@@ -10,6 +10,7 @@ from operator import itemgetter
 from io import BytesIO
 
 import isodate
+import isoweek
 
 from django import http
 from django.conf import settings
@@ -1118,6 +1119,22 @@ def crashes_per_day(request, default_context=None):
     context['graph_data'] = graph_data
     context['report'] = 'daily'
 
+    errors = []
+    for error in results.get('errors', []):
+        if not error['type'] == 'shards':
+            continue
+
+        week = int(error['index'][-2:])
+        year = int(error['index'][-6:-2])
+        day = isoweek.Week(year, week).monday()
+        percent = error['shards_count'] * 100 / settings.ES_SHARDS_PER_INDEX
+        errors.append(
+            'The data for the week of {} is ~{}% lower than expected.'.format(
+                day, percent
+            )
+        )
+    context['errors'] = errors
+
     # This 'Crashes per User' report replaces an older version
     # of the report that produces near identical output, but does
     # it using reading aggregates stored in Postgresql.
@@ -1142,7 +1159,6 @@ def exploitable_crashes(
     """This function is now deprecated in favor of the new one called
     exploitability_report"""
     context = default_context or {}
-
     if product is None:
         return redirect(
             'crashstats:exploitable_crashes',
@@ -2036,12 +2052,15 @@ def adu_by_signature_json(request, default_context=None):
 
 
 def status_json(request):
-    response = http.HttpResponse(
-        models.Status().get(decode_json=False),
-        content_type='application/json; charset=UTF-8'
-    )
-    response['Access-Control-Allow-Origin'] = '*'
-    return response
+    """This is deprecated and should not be used.
+    Use the /api/Status/ endpoint instead.
+    """
+    if settings.DEBUG:
+        raise Exception(
+            'This view is deprecated and should not be accessed. '
+            'The only reason it\'s kept is for legacy reasons.'
+        )
+    return redirect(reverse('api:model_wrapper', args=('Status',)))
 
 
 def status_revision(request):
@@ -2522,7 +2541,7 @@ def graphics_report(request):
     """Return a CSV output of all crashes for a specific date for a
     particular day and a particular product."""
     if (
-        not request.user.is_authenticated() or
+        not request.user.is_active or
         not request.user.has_perm('crashstats.run_long_queries')
     ):
         return http.HttpResponseForbidden(
