@@ -1,17 +1,18 @@
 import datetime
+
 import freezegun
 import mock
 import pyquery
 from nose.tools import eq_, ok_
 
 from django.core.urlresolvers import reverse
-from django.utils.timezone import UTC
+from django.utils.timezone import utc
 
-from crashstats.supersearch.models import SuperSearchUnredacted
 from crashstats.crashstats.models import SignatureFirstDate
 from crashstats.crashstats.tests.test_views import (
     BaseTestViews, mocked_post_123
 )
+from crashstats.supersearch.models import SuperSearchUnredacted
 
 
 class TestViews(BaseTestViews):
@@ -41,7 +42,7 @@ class TestViews(BaseTestViews):
                         "signature": u"FakeSignature1 \u7684 Japanese",
                         "first_date": datetime.datetime(
                             2000, 1, 1, 12, 23, 34,
-                            tzinfo=UTC(),
+                            tzinfo=utc,
                         ),
                         "first_build": "20000101122334",
                     },
@@ -49,7 +50,7 @@ class TestViews(BaseTestViews):
                         "signature": u"mozCool()",
                         "first_date": datetime.datetime(
                             2016, 5, 2, 0, 0, 0,
-                            tzinfo=UTC(),
+                            tzinfo=utc,
                         ),
                         "first_build": "20160502000000",
                     },
@@ -276,14 +277,13 @@ class TestViews(BaseTestViews):
             mocked_supersearch_get
         )
 
-        now = datetime.datetime.utcnow()
-        today = now.replace(hour=0, minute=0, second=0, microsecond=0)
-
-        timestr = '%Y-%m-%d %H:%M:%S'
-        now = now.strftime(timestr)
-        today = today.strftime(timestr)
+        now = datetime.datetime.utcnow().replace(microsecond=0)
+        today = now.replace(hour=0, minute=0, second=0)
 
         with freezegun.freeze_time(now, tz_offset=0):
+            now = now.isoformat()
+            today = today.isoformat()
+
             # By default, it returns "real-time" data.
             response = self.client.get(self.base_url, {
                 'product': 'WaterWolf',

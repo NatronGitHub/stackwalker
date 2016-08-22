@@ -91,6 +91,24 @@ def timestamp_to_date(
 
 
 @library.filter
+def time_tag(dt, format='%a, %b %d %H:%M %Z', future=False):
+    if not isinstance(dt, (datetime.date, datetime.datetime)):
+        try:
+            dt = isodate.parse_datetime(dt)
+        except isodate.ISO8601Error:
+            return dt
+
+    return jinja2.Markup(
+        '<time datetime="{}" class="{}">{}</time>'
+        .format(
+            dt.isoformat(),
+            future and 'in' or 'ago',
+            dt.strftime(format)
+        )
+    )
+
+
+@library.filter
 def human_readable_iso_date(dt):
     """ Python datetime to a human readable ISO datetime. """
     if not isinstance(dt, (datetime.date, datetime.datetime)):
