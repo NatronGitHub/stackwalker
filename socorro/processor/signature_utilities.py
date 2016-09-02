@@ -4,6 +4,7 @@
 
 import re
 
+import ujson
 from itertools import islice
 
 from configman import Namespace, RequiredConfig
@@ -678,14 +679,21 @@ class SignatureRunWatchDog(SignatureGenerationRule):
 
     #--------------------------------------------------------------------------
     def _predicate(self, raw_crash, raw_dumps, processed_crash, proc_meta):
-        return '::RunWatchdog' in processed_crash['signature']
+        return 'RunWatchdog' in processed_crash['signature']
 
     #--------------------------------------------------------------------------
     def _get_crashing_thread(self, processed_crash):
+        # Always use thread 0 in this case, because that's the thread that
+        # was hanging when the software was artificially crashed.
         return 0
 
     #--------------------------------------------------------------------------
     def _action(self, raw_crash, raw_dumps, processed_crash, processor_meta):
+        # For shutdownhang crashes, we need to use thread 0 instead of the
+        # crashing thread. The reason is because those crashes happen
+        # artificially when thread 0 gets stuck. So whatever the crashing
+        # thread is, we don't care about it and only want to know what was
+        # happening in thread 0 when it got stuck.
         result = super(SignatureRunWatchDog, self)._action(
             raw_crash,
             raw_dumps,
@@ -696,6 +704,47 @@ class SignatureRunWatchDog(SignatureGenerationRule):
             "shutdownhang | %s" % processed_crash['signature']
         )
         return result
+
+
+#==============================================================================
+class SignatureShutdownTimeout(Rule):
+    """replaces the signature if there is a shutdown timeout message in the
+    crash"""
+
+    def version(self):
+        return '1.0'
+
+    def _predicate(self, raw_crash, raw_dumps, processed_crash, proc_meta):
+        try:
+            return bool(raw_crash['AsyncShutdownTimeout'])
+        except KeyError:
+            return False
+
+    def _action(self, raw_crash, raw_dumps, processed_crash, processor_meta):
+        parts = ['AsyncShutdownTimeout']
+        try:
+            shutdown_data = ujson.loads(raw_crash['AsyncShutdownTimeout'])
+            parts.append(shutdown_data['phase'])
+            conditions = [c['name'] for c in shutdown_data['conditions']]
+            if conditions:
+                conditions.sort()
+                parts.append(','.join(conditions))
+            else:
+                parts.append("(none)")
+        except (ValueError, KeyError), e:
+            parts.append("UNKNOWN")
+            processor_meta['processor_notes'].append(
+                'Error parsing AsyncShutdownTimeout: {}'.format(e)
+            )
+
+        new_sig = ' | '.join(parts)
+        processor_meta['processor_notes'].append(
+            'Signature replaced with a Shutdown Timeout signature, '
+            'was: "{}"'.format(processed_crash['signature'])
+        )
+        processed_crash['signature'] = new_sig
+
+        return True
 
 
 #==============================================================================
