@@ -1,4 +1,4 @@
-/* global socorro:true, $:true, Analytics:true */
+/* global socorro $ Analytics Qs DateFilters */
 
 var SignatureReport = {
     // Function to help with inheritance.
@@ -7,6 +7,11 @@ var SignatureReport = {
         f.prototype = proto;
         return new f ();
     },
+};
+
+SignatureReport.getURL = function (name) {
+    'use strict';
+    return $('#mainbody').data('urls-' + name);
 };
 
 SignatureReport.init = function () {
@@ -49,6 +54,10 @@ SignatureReport.init = function () {
     SignatureReport.getParamsWithSignature = function () {
         var params = form.dynamicForm('getParams');
         params.signature = SIGNATURE;
+
+        // Add dates from the date filters.
+        params.date = DateFilters.getDates();
+
         return params;
     };
 
@@ -126,19 +135,25 @@ SignatureReport.init = function () {
                 delete initialParams.signature;
             }
 
+            if (initialParams.date) {
+                DateFilters.setDates(initialParams.date);
+                delete initialParams.date;
+            }
+
             initialParams = socorro.search.getFilteredParams(initialParams);
-            form.dynamicForm(fieldsURL, initialParams, '#search-params-fieldset', function () {
-                // When the form has finished loading, we get sanitized parameters
-                // from it and show the results. This will avoid strange behaviors
-                // that can be caused by manually set parameters, for example.
-                callback();
-            });
         }
         else {
-            // No initial params, just load the form and let the user play with it.
-            form.dynamicForm(fieldsURL, {}, '#search-params-fieldset');
-            callback();
+            initialParams = {};
         }
+
+        form.dynamicForm(fieldsURL, initialParams, '#search-params-fieldset', function () {
+            $('.loader', searchSection).remove();
+            form.show();
+            // When the form has finished loading, we get sanitized parameters
+            // from it and show the results. This will avoid strange behaviors
+            // that can be caused by manually set parameters, for example.
+            callback();
+        });
 
         searchSection.hide();
     }

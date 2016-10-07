@@ -592,7 +592,7 @@ class TestViews(BaseTestViews):
         url = reverse('home:home', args=('Unknown',))
         response = self.client.get(url)
         eq_(response.status_code, 404)
-        ok_('Page not Found' in response.content)
+        ok_('Page Not Found' in response.content)
         ok_('id="products_select"' not in response.content)
 
     def test_handler404_json(self):
@@ -2428,7 +2428,11 @@ class TestViews(BaseTestViews):
         ok_(_SAMPLE_META['Email'] not in response.content)
         ok_(_SAMPLE_META['URL'] not in response.content)
         ok_(
-            'You need to be signed in to be able to download raw dumps.'
+            'You need to be signed in to download raw dumps.'
+            in response.content
+        )
+        ok_(
+            'You need to be signed in to view unredacted crashes.'
             in response.content
         )
         # Should not be able to see sensitive key from stackwalker JSON
@@ -2649,6 +2653,69 @@ class TestViews(BaseTestViews):
             '<a href="https://s3.example.com/winmm.sym">winmm.dll</a>' in
             response.content
         )
+
+    @mock.patch('crashstats.crashstats.models.Bugs.get')
+    @mock.patch('requests.get')
+    def test_report_index_with_shutdownhang_signature(self, rget, rpost):
+        rpost.side_effect = mocked_post_threeothersigs
+        json_dump = {
+            'crash_info': {
+                'crashing_thread': 2,
+            },
+            'status': 'OK',
+            'threads': [
+                {'frame_count': 0, 'frames': []},
+                {'frame_count': 0, 'frames': []},
+                {'frame_count': 0, 'frames': []},
+            ],
+            'modules': [],
+        }
+
+        def mocked_get(url, params, **options):
+            if 'correlations/signatures' in url:
+                return Response({
+                    'hits': [
+                        'FakeSignature1',
+                        'FakeSignature2'
+                    ],
+                    'total': 2
+                })
+
+            raise NotImplementedError(url)
+
+        rget.side_effect = mocked_get
+
+        def mocked_raw_crash_get(**params):
+            assert 'datatype' in params
+            if params['datatype'] == 'meta':
+                return copy.deepcopy(_SAMPLE_META)
+            raise NotImplementedError
+
+        models.RawCrash.implementation().get.side_effect = (
+            mocked_raw_crash_get
+        )
+
+        def mocked_processed_crash_get(**params):
+            assert 'datatype' in params
+            if params['datatype'] == 'unredacted':
+                crash = copy.deepcopy(_SAMPLE_UNREDACTED)
+                crash['json_dump'] = json_dump
+                crash['signature'] = 'shutdownhang | foo::bar()'
+                return crash
+
+            raise NotImplementedError(params)
+
+        models.UnredactedCrash.implementation().get.side_effect = (
+            mocked_processed_crash_get
+        )
+
+        crash_id = '11cb72f5-eb28-41e1-a8e4-849982120611'
+        url = reverse('crashstats:report_index', args=(crash_id,))
+        response = self.client.get(url)
+        eq_(response.status_code, 200)
+
+        ok_('Crashing Thread (2)' not in response.content)
+        ok_('Crashing Thread (0)' in response.content)
 
     @mock.patch('crashstats.crashstats.models.Bugs.get')
     @mock.patch('requests.get')
@@ -4683,6 +4750,36 @@ class TestViews(BaseTestViews):
         response = self.client.get(dump_url)
         eq_(response.status_code, 200)
         ok_('bla bla bla' in response.content)  # still. good.
+
+    def test_raw_data_memory_report(self):
+
+        crash_id = '176bcd6c-c2ec-4b0c-9d5f-dadea2120531'
+
+        def mocked_get(**params):
+            assert params['name'] == 'memory_report'
+            assert params['uuid'] == crash_id
+            assert params['datatype'] == 'raw'
+            return "binary stuff"
+
+        models.RawCrash.implementation().get.side_effect = mocked_get
+
+        dump_url = reverse(
+            'crashstats:raw_data_named',
+            args=(crash_id, 'memory_report', 'json.gz')
+        )
+        response = self.client.get(dump_url)
+        eq_(response.status_code, 302)
+        assert 'login' in response['Location']
+
+        user = self._login()
+        group = self._create_group_with_permission('view_rawdump')
+        user.groups.add(group)
+        assert user.has_perm('crashstats.view_rawdump')
+
+        response = self.client.get(dump_url)
+        eq_(response.status_code, 200)
+        eq_(response['Content-Type'], 'application/octet-stream')
+        ok_('binary stuff' in response.content, response.content)
 
     @mock.patch('requests.get')
     def test_correlations_json(self, rget):
