@@ -11,17 +11,20 @@
 {% endblock %}
 
 {% block content %}
-<div id="mainbody">
+<div id="mainbody"
+    data-columns="{{ possible_columns | to_json }}"
+    data-facets="{{ possible_facets | to_json }}"
+    >
     <div class="page-heading">
         <h2>Super Search</h2>
 
         <nav>
+            {% if not waffle.switch('supersearch-custom-query-disabled') and request.user.has_perm('crashstats.run_custom_queries') %}
             <ul class="options">
                 <li><a href="{{ url('supersearch.search') }}" class="selected">Search by fields</a></li>
-                {% if not waffle.switch('supersearch-custom-query-disabled') and request.user.has_perm('crashstats.run_custom_queries') %}
                 <li><a href="{{ url('supersearch.search_custom') }}">Custom query</a></li>
-                {% endif %}
             </ul>
+            {% endif %}
             <div id="sumo-link">
                 <a href="https://developer.mozilla.org/en-US/docs/A_guide_to_searching_crash_reports"
                    title="MDN documentation on searching crash reports"
@@ -116,11 +119,6 @@
 {% block site_js %}
     {{ super() }}
 
-<script>
-var COLUMNS = {{ possible_columns | json_dumps }};
-var FACETS = {{ possible_facets | json_dumps }};
-var BASE_URL = location.protocol + '//' + location.host;
-</script>
     {% javascript 'select2' %}
     {% javascript 'jquery_ui' %}
     {% javascript 'jquery_tablesorter' %}

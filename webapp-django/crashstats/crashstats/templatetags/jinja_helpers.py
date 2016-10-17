@@ -33,10 +33,16 @@ def truncatechars(str_, max_length):
 
 @library.filter
 def urlencode(txt):
-    """Url encode a path."""
+    """Url encode a path.
+
+    This function ensures white spaces are encoded with '%20' and not '+'.
+    """
+    if not isinstance(txt, basestring):
+        # Do nothing on non-strings.
+        return txt
     if isinstance(txt, unicode):
         txt = txt.encode('utf-8')
-    return urllib.quote_plus(txt)
+    return urllib.quote_plus(txt).replace('+', '%20')
 
 
 @library.filter
@@ -109,10 +115,11 @@ def time_tag(dt, format='%a, %b %d %H:%M %Z', future=False):
 
 
 @library.global_function
-def datetime_picker(input_name, default_value=''):
+def datetime_picker(input_name, default_value):
     """Return a datetime picker HTML element to be powered by a JS library.
     """
-    return jinja2.Markup('''
+    return jinja2.Markup(
+        '''
         <span
             class="datetime-picker {input_name}"
             data-wrap="true"
@@ -120,6 +127,7 @@ def datetime_picker(input_name, default_value=''):
             data-utc="true"
             data-time_24hr="true"
             data-alt-input="true"
+            data-date-format="Y-m-d\TH:i:S\Z"
             data-alt-format="F j, Y - H:i"
             date-default-date="{default_value}"
         >
@@ -373,3 +381,8 @@ def show_filesize(bytes, unit='bytes'):
         'unit': unit,
         'humanized': humanized,
     }).strip())
+
+
+@library.global_function
+def booleanish_to_boolean(value):
+    return str(value).lower() in ('1', 'true', 'yes')

@@ -3,7 +3,10 @@
 
 
 {% block content %}
-<div id="mainbody">
+<div id="mainbody"
+    class="custom-search"
+    data-elasticsearch-indices="{{ elasticsearch_indices | to_json }}"
+>
     <div class="page-heading">
         <h2>Super Search</h2>
 
@@ -20,9 +23,12 @@
             data-results-url="{{ url('supersearch.search_query') }}"
         >
             {% csrf_token %}
-            <button type="submit" id="search-button">Search</button>
+            <div class="form-controls">
+                <button type="submit" id="search-button">Search</button>
+            </div>
 
             <div id="editor">{% if query %}{{ query }}{% endif %}</div>
+
             <fieldset class="options">
                 <p>elasticsearch indices to query. Schema is socorroYYYYWW. Use <kbd>ALL</kbd> to query all existing indices (not recommended).</p>
                 <input type="text" id="search_indices" name="search_indices" value="{{ indices }}">
@@ -52,10 +58,6 @@
 
 {% block site_js %}
     {{ super() }}
-
-<script>
-var ELASTICSEARCH_INDICES = {{ elasticsearch_indices | json_dumps }};
-</script>
 
     {% javascript 'select2' %}
     {% javascript 'search_custom' %}
