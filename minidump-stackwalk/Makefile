@@ -30,6 +30,8 @@ EXTRA_OBJS := \
 
 VPATH += $(JSON_SRCDIR)
 
+LIBZIP_LIBS := $(shell pkg-config libzip --libs)
+
 OS := $(shell uname -s)
 ifeq ($(OS),Linux)
 CURL_CFLAGS := $(shell pkg-config libcurl --cflags)
@@ -49,7 +51,7 @@ CXXFLAGS += \
   $(WERROR) \
   $(CURL_CFLAGS) \
   $(NULL)
-LIBS := $(CURL_LIBS)
+LIBS := $(CURL_LIBS) $(LIBZIP_LIBS)
 
 .SECONDEXPANSION:
 $(BINS): %: %.cc $(BREAKPAD_LIBS) $(EXTRA_OBJS) $$($$*_OBJS)

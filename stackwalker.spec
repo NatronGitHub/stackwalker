@@ -1,7 +1,7 @@
-Summary: Convert minidump to JSON
+Summary: Parse crash reports
 Name: stackwalker
 
-Version: 2016.06
+Version: 2016.10
 Release: 1%{?dist}
 License: BSD
 
@@ -11,11 +11,11 @@ URL: https://github.com/olear/stackwalker
 Source: %{name}-%{version}.tar.xz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
-BuildRequires: libcurl-devel
-Requires: libcurl
+BuildRequires: libcurl-devel libzip-devel
+Requires: libcurl libzip
 
 %description
-Convert minidump to JSON.
+Parse crash reports from clients using Breakpad.
 
 %prep
 %setup
