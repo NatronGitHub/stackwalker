@@ -1,0 +1,20 @@
+sudo: required
+dist: trusty
+
+language: cpp
+
+compiler:
+  - gcc
+
+install:
+  - sudo apt-get install -y libzip-dev libcurl4-openssl-dev
+
+script:
+  - git submodule update -i --recursive
+  - cd breakpad
+  - ./configure
+  - make -j2
+  - cd ../minidump-stackwalk
+  - make
+  - cd ../tests
+  - sh run.sh
