@@ -1,7 +1,7 @@
 Summary: Parse crash reports
 Name: stackwalker
 
-Version: 2016.10
+Version: 2016.11
 Release: 1%{?dist}
 License: BSD
 
