@@ -11,9 +11,9 @@ JSON_INCLUDEDIR := $(JSON_DIR)/include
 
 BINS := \
   stackwalker \
-  dumplookup \
-  get-minidump-instructions \
-  jit-crash-categorize \
+#  dumplookup \
+#  get-minidump-instructions \
+#  jit-crash-categorize \
   $(NULL)
 
 all: $(BINS)
@@ -30,16 +30,16 @@ EXTRA_OBJS := \
 
 VPATH += $(JSON_SRCDIR)
 
-LIBZIP_LIBS := $(shell pkg-config libzip --libs)
-
 OS := $(shell uname -s)
 ifeq ($(OS),Linux)
 CURL_CFLAGS := $(shell pkg-config libcurl --cflags)
 CURL_LIBS := $(shell pkg-config libcurl --libs)
+LIBZIP_LIBS := $(shell pkg-config libzip --libs)
 # Don't -Werror everywhere, some compilers are too picky.
 WERROR := -Werror
 else
 CURL_LIBS := -lcurl
+LIBZIP_LIBS := -lzip -lz
 endif
 
 CXXFLAGS += \

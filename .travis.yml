@@ -12,7 +12,7 @@ install:
 script:
   - git submodule update -i --recursive
   - cd breakpad
-  - ./configure
+  - LIBS="-lzip -lz" ./configure
   - make -j2
   - cd ../minidump-stackwalk
   - make
