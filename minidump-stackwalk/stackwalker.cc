@@ -570,7 +570,7 @@ int ConvertModulesToJSON(const ProcessState& process_state,
       main_module_index = module_sequence;
 
     Json::Value module_data;
-    module_data["filename"] = PathnameStripper::File(module->code_file());
+    module_data["filename"] = module->code_file();
     module_data["code_id"] = PathnameStripper::File(module->code_identifier());
     module_data["version"] = module->version();
     module_data["debug_file"] = PathnameStripper::File(module->debug_file());

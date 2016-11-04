@@ -141,7 +141,7 @@
          "debug_file" : "zlib.pyd",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x2c0000",
-         "filename" : "zlib.pyd",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\lib\\python2.7\\lib-dynload\\zlib.pyd",
          "version" : ""
       },
       {
@@ -150,7 +150,7 @@
          "debug_file" : "Natron-bin.exe",
          "debug_id" : "D24F709D48BDE7C18085E505F49157C51",
          "end_addr" : "0x130c000",
-         "filename" : "Natron-bin.exe",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\Natron-bin.exe",
          "loaded_symbols" : true,
          "version" : "2.1.7.0"
       },
@@ -160,7 +160,7 @@
          "debug_file" : "libgdk_pixbuf-2.0-0.dll",
          "debug_id" : "232107838362d36340000000000000000",
          "end_addr" : "0x3baa000",
-         "filename" : "libgdk_pixbuf-2.0-0.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\Plugins\\OFX\\Natron\\Arena.ofx.bundle\\Contents\\Win64\\libgdk_pixbuf-2.0-0.dll",
          "version" : "2.32.1.0"
       },
       {
@@ -169,7 +169,7 @@
          "debug_file" : "libintl-8.dll",
          "debug_id" : "019607838362d36340000000000000000",
          "end_addr" : "0x3bd8000",
-         "filename" : "libintl-8.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\Plugins\\OFX\\Natron\\Arena.ofx.bundle\\Contents\\Win64\\libintl-8.dll",
          "version" : "0.19.6.0"
       },
       {
@@ -178,7 +178,7 @@
          "debug_file" : "libpangowin32-1.0-0.dll",
          "debug_id" : "138107838362d36340000000000000000",
          "end_addr" : "0x3bff000",
-         "filename" : "libpangowin32-1.0-0.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\Plugins\\OFX\\Natron\\Arena.ofx.bundle\\Contents\\Win64\\libpangowin32-1.0-0.dll",
          "version" : "1.38.1.0"
       },
       {
@@ -187,7 +187,7 @@
          "debug_file" : "QtGui.pyd",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x5b66000",
-         "filename" : "QtGui.pyd",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\Plugins\\PySide\\QtGui.pyd",
          "version" : ""
       },
       {
@@ -196,7 +196,7 @@
          "debug_file" : "Arena.ofx",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x8275000",
-         "filename" : "Arena.ofx",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\Plugins\\OFX\\Natron\\Arena.ofx.bundle\\Contents\\Win64\\Arena.ofx",
          "version" : ""
       },
       {
@@ -205,7 +205,7 @@
          "debug_file" : "libicuin56.dll",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x84a2000",
-         "filename" : "libicuin56.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\Plugins\\OFX\\Natron\\Arena.ofx.bundle\\Contents\\Win64\\libicuin56.dll",
          "version" : ""
       },
       {
@@ -214,7 +214,7 @@
          "debug_file" : "libicuuc56.dll",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x8617000",
-         "filename" : "libicuuc56.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\libicuuc56.dll",
          "version" : ""
       },
       {
@@ -223,7 +223,7 @@
          "debug_file" : "libicudt56.dll",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x9e10000",
-         "filename" : "libicudt56.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\libicudt56.dll",
          "version" : ""
       },
       {
@@ -232,7 +232,7 @@
          "debug_file" : "libOpenColorIO.dll",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x9f5b000",
-         "filename" : "libOpenColorIO.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\libOpenColorIO.dll",
          "version" : ""
       },
       {
@@ -241,7 +241,7 @@
          "debug_file" : "librsvg-2-2.dll",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x9f9d000",
-         "filename" : "librsvg-2-2.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\Plugins\\OFX\\Natron\\Arena.ofx.bundle\\Contents\\Win64\\librsvg-2-2.dll",
          "version" : ""
       },
       {
@@ -250,7 +250,7 @@
          "debug_file" : "libwebp-6.dll",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0xa00b000",
-         "filename" : "libwebp-6.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\libwebp-6.dll",
          "version" : ""
       },
       {
@@ -259,7 +259,7 @@
          "debug_file" : "IO.ofx",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0xa38e000",
-         "filename" : "IO.ofx",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\Plugins\\OFX\\Natron\\IO.ofx.bundle\\Contents\\Win64\\IO.ofx",
          "version" : ""
       },
       {
@@ -268,7 +268,7 @@
          "debug_file" : "libIlmImf-2_2.dll",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0xa6b8000",
-         "filename" : "libIlmImf-2_2.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\libIlmImf-2_2.dll",
          "version" : ""
       },
       {
@@ -277,7 +277,7 @@
          "debug_file" : "libOpenImageIO.dll",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0xb027000",
-         "filename" : "libOpenImageIO.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\libOpenImageIO.dll",
          "version" : ""
       },
       {
@@ -286,7 +286,7 @@
          "debug_file" : "Misc.ofx",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0xcbab000",
-         "filename" : "Misc.ofx",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\Plugins\\OFX\\Natron\\Misc.ofx.bundle\\Contents\\Win64\\Misc.ofx",
          "version" : ""
       },
       {
@@ -295,7 +295,7 @@
          "debug_file" : "osmesa.dll",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0xe45b000",
-         "filename" : "osmesa.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\osmesa.dll",
          "version" : ""
       },
       {
@@ -304,7 +304,7 @@
          "debug_file" : "libgcc_s_seh-1.dll",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x6145c000",
-         "filename" : "libgcc_s_seh-1.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\libgcc_s_seh-1.dll",
          "version" : ""
       },
       {
@@ -313,7 +313,7 @@
          "debug_file" : "libboost_regex-mt.dll",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x61568000",
-         "filename" : "libboost_regex-mt.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\libboost_regex-mt.dll",
          "version" : ""
       },
       {
@@ -322,7 +322,7 @@
          "debug_file" : "libharfbuzz-0.dll",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x6166a000",
-         "filename" : "libharfbuzz-0.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\libharfbuzz-0.dll",
          "version" : ""
       },
       {
@@ -331,7 +331,7 @@
          "debug_file" : "libjasper-1.dll",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x61823000",
-         "filename" : "libjasper-1.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\libjasper-1.dll",
          "version" : ""
       },
       {
@@ -340,7 +340,7 @@
          "debug_file" : "libintl-8.dll",
          "debug_id" : "019607838362d36340000000000000000",
          "end_addr" : "0x61ce8000",
-         "filename" : "libintl-8.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\libintl-8.dll",
          "version" : "0.19.6.0"
       },
       {
@@ -349,7 +349,7 @@
          "debug_file" : "CImg.ofx",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x621ec000",
-         "filename" : "CImg.ofx",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\Plugins\\OFX\\Natron\\CImg.ofx.bundle\\Contents\\Win64\\CImg.ofx",
          "version" : ""
       },
       {
@@ -358,7 +358,7 @@
          "debug_file" : "LIBBZ2-1.DLL",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x626da000",
-         "filename" : "LIBBZ2-1.DLL",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\LIBBZ2-1.DLL",
          "version" : ""
       },
       {
@@ -367,7 +367,7 @@
          "debug_file" : "qgif4.dll",
          "debug_id" : "48707838362d363400000000000000000",
          "end_addr" : "0x62a12000",
-         "filename" : "qgif4.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\imageformats\\qgif4.dll",
          "version" : "4.8.7.0"
       },
       {
@@ -376,7 +376,7 @@
          "debug_file" : "ZLIB1.DLL",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x62e9d000",
-         "filename" : "ZLIB1.DLL",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\ZLIB1.DLL",
          "version" : ""
       },
       {
@@ -385,7 +385,7 @@
          "debug_file" : "libgomp-1.dll",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x63624000",
-         "filename" : "libgomp-1.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\libgomp-1.dll",
          "version" : ""
       },
       {
@@ -394,7 +394,7 @@
          "debug_file" : "libIex-2_2.dll",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x63913000",
-         "filename" : "libIex-2_2.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\libIex-2_2.dll",
          "version" : ""
       },
       {
@@ -403,7 +403,7 @@
          "debug_file" : "qjpeg4.dll",
          "debug_id" : "48707838362d363400000000000000000",
          "end_addr" : "0x63a12000",
-         "filename" : "qjpeg4.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\imageformats\\qjpeg4.dll",
          "version" : "4.8.7.0"
       },
       {
@@ -412,7 +412,7 @@
          "debug_file" : "libgobject-2.0-0.dll",
          "debug_id" : "246207838362d36340000000000000000",
          "end_addr" : "0x63a92000",
-         "filename" : "libgobject-2.0-0.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\Plugins\\OFX\\Natron\\Arena.ofx.bundle\\Contents\\Win64\\libgobject-2.0-0.dll",
          "version" : "2.46.2.0"
       },
       {
@@ -421,7 +421,7 @@
          "debug_file" : "liblzma-5.dll",
          "debug_id" : "52107838362d363400000000000000000",
          "end_addr" : "0x63cec000",
-         "filename" : "liblzma-5.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\liblzma-5.dll",
          "version" : "5.2.1.0"
       },
       {
@@ -430,7 +430,7 @@
          "debug_file" : "QtCore.pyd",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x6411d000",
-         "filename" : "QtCore.pyd",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\Plugins\\PySide\\QtCore.pyd",
          "version" : ""
       },
       {
@@ -439,7 +439,7 @@
          "debug_file" : "libboost_system-mt.dll",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x6488e000",
-         "filename" : "libboost_system-mt.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\libboost_system-mt.dll",
          "version" : ""
       },
       {
@@ -448,7 +448,7 @@
          "debug_file" : "libwinpthread-1.dll",
          "debug_id" : "10007838362d363400000000000000000",
          "end_addr" : "0x64955000",
-         "filename" : "libwinpthread-1.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\libwinpthread-1.dll",
          "version" : "1.0.0.0"
       },
       {
@@ -457,7 +457,7 @@
          "debug_file" : "LIBMNG-2.DLL",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x64eb8000",
-         "filename" : "LIBMNG-2.DLL",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\LIBMNG-2.DLL",
          "version" : ""
       },
       {
@@ -466,7 +466,7 @@
          "debug_file" : "libfontconfig-1.dll",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x64fd3000",
-         "filename" : "libfontconfig-1.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\libfontconfig-1.dll",
          "version" : ""
       },
       {
@@ -475,7 +475,7 @@
          "debug_file" : "libpixman-1-0.dll",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x653af000",
-         "filename" : "libpixman-1-0.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\libpixman-1-0.dll",
          "version" : ""
       },
       {
@@ -484,7 +484,7 @@
          "debug_file" : "libpango-1.0-0.dll",
          "debug_id" : "138107838362d36340000000000000000",
          "end_addr" : "0x655c2000",
-         "filename" : "libpango-1.0-0.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\Plugins\\OFX\\Natron\\Arena.ofx.bundle\\Contents\\Win64\\libpango-1.0-0.dll",
          "version" : "1.38.1.0"
       },
       {
@@ -493,7 +493,7 @@
          "debug_file" : "LIBGIF-7.DLL",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x65893000",
-         "filename" : "LIBGIF-7.DLL",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\LIBGIF-7.DLL",
          "version" : ""
       },
       {
@@ -502,7 +502,7 @@
          "debug_file" : "QtSvg4.dll",
          "debug_id" : "48707838362d363400000000000000000",
          "end_addr" : "0x65b98000",
-         "filename" : "QtSvg4.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\QtSvg4.dll",
          "version" : "4.8.7.0"
       },
       {
@@ -511,7 +511,7 @@
          "debug_file" : "QtNetwork4.dll",
          "debug_id" : "48707838362d363400000000000000000",
          "end_addr" : "0x65dcf000",
-         "filename" : "QtNetwork4.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\QtNetwork4.dll",
          "version" : "4.8.7.0"
       },
       {
@@ -520,7 +520,7 @@
          "debug_file" : "libiconv-2.dll",
          "debug_id" : "114007838362d36340000000000000000",
          "end_addr" : "0x66109000",
-         "filename" : "libiconv-2.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\libiconv-2.dll",
          "version" : "1.14.0.0"
       },
       {
@@ -529,7 +529,7 @@
          "debug_file" : "libcroco-0.6-3.dll",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x66482000",
-         "filename" : "libcroco-0.6-3.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\Plugins\\OFX\\Natron\\Arena.ofx.bundle\\Contents\\Win64\\libcroco-0.6-3.dll",
          "version" : ""
       },
       {
@@ -538,7 +538,7 @@
          "debug_file" : "librevenge-stream-0.0.dll",
          "debug_id" : "00407838362d363400000000000000000",
          "end_addr" : "0x66824000",
-         "filename" : "librevenge-stream-0.0.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\Plugins\\OFX\\Natron\\Arena.ofx.bundle\\Contents\\Win64\\librevenge-stream-0.0.dll",
          "version" : "0.0.4.0"
       },
       {
@@ -547,7 +547,7 @@
          "debug_file" : "libopenjpeg-5.dll",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x674f6000",
-         "filename" : "libopenjpeg-5.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\libopenjpeg-5.dll",
          "version" : ""
       },
       {
@@ -556,7 +556,7 @@
          "debug_file" : "QTGUI4.DLL",
          "debug_id" : "48707838362d363400000000000000000",
          "end_addr" : "0x68041000",
-         "filename" : "QTGUI4.DLL",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\QTGUI4.DLL",
          "missing_symbols" : true,
          "version" : "4.8.7.0"
       },
@@ -566,7 +566,7 @@
          "debug_file" : "libHalf-2_2.dll",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x680cf000",
-         "filename" : "libHalf-2_2.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\libHalf-2_2.dll",
          "version" : ""
       },
       {
@@ -575,7 +575,7 @@
          "debug_file" : "Shadertoy.ofx",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x68441000",
-         "filename" : "Shadertoy.ofx",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\Plugins\\OFX\\Natron\\Shadertoy.ofx.bundle\\Contents\\Win64\\Shadertoy.ofx",
          "version" : ""
       },
       {
@@ -584,7 +584,7 @@
          "debug_file" : "libglib-2.0-0.dll",
          "debug_id" : "246207838362d36340000000000000000",
          "end_addr" : "0x686fc000",
-         "filename" : "libglib-2.0-0.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\libglib-2.0-0.dll",
          "version" : "2.46.2.0"
       },
       {
@@ -593,7 +593,7 @@
          "debug_file" : "libshiboken-python2.7.dll",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x68ab9000",
-         "filename" : "libshiboken-python2.7.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\libshiboken-python2.7.dll",
          "version" : ""
       },
       {
@@ -602,7 +602,7 @@
          "debug_file" : "libpng16-16.dll",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x68b7f000",
-         "filename" : "libpng16-16.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\libpng16-16.dll",
          "version" : ""
       },
       {
@@ -611,7 +611,7 @@
          "debug_file" : "libcairo-2.dll",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x68eb1000",
-         "filename" : "libcairo-2.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\libcairo-2.dll",
          "version" : ""
       },
       {
@@ -620,7 +620,7 @@
          "debug_file" : "libtiff-5.dll",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x68f39000",
-         "filename" : "libtiff-5.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\libtiff-5.dll",
          "version" : ""
       },
       {
@@ -629,7 +629,7 @@
          "debug_file" : "libexpat-1.dll",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x68f6d000",
-         "filename" : "libexpat-1.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\libexpat-1.dll",
          "version" : ""
       },
       {
@@ -638,7 +638,7 @@
          "debug_file" : "libfreetype-6.dll",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x69464000",
-         "filename" : "libfreetype-6.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\libfreetype-6.dll",
          "version" : ""
       },
       {
@@ -647,7 +647,7 @@
          "debug_file" : "_struct.pyd",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x6a012000",
-         "filename" : "_struct.pyd",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\lib\\python2.7\\lib-dynload\\_struct.pyd",
          "version" : ""
       },
       {
@@ -656,7 +656,7 @@
          "debug_file" : "math.pyd",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x6a515000",
-         "filename" : "math.pyd",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\lib\\python2.7\\lib-dynload\\math.pyd",
          "version" : ""
       },
       {
@@ -665,7 +665,7 @@
          "debug_file" : "libpoppler-60.dll",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x6a9d9000",
-         "filename" : "libpoppler-60.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\Plugins\\OFX\\Natron\\Arena.ofx.bundle\\Contents\\Win64\\libpoppler-60.dll",
          "version" : ""
       },
       {
@@ -674,7 +674,7 @@
          "debug_file" : "liblcms2-2.dll",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x6b2a1000",
-         "filename" : "liblcms2-2.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\liblcms2-2.dll",
          "version" : ""
       },
       {
@@ -683,7 +683,7 @@
          "debug_file" : "LIBZIP-4.DLL",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x6b560000",
-         "filename" : "LIBZIP-4.DLL",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\Plugins\\OFX\\Natron\\Arena.ofx.bundle\\Contents\\Win64\\LIBZIP-4.DLL",
          "version" : ""
       },
       {
@@ -692,7 +692,7 @@
          "debug_file" : "LIBFFI-6.DLL",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x6b750000",
-         "filename" : "LIBFFI-6.DLL",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\LIBFFI-6.DLL",
          "version" : ""
       },
       {
@@ -701,7 +701,7 @@
          "debug_file" : "libjpeg-8.dll",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x6b869000",
-         "filename" : "libjpeg-8.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\libjpeg-8.dll",
          "version" : ""
       },
       {
@@ -710,7 +710,7 @@
          "debug_file" : "libboost_serialization-mt.dll",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x6ba78000",
-         "filename" : "libboost_serialization-mt.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\libboost_serialization-mt.dll",
          "version" : ""
       },
       {
@@ -719,7 +719,7 @@
          "debug_file" : "libcdr-0.1.dll",
          "debug_id" : "01207838362d363400000000000000000",
          "end_addr" : "0x6bed1000",
-         "filename" : "libcdr-0.1.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\Plugins\\OFX\\Natron\\Arena.ofx.bundle\\Contents\\Win64\\libcdr-0.1.dll",
          "version" : "0.1.2.0"
       },
       {
@@ -728,7 +728,7 @@
          "debug_file" : "libpyside-python2.7.dll",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x6c770000",
-         "filename" : "libpyside-python2.7.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\libpyside-python2.7.dll",
          "version" : ""
       },
       {
@@ -737,7 +737,7 @@
          "debug_file" : "libpoppler-glib-8.dll",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x6ca56000",
-         "filename" : "libpoppler-glib-8.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\Plugins\\OFX\\Natron\\Arena.ofx.bundle\\Contents\\Win64\\libpoppler-glib-8.dll",
          "version" : ""
       },
       {
@@ -746,7 +746,7 @@
          "debug_file" : "qmng4.dll",
          "debug_id" : "48707838362d363400000000000000000",
          "end_addr" : "0x6cad1000",
-         "filename" : "qmng4.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\imageformats\\qmng4.dll",
          "version" : "4.8.7.0"
       },
       {
@@ -755,7 +755,7 @@
          "debug_file" : "libpython2.7.dll",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x6cfd6000",
-         "filename" : "libpython2.7.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\libpython2.7.dll",
          "version" : ""
       },
       {
@@ -764,7 +764,7 @@
          "debug_file" : "qtga4.dll",
          "debug_id" : "48707838362d363400000000000000000",
          "end_addr" : "0x6d2d1000",
-         "filename" : "qtga4.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\imageformats\\qtga4.dll",
          "version" : "4.8.7.0"
       },
       {
@@ -773,7 +773,7 @@
          "debug_file" : "libpangocairo-1.0-0.dll",
          "debug_id" : "138107838362d36340000000000000000",
          "end_addr" : "0x6d4d6000",
-         "filename" : "libpangocairo-1.0-0.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\Plugins\\OFX\\Natron\\Arena.ofx.bundle\\Contents\\Win64\\libpangocairo-1.0-0.dll",
          "version" : "1.38.1.0"
       },
       {
@@ -782,7 +782,7 @@
          "debug_file" : "libgio-2.0-0.dll",
          "debug_id" : "246207838362d36340000000000000000",
          "end_addr" : "0x6d6d5000",
-         "filename" : "libgio-2.0-0.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\Plugins\\OFX\\Natron\\Arena.ofx.bundle\\Contents\\Win64\\libgio-2.0-0.dll",
          "version" : "2.46.2.0"
       },
       {
@@ -791,7 +791,7 @@
          "debug_file" : "libpangoft2-1.0-0.dll",
          "debug_id" : "138107838362d36340000000000000000",
          "end_addr" : "0x6d71a000",
-         "filename" : "libpangoft2-1.0-0.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\Plugins\\OFX\\Natron\\Arena.ofx.bundle\\Contents\\Win64\\libpangoft2-1.0-0.dll",
          "version" : "1.38.1.0"
       },
       {
@@ -800,7 +800,7 @@
          "debug_file" : "qsvgicon4.dll",
          "debug_id" : "48707838362d363400000000000000000",
          "end_addr" : "0x6d894000",
-         "filename" : "qsvgicon4.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\iconengines\\qsvgicon4.dll",
          "version" : "4.8.7.0"
       },
       {
@@ -809,7 +809,7 @@
          "debug_file" : "libgmodule-2.0-0.dll",
          "debug_id" : "246207838362d36340000000000000000",
          "end_addr" : "0x6dd0f000",
-         "filename" : "libgmodule-2.0-0.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\Plugins\\OFX\\Natron\\Arena.ofx.bundle\\Contents\\Win64\\libgmodule-2.0-0.dll",
          "version" : "2.46.2.0"
       },
       {
@@ -818,7 +818,7 @@
          "debug_file" : "QTCORE4.DLL",
          "debug_id" : "48707838362d363400000000000000000",
          "end_addr" : "0x6e381000",
-         "filename" : "QTCORE4.DLL",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\QTCORE4.DLL",
          "missing_symbols" : true,
          "version" : "4.8.7.0"
       },
@@ -828,7 +828,7 @@
          "debug_file" : "qsvg4.dll",
          "debug_id" : "48707838362d363400000000000000000",
          "end_addr" : "0x6e491000",
-         "filename" : "qsvg4.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\imageformats\\qsvg4.dll",
          "version" : "4.8.7.0"
       },
       {
@@ -837,7 +837,7 @@
          "debug_file" : "QtOpenGL4.dll",
          "debug_id" : "48707838362d363400000000000000000",
          "end_addr" : "0x6f06d000",
-         "filename" : "QtOpenGL4.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\QtOpenGL4.dll",
          "version" : "4.8.7.0"
       },
       {
@@ -846,7 +846,7 @@
          "debug_file" : "libboost_filesystem-mt.dll",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x6f0a3000",
-         "filename" : "libboost_filesystem-mt.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\libboost_filesystem-mt.dll",
          "version" : ""
       },
       {
@@ -855,7 +855,7 @@
          "debug_file" : "qtiff4.dll",
          "debug_id" : "48707838362d363400000000000000000",
          "end_addr" : "0x6f3d2000",
-         "filename" : "qtiff4.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\imageformats\\qtiff4.dll",
          "version" : "4.8.7.0"
       },
       {
@@ -864,7 +864,7 @@
          "debug_file" : "librevenge-0.0.dll",
          "debug_id" : "00407838362d363400000000000000000",
          "end_addr" : "0x6f436000",
-         "filename" : "librevenge-0.0.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\Plugins\\OFX\\Natron\\Arena.ofx.bundle\\Contents\\Win64\\librevenge-0.0.dll",
          "version" : "0.0.4.0"
       },
       {
@@ -873,7 +873,7 @@
          "debug_file" : "libraw_r-15.dll",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x6f855000",
-         "filename" : "libraw_r-15.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\libraw_r-15.dll",
          "version" : ""
       },
       {
@@ -882,7 +882,7 @@
          "debug_file" : "_ctypes.pyd",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x6f8ab000",
-         "filename" : "_ctypes.pyd",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\lib\\python2.7\\lib-dynload\\_ctypes.pyd",
          "version" : ""
       },
       {
@@ -891,7 +891,7 @@
          "debug_file" : "QtXml4.dll",
          "debug_id" : "48707838362d363400000000000000000",
          "end_addr" : "0x6fb1f000",
-         "filename" : "QtXml4.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\QtXml4.dll",
          "version" : "4.8.7.0"
       },
       {
@@ -900,7 +900,7 @@
          "debug_file" : "libstdc++-6.dll",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x6fda2000",
-         "filename" : "libstdc++-6.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\libstdc++-6.dll",
          "missing_symbols" : true,
          "version" : ""
       },
@@ -910,7 +910,7 @@
          "debug_file" : "libImath-2_2.dll",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7029e000",
-         "filename" : "libImath-2_2.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\libImath-2_2.dll",
          "version" : ""
       },
       {
@@ -919,7 +919,7 @@
          "debug_file" : "qico4.dll",
          "debug_id" : "48707838362d363400000000000000000",
          "end_addr" : "0x70a12000",
-         "filename" : "qico4.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\imageformats\\qico4.dll",
          "version" : "4.8.7.0"
       },
       {
@@ -928,7 +928,7 @@
          "debug_file" : "libIlmThread-2_2.dll",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x70b4f000",
-         "filename" : "libIlmThread-2_2.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\libIlmThread-2_2.dll",
          "version" : ""
       },
       {
@@ -937,7 +937,7 @@
          "debug_file" : "libboost_thread-mt.dll",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x70f26000",
-         "filename" : "libboost_thread-mt.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\libboost_thread-mt.dll",
          "version" : ""
       },
       {
@@ -946,7 +946,7 @@
          "debug_file" : "libxml2-2.dll",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x71087000",
-         "filename" : "libxml2-2.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\Plugins\\OFX\\Natron\\Arena.ofx.bundle\\Contents\\Win64\\libxml2-2.dll",
          "version" : ""
       },
       {
@@ -955,7 +955,7 @@
          "debug_file" : "libSeExpr.dll",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x712d4000",
-         "filename" : "libSeExpr.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\libSeExpr.dll",
          "version" : ""
       },
       {
@@ -964,7 +964,7 @@
          "debug_file" : "opengl32.dll",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x73bcf000",
-         "filename" : "opengl32.dll",
+         "filename" : "C:\\Windows\\System32\\opengl32.dll",
          "missing_symbols" : true,
          "version" : ""
       },
@@ -974,7 +974,7 @@
          "debug_file" : "user32.pdb",
          "debug_id" : "953B04792B8A48B2883930E36FD22A6A2",
          "end_addr" : "0x7710a000",
-         "filename" : "user32.dll",
+         "filename" : "C:\\Windows\\System32\\user32.dll",
          "missing_symbols" : true,
          "version" : "6.1.7601.17514"
       },
@@ -984,7 +984,7 @@
          "debug_file" : "kernel32.pdb",
          "debug_id" : "C4312728BA1F4691955E99B2E026FAFC2",
          "end_addr" : "0x7722f000",
-         "filename" : "kernel32.dll",
+         "filename" : "C:\\Windows\\System32\\kernel32.dll",
          "missing_symbols" : true,
          "version" : "6.1.7601.18015"
       },
@@ -994,7 +994,7 @@
          "debug_file" : "ntdll.pdb",
          "debug_id" : "9D04EB0AA387494FBD81ED062072B99C2",
          "end_addr" : "0x773d9000",
-         "filename" : "ntdll.dll",
+         "filename" : "C:\\Windows\\System32\\ntdll.dll",
          "missing_symbols" : true,
          "version" : "6.1.7601.18247"
       },
@@ -1004,7 +1004,7 @@
          "debug_file" : "psapi.pdb",
          "debug_id" : "0CABCB9659614C45A750FC85662A63D62",
          "end_addr" : "0x773f7000",
-         "filename" : "psapi.dll",
+         "filename" : "C:\\Windows\\System32\\psapi.dll",
          "version" : "6.1.7600.16385"
       },
       {
@@ -1013,7 +1013,7 @@
          "debug_file" : "swscale-4.dll",
          "debug_id" : "4110007838362d3634000000000000000",
          "end_addr" : "0x7fee8ee3000",
-         "filename" : "swscale-4.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\swscale-4.dll",
          "version" : "4.1.100.0"
       },
       {
@@ -1022,7 +1022,7 @@
          "debug_file" : "avformat-57.dll",
          "debug_id" : "574110007838362d36340000000000000",
          "end_addr" : "0x7fee910b000",
-         "filename" : "avformat-57.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\avformat-57.dll",
          "version" : "57.41.100.0"
       },
       {
@@ -1031,7 +1031,7 @@
          "debug_file" : "avcodec-57.dll",
          "debug_id" : "574810107838362d36340000000000000",
          "end_addr" : "0x7feeab60000",
-         "filename" : "avcodec-57.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\avcodec-57.dll",
          "version" : "57.48.101.0"
       },
       {
@@ -1040,7 +1040,7 @@
          "debug_file" : "avutil-55.dll",
          "debug_id" : "552810007838362d36340000000000000",
          "end_addr" : "0x7feeb7f3000",
-         "filename" : "avutil-55.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\avutil-55.dll",
          "version" : "55.28.100.0"
       },
       {
@@ -1049,7 +1049,7 @@
          "debug_file" : "swresample-2.dll",
          "debug_id" : "2110007838362d3634000000000000000",
          "end_addr" : "0x7feec087000",
-         "filename" : "swresample-2.dll",
+         "filename" : "C:\\Users\\olear\\Desktop\\Natron-2.1.7-Windows-x86_64bit-no-installer\\bin\\swresample-2.dll",
          "version" : "2.1.100.0"
       },
       {
@@ -1058,7 +1058,7 @@
          "debug_file" : "comctl32v582.pdb",
          "debug_id" : "0A19E50C177348078550FC706C26BFDF1",
          "end_addr" : "0x7feeddc0000",
-         "filename" : "comctl32.dll",
+         "filename" : "C:\\Windows\\winsxs\\amd64_microsoft.windows.common-controls_6595b64144ccf1df_5.82.7601.17514_none_a4d6a923711520a9\\comctl32.dll",
          "version" : "5.82.7601.17514"
       },
       {
@@ -1067,7 +1067,7 @@
          "debug_file" : "shfolder.pdb",
          "debug_id" : "D94D04F6BAAB4FE1999212BCA66AD7072",
          "end_addr" : "0x7feefb97000",
-         "filename" : "shfolder.dll",
+         "filename" : "C:\\Windows\\System32\\shfolder.dll",
          "version" : "6.1.7600.16385"
       },
       {
@@ -1076,7 +1076,7 @@
          "debug_file" : "dbghelp.pdb",
          "debug_id" : "094E015761DA454EB641C2328520CD6F2",
          "end_addr" : "0x7fef48d5000",
-         "filename" : "dbghelp.dll",
+         "filename" : "C:\\Windows\\System32\\dbghelp.dll",
          "version" : "6.1.7601.17514"
       },
       {
@@ -1085,7 +1085,7 @@
          "debug_file" : "msimg32.pdb",
          "debug_id" : "412FBF9A65E64A2DBC04B7F2416B439E2",
          "end_addr" : "0x7fef4c37000",
-         "filename" : "msimg32.dll",
+         "filename" : "C:\\Windows\\System32\\msimg32.dll",
          "version" : "6.1.7600.16385"
       },
       {
@@ -1094,7 +1094,7 @@
          "debug_file" : "winspool.pdb",
          "debug_id" : "E75038C36E27430E98384DD6F936BDAA1",
          "end_addr" : "0x7fef86d1000",
-         "filename" : "winspool.drv",
+         "filename" : "C:\\Windows\\System32\\winspool.drv",
          "version" : "6.1.7601.17514"
       },
       {
@@ -1103,7 +1103,7 @@
          "debug_file" : "mpr.pdb",
          "debug_id" : "4F9E18E000674B84B77CEE0E9C6353F22",
          "end_addr" : "0x7fef88c8000",
-         "filename" : "mpr.dll",
+         "filename" : "C:\\Windows\\System32\\mpr.dll",
          "version" : "6.1.7600.16385"
       },
       {
@@ -1112,7 +1112,7 @@
          "debug_file" : "wsock32.pdb",
          "debug_id" : "FF4403423D314B78AC3A5EB71E5DD9C62",
          "end_addr" : "0x7fef8a49000",
-         "filename" : "wsock32.dll",
+         "filename" : "C:\\Windows\\System32\\wsock32.dll",
          "version" : "6.1.7600.16385"
       },
       {
@@ -1121,7 +1121,7 @@
          "debug_file" : "winrnr.pdb",
          "debug_id" : "092077177DFC4B37BD49E938377C81392",
          "end_addr" : "0x7fef8b0b000",
-         "filename" : "winrnr.dll",
+         "filename" : "C:\\Windows\\System32\\winrnr.dll",
          "version" : "6.1.7600.16385"
       },
       {
@@ -1130,7 +1130,7 @@
          "debug_file" : "pnrpnsp.pdb",
          "debug_id" : "7346E3B8316541FEB959B0787F85CC9A2",
          "end_addr" : "0x7fef8b29000",
-         "filename" : "pnrpnsp.dll",
+         "filename" : "C:\\Windows\\System32\\pnrpnsp.dll",
          "version" : "6.1.7600.16385"
       },
       {
@@ -1139,7 +1139,7 @@
          "debug_file" : "NapiNSP.pdb",
          "debug_id" : "D77ABF6D8C4643D6A4A721AA53347ECB2",
          "end_addr" : "0x7fef8b45000",
-         "filename" : "NapiNSP.dll",
+         "filename" : "C:\\Windows\\System32\\NapiNSP.dll",
          "version" : "6.1.7600.16385"
       },
       {
@@ -1148,7 +1148,7 @@
          "debug_file" : "dwmapi.pdb",
          "debug_id" : "8683ED0C3DBE4053883EC22FD9B4F2102",
          "end_addr" : "0x7fefac28000",
-         "filename" : "dwmapi.dll",
+         "filename" : "C:\\Windows\\System32\\dwmapi.dll",
          "version" : "6.1.7600.16385"
       },
       {
@@ -1157,7 +1157,7 @@
          "debug_file" : "winmm.pdb",
          "debug_id" : "DF6E9D2411CE4DDFB398C369D05BC96B2",
          "end_addr" : "0x7fefac6b000",
-         "filename" : "winmm.dll",
+         "filename" : "C:\\Windows\\System32\\winmm.dll",
          "missing_symbols" : true,
          "version" : "6.1.7600.16385"
       },
@@ -1167,7 +1167,7 @@
          "debug_file" : "MicrosoftWindowsGdiPlus-1.1.7601.17514-gdiplus.pdb",
          "debug_id" : "E92C00158AFD47278CCBBB30011E7D381",
          "end_addr" : "0x7fefb165000",
-         "filename" : "GdiPlus.dll",
+         "filename" : "C:\\Windows\\winsxs\\amd64_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.7601.17514_none_2b24536c71ed437a\\GdiPlus.dll",
          "version" : "6.1.7601.17514"
       },
       {
@@ -1176,7 +1176,7 @@
          "debug_file" : "UxTheme.pdb",
          "debug_id" : "B0692F27B52C454FACA7380C075DE8632",
          "end_addr" : "0x7fefb256000",
-         "filename" : "uxtheme.dll",
+         "filename" : "C:\\Windows\\System32\\uxtheme.dll",
          "version" : "6.1.7600.16385"
       },
       {
@@ -1185,7 +1185,7 @@
          "debug_file" : "nlaapi.pdb",
          "debug_id" : "E4265F2570334A42B6BDCE531B463CC22",
          "end_addr" : "0x7fefb985000",
-         "filename" : "nlaapi.dll",
+         "filename" : "C:\\Windows\\System32\\nlaapi.dll",
          "version" : "6.1.7601.17514"
       },
       {
@@ -1194,7 +1194,7 @@
          "debug_file" : "wshtcpip.pdb",
          "debug_id" : "CDA0B508B8854B9A929B4B8B06A1B3852",
          "end_addr" : "0x7fefc337000",
-         "filename" : "WSHTCPIP.DLL",
+         "filename" : "C:\\Windows\\System32\\WSHTCPIP.DLL",
          "version" : "6.1.7600.16385"
       },
       {
@@ -1203,7 +1203,7 @@
          "debug_file" : "winnsi.pdb",
          "debug_id" : "20D0E4C982CA45AFA5260FA6E6C256182",
          "end_addr" : "0x7fefc42b000",
-         "filename" : "winnsi.dll",
+         "filename" : "C:\\Windows\\System32\\winnsi.dll",
          "version" : "6.1.7600.16385"
       },
       {
@@ -1212,7 +1212,7 @@
          "debug_file" : "iphlpapi.pdb",
          "debug_id" : "8B5A2D4E17EF425EB27B7705D3BC92C72",
          "end_addr" : "0x7fefc457000",
-         "filename" : "IPHLPAPI.DLL",
+         "filename" : "C:\\Windows\\System32\\IPHLPAPI.DLL",
          "version" : "6.1.7601.17514"
       },
       {
@@ -1221,7 +1221,7 @@
          "debug_file" : "userenv.pdb",
          "debug_id" : "9279A3188C0745E88BB89DFBD6B071062",
          "end_addr" : "0x7fefc4ee000",
-         "filename" : "userenv.dll",
+         "filename" : "C:\\Windows\\System32\\userenv.dll",
          "version" : "6.1.7601.17514"
       },
       {
@@ -1230,7 +1230,7 @@
          "debug_file" : "rsaenh.pdb",
          "debug_id" : "2BFA66BBF64F4B12B0B3E7A78AE54C2D2",
          "end_addr" : "0x7fefc757000",
-         "filename" : "rsaenh.dll",
+         "filename" : "C:\\Windows\\System32\\rsaenh.dll",
          "version" : "6.1.7600.16385"
       },
       {
@@ -1239,7 +1239,7 @@
          "debug_file" : "dnsapi.pdb",
          "debug_id" : "70BE754EAC24444F93D3381A96404BBE2",
          "end_addr" : "0x7fefc88b000",
-         "filename" : "dnsapi.dll",
+         "filename" : "C:\\Windows\\System32\\dnsapi.dll",
          "version" : "6.1.7601.17514"
       },
       {
@@ -1248,7 +1248,7 @@
          "debug_file" : "mswsock.pdb",
          "debug_id" : "47409B8D0E6A4DBF8930D24404E9DC1B2",
          "end_addr" : "0x7fefca05000",
-         "filename" : "mswsock.dll",
+         "filename" : "C:\\Windows\\System32\\mswsock.dll",
          "missing_symbols" : true,
          "version" : "6.1.7601.17514"
       },
@@ -1258,7 +1258,7 @@
          "debug_file" : "cryptsp.pdb",
          "debug_id" : "66E52B1E32514B16ACB0A2B5DFB173FF1",
          "end_addr" : "0x7fefca27000",
-         "filename" : "cryptsp.dll",
+         "filename" : "C:\\Windows\\System32\\cryptsp.dll",
          "version" : "6.1.7600.16385"
       },
       {
@@ -1267,7 +1267,7 @@
          "debug_file" : "secur32.pdb",
          "debug_id" : "7E4963AA96744A86B2E4660766D9C0592",
          "end_addr" : "0x7fefcf8b000",
-         "filename" : "secur32.dll",
+         "filename" : "C:\\Windows\\System32\\secur32.dll",
          "version" : "6.1.7601.17514"
       },
       {
@@ -1276,7 +1276,7 @@
          "debug_file" : "sspicli.pdb",
          "debug_id" : "99543E69502E45D38FA68B1D32A612A02",
          "end_addr" : "0x7fefd005000",
-         "filename" : "sspicli.dll",
+         "filename" : "C:\\Windows\\System32\\sspicli.dll",
          "version" : "6.1.7601.17514"
       },
       {
@@ -1285,7 +1285,7 @@
          "debug_file" : "cryptbase.pdb",
          "debug_id" : "F03E074BB9E74C9F9BBFB0E42EF3A0AB2",
          "end_addr" : "0x7fefd07f000",
-         "filename" : "CRYPTBASE.dll",
+         "filename" : "C:\\Windows\\System32\\CRYPTBASE.dll",
          "version" : "6.1.7600.16385"
       },
       {
@@ -1294,7 +1294,7 @@
          "debug_file" : "RpcRtRemote.pdb",
          "debug_id" : "EB6745394D5B4FCB88A0ADBE1EA17B1C2",
          "end_addr" : "0x7fefd174000",
-         "filename" : "RpcRtRemote.dll",
+         "filename" : "C:\\Windows\\System32\\RpcRtRemote.dll",
          "version" : "6.1.7601.17514"
       },
       {
@@ -1303,7 +1303,7 @@
          "debug_file" : "profapi.pdb",
          "debug_id" : "DC86D275BBB0437F94B2CD4B06D4B9342",
          "end_addr" : "0x7fefd18f000",
-         "filename" : "profapi.dll",
+         "filename" : "C:\\Windows\\System32\\profapi.dll",
          "version" : "6.1.7600.16385"
       },
       {
@@ -1312,7 +1312,7 @@
          "debug_file" : "kernelbase.pdb",
          "debug_id" : "91C72371DD43448192B7B46F5ED10AA02",
          "end_addr" : "0x7fefd54b000",
-         "filename" : "KERNELBASE.dll",
+         "filename" : "C:\\Windows\\System32\\KERNELBASE.dll",
          "missing_symbols" : true,
          "version" : "6.1.7601.18015"
       },
@@ -1322,7 +1322,7 @@
          "debug_file" : "lpk.pdb",
          "debug_id" : "B653B2B751414F90BE8A8BBE222F17782",
          "end_addr" : "0x7fefd55e000",
-         "filename" : "lpk.dll",
+         "filename" : "C:\\Windows\\System32\\lpk.dll",
          "version" : "6.1.7600.16385"
       },
       {
@@ -1331,7 +1331,7 @@
          "debug_file" : "ole32.pdb",
          "debug_id" : "EE489189724F4D47AECCFDB5534824352",
          "end_addr" : "0x7fefd7e3000",
-         "filename" : "ole32.dll",
+         "filename" : "C:\\Windows\\System32\\ole32.dll",
          "missing_symbols" : true,
          "version" : "6.1.7601.17514"
       },
@@ -1341,7 +1341,7 @@
          "debug_file" : "msctf.pdb",
          "debug_id" : "6A5BABB8E88644C696530BFE3C90F32F2",
          "end_addr" : "0x7fefdad9000",
-         "filename" : "msctf.dll",
+         "filename" : "C:\\Windows\\System32\\msctf.dll",
          "missing_symbols" : true,
          "version" : "6.1.7600.16385"
       },
@@ -1351,7 +1351,7 @@
          "debug_file" : "sechost.pdb",
          "debug_id" : "ED0034906F9A408C92C4F32ACFC57B291",
          "end_addr" : "0x7fefdaff000",
-         "filename" : "sechost.dll",
+         "filename" : "C:\\Windows\\System32\\sechost.dll",
          "version" : "6.1.7600.16385"
       },
       {
@@ -1360,7 +1360,7 @@
          "debug_file" : "msvcrt.pdb",
          "debug_id" : "047EACB4C8FA442BBAEF06CE45CC1A782",
          "end_addr" : "0x7fefdb9f000",
-         "filename" : "msvcrt.dll",
+         "filename" : "C:\\Windows\\System32\\msvcrt.dll",
          "missing_symbols" : true,
          "version" : "7.0.7600.16385"
       },
@@ -1370,7 +1370,7 @@
          "debug_file" : "rpcrt4.pdb",
          "debug_id" : "7D748DA6D7454C9EA38C8CEF1C9E75F22",
          "end_addr" : "0x7fefddfd000",
-         "filename" : "rpcrt4.dll",
+         "filename" : "C:\\Windows\\System32\\rpcrt4.dll",
          "version" : "6.1.7601.17514"
       },
       {
@@ -1379,7 +1379,7 @@
          "debug_file" : "shell32.pdb",
          "debug_id" : "1E9FDDC20B504C30921B1185EBB2ED962",
          "end_addr" : "0x7fefeb88000",
-         "filename" : "shell32.dll",
+         "filename" : "C:\\Windows\\System32\\shell32.dll",
          "version" : "6.1.7601.17514"
       },
       {
@@ -1388,7 +1388,7 @@
          "debug_file" : "ws2_32.pdb",
          "debug_id" : "348BE7D22346495B841B7FA203996BD02",
          "end_addr" : "0x7fefebdd000",
-         "filename" : "ws2_32.dll",
+         "filename" : "C:\\Windows\\System32\\ws2_32.dll",
          "version" : "6.1.7601.17514"
       },
       {
@@ -1397,7 +1397,7 @@
          "debug_file" : "gdi32.pdb",
          "debug_id" : "FB9403C3B1304DA192C4D0E3485E25ED2",
          "end_addr" : "0x7fefeea7000",
-         "filename" : "gdi32.dll",
+         "filename" : "C:\\Windows\\System32\\gdi32.dll",
          "version" : "6.1.7601.17514"
       },
       {
@@ -1406,7 +1406,7 @@
          "debug_file" : "shlwapi.pdb",
          "debug_id" : "0820A0750C1A4E2597E17DEA57D049542",
          "end_addr" : "0x7fefef41000",
-         "filename" : "shlwapi.dll",
+         "filename" : "C:\\Windows\\System32\\shlwapi.dll",
          "version" : "6.1.7601.17514"
       },
       {
@@ -1415,7 +1415,7 @@
          "debug_file" : "comdlg32.pdb",
          "debug_id" : "631B57376F8549FDB2E7A8AB3D2D1FDF2",
          "end_addr" : "0x7feff087000",
-         "filename" : "comdlg32.dll",
+         "filename" : "C:\\Windows\\System32\\comdlg32.dll",
          "version" : "6.1.7601.17514"
       },
       {
@@ -1424,7 +1424,7 @@
          "debug_file" : "nsi.pdb",
          "debug_id" : "DDDD6B3D710D49D5A01AF692A91FCD262",
          "end_addr" : "0x7feff098000",
-         "filename" : "nsi.dll",
+         "filename" : "C:\\Windows\\System32\\nsi.dll",
          "version" : "6.1.7600.16385"
       },
       {
@@ -1433,7 +1433,7 @@
          "debug_file" : "imm32.pdb",
          "debug_id" : "98F27BA5AEE541ECBEE00CD03AD50FEE2",
          "end_addr" : "0x7feff0ce000",
-         "filename" : "imm32.dll",
+         "filename" : "C:\\Windows\\System32\\imm32.dll",
          "version" : "6.1.7600.16385"
       },
       {
@@ -1442,7 +1442,7 @@
          "debug_file" : "advapi32.pdb",
          "debug_id" : "699F5B1DC86D40EA9280C58CB9AA46172",
          "end_addr" : "0x7feff1ab000",
-         "filename" : "advapi32.dll",
+         "filename" : "C:\\Windows\\System32\\advapi32.dll",
          "version" : "6.1.7601.18247"
       },
       {
@@ -1451,7 +1451,7 @@
          "debug_file" : "usp10.pdb",
          "debug_id" : "DB4EC1196F91457FBB0A462D9D0AFEC31",
          "end_addr" : "0x7feff279000",
-         "filename" : "usp10.dll",
+         "filename" : "C:\\Windows\\System32\\usp10.dll",
          "version" : "1.626.7601.17514"
       },
       {
@@ -1460,7 +1460,7 @@
          "debug_file" : "oleaut32.pdb",
          "debug_id" : "FDC23B056B754023BC1E0146C2A4390F2",
          "end_addr" : "0x7feff537000",
-         "filename" : "oleaut32.dll",
+         "filename" : "C:\\Windows\\System32\\oleaut32.dll",
          "version" : "6.1.7601.17514"
       }
    ],

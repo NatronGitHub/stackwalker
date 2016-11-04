@@ -138,7 +138,7 @@
          "debug_file" : "Natron-bin",
          "debug_id" : "AB4FE68C90FD3653BEE2AE398A7908090",
          "end_addr" : "0x100fb4000",
-         "filename" : "Natron-bin",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/MacOS/Natron-bin",
          "loaded_symbols" : true,
          "version" : ""
       },
@@ -148,7 +148,7 @@
          "debug_file" : "Python",
          "debug_id" : "4DAC085CE3F832B1BC9723B9E79874380",
          "end_addr" : "0x10191a000",
-         "filename" : "Python",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/Python.framework/Versions/2.7/Python",
          "version" : "0.2.7.0"
       },
       {
@@ -157,7 +157,7 @@
          "debug_file" : "libpyside-python2.7.1.2.dylib",
          "debug_id" : "1BA7743041263782938F2885DB747D430",
          "end_addr" : "0x101a1c000",
-         "filename" : "libpyside-python2.7.1.2.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libpyside-python2.7.1.2.dylib",
          "version" : "0.1.2.2"
       },
       {
@@ -166,7 +166,7 @@
          "debug_file" : "libshiboken-python2.7.1.2.dylib",
          "debug_id" : "9868C059DEBF3D299B0D6848CB8DC6B40",
          "end_addr" : "0x101a4f000",
-         "filename" : "libshiboken-python2.7.1.2.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libshiboken-python2.7.1.2.dylib",
          "version" : "0.1.2.2"
       },
       {
@@ -175,7 +175,7 @@
          "debug_file" : "libboost_serialization-mt.dylib",
          "debug_id" : "72FA11988391FA378D0589DEBD14A2B90",
          "end_addr" : "0x101aac000",
-         "filename" : "libboost_serialization-mt.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libboost_serialization-mt.dylib",
          "version" : "0.0.0.0"
       },
       {
@@ -184,7 +184,7 @@
          "debug_file" : "libexpat.1.dylib",
          "debug_id" : "41E9B0F851CB3B44B766B1C8ACB541060",
          "end_addr" : "0x101b32000",
-         "filename" : "libexpat.1.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libexpat.1.dylib",
          "version" : "0.8.2.0"
       },
       {
@@ -193,7 +193,7 @@
          "debug_file" : "libcairo.2.dylib",
          "debug_id" : "4D2363B71DE13853B47BD8ADD4E48A290",
          "end_addr" : "0x101c09000",
-         "filename" : "libcairo.2.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libcairo.2.dylib",
          "version" : "0.11403.6.0"
       },
       {
@@ -202,7 +202,7 @@
          "debug_file" : "QtOpenGL",
          "debug_id" : "291F09EFAB0E3EB6A598F3E499F3C0550",
          "end_addr" : "0x101d17000",
-         "filename" : "QtOpenGL",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/QtOpenGL.framework/Versions/4/QtOpenGL",
          "version" : "0.4.8.7"
       },
       {
@@ -211,7 +211,7 @@
          "debug_file" : "QtGui",
          "debug_id" : "381A387837933E3EA25F7852217A1B0C0",
          "end_addr" : "0x102761000",
-         "filename" : "QtGui",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/QtGui.framework/Versions/4/QtGui",
          "missing_symbols" : true,
          "version" : "0.4.8.7"
       },
@@ -221,7 +221,7 @@
          "debug_file" : "QtCore",
          "debug_id" : "3C9D56D5DA5A3919B63E574E759C82950",
          "end_addr" : "0x102d03000",
-         "filename" : "QtCore",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/QtCore.framework/Versions/4/QtCore",
          "missing_symbols" : true,
          "version" : "0.4.8.7"
       },
@@ -231,7 +231,7 @@
          "debug_file" : "QtNetwork",
          "debug_id" : "BDABBF9994DF303F99B330B9F5DFC7AD0",
          "end_addr" : "0x102ee7000",
-         "filename" : "QtNetwork",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/QtNetwork.framework/Versions/4/QtNetwork",
          "version" : "0.4.8.7"
       },
       {
@@ -240,7 +240,7 @@
          "debug_file" : "AGL",
          "debug_id" : "4DBEAB05DDCD3CD48046C29852B56EB50",
          "end_addr" : "0x102f54000",
-         "filename" : "AGL",
+         "filename" : "/System/Library/Frameworks/AGL.framework/Versions/A/AGL",
          "version" : "0.1.0.0"
       },
       {
@@ -249,7 +249,7 @@
          "debug_file" : "libstdc++.6.dylib",
          "debug_id" : "9F8991425E5D36BCAAE7DD6029D1D40D0",
          "end_addr" : "0x103017000",
-         "filename" : "libstdc++.6.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libstdc++.6.dylib",
          "version" : "0.7.22.0"
       },
       {
@@ -258,7 +258,7 @@
          "debug_file" : "libgomp.1.dylib",
          "debug_id" : "655FC9DE71BB3A3BA6A5FC12D66AE15F0",
          "end_addr" : "0x1030d0000",
-         "filename" : "libgomp.1.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libgomp.1.dylib",
          "version" : "0.2.0.0"
       },
       {
@@ -267,7 +267,7 @@
          "debug_file" : "libgcc_s.1.dylib",
          "debug_id" : "357AC3D36F323FDE98BB8C5996DB98760",
          "end_addr" : "0x1030e8000",
-         "filename" : "libgcc_s.1.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libgcc_s.1.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -276,7 +276,7 @@
          "debug_file" : "QtCore",
          "debug_id" : "3C9D56D5DA5A3919B63E574E759C82950",
          "end_addr" : "0x1033c6000",
-         "filename" : "QtCore",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/QtCore",
          "missing_symbols" : true,
          "version" : "0.4.8.7"
       },
@@ -286,7 +286,7 @@
          "debug_file" : "libz.1.dylib",
          "debug_id" : "A07EE7AEFDB1F5E88B1206B7B616DA940",
          "end_addr" : "0x103483000",
-         "filename" : "libz.1.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libz.1.dylib",
          "version" : "0.1.2.8"
       },
       {
@@ -295,7 +295,7 @@
          "debug_file" : "libpixman-1.0.dylib",
          "debug_id" : "23F594EC4E2539C4A927E7629813B8BF0",
          "end_addr" : "0x1034fa000",
-         "filename" : "libpixman-1.0.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libpixman-1.0.dylib",
          "version" : "0.35.0.0"
       },
       {
@@ -304,7 +304,7 @@
          "debug_file" : "libfontconfig.1.dylib",
          "debug_id" : "65490D5BFCDB179796417EB8A2D597450",
          "end_addr" : "0x103543000",
-         "filename" : "libfontconfig.1.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libfontconfig.1.dylib",
          "version" : "0.11.2.0"
       },
       {
@@ -313,7 +313,7 @@
          "debug_file" : "libfreetype.6.dylib",
          "debug_id" : "A68D7BF6C5F9321E88B63EA4A8CEAABC0",
          "end_addr" : "0x1035df000",
-         "filename" : "libfreetype.6.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libfreetype.6.dylib",
          "version" : "0.19.6.0"
       },
       {
@@ -322,7 +322,7 @@
          "debug_file" : "libpng16.16.dylib",
          "debug_id" : "863EAB78A82A3DA59ECDBC7784E1BEEF0",
          "end_addr" : "0x10361e000",
-         "filename" : "libpng16.16.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libpng16.16.dylib",
          "version" : "0.43.0.0"
       },
       {
@@ -331,7 +331,7 @@
          "debug_file" : "libbz2.1.0.dylib",
          "debug_id" : "D6053F91B09BA0BD60749B49D54F54EB0",
          "end_addr" : "0x103635000",
-         "filename" : "libbz2.1.0.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libbz2.1.0.dylib",
          "version" : "0.1.0.6"
       },
       {
@@ -340,7 +340,7 @@
          "debug_file" : "libssl.1.0.0.dylib",
          "debug_id" : "E3B10E19581CB3E9D6E690DA9065FBA20",
          "end_addr" : "0x103691000",
-         "filename" : "libssl.1.0.0.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libssl.1.0.0.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -349,7 +349,7 @@
          "debug_file" : "libcrypto.1.0.0.dylib",
          "debug_id" : "8B20200CFA8183B091EAC5E24FBBCEEE0",
          "end_addr" : "0x10385e000",
-         "filename" : "libcrypto.1.0.0.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libcrypto.1.0.0.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -358,7 +358,7 @@
          "debug_file" : "csparser",
          "debug_id" : "A8B6334E24A6301FBE583435B6F6A24A0",
          "end_addr" : "0x1039cd000",
-         "filename" : "csparser",
+         "filename" : "/System/Library/Frameworks/Security.framework/PlugIns/csparser.bundle/Contents/MacOS/csparser",
          "version" : "0.0.0.0"
       },
       {
@@ -367,7 +367,7 @@
          "debug_file" : "zlib.so",
          "debug_id" : "6318E63EE74230C198FB5D116DB2A4CB0",
          "end_addr" : "0x1039f3000",
-         "filename" : "zlib.so",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/Python.framework/Versions/2.7/lib/python2.7/lib-dynload/zlib.so",
          "version" : "0.0.0.0"
       },
       {
@@ -376,7 +376,7 @@
          "debug_file" : "AppleIntelHD3000GraphicsGLDriver",
          "debug_id" : "4C2B034BD3C93197AEEAFC3291C5F8B10",
          "end_addr" : "0x10868b000",
-         "filename" : "AppleIntelHD3000GraphicsGLDriver",
+         "filename" : "/System/Library/Extensions/AppleIntelHD3000GraphicsGLDriver.bundle/Contents/MacOS/AppleIntelHD3000GraphicsGLDriver",
          "version" : "0.0.0.0"
       },
       {
@@ -385,7 +385,7 @@
          "debug_file" : "math.so",
          "debug_id" : "247F619C90823A5DAC7EEC137C5BE6530",
          "end_addr" : "0x1087e5000",
-         "filename" : "math.so",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/Python.framework/Versions/2.7/lib/python2.7/lib-dynload/math.so",
          "version" : "0.0.0.0"
       },
       {
@@ -403,7 +403,7 @@
          "debug_file" : "libgmodule-2.0.0.dylib",
          "debug_id" : "A55388542274394F9E0976F8E76E441A0",
          "end_addr" : "0x10ab24000",
-         "filename" : "libgmodule-2.0.0.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libgmodule-2.0.0.dylib",
          "version" : "0.5001.1.0"
       },
       {
@@ -412,7 +412,7 @@
          "debug_file" : "QtCore.so",
          "debug_id" : "CDD153E619E537168979424EC3CD632C0",
          "end_addr" : "0x10b04d000",
-         "filename" : "QtCore.so",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/PySide/QtCore.so",
          "version" : "0.0.0.0"
       },
       {
@@ -421,7 +421,7 @@
          "debug_file" : "libTraditionalChineseConverter.dylib",
          "debug_id" : "1BD8CD9EE1163EC791621BDD65230D5F0",
          "end_addr" : "0x10b3f3000",
-         "filename" : "libTraditionalChineseConverter.dylib",
+         "filename" : "/System/Library/CoreServices/Encodings/libTraditionalChineseConverter.dylib",
          "version" : "0.68.0.0"
       },
       {
@@ -430,7 +430,7 @@
          "debug_file" : "libffi.6.dylib",
          "debug_id" : "DD598F23C71AD211401C9631685FFD010",
          "end_addr" : "0x10b4fb000",
-         "filename" : "libffi.6.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libffi.6.dylib",
          "version" : "0.7.4.0"
       },
       {
@@ -439,7 +439,7 @@
          "debug_file" : "QtGui.so",
          "debug_id" : "53DF483BBD2632098BADADDAF84EC51E0",
          "end_addr" : "0x10c095000",
-         "filename" : "QtGui.so",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/PySide/QtGui.so",
          "version" : "0.0.0.0"
       },
       {
@@ -448,7 +448,7 @@
          "debug_file" : "libgthread-2.0.0.dylib",
          "debug_id" : "1EBF11A91DAA3FB7A0D9B78494D71EFA0",
          "end_addr" : "0x10c4fd000",
-         "filename" : "libgthread-2.0.0.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libgthread-2.0.0.dylib",
          "version" : "0.5001.1.0"
       },
       {
@@ -457,7 +457,7 @@
          "debug_file" : "libintl.8.dylib",
          "debug_id" : "879207D9D564397986B82DFD267F0EF00",
          "end_addr" : "0x10c68c000",
-         "filename" : "libintl.8.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libintl.8.dylib",
          "version" : "0.10.5.0"
       },
       {
@@ -466,7 +466,7 @@
          "debug_file" : "libIexMath-2_2.12.dylib",
          "debug_id" : "562DE6E0227639B5BD38264E0E1118770",
          "end_addr" : "0x10c6a7000",
-         "filename" : "libIexMath-2_2.12.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libIexMath-2_2.12.dylib",
          "version" : "0.13.0.0"
       },
       {
@@ -475,7 +475,7 @@
          "debug_file" : "libIlmThread-2_2.12.dylib",
          "debug_id" : "613CAED4A75437B0B2B77F0C855502E70",
          "end_addr" : "0x10c6af000",
-         "filename" : "libIlmThread-2_2.12.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libIlmThread-2_2.12.dylib",
          "version" : "0.13.0.0"
       },
       {
@@ -484,7 +484,7 @@
          "debug_file" : "libpangocairo-1.0.0.dylib",
          "debug_id" : "5E9D9DDB8B74312ABF604A62F94E715E0",
          "end_addr" : "0x10ca95000",
-         "filename" : "libpangocairo-1.0.0.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libpangocairo-1.0.0.dylib",
          "version" : "0.4001.3.0"
       },
       {
@@ -493,7 +493,7 @@
          "debug_file" : "VideoDecodeAcceleration",
          "debug_id" : "54388EB1C9DB31CABE8F5FD150B2EDBA0",
          "end_addr" : "0x10caa2000",
-         "filename" : "VideoDecodeAcceleration",
+         "filename" : "/System/Library/Frameworks/VideoDecodeAcceleration.framework/Versions/A/VideoDecodeAcceleration",
          "version" : "0.1.0.0"
       },
       {
@@ -502,7 +502,7 @@
          "debug_file" : "libboost_atomic-mt.dylib",
          "debug_id" : "B583E9BAC02EC95979AACB42C04172F80",
          "end_addr" : "0x10caa9000",
-         "filename" : "libboost_atomic-mt.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libboost_atomic-mt.dylib",
          "version" : "0.0.0.0"
       },
       {
@@ -511,7 +511,7 @@
          "debug_file" : "libImath-2_2.12.dylib",
          "debug_id" : "A3E05933584C354C9BBB99D8593C3A520",
          "end_addr" : "0x10cafa000",
-         "filename" : "libImath-2_2.12.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libImath-2_2.12.dylib",
          "version" : "0.13.0.0"
       },
       {
@@ -520,7 +520,7 @@
          "debug_file" : "libpangoft2-1.0.0.dylib",
          "debug_id" : "53C6A70F81AD35AA8349F2C6444AD9340",
          "end_addr" : "0x10cc10000",
-         "filename" : "libpangoft2-1.0.0.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libpangoft2-1.0.0.dylib",
          "version" : "0.4001.3.0"
       },
       {
@@ -529,7 +529,7 @@
          "debug_file" : "libogg.0.dylib",
          "debug_id" : "6CD955C86C42B65B92A0D046BB45C3040",
          "end_addr" : "0x10cc1f000",
-         "filename" : "libogg.0.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libogg.0.dylib",
          "version" : "0.9.2.0"
       },
       {
@@ -538,7 +538,7 @@
          "debug_file" : "libboost_system-mt.dylib",
          "debug_id" : "D066A93A98E1FEF1D60C1984EFB7D3FC0",
          "end_addr" : "0x10cc26000",
-         "filename" : "libboost_system-mt.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libboost_system-mt.dylib",
          "version" : "0.0.0.0"
       },
       {
@@ -547,7 +547,7 @@
          "debug_file" : "libgdk_pixbuf-2.0.0.dylib",
          "debug_id" : "2459998340C63D6A82192C972F22F45D0",
          "end_addr" : "0x10cc4b000",
-         "filename" : "libgdk_pixbuf-2.0.0.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libgdk_pixbuf-2.0.0.dylib",
          "version" : "0.3601.0.0"
       },
       {
@@ -556,7 +556,7 @@
          "debug_file" : "libgif.4.dylib",
          "debug_id" : "CC75001E690A90D3AA934CB24E2FDBF00",
          "end_addr" : "0x10cc5a000",
-         "filename" : "libgif.4.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libgif.4.dylib",
          "version" : "0.6.7.0"
       },
       {
@@ -565,7 +565,7 @@
          "debug_file" : "libboost_chrono-mt.dylib",
          "debug_id" : "1798150003F2344C3924933A74FFB8A60",
          "end_addr" : "0x10cc7a000",
-         "filename" : "libboost_chrono-mt.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libboost_chrono-mt.dylib",
          "version" : "0.0.0.0"
       },
       {
@@ -574,7 +574,7 @@
          "debug_file" : "libharfbuzz.0.dylib",
          "debug_id" : "470CA57EDD8231FCA3CE3898B56385FA0",
          "end_addr" : "0x10d582000",
-         "filename" : "libharfbuzz.0.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libharfbuzz.0.dylib",
          "version" : "0.10303.0.0"
       },
       {
@@ -583,7 +583,7 @@
          "debug_file" : "libgraphite2.3.dylib",
          "debug_id" : "52E9BFF54B1137EAB02AA8F27B26ACF80",
          "end_addr" : "0x10d5cb000",
-         "filename" : "libgraphite2.3.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libgraphite2.3.dylib",
          "version" : "0.3.0.1"
       },
       {
@@ -592,7 +592,7 @@
          "debug_file" : "librevenge-stream-0.0.0.dylib",
          "debug_id" : "E9BC629BD7DB3139B1223E74456E029D0",
          "end_addr" : "0x10d5ef000",
-         "filename" : "librevenge-stream-0.0.0.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/librevenge-stream-0.0.0.dylib",
          "version" : "0.1.4.0"
       },
       {
@@ -601,7 +601,7 @@
          "debug_file" : "Arena.ofx",
          "debug_id" : "17FA4B4D9450356988CF5E151E75DAD00",
          "end_addr" : "0x10e0b7000",
-         "filename" : "Arena.ofx",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Plugins/OFX/Natron/Arena.ofx.bundle/Contents/MacOS/Arena.ofx",
          "version" : "0.0.0.0"
       },
       {
@@ -610,7 +610,7 @@
          "debug_file" : "libOpenColorIO.1.dylib",
          "debug_id" : "68C58D2464F93AFD94B58F6ECDB5FB430",
          "end_addr" : "0x10e27f000",
-         "filename" : "libOpenColorIO.1.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libOpenColorIO.1.dylib",
          "version" : "0.1.0.9"
       },
       {
@@ -619,7 +619,7 @@
          "debug_file" : "libpango-1.0.0.dylib",
          "debug_id" : "C4235C8691D638009DDB1C8C3CA61F870",
          "end_addr" : "0x10e326000",
-         "filename" : "libpango-1.0.0.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libpango-1.0.0.dylib",
          "version" : "0.4001.3.0"
       },
       {
@@ -628,7 +628,7 @@
          "debug_file" : "libgobject-2.0.0.dylib",
          "debug_id" : "ADEADBDADFF23236ADA127AAE7943DDA0",
          "end_addr" : "0x10e378000",
-         "filename" : "libgobject-2.0.0.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libgobject-2.0.0.dylib",
          "version" : "0.5001.1.0"
       },
       {
@@ -637,7 +637,7 @@
          "debug_file" : "libglib-2.0.0.dylib",
          "debug_id" : "CDD08F9D8FF13578A76F3A9A7C0E36390",
          "end_addr" : "0x10e470000",
-         "filename" : "libglib-2.0.0.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libglib-2.0.0.dylib",
          "version" : "0.5001.1.0"
       },
       {
@@ -646,7 +646,7 @@
          "debug_file" : "libpcre.1.dylib",
          "debug_id" : "85F0886AEAE43EC98BAF5641CA0FFE630",
          "end_addr" : "0x10e503000",
-         "filename" : "libpcre.1.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libpcre.1.dylib",
          "version" : "0.4.7.0"
       },
       {
@@ -655,7 +655,7 @@
          "debug_file" : "librsvg-2.2.dylib",
          "debug_id" : "8C35414AD652376F82D83494C22EDD750",
          "end_addr" : "0x10e536000",
-         "filename" : "librsvg-2.2.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/librsvg-2.2.dylib",
          "version" : "0.43.16.0"
       },
       {
@@ -664,7 +664,7 @@
          "debug_file" : "liblcms2.2.dylib",
          "debug_id" : "590D959E007D3C1EA9E3AD82D7756B630",
          "end_addr" : "0x10e588000",
-         "filename" : "liblcms2.2.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/liblcms2.2.dylib",
          "version" : "0.3.8.0"
       },
       {
@@ -673,7 +673,7 @@
          "debug_file" : "libzip.4.dylib",
          "debug_id" : "94A48E4C64E43AB18CD1C79B270DB3120",
          "end_addr" : "0x10e5aa000",
-         "filename" : "libzip.4.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libzip.4.dylib",
          "version" : "0.5.0.0"
       },
       {
@@ -682,7 +682,7 @@
          "debug_file" : "libiconv.2.dylib",
          "debug_id" : "065A36D75F157B4CC3F4D9B23DFC36A30",
          "end_addr" : "0x111634000",
-         "filename" : "libiconv.2.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libiconv.2.dylib",
          "version" : "0.8.1.0"
       },
       {
@@ -691,7 +691,7 @@
          "debug_file" : "libgio-2.0.0.dylib",
          "debug_id" : "E89DFE0FE90430DE8667CB8BE459A24A0",
          "end_addr" : "0x111782000",
-         "filename" : "libgio-2.0.0.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libgio-2.0.0.dylib",
          "version" : "0.5001.1.0"
       },
       {
@@ -700,7 +700,7 @@
          "debug_file" : "libcdr-0.1.1.dylib",
          "debug_id" : "1126051E714332DB980B9B008E2F0BD80",
          "end_addr" : "0x111897000",
-         "filename" : "libcdr-0.1.1.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libcdr-0.1.1.dylib",
          "version" : "0.2.3.0"
       },
       {
@@ -709,7 +709,7 @@
          "debug_file" : "libicui18n.55.dylib",
          "debug_id" : "C16A41EEC273EF8D28C4EE09D3E499640",
          "end_addr" : "0x111a6a000",
-         "filename" : "libicui18n.55.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libicui18n.55.dylib",
          "version" : "0.55.1.0"
       },
       {
@@ -718,7 +718,7 @@
          "debug_file" : "libicuuc.55.dylib",
          "debug_id" : "9F4D0B6D89C5359D2DB1F69F0CB719A00",
          "end_addr" : "0x111c56000",
-         "filename" : "libicuuc.55.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libicuuc.55.dylib",
          "version" : "0.55.1.0"
       },
       {
@@ -727,7 +727,7 @@
          "debug_file" : "libicudata.55.dylib",
          "debug_id" : "F1C2507AD95A817EB3D2B224A79E57D70",
          "end_addr" : "0x11356e000",
-         "filename" : "libicudata.55.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libicudata.55.dylib",
          "version" : "0.55.1.0"
       },
       {
@@ -736,7 +736,7 @@
          "debug_file" : "librevenge-0.0.0.dylib",
          "debug_id" : "0CC3FA2EDBF833C8A5B2381DACA38D960",
          "end_addr" : "0x113592000",
-         "filename" : "librevenge-0.0.0.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/librevenge-0.0.0.dylib",
          "version" : "0.1.4.0"
       },
       {
@@ -745,7 +745,7 @@
          "debug_file" : "librevenge-generators-0.0.0.dylib",
          "debug_id" : "026A2108964A32488FF05B9625E82DD20",
          "end_addr" : "0x1135e6000",
-         "filename" : "librevenge-generators-0.0.0.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/librevenge-generators-0.0.0.dylib",
          "version" : "0.1.4.0"
       },
       {
@@ -754,7 +754,7 @@
          "debug_file" : "libxml2.2.dylib",
          "debug_id" : "46124B0697A2360A99A4BB95372C05270",
          "end_addr" : "0x113736000",
-         "filename" : "libxml2.2.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libxml2.2.dylib",
          "version" : "0.12.4.0"
       },
       {
@@ -763,7 +763,7 @@
          "debug_file" : "liblzma.5.dylib",
          "debug_id" : "901F67BF3E89C04F2E3849E7D57D522A0",
          "end_addr" : "0x113787000",
-         "filename" : "liblzma.5.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/liblzma.5.dylib",
          "version" : "0.8.2.0"
       },
       {
@@ -772,7 +772,7 @@
          "debug_file" : "libcurl.4.dylib",
          "debug_id" : "7F931EF2D3CD3F949D7A9ECC1F3EB86B0",
          "end_addr" : "0x1137de000",
-         "filename" : "libcurl.4.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libcurl.4.dylib",
          "version" : "0.9.0.0"
       },
       {
@@ -781,7 +781,7 @@
          "debug_file" : "libpoppler-glib.8.dylib",
          "debug_id" : "50C2EAFDE1B43F9D80A1455E2E140F330",
          "end_addr" : "0x113826000",
-         "filename" : "libpoppler-glib.8.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libpoppler-glib.8.dylib",
          "version" : "0.17.0.0"
       },
       {
@@ -790,7 +790,7 @@
          "debug_file" : "libpoppler.64.dylib",
          "debug_id" : "35096E8F1A5B348F9017C6D9A4E72F5C0",
          "end_addr" : "0x1139b2000",
-         "filename" : "libpoppler.64.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libpoppler.64.dylib",
          "version" : "0.65.0.0"
       },
       {
@@ -799,7 +799,7 @@
          "debug_file" : "libtinyxml.dylib",
          "debug_id" : "52510C8A21373CCD886207348866C0330",
          "end_addr" : "0x113a7d000",
-         "filename" : "libtinyxml.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libtinyxml.dylib",
          "version" : "0.0.0.0"
       },
       {
@@ -808,7 +808,7 @@
          "debug_file" : "libcroco-0.6.3.dylib",
          "debug_id" : "F39513F72C4AA399F0ACD9CA3316EEED0",
          "end_addr" : "0x113ab1000",
-         "filename" : "libcroco-0.6.3.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libcroco-0.6.3.dylib",
          "version" : "0.4.1.0"
       },
       {
@@ -817,7 +817,7 @@
          "debug_file" : "libtiff.5.dylib",
          "debug_id" : "6E5E66FC04013171B6CBDAF7E2014B8A0",
          "end_addr" : "0x113b22000",
-         "filename" : "libtiff.5.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libtiff.5.dylib",
          "version" : "0.8.4.0"
       },
       {
@@ -826,7 +826,7 @@
          "debug_file" : "libjpeg.8.dylib",
          "debug_id" : "FE7D54B688C731A5AC0C2D7C7C7F36760",
          "end_addr" : "0x113b93000",
-         "filename" : "libjpeg.8.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libjpeg.8.dylib",
          "version" : "0.10.2.0"
       },
       {
@@ -835,7 +835,7 @@
          "debug_file" : "libopenjpeg.1.dylib",
          "debug_id" : "C61069B0EED6F6CEFBF311DCE496DFB60",
          "end_addr" : "0x113bc2000",
-         "filename" : "libopenjpeg.1.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libopenjpeg.1.dylib",
          "version" : "0.7.2.0"
       },
       {
@@ -844,7 +844,7 @@
          "debug_file" : "CImg.ofx",
          "debug_id" : "7F77EE79F9CA3A629FFDBE0F16B7F88F0",
          "end_addr" : "0x113da4000",
-         "filename" : "CImg.ofx",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Plugins/OFX/Natron/CImg.ofx.bundle/Contents/MacOS/CImg.ofx",
          "version" : "0.0.0.0"
       },
       {
@@ -853,7 +853,7 @@
          "debug_file" : "IO.ofx",
          "debug_id" : "BA623AE1F86D355B922811D2636A059B0",
          "end_addr" : "0x113fda000",
-         "filename" : "IO.ofx",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Plugins/OFX/Natron/IO.ofx.bundle/Contents/MacOS/IO.ofx",
          "version" : "0.0.0.0"
       },
       {
@@ -862,7 +862,7 @@
          "debug_file" : "libIlmImf-2_2.22.dylib",
          "debug_id" : "123CABE7C05E3D40B1375A318906E8250",
          "end_addr" : "0x1141c1000",
-         "filename" : "libIlmImf-2_2.22.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libIlmImf-2_2.22.dylib",
          "version" : "0.23.0.0"
       },
       {
@@ -871,7 +871,7 @@
          "debug_file" : "libHalf.12.dylib",
          "debug_id" : "C3C66C4C89363E6CB8953D9ABECBA27B0",
          "end_addr" : "0x114376000",
-         "filename" : "libHalf.12.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libHalf.12.dylib",
          "version" : "0.13.0.0"
       },
       {
@@ -880,7 +880,7 @@
          "debug_file" : "libIex-2_2.12.dylib",
          "debug_id" : "9C6DFB19EFA93290A4EAB3799D3C7C750",
          "end_addr" : "0x114383000",
-         "filename" : "libIex-2_2.12.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libIex-2_2.12.dylib",
          "version" : "0.13.0.0"
       },
       {
@@ -889,7 +889,7 @@
          "debug_file" : "libavformat.57.dylib",
          "debug_id" : "3B0709726B6C318BA7651C2C3FBEEF9E0",
          "end_addr" : "0x11452b000",
-         "filename" : "libavformat.57.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libavformat.57.dylib",
          "version" : "0.57.41.100"
       },
       {
@@ -898,7 +898,7 @@
          "debug_file" : "libavcodec.57.dylib",
          "debug_id" : "9459BBA311A830B3B2C1D86E459D1E480",
          "end_addr" : "0x11526e000",
-         "filename" : "libavcodec.57.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libavcodec.57.dylib",
          "version" : "0.57.48.101"
       },
       {
@@ -907,7 +907,7 @@
          "debug_file" : "libswscale.4.dylib",
          "debug_id" : "A9C918170804385CB1B47DB070ED928A0",
          "end_addr" : "0x115b95000",
-         "filename" : "libswscale.4.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libswscale.4.dylib",
          "version" : "0.4.1.100"
       },
       {
@@ -916,7 +916,7 @@
          "debug_file" : "libavutil.55.dylib",
          "debug_id" : "A143A3457A713D03B20A5D353DCCFFF10",
          "end_addr" : "0x115bee000",
-         "filename" : "libavutil.55.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libavutil.55.dylib",
          "version" : "0.55.28.100"
       },
       {
@@ -925,7 +925,7 @@
          "debug_file" : "libOpenImageIO.1.6.dylib",
          "debug_id" : "33F550700CF53F3F8A966A9FF8F0425F0",
          "end_addr" : "0x116108000",
-         "filename" : "libOpenImageIO.1.6.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libOpenImageIO.1.6.dylib",
          "version" : "0.1.6.17"
       },
       {
@@ -934,7 +934,7 @@
          "debug_file" : "libSeExpr.dylib",
          "debug_id" : "7D74DD66AAB331CC8A9394238306C91B0",
          "end_addr" : "0x116361000",
-         "filename" : "libSeExpr.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libSeExpr.dylib",
          "version" : "0.0.0.0"
       },
       {
@@ -943,7 +943,7 @@
          "debug_file" : "libswresample.2.dylib",
          "debug_id" : "E55C8F4658153F609088744E76331E470",
          "end_addr" : "0x1163ca000",
-         "filename" : "libswresample.2.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libswresample.2.dylib",
          "version" : "0.2.1.100"
       },
       {
@@ -952,7 +952,7 @@
          "debug_file" : "libx264.148.dylib",
          "debug_id" : "5CE5FCC50C6FF8CD4CF8EED629D043530",
          "end_addr" : "0x1164e1000",
-         "filename" : "libx264.148.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libx264.148.dylib",
          "version" : "0.0.0.0"
       },
       {
@@ -961,7 +961,7 @@
          "debug_file" : "libvorbisenc.2.dylib",
          "debug_id" : "5142C105DB0713DC39ECDAB8928F7FA50",
          "end_addr" : "0x1165f4000",
-         "filename" : "libvorbisenc.2.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libvorbisenc.2.dylib",
          "version" : "0.3.11.0"
       },
       {
@@ -970,7 +970,7 @@
          "debug_file" : "libvorbis.0.dylib",
          "debug_id" : "3C4C6597F3496249B162FF57EEF672110",
          "end_addr" : "0x116667000",
-         "filename" : "libvorbis.0.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libvorbis.0.dylib",
          "version" : "0.5.8.0"
       },
       {
@@ -979,7 +979,7 @@
          "debug_file" : "libtheoraenc.1.dylib",
          "debug_id" : "CF36CECAAACAB7F093879202F22806AE0",
          "end_addr" : "0x1166a2000",
-         "filename" : "libtheoraenc.1.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libtheoraenc.1.dylib",
          "version" : "0.3.2.0"
       },
       {
@@ -988,7 +988,7 @@
          "debug_file" : "libtheoradec.1.dylib",
          "debug_id" : "97B25C54162ABFD03FE8A804E5D245240",
          "end_addr" : "0x1166b9000",
-         "filename" : "libtheoradec.1.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libtheoradec.1.dylib",
          "version" : "0.3.4.0"
       },
       {
@@ -997,7 +997,7 @@
          "debug_file" : "libspeex.1.dylib",
          "debug_id" : "26F15CCB03A6BFC0ADB83294618E874E0",
          "end_addr" : "0x1166d2000",
-         "filename" : "libspeex.1.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libspeex.1.dylib",
          "version" : "0.7.0.0"
       },
       {
@@ -1006,7 +1006,7 @@
          "debug_file" : "libsoxr.0.dylib",
          "debug_id" : "9DEA76541CF1FD0332650162AD4183A90",
          "end_addr" : "0x1166fe000",
-         "filename" : "libsoxr.0.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libsoxr.0.dylib",
          "version" : "0.0.1.1"
       },
       {
@@ -1015,7 +1015,7 @@
          "debug_file" : "libschroedinger-1.0.0.dylib",
          "debug_id" : "957666F17B1238FC8E568038B51E21A50",
          "end_addr" : "0x1167cc000",
-         "filename" : "libschroedinger-1.0.0.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libschroedinger-1.0.0.dylib",
          "version" : "0.12.0.0"
       },
       {
@@ -1024,7 +1024,7 @@
          "debug_file" : "libopus.0.dylib",
          "debug_id" : "9737A0A04C743DB982360D706824801A0",
          "end_addr" : "0x116828000",
-         "filename" : "libopus.0.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libopus.0.dylib",
          "version" : "0.6.3.0"
       },
       {
@@ -1033,7 +1033,7 @@
          "debug_file" : "libopenjp2.7.dylib",
          "debug_id" : "AE5AA9571EC6F670087FA185528904020",
          "end_addr" : "0x116857000",
-         "filename" : "libopenjp2.7.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libopenjp2.7.dylib",
          "version" : "0.2.1.0"
       },
       {
@@ -1042,7 +1042,7 @@
          "debug_file" : "libmp3lame.0.dylib",
          "debug_id" : "F2BEE1234229A505B32E9B6531AC66570",
          "end_addr" : "0x116899000",
-         "filename" : "libmp3lame.0.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libmp3lame.0.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -1051,7 +1051,7 @@
          "debug_file" : "libmodplug.1.dylib",
          "debug_id" : "0CA0768BB3E0FE4EE81B2A7F26E64D940",
          "end_addr" : "0x116912000",
-         "filename" : "libmodplug.1.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libmodplug.1.dylib",
          "version" : "0.2.0.0"
       },
       {
@@ -1060,7 +1060,7 @@
          "debug_file" : "liborc-0.4.0.dylib",
          "debug_id" : "B7CE46C4E6543B1E95CB33AF5734A75E0",
          "end_addr" : "0x116a3f000",
-         "filename" : "liborc-0.4.0.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/liborc-0.4.0.dylib",
          "version" : "0.26.0.0"
       },
       {
@@ -1069,7 +1069,7 @@
          "debug_file" : "libboost_filesystem-mt.dylib",
          "debug_id" : "FB015D1B73DCB15F11748239A443DAA50",
          "end_addr" : "0x116a6c000",
-         "filename" : "libboost_filesystem-mt.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libboost_filesystem-mt.dylib",
          "version" : "0.0.0.0"
       },
       {
@@ -1078,7 +1078,7 @@
          "debug_file" : "libboost_regex-mt.dylib",
          "debug_id" : "32652DC03E530BB3D653BAE3FDCEC1B80",
          "end_addr" : "0x116b65000",
-         "filename" : "libboost_regex-mt.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libboost_regex-mt.dylib",
          "version" : "0.0.0.0"
       },
       {
@@ -1087,7 +1087,7 @@
          "debug_file" : "libboost_thread-mt.dylib",
          "debug_id" : "66283C1112D38425628D839BE7233F190",
          "end_addr" : "0x116c20000",
-         "filename" : "libboost_thread-mt.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libboost_thread-mt.dylib",
          "version" : "0.0.0.0"
       },
       {
@@ -1096,7 +1096,7 @@
          "debug_file" : "libboost_date_time-mt.dylib",
          "debug_id" : "2FC66D122D671D21B21B8098CE4F4FAA0",
          "end_addr" : "0x116c45000",
-         "filename" : "libboost_date_time-mt.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libboost_date_time-mt.dylib",
          "version" : "0.0.0.0"
       },
       {
@@ -1105,7 +1105,7 @@
          "debug_file" : "libwebp.6.dylib",
          "debug_id" : "6E47C66F29A939929E81E903A137FE110",
          "end_addr" : "0x116cb4000",
-         "filename" : "libwebp.6.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libwebp.6.dylib",
          "version" : "0.7.1.0"
       },
       {
@@ -1114,7 +1114,7 @@
          "debug_file" : "libraw_r.15.dylib",
          "debug_id" : "F6D80F1AB01639F3A99CCC8B589F872C0",
          "end_addr" : "0x116d35000",
-         "filename" : "libraw_r.15.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libraw_r.15.dylib",
          "version" : "0.16.0.0"
       },
       {
@@ -1123,7 +1123,7 @@
          "debug_file" : "libjasper.1.dylib",
          "debug_id" : "0A9F136D52CE3436913D868AC1863FB90",
          "end_addr" : "0x116dcb000",
-         "filename" : "libjasper.1.dylib",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Frameworks/libjasper.1.dylib",
          "version" : "0.2.0.0"
       },
       {
@@ -1132,7 +1132,7 @@
          "debug_file" : "Misc.ofx",
          "debug_id" : "686B81CB1CBC3BEEBB2FDE96D41418250",
          "end_addr" : "0x1185cf000",
-         "filename" : "Misc.ofx",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Plugins/OFX/Natron/Misc.ofx.bundle/Contents/MacOS/Misc.ofx",
          "version" : "0.0.0.0"
       },
       {
@@ -1141,7 +1141,7 @@
          "debug_file" : "Shadertoy.ofx",
          "debug_id" : "CADD3F0590833D678C3BB321C32DB3CF0",
          "end_addr" : "0x119710000",
-         "filename" : "Shadertoy.ofx",
+         "filename" : "/Users/olear/Desktop/Natron.app/Contents/Plugins/OFX/Natron/Shadertoy.ofx.bundle/Contents/MacOS/Shadertoy.ofx",
          "version" : "0.0.0.0"
       },
       {
@@ -1150,7 +1150,7 @@
          "debug_file" : "libz.1.dylib",
          "debug_id" : "43317BEAACA234C2AF37902AA926C83A0",
          "end_addr" : "0x7fff8a641000",
-         "filename" : "libz.1.dylib",
+         "filename" : "/usr/lib/libz.1.dylib",
          "version" : "0.1.2.5"
       },
       {
@@ -1159,7 +1159,7 @@
          "debug_file" : "Backup",
          "debug_id" : "551ABBE3211D3D7DB811B2F863DD17CB0",
          "end_addr" : "0x7fff8a6fc000",
-         "filename" : "Backup",
+         "filename" : "/System/Library/PrivateFrameworks/Backup.framework/Versions/A/Backup",
          "version" : "0.960.0.2"
       },
       {
@@ -1168,7 +1168,7 @@
          "debug_file" : "NetAuth",
          "debug_id" : "ABBBE55226E036828BFDC59EC702F3470",
          "end_addr" : "0x7fff8a707000",
-         "filename" : "NetAuth",
+         "filename" : "/System/Library/PrivateFrameworks/NetAuth.framework/Versions/A/NetAuth",
          "version" : "0.1.0.0"
       },
       {
@@ -1177,7 +1177,7 @@
          "debug_file" : "HIToolbox",
          "debug_id" : "510697D02F923256B587AD11DF9884300",
          "end_addr" : "0x7fff8ab82000",
-         "filename" : "HIToolbox",
+         "filename" : "/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/HIToolbox.framework/Versions/A/HIToolbox",
          "version" : "0.806.0.0"
       },
       {
@@ -1186,7 +1186,7 @@
          "debug_file" : "UIFoundation",
          "debug_id" : "237F281F7F153309B749F8DA37822F9F0",
          "end_addr" : "0x7fff8ad01000",
-         "filename" : "UIFoundation",
+         "filename" : "/System/Library/PrivateFrameworks/UIFoundation.framework/Versions/A/UIFoundation",
          "version" : "0.435.0.0"
       },
       {
@@ -1195,7 +1195,7 @@
          "debug_file" : "libsystem_network.dylib",
          "debug_id" : "14ECA259D4713E47A843FF09905778930",
          "end_addr" : "0x7fff8ae9f000",
-         "filename" : "libsystem_network.dylib",
+         "filename" : "/usr/lib/system/libsystem_network.dylib",
          "version" : "0.582.1.4"
       },
       {
@@ -1204,7 +1204,7 @@
          "debug_file" : "libxpc.dylib",
          "debug_id" : "3E09C275A33B357AB0ABA2DDF88EC9D50",
          "end_addr" : "0x7fff8aec9000",
-         "filename" : "libxpc.dylib",
+         "filename" : "/usr/lib/system/libxpc.dylib",
          "version" : "0.755.1.19"
       },
       {
@@ -1213,7 +1213,7 @@
          "debug_file" : "libvDSP.dylib",
          "debug_id" : "1CF0ABF8ADD33DEA8E12AA4C97ACCB950",
          "end_addr" : "0x7fff8b709000",
-         "filename" : "libvDSP.dylib",
+         "filename" : "/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libvDSP.dylib",
          "version" : "0.563.3.0"
       },
       {
@@ -1222,7 +1222,7 @@
          "debug_file" : "libunc.dylib",
          "debug_id" : "D9B0C7B186483AAC931CE7CD362FAA8A0",
          "end_addr" : "0x7fff8b70a000",
-         "filename" : "libunc.dylib",
+         "filename" : "/usr/lib/system/libunc.dylib",
          "version" : "0.29.0.0"
       },
       {
@@ -1231,7 +1231,7 @@
          "debug_file" : "Security",
          "debug_id" : "E44CA10FE1E23DC5BCF3EF76649A09180",
          "end_addr" : "0x7fff8b988000",
-         "filename" : "Security",
+         "filename" : "/System/Library/Frameworks/Security.framework/Versions/A/Security",
          "version" : "0.57336.1.9"
       },
       {
@@ -1240,7 +1240,7 @@
          "debug_file" : "libc++.1.dylib",
          "debug_id" : "54190E1BEE493D6DAC292813D7380BA50",
          "end_addr" : "0x7fff8b9dc000",
-         "filename" : "libc++.1.dylib",
+         "filename" : "/usr/lib/libc++.1.dylib",
          "version" : "0.120.1.0"
       },
       {
@@ -1249,7 +1249,7 @@
          "debug_file" : "CoreMedia",
          "debug_id" : "30C4C79B38E7331FA3D18D0777D23FD40",
          "end_addr" : "0x7fff8bbbd000",
-         "filename" : "CoreMedia",
+         "filename" : "/System/Library/Frameworks/CoreMedia.framework/Versions/A/CoreMedia",
          "version" : "0.1.0.0"
       },
       {
@@ -1258,7 +1258,7 @@
          "debug_file" : "AppleVA",
          "debug_id" : "F0CFD860FA5E3BD580FA12C0B4CF620D0",
          "end_addr" : "0x7fff8c323000",
-         "filename" : "AppleVA",
+         "filename" : "/System/Library/PrivateFrameworks/AppleVA.framework/Versions/A/AppleVA",
          "version" : "0.1.0.0"
       },
       {
@@ -1267,7 +1267,7 @@
          "debug_file" : "libGLImage.dylib",
          "debug_id" : "057F9F59B58A3C8DA965F4929A2124060",
          "end_addr" : "0x7fff8c36a000",
-         "filename" : "libGLImage.dylib",
+         "filename" : "/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGLImage.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -1276,7 +1276,7 @@
          "debug_file" : "AppSandbox",
          "debug_id" : "39C1D57B457A39BDBB0A9B8C5D8C986E0",
          "end_addr" : "0x7fff8c376000",
-         "filename" : "AppSandbox",
+         "filename" : "/System/Library/PrivateFrameworks/AppSandbox.framework/Versions/A/AppSandbox",
          "version" : "0.1.0.0"
       },
       {
@@ -1285,7 +1285,7 @@
          "debug_file" : "CommerceCore",
          "debug_id" : "2E605FE7DEB6354EA6E1E9D24D8E7B690",
          "end_addr" : "0x7fff8c382000",
-         "filename" : "CommerceCore",
+         "filename" : "/System/Library/PrivateFrameworks/CommerceKit.framework/Versions/A/Frameworks/CommerceCore.framework/Versions/A/CommerceCore",
          "version" : "0.379.0.0"
       },
       {
@@ -1294,7 +1294,7 @@
          "debug_file" : "libutil.dylib",
          "debug_id" : "E37832CF5EE6345AB0ECFFC8D2B673750",
          "end_addr" : "0x7fff8cd61000",
-         "filename" : "libutil.dylib",
+         "filename" : "/usr/lib/libutil.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -1303,7 +1303,7 @@
          "debug_file" : "AVFoundation",
          "debug_id" : "BFA3AB94F05C3827BD204BE3DC6F3AAC0",
          "end_addr" : "0x7fff8cfa7000",
-         "filename" : "AVFoundation",
+         "filename" : "/System/Library/Frameworks/AVFoundation.framework/Versions/A/AVFoundation",
          "version" : "0.2.0.0"
       },
       {
@@ -1312,7 +1312,7 @@
          "debug_file" : "GSS",
          "debug_id" : "D50CDB4472E93520996593901621F7810",
          "end_addr" : "0x7fff8cfd9000",
-         "filename" : "GSS",
+         "filename" : "/System/Library/Frameworks/GSS.framework/Versions/A/GSS",
          "version" : "0.1.0.0"
       },
       {
@@ -1321,7 +1321,7 @@
          "debug_file" : "EFILogin",
          "debug_id" : "1FF633310B4A385DAC447AE6659475530",
          "end_addr" : "0x7fff8cfdc000",
-         "filename" : "EFILogin",
+         "filename" : "/System/Library/PrivateFrameworks/EFILogin.framework/Versions/A/EFILogin",
          "version" : "0.1.0.0"
       },
       {
@@ -1330,7 +1330,7 @@
          "debug_file" : "libTIFF.dylib",
          "debug_id" : "38655E86672631D1A4DF0C8BBE504B0B0",
          "end_addr" : "0x7fff8d054000",
-         "filename" : "libTIFF.dylib",
+         "filename" : "/System/Library/Frameworks/ImageIO.framework/Versions/A/Resources/libTIFF.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -1339,7 +1339,7 @@
          "debug_file" : "GenerationalStorage",
          "debug_id" : "05652CADE7F53225929DE13F241FBA410",
          "end_addr" : "0x7fff8d0c6000",
-         "filename" : "GenerationalStorage",
+         "filename" : "/System/Library/PrivateFrameworks/GenerationalStorage.framework/Versions/A/GenerationalStorage",
          "version" : "0.239.0.0"
       },
       {
@@ -1348,7 +1348,7 @@
          "debug_file" : "libsystem_notify.dylib",
          "debug_id" : "56ABC155CB9930A8A8B1C204B56150920",
          "end_addr" : "0x7fff8d0d0000",
-         "filename" : "libsystem_notify.dylib",
+         "filename" : "/usr/lib/system/libsystem_notify.dylib",
          "version" : "0.149.0.0"
       },
       {
@@ -1357,7 +1357,7 @@
          "debug_file" : "SecurityFoundation",
          "debug_id" : "C2DFA11318143701B185D82E11A26E860",
          "end_addr" : "0x7fff8d343000",
-         "filename" : "SecurityFoundation",
+         "filename" : "/System/Library/Frameworks/SecurityFoundation.framework/Versions/A/SecurityFoundation",
          "version" : "0.55126.0.0"
       },
       {
@@ -1366,7 +1366,7 @@
          "debug_file" : "Cocoa",
          "debug_id" : "A033F3421FEC3DFD830AE8EE284DF4920",
          "end_addr" : "0x7fff8d6f9000",
-         "filename" : "Cocoa",
+         "filename" : "/System/Library/Frameworks/Cocoa.framework/Versions/A/Cocoa",
          "version" : "0.22.0.0"
       },
       {
@@ -1375,7 +1375,7 @@
          "debug_file" : "libChineseTokenizer.dylib",
          "debug_id" : "1794A8809C3D37B28F3E6CAFFB3960890",
          "end_addr" : "0x7fff8d711000",
-         "filename" : "libChineseTokenizer.dylib",
+         "filename" : "/usr/lib/libChineseTokenizer.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -1384,7 +1384,7 @@
          "debug_file" : "AppKit",
          "debug_id" : "AE68D5C702153027A54B437B1B392CA20",
          "end_addr" : "0x7fff8e388000",
-         "filename" : "AppKit",
+         "filename" : "/System/Library/Frameworks/AppKit.framework/Versions/C/AppKit",
          "missing_symbols" : true,
          "version" : "0.1404.11.0"
       },
@@ -1394,7 +1394,7 @@
          "debug_file" : "libsystem_sandbox.dylib",
          "debug_id" : "2F36D536482C39ECBAFD72297728F0A40",
          "end_addr" : "0x7fff8e38c000",
-         "filename" : "libsystem_sandbox.dylib",
+         "filename" : "/usr/lib/system/libsystem_sandbox.dylib",
          "version" : "0.459.1.8"
       },
       {
@@ -1403,7 +1403,7 @@
          "debug_file" : "OpenCL",
          "debug_id" : "68A639313F6F3DE29C8D624006908B830",
          "end_addr" : "0x7fff8e3dc000",
-         "filename" : "OpenCL",
+         "filename" : "/System/Library/Frameworks/OpenCL.framework/Versions/A/OpenCL",
          "version" : "0.1.0.0"
       },
       {
@@ -1412,7 +1412,7 @@
          "debug_file" : "Print",
          "debug_id" : "F13A0609793A3A43A961AAFC81AC8FDA0",
          "end_addr" : "0x7fff8e900000",
-         "filename" : "Print",
+         "filename" : "/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/Print.framework/Versions/A/Print",
          "version" : "0.266.0.0"
       },
       {
@@ -1421,7 +1421,7 @@
          "debug_file" : "libFontParser.dylib",
          "debug_id" : "3CD078A82E203B0FB312A2E641C768730",
          "end_addr" : "0x7fff8efbc000",
-         "filename" : "libFontParser.dylib",
+         "filename" : "/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ATS.framework/Versions/A/Resources/libFontParser.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -1430,7 +1430,7 @@
          "debug_file" : "AE",
          "debug_id" : "87FDCC5A82AC36A2BFE9D0B2A3D870F10",
          "end_addr" : "0x7fff8f012000",
-         "filename" : "AE",
+         "filename" : "/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/AE.framework/Versions/A/AE",
          "version" : "0.701.0.0"
       },
       {
@@ -1439,7 +1439,7 @@
          "debug_file" : "CFNetwork",
          "debug_id" : "66C3378C430D3803802566120AFDCD160",
          "end_addr" : "0x7fff8f29a000",
-         "filename" : "CFNetwork",
+         "filename" : "/System/Library/Frameworks/CFNetwork.framework/Versions/A/CFNetwork",
          "version" : "0.760.0.5"
       },
       {
@@ -1448,7 +1448,7 @@
          "debug_file" : "SystemConfiguration",
          "debug_id" : "FED4C250DDEB3CC3B88DFFA56E21425E0",
          "end_addr" : "0x7fff8f336000",
-         "filename" : "SystemConfiguration",
+         "filename" : "/System/Library/Frameworks/SystemConfiguration.framework/Versions/A/SystemConfiguration",
          "version" : "0.801.1.1"
       },
       {
@@ -1457,7 +1457,7 @@
          "debug_file" : "Foundation",
          "debug_id" : "2D13ED37BFFE3B7FA65AD6ED43B05EE90",
          "end_addr" : "0x7fff9076e000",
-         "filename" : "Foundation",
+         "filename" : "/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation",
          "version" : "0.1252.0.0"
       },
       {
@@ -1466,7 +1466,7 @@
          "debug_file" : "VideoToolbox",
          "debug_id" : "72715A24C3BC35D88240BBBD56E370900",
          "end_addr" : "0x7fff90b04000",
-         "filename" : "VideoToolbox",
+         "filename" : "/System/Library/Frameworks/VideoToolbox.framework/Versions/A/VideoToolbox",
          "version" : "0.1.0.0"
       },
       {
@@ -1475,7 +1475,7 @@
          "debug_file" : "SpeechSynthesis",
          "debug_id" : "8D8F331E21D23B7EB9773EB1D9E44D5B0",
          "end_addr" : "0x7fff90b11000",
-         "filename" : "SpeechSynthesis",
+         "filename" : "/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/SpeechSynthesis.framework/Versions/A/SpeechSynthesis",
          "version" : "0.1.0.0"
       },
       {
@@ -1484,7 +1484,7 @@
          "debug_file" : "SearchKit",
          "debug_id" : "45A716CDD9E73F1F9EC8BB37CA9E8C040",
          "end_addr" : "0x7fff90b81000",
-         "filename" : "SearchKit",
+         "filename" : "/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/SearchKit.framework/Versions/A/SearchKit",
          "version" : "0.200.1.0"
       },
       {
@@ -1493,7 +1493,7 @@
          "debug_file" : "Help",
          "debug_id" : "AA185754DEEB309193017B23C4D368180",
          "end_addr" : "0x7fff90b85000",
-         "filename" : "Help",
+         "filename" : "/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/Help.framework/Versions/A/Help",
          "version" : "0.1.0.0"
       },
       {
@@ -1502,7 +1502,7 @@
          "debug_file" : "libcompression.dylib",
          "debug_id" : "803C89B91E7D3658A2CF2B8371C546380",
          "end_addr" : "0x7fff90bb2000",
-         "filename" : "libcompression.dylib",
+         "filename" : "/usr/lib/libcompression.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -1511,7 +1511,7 @@
          "debug_file" : "libsystem_coreservices.dylib",
          "debug_id" : "692631A0192332CA9BD5044B1382FFDE0",
          "end_addr" : "0x7fff90d9c000",
-         "filename" : "libsystem_coreservices.dylib",
+         "filename" : "/usr/lib/system/libsystem_coreservices.dylib",
          "version" : "0.19.0.0"
       },
       {
@@ -1520,7 +1520,7 @@
          "debug_file" : "SpeechRecognitionCore",
          "debug_id" : "121178238A9E3C88A01C3B25D68535CE0",
          "end_addr" : "0x7fff90dac000",
-         "filename" : "SpeechRecognitionCore",
+         "filename" : "/System/Library/PrivateFrameworks/SpeechRecognitionCore.framework/Versions/A/SpeechRecognitionCore",
          "version" : "0.1.0.0"
       },
       {
@@ -1529,7 +1529,7 @@
          "debug_file" : "libsystem_info.dylib",
          "debug_id" : "65D0643AC8AE3E8D9F6EE4AD823F16B20",
          "end_addr" : "0x7fff90ec2000",
-         "filename" : "libsystem_info.dylib",
+         "filename" : "/usr/lib/system/libsystem_info.dylib",
          "version" : "0.476.0.0"
       },
       {
@@ -1538,7 +1538,7 @@
          "debug_file" : "PrintCore",
          "debug_id" : "34EA102AD48237FF9C9BE4FE4275913B0",
          "end_addr" : "0x7fff90f17000",
-         "filename" : "PrintCore",
+         "filename" : "/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/PrintCore.framework/Versions/A/PrintCore",
          "version" : "0.472.0.0"
       },
       {
@@ -1547,7 +1547,7 @@
          "debug_file" : "AudioUnit",
          "debug_id" : "017C6053C32E34EEAAAE6702E74F14EF0",
          "end_addr" : "0x7fff90f1b000",
-         "filename" : "AudioUnit",
+         "filename" : "/System/Library/Frameworks/AudioUnit.framework/Versions/A/AudioUnit",
          "version" : "0.1.0.0"
       },
       {
@@ -1556,7 +1556,7 @@
          "debug_file" : "libsystem_networkextension.dylib",
          "debug_id" : "4736FCC59DBA31F4AAC8CD0A177CF5020",
          "end_addr" : "0x7fff91075000",
-         "filename" : "libsystem_networkextension.dylib",
+         "filename" : "/usr/lib/system/libsystem_networkextension.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -1565,7 +1565,7 @@
          "debug_file" : "Mangrove",
          "debug_id" : "7CA6F485F7A5301C9F144C667EF8B2F30",
          "end_addr" : "0x7fff91079000",
-         "filename" : "Mangrove",
+         "filename" : "/System/Library/PrivateFrameworks/Mangrove.framework/Versions/A/Mangrove",
          "version" : "0.1.0.0"
       },
       {
@@ -1574,7 +1574,7 @@
          "debug_file" : "XPCService",
          "debug_id" : "E50F12068B6B3CDBBC66E5B70B4B41C70",
          "end_addr" : "0x7fff91080000",
-         "filename" : "XPCService",
+         "filename" : "/System/Library/PrivateFrameworks/XPCService.framework/Versions/A/XPCService",
          "version" : "0.1.0.0"
       },
       {
@@ -1583,7 +1583,7 @@
          "debug_file" : "vImage",
          "debug_id" : "7CBF4A5AFA053577BFB4133E0BDF5EDA0",
          "end_addr" : "0x7fff9159c000",
-         "filename" : "vImage",
+         "filename" : "/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vImage.framework/Versions/A/vImage",
          "version" : "0.317.2.0"
       },
       {
@@ -1592,7 +1592,7 @@
          "debug_file" : "CoreAVCHD",
          "debug_id" : "56AA41E62F6031D8B5062D4A5C341C770",
          "end_addr" : "0x7fff915cd000",
-         "filename" : "CoreAVCHD",
+         "filename" : "/System/Library/PrivateFrameworks/CoreAVCHD.framework/Versions/A/CoreAVCHD",
          "version" : "0.5800.0.0"
       },
       {
@@ -1601,7 +1601,7 @@
          "debug_file" : "DebugSymbols",
          "debug_id" : "6F5853A15DA83C428E022B972F34BCE00",
          "end_addr" : "0x7fff91608000",
-         "filename" : "DebugSymbols",
+         "filename" : "/System/Library/PrivateFrameworks/DebugSymbols.framework/Versions/A/DebugSymbols",
          "version" : "0.132.0.0"
       },
       {
@@ -1610,7 +1610,7 @@
          "debug_file" : "TCC",
          "debug_id" : "8D7468B6D5A33BF9BD98E8087AF0B61B0",
          "end_addr" : "0x7fff9160e000",
-         "filename" : "TCC",
+         "filename" : "/System/Library/PrivateFrameworks/TCC.framework/Versions/A/TCC",
          "version" : "0.1.0.0"
       },
       {
@@ -1619,7 +1619,7 @@
          "debug_file" : "CoreServices",
          "debug_id" : "208E32DAE7D93B4FA545EE2BFB53696D0",
          "end_addr" : "0x7fff9165b000",
-         "filename" : "CoreServices",
+         "filename" : "/System/Library/Frameworks/CoreServices.framework/Versions/A/CoreServices",
          "version" : "0.728.4.0"
       },
       {
@@ -1628,7 +1628,7 @@
          "debug_file" : "libiconv.2.dylib",
          "debug_id" : "82529E3B0485344C807583C7725D6A6F0",
          "end_addr" : "0x7fff917cb000",
-         "filename" : "libiconv.2.dylib",
+         "filename" : "/usr/lib/libiconv.2.dylib",
          "version" : "0.7.0.0"
       },
       {
@@ -1637,7 +1637,7 @@
          "debug_file" : "libLAPACK.dylib",
          "debug_id" : "BDADCDAE1FD83190B9DDDB671495EEE20",
          "end_addr" : "0x7fff91bce000",
-         "filename" : "libLAPACK.dylib",
+         "filename" : "/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libLAPACK.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -1646,7 +1646,7 @@
          "debug_file" : "DataDetectorsCore",
          "debug_id" : "65672990505F3B1D87FB42BE532A4D070",
          "end_addr" : "0x7fff91c6c000",
-         "filename" : "DataDetectorsCore",
+         "filename" : "/System/Library/PrivateFrameworks/DataDetectorsCore.framework/Versions/A/DataDetectorsCore",
          "version" : "0.460.0.0"
       },
       {
@@ -1655,7 +1655,7 @@
          "debug_file" : "QD",
          "debug_id" : "46969760B02A3ED5B8BCD6144939B16E0",
          "end_addr" : "0x7fff91df3000",
-         "filename" : "QD",
+         "filename" : "/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/QD.framework/Versions/A/QD",
          "version" : "0.302.0.0"
       },
       {
@@ -1664,7 +1664,7 @@
          "debug_file" : "libkxld.dylib",
          "debug_id" : "D38002C3A391361BACD35FF2EDA51EDC0",
          "end_addr" : "0x7fff92390000",
-         "filename" : "libkxld.dylib",
+         "filename" : "/usr/lib/system/libkxld.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -1673,7 +1673,7 @@
          "debug_file" : "libicucore.A.dylib",
          "debug_id" : "DEB70F32DA94323BB6D103D09C8FB10C0",
          "end_addr" : "0x7fff925e2000",
-         "filename" : "libicucore.A.dylib",
+         "filename" : "/usr/lib/libicucore.A.dylib",
          "version" : "0.55.1.0"
       },
       {
@@ -1682,7 +1682,7 @@
          "debug_file" : "ChunkingLibrary",
          "debug_id" : "C22F50387354330F8F3836F187E6A4B10",
          "end_addr" : "0x7fff9260a000",
-         "filename" : "ChunkingLibrary",
+         "filename" : "/System/Library/PrivateFrameworks/ChunkingLibrary.framework/Versions/A/ChunkingLibrary",
          "version" : "0.167.0.0"
       },
       {
@@ -1691,7 +1691,7 @@
          "debug_file" : "IOAccelerator",
          "debug_id" : "68212F3D7660339189CA99363ED9AB4D0",
          "end_addr" : "0x7fff92611000",
-         "filename" : "IOAccelerator",
+         "filename" : "/System/Library/PrivateFrameworks/IOAccelerator.framework/Versions/A/IOAccelerator",
          "version" : "0.1.0.0"
       },
       {
@@ -1700,7 +1700,7 @@
          "debug_file" : "MultitouchSupport",
          "debug_id" : "650FA404DC2C365E8373218F1D765D350",
          "end_addr" : "0x7fff92639000",
-         "filename" : "MultitouchSupport",
+         "filename" : "/System/Library/PrivateFrameworks/MultitouchSupport.framework/Versions/A/MultitouchSupport",
          "version" : "0.304.9.0"
       },
       {
@@ -1709,7 +1709,7 @@
          "debug_file" : "liblangid.dylib",
          "debug_id" : "EAC09BF05E883060AA51EC71B4D26F3C0",
          "end_addr" : "0x7fff9263b000",
-         "filename" : "liblangid.dylib",
+         "filename" : "/usr/lib/liblangid.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -1718,7 +1718,7 @@
          "debug_file" : "LangAnalysis",
          "debug_id" : "E7D610A114453CA3B9A1EE15D54B75AB0",
          "end_addr" : "0x7fff9264b000",
-         "filename" : "LangAnalysis",
+         "filename" : "/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/LangAnalysis.framework/Versions/A/LangAnalysis",
          "version" : "0.1.0.0"
       },
       {
@@ -1727,7 +1727,7 @@
          "debug_file" : "LDAP",
          "debug_id" : "207E4A14E3CC3658ABAFB5CAEC9ED1EB0",
          "end_addr" : "0x7fff92683000",
-         "filename" : "LDAP",
+         "filename" : "/System/Library/Frameworks/LDAP.framework/Versions/A/LDAP",
          "version" : "0.2.4.0"
       },
       {
@@ -1736,7 +1736,7 @@
          "debug_file" : "FindMyDevice",
          "debug_id" : "28CE764F4C4C3A75B7AEEDBC7A189E820",
          "end_addr" : "0x7fff9268d000",
-         "filename" : "FindMyDevice",
+         "filename" : "/System/Library/PrivateFrameworks/FindMyDevice.framework/Versions/A/FindMyDevice",
          "version" : "0.1.0.0"
       },
       {
@@ -1745,7 +1745,7 @@
          "debug_file" : "FaceCore",
          "debug_id" : "D02FBB0342A53E7583C1F563B1E3258F0",
          "end_addr" : "0x7fff92b07000",
-         "filename" : "FaceCore",
+         "filename" : "/System/Library/PrivateFrameworks/FaceCore.framework/Versions/A/FaceCore",
          "version" : "0.3.3.1"
       },
       {
@@ -1754,7 +1754,7 @@
          "debug_file" : "libFontRegistry.dylib",
          "debug_id" : "BC1B3AD549273AB794FFCD93BF895D980",
          "end_addr" : "0x7fff92b5c000",
-         "filename" : "libFontRegistry.dylib",
+         "filename" : "/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ATS.framework/Versions/A/Resources/libFontRegistry.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -1763,7 +1763,7 @@
          "debug_file" : "libsystem_c.dylib",
          "debug_id" : "A60CE86D1FF332ADA672C7597F8845290",
          "end_addr" : "0x7fff92c58000",
-         "filename" : "libsystem_c.dylib",
+         "filename" : "/usr/lib/system/libsystem_c.dylib",
          "version" : "0.1081.1.3"
       },
       {
@@ -1772,7 +1772,7 @@
          "debug_file" : "HIServices",
          "debug_id" : "19389B63C37331AE91803A11093EAE580",
          "end_addr" : "0x7fff92ca5000",
-         "filename" : "HIServices",
+         "filename" : "/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/HIServices.framework/Versions/A/HIServices",
          "version" : "0.548.0.0"
       },
       {
@@ -1781,7 +1781,7 @@
          "debug_file" : "libMatch.1.dylib",
          "debug_id" : "D8024E9A795B30FCBCE7DB1E20889AB90",
          "end_addr" : "0x7fff92ce7000",
-         "filename" : "libMatch.1.dylib",
+         "filename" : "/usr/lib/libMatch.1.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -1790,7 +1790,7 @@
          "debug_file" : "libOpenScriptingUtil.dylib",
          "debug_id" : "5C4A51D409A932098E5715F112725CC40",
          "end_addr" : "0x7fff92d27000",
-         "filename" : "libOpenScriptingUtil.dylib",
+         "filename" : "/usr/lib/libOpenScriptingUtil.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -1799,7 +1799,7 @@
          "debug_file" : "CoreWLAN",
          "debug_id" : "3CA2F32A4FBF39ED83ECF2E3C43D37750",
          "end_addr" : "0x7fff92d92000",
-         "filename" : "CoreWLAN",
+         "filename" : "/System/Library/Frameworks/CoreWLAN.framework/Versions/A/CoreWLAN",
          "version" : "0.1.0.0"
       },
       {
@@ -1808,7 +1808,7 @@
          "debug_file" : "CoreSymbolication",
          "debug_id" : "CC7CAE84DEC63184B841559DBE97D0250",
          "end_addr" : "0x7fff92e1b000",
-         "filename" : "CoreSymbolication",
+         "filename" : "/System/Library/PrivateFrameworks/CoreSymbolication.framework/Versions/A/CoreSymbolication",
          "version" : "0.58048.1.0"
       },
       {
@@ -1817,7 +1817,7 @@
          "debug_file" : "libsqlite3.dylib",
          "debug_id" : "6ED840B7716E3CA9BBA07BE4B6E85A4F0",
          "end_addr" : "0x7fff92f40000",
-         "filename" : "libsqlite3.dylib",
+         "filename" : "/usr/lib/libsqlite3.dylib",
          "version" : "0.216.0.0"
       },
       {
@@ -1826,7 +1826,7 @@
          "debug_file" : "libobjc.A.dylib",
          "debug_id" : "CE3C3C78A7BB3147837555424032FF5E0",
          "end_addr" : "0x7fff932b7000",
-         "filename" : "libobjc.A.dylib",
+         "filename" : "/usr/lib/libobjc.A.dylib",
          "version" : "0.228.0.0"
       },
       {
@@ -1835,7 +1835,7 @@
          "debug_file" : "libpam.2.dylib",
          "debug_id" : "7F986CE8EF743BC3BB7E5267E24EAFFE0",
          "end_addr" : "0x7fff932bc000",
-         "filename" : "libpam.2.dylib",
+         "filename" : "/usr/lib/libpam.2.dylib",
          "version" : "0.3.0.0"
       },
       {
@@ -1844,7 +1844,7 @@
          "debug_file" : "CoreMediaIO",
          "debug_id" : "999CED97277737EF8425F25B1B1F5A040",
          "end_addr" : "0x7fff93308000",
-         "filename" : "CoreMediaIO",
+         "filename" : "/System/Library/Frameworks/CoreMediaIO.framework/Versions/A/CoreMediaIO",
          "version" : "0.1.0.0"
       },
       {
@@ -1853,7 +1853,7 @@
          "debug_file" : "CoreMediaAuthoring",
          "debug_id" : "82B6246361253B03AA578724E13C7F410",
          "end_addr" : "0x7fff93357000",
-         "filename" : "CoreMediaAuthoring",
+         "filename" : "/System/Library/PrivateFrameworks/CoreMediaAuthoring.framework/Versions/A/CoreMediaAuthoring",
          "version" : "0.1.0.0"
       },
       {
@@ -1862,7 +1862,7 @@
          "debug_file" : "TrustEvaluationAgent",
          "debug_id" : "BC19A1D1805B3FC5BF0B1EF6FB36FE740",
          "end_addr" : "0x7fff933eb000",
-         "filename" : "TrustEvaluationAgent",
+         "filename" : "/System/Library/PrivateFrameworks/TrustEvaluationAgent.framework/Versions/A/TrustEvaluationAgent",
          "version" : "0.25.0.0"
       },
       {
@@ -1871,7 +1871,7 @@
          "debug_file" : "libsystem_configuration.dylib",
          "debug_id" : "EB55C3D8048D350EBF240CBD4479D51C0",
          "end_addr" : "0x7fff93541000",
-         "filename" : "libsystem_configuration.dylib",
+         "filename" : "/usr/lib/system/libsystem_configuration.dylib",
          "version" : "0.801.1.1"
       },
       {
@@ -1880,7 +1880,7 @@
          "debug_file" : "libJP2.dylib",
          "debug_id" : "FB66F0981365378D88E80008BA72CA6F0",
          "end_addr" : "0x7fff9365f000",
-         "filename" : "libJP2.dylib",
+         "filename" : "/System/Library/Frameworks/ImageIO.framework/Versions/A/Resources/libJP2.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -1889,7 +1889,7 @@
          "debug_file" : "libSparseBLAS.dylib",
          "debug_id" : "C10D35D23D3D3EB08215527BD1F1F3E00",
          "end_addr" : "0x7fff93670000",
-         "filename" : "libSparseBLAS.dylib",
+         "filename" : "/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libSparseBLAS.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -1898,7 +1898,7 @@
          "debug_file" : "libsystem_malloc.dylib",
          "debug_id" : "1B57A6143D603F87876F7DB4AF38120F0",
          "end_addr" : "0x7fff9368d000",
-         "filename" : "libsystem_malloc.dylib",
+         "filename" : "/usr/lib/system/libsystem_malloc.dylib",
          "version" : "0.67.0.0"
       },
       {
@@ -1907,7 +1907,7 @@
          "debug_file" : "AppleVPA",
          "debug_id" : "2847B765B0A93D74BDEF556795270AE10",
          "end_addr" : "0x7fff936ab000",
-         "filename" : "AppleVPA",
+         "filename" : "/System/Library/PrivateFrameworks/AppleVPA.framework/Versions/A/AppleVPA",
          "version" : "0.1.0.0"
       },
       {
@@ -1916,7 +1916,7 @@
          "debug_file" : "CoreWiFi",
          "debug_id" : "537EFC2F3A2336D793208834D51EB2430",
          "end_addr" : "0x7fff93739000",
-         "filename" : "CoreWiFi",
+         "filename" : "/System/Library/PrivateFrameworks/CoreWiFi.framework/Versions/A/CoreWiFi",
          "version" : "0.1.0.0"
       },
       {
@@ -1925,7 +1925,7 @@
          "debug_file" : "ImageIO",
          "debug_id" : "1C0E4F9F375D305BA8E5DE8D4C4B8A800",
          "end_addr" : "0x7fff9418a000",
-         "filename" : "ImageIO",
+         "filename" : "/System/Library/Frameworks/ImageIO.framework/Versions/A/ImageIO",
          "version" : "0.1.0.0"
       },
       {
@@ -1934,7 +1934,7 @@
          "debug_file" : "CoreDaemon",
          "debug_id" : "B0028247B33336F580988EC95E6C2B230",
          "end_addr" : "0x7fff9419b000",
-         "filename" : "CoreDaemon",
+         "filename" : "/System/Library/PrivateFrameworks/CoreDaemon.framework/Versions/B/CoreDaemon",
          "version" : "0.3.0.0"
       },
       {
@@ -1943,7 +1943,7 @@
          "debug_file" : "OpenDirectory",
          "debug_id" : "E0F63D6023C83FB7BA785BD8613543520",
          "end_addr" : "0x7fff941a8000",
-         "filename" : "OpenDirectory",
+         "filename" : "/System/Library/Frameworks/OpenDirectory.framework/Versions/A/OpenDirectory",
          "version" : "0.1.0.0"
       },
       {
@@ -1952,7 +1952,7 @@
          "debug_file" : "libsystem_dnssd.dylib",
          "debug_id" : "DB6AB2064AD8369DBF571D246AD605820",
          "end_addr" : "0x7fff94491000",
-         "filename" : "libsystem_dnssd.dylib",
+         "filename" : "/usr/lib/system/libsystem_dnssd.dylib",
          "version" : "0.624.1.2"
       },
       {
@@ -1961,7 +1961,7 @@
          "debug_file" : "DiskArbitration",
          "debug_id" : "B391A88512863718A3418C84560DDE580",
          "end_addr" : "0x7fff94497000",
-         "filename" : "DiskArbitration",
+         "filename" : "/System/Library/Frameworks/DiskArbitration.framework/Versions/A/DiskArbitration",
          "version" : "0.1.0.0"
       },
       {
@@ -1970,7 +1970,7 @@
          "debug_file" : "libkeymgr.dylib",
          "debug_id" : "470802808B573D758A209E100864DE270",
          "end_addr" : "0x7fff944a5000",
-         "filename" : "libkeymgr.dylib",
+         "filename" : "/usr/lib/system/libkeymgr.dylib",
          "version" : "0.28.0.0"
       },
       {
@@ -1979,7 +1979,7 @@
          "debug_file" : "libcommonCrypto.dylib",
          "debug_id" : "BD1DCF1983533F6AAFFAEBBA29A302A80",
          "end_addr" : "0x7fff944b1000",
-         "filename" : "libcommonCrypto.dylib",
+         "filename" : "/usr/lib/system/libcommonCrypto.dylib",
          "version" : "0.60074.0.0"
       },
       {
@@ -1988,7 +1988,7 @@
          "debug_file" : "libmecabra.dylib",
          "debug_id" : "55386F90726038ECBA418978659449080",
          "end_addr" : "0x7fff94779000",
-         "filename" : "libmecabra.dylib",
+         "filename" : "/usr/lib/libmecabra.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -1997,7 +1997,7 @@
          "debug_file" : "LaunchServices",
          "debug_id" : "78774CB9B206360FBC9F2ACA698118140",
          "end_addr" : "0x7fff948c5000",
-         "filename" : "LaunchServices",
+         "filename" : "/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/LaunchServices",
          "version" : "0.728.4.0"
       },
       {
@@ -2006,7 +2006,7 @@
          "debug_file" : "libcldcpuengine.dylib",
          "debug_id" : "C33F593F44DB38D38D70380FC401E7620",
          "end_addr" : "0x7fff948ce000",
-         "filename" : "libcldcpuengine.dylib",
+         "filename" : "/System/Library/Frameworks/OpenCL.framework/Versions/A/Libraries/libcldcpuengine.dylib",
          "version" : "0.2.6.4"
       },
       {
@@ -2015,7 +2015,7 @@
          "debug_file" : "Heimdal",
          "debug_id" : "2D358FB461BB3BB69EF7D9868A0B02750",
          "end_addr" : "0x7fff949ba000",
-         "filename" : "Heimdal",
+         "filename" : "/System/Library/PrivateFrameworks/Heimdal.framework/Versions/A/Heimdal",
          "version" : "0.1.0.0"
       },
       {
@@ -2024,7 +2024,7 @@
          "debug_file" : "libodfde.dylib",
          "debug_id" : "B2194A773D293CE29D96F8986A1989800",
          "end_addr" : "0x7fff949d7000",
-         "filename" : "libodfde.dylib",
+         "filename" : "/usr/lib/libodfde.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -2033,7 +2033,7 @@
          "debug_file" : "libJPEG.dylib",
          "debug_id" : "3A9FA6E4C315357E984AB00565F8FD820",
          "end_addr" : "0x7fff94a65000",
-         "filename" : "libJPEG.dylib",
+         "filename" : "/System/Library/Frameworks/ImageIO.framework/Versions/A/Resources/libJPEG.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -2042,7 +2042,7 @@
          "debug_file" : "GLRendererFloat",
          "debug_id" : "E6788BC587DA3A03A1D2810851D07AA40",
          "end_addr" : "0x7fff94a90000",
-         "filename" : "GLRendererFloat",
+         "filename" : "/System/Library/Frameworks/OpenGL.framework/Versions/A/Resources/GLRendererFloat.bundle/GLRendererFloat",
          "version" : "0.65535.0.0"
       },
       {
@@ -2051,7 +2051,7 @@
          "debug_file" : "libdyld.dylib",
          "debug_id" : "F9D64D8C4C333D06B7F8697F132928940",
          "end_addr" : "0x7fff94b8d000",
-         "filename" : "libdyld.dylib",
+         "filename" : "/usr/lib/system/libdyld.dylib",
          "version" : "0.360.14.0"
       },
       {
@@ -2060,7 +2060,7 @@
          "debug_file" : "libxslt.1.dylib",
          "debug_id" : "412A09C97C02351EA4162453361EACA90",
          "end_addr" : "0x7fff94bb7000",
-         "filename" : "libxslt.1.dylib",
+         "filename" : "/usr/lib/libxslt.1.dylib",
          "version" : "0.3.26.0"
       },
       {
@@ -2069,7 +2069,7 @@
          "debug_file" : "libGLU.dylib",
          "debug_id" : "4F500E4033FD3EFF8513E553E3B4D5600",
          "end_addr" : "0x7fff94e0d000",
-         "filename" : "libGLU.dylib",
+         "filename" : "/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGLU.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -2078,7 +2078,7 @@
          "debug_file" : "libspindump.dylib",
          "debug_id" : "D55A6D6B7B7D3D15AC6C73DE9954C6710",
          "end_addr" : "0x7fff94ec8000",
-         "filename" : "libspindump.dylib",
+         "filename" : "/usr/lib/libspindump.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -2087,7 +2087,7 @@
          "debug_file" : "Kerberos",
          "debug_id" : "D2F0BF9486563FBF81AC43D417B661F10",
          "end_addr" : "0x7fff94ef2000",
-         "filename" : "Kerberos",
+         "filename" : "/System/Library/Frameworks/Kerberos.framework/Versions/A/Kerberos",
          "version" : "0.6.0.0"
       },
       {
@@ -2096,7 +2096,7 @@
          "debug_file" : "IconServices",
          "debug_id" : "9F8B91848DA83B7A970B3086DDD1CC6F0",
          "end_addr" : "0x7fff94f15000",
-         "filename" : "IconServices",
+         "filename" : "/System/Library/PrivateFrameworks/IconServices.framework/Versions/A/IconServices",
          "version" : "0.68.0.0"
       },
       {
@@ -2105,7 +2105,7 @@
          "debug_file" : "libRIP.A.dylib",
          "debug_id" : "DB727879E42B33C5B1FFCC34CDFBF0170",
          "end_addr" : "0x7fff94f3f000",
-         "filename" : "libRIP.A.dylib",
+         "filename" : "/System/Library/Frameworks/CoreGraphics.framework/Versions/A/Resources/libRIP.A.dylib",
          "version" : "0.600.0.0"
       },
       {
@@ -2114,7 +2114,7 @@
          "debug_file" : "libcompiler_rt.dylib",
          "debug_id" : "253B36E5572D377DAE99A02CE32590E50",
          "end_addr" : "0x7fff94f6d000",
-         "filename" : "libcompiler_rt.dylib",
+         "filename" : "/usr/lib/system/libcompiler_rt.dylib",
          "version" : "0.62.0.0"
       },
       {
@@ -2123,7 +2123,7 @@
          "debug_file" : "CoreAUC",
          "debug_id" : "36675355FEF43DC09734AE6F125883C20",
          "end_addr" : "0x7fff953b3000",
-         "filename" : "CoreAUC",
+         "filename" : "/System/Library/PrivateFrameworks/CoreAUC.framework/Versions/A/CoreAUC",
          "version" : "0.1.0.0"
       },
       {
@@ -2132,7 +2132,7 @@
          "debug_file" : "AppContainer",
          "debug_id" : "6F31BB330D513A4DA7DD42446BF43DA00",
          "end_addr" : "0x7fff953cc000",
-         "filename" : "AppContainer",
+         "filename" : "/System/Library/PrivateFrameworks/AppContainer.framework/Versions/A/AppContainer",
          "version" : "0.1.0.0"
       },
       {
@@ -2141,7 +2141,7 @@
          "debug_file" : "CoreUI",
          "debug_id" : "1F30C00690583B399DC3594FDB1081740",
          "end_addr" : "0x7fff95536000",
-         "filename" : "CoreUI",
+         "filename" : "/System/Library/PrivateFrameworks/CoreUI.framework/Versions/A/CoreUI",
          "version" : "0.362.0.0"
       },
       {
@@ -2150,7 +2150,7 @@
          "debug_file" : "CoreImage",
          "debug_id" : "8FEAE2371EBA3058B4B3BB36F6640F440",
          "end_addr" : "0x7fff95790000",
-         "filename" : "CoreImage",
+         "filename" : "/System/Library/Frameworks/CoreImage.framework/Versions/A/CoreImage",
          "version" : "0.2.0.0"
       },
       {
@@ -2159,7 +2159,7 @@
          "debug_file" : "liblzma.5.dylib",
          "debug_id" : "8CD1828649EA31E48A731BF8DECED6C60",
          "end_addr" : "0x7fff95842000",
-         "filename" : "liblzma.5.dylib",
+         "filename" : "/usr/lib/liblzma.5.dylib",
          "version" : "0.6.3.0"
       },
       {
@@ -2168,7 +2168,7 @@
          "debug_file" : "Shortcut",
          "debug_id" : "F6E559D940BE3CC9BB16E71300C77F8A0",
          "end_addr" : "0x7fff9586a000",
-         "filename" : "Shortcut",
+         "filename" : "/System/Library/PrivateFrameworks/Shortcut.framework/Versions/A/Shortcut",
          "version" : "0.93.0.0"
       },
       {
@@ -2177,7 +2177,7 @@
          "debug_file" : "libxml2.2.dylib",
          "debug_id" : "0702E13CD7263DAFB0D177F7B9EF6A370",
          "end_addr" : "0x7fff9595a000",
-         "filename" : "libxml2.2.dylib",
+         "filename" : "/usr/lib/libxml2.2.dylib",
          "version" : "0.10.9.0"
       },
       {
@@ -2186,7 +2186,7 @@
          "debug_file" : "CoreServicesInternal",
          "debug_id" : "EAD7A7B3D7753E4C98B836D0477959930",
          "end_addr" : "0x7fff95991000",
-         "filename" : "CoreServicesInternal",
+         "filename" : "/System/Library/PrivateFrameworks/CoreServicesInternal.framework/Versions/A/CoreServicesInternal",
          "version" : "0.248.0.0"
       },
       {
@@ -2195,7 +2195,7 @@
          "debug_file" : "libGIF.dylib",
          "debug_id" : "5A5C6F14D41E3C909AEEE94DA9124E8D0",
          "end_addr" : "0x7fff95996000",
-         "filename" : "libGIF.dylib",
+         "filename" : "/System/Library/Frameworks/ImageIO.framework/Versions/A/Resources/libGIF.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -2204,7 +2204,7 @@
          "debug_file" : "vecLib",
          "debug_id" : "715465E1283F3A84B52273E32D4F07550",
          "end_addr" : "0x7fff95997000",
-         "filename" : "vecLib",
+         "filename" : "/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/vecLib",
          "version" : "0.563.3.0"
       },
       {
@@ -2213,7 +2213,7 @@
          "debug_file" : "LoginUICore",
          "debug_id" : "6DCEED7A529B3AFD8F8397A40B56E4D90",
          "end_addr" : "0x7fff9599c000",
-         "filename" : "LoginUICore",
+         "filename" : "/System/Library/PrivateFrameworks/LoginUIKit.framework/Versions/A/Frameworks/LoginUICore.framework/Versions/A/LoginUICore",
          "version" : "0.1.0.0"
       },
       {
@@ -2222,7 +2222,7 @@
          "debug_file" : "libCoreVMClient.dylib",
          "debug_id" : "3B709F2E35BA3D969324E56AF5F68E500",
          "end_addr" : "0x7fff959b5000",
-         "filename" : "libCoreVMClient.dylib",
+         "filename" : "/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libCoreVMClient.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -2231,7 +2231,7 @@
          "debug_file" : "Metadata",
          "debug_id" : "83FB4CDD29DE3DAD8FEBFD9E9474576F0",
          "end_addr" : "0x7fff95ca3000",
-         "filename" : "Metadata",
+         "filename" : "/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Metadata",
          "version" : "0.972.9.0"
       },
       {
@@ -2240,7 +2240,7 @@
          "debug_file" : "MediaKit",
          "debug_id" : "6F40D74C7F2C3693AF8063365A6F76800",
          "end_addr" : "0x7fff95cd7000",
-         "filename" : "MediaKit",
+         "filename" : "/System/Library/PrivateFrameworks/MediaKit.framework/Versions/A/MediaKit",
          "version" : "0.807.0.0"
       },
       {
@@ -2249,7 +2249,7 @@
          "debug_file" : "CoreAudio",
          "debug_id" : "E9B6EFBAF6EA3F208C9153EC7D4647730",
          "end_addr" : "0x7fff95f01000",
-         "filename" : "CoreAudio",
+         "filename" : "/System/Library/Frameworks/CoreAudio.framework/Versions/A/CoreAudio",
          "version" : "0.1.0.0"
       },
       {
@@ -2258,7 +2258,7 @@
          "debug_file" : "libresolv.9.dylib",
          "debug_id" : "B192EC2784EC3D8A9CBF0374B5C9B31A0",
          "end_addr" : "0x7fff95f62000",
-         "filename" : "libresolv.9.dylib",
+         "filename" : "/usr/lib/libresolv.9.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -2267,7 +2267,7 @@
          "debug_file" : "PerformanceAnalysis",
          "debug_id" : "E7C53B84558F39EA949C82F4163F6F140",
          "end_addr" : "0x7fff95fec000",
-         "filename" : "PerformanceAnalysis",
+         "filename" : "/System/Library/PrivateFrameworks/PerformanceAnalysis.framework/Versions/A/PerformanceAnalysis",
          "version" : "0.1.0.0"
       },
       {
@@ -2276,7 +2276,7 @@
          "debug_file" : "OpenGL",
          "debug_id" : "7D63C884AF3D3167ABCEF7EEBDF9762B0",
          "end_addr" : "0x7fff96001000",
-         "filename" : "OpenGL",
+         "filename" : "/System/Library/Frameworks/OpenGL.framework/Versions/A/OpenGL",
          "version" : "0.1.0.0"
       },
       {
@@ -2285,7 +2285,7 @@
          "debug_file" : "QuartzCore",
          "debug_id" : "3DDB2E3A690232168DC456ED16B7C6980",
          "end_addr" : "0x7fff96208000",
-         "filename" : "QuartzCore",
+         "filename" : "/System/Library/Frameworks/QuartzCore.framework/Versions/A/QuartzCore",
          "version" : "0.1.11.0"
       },
       {
@@ -2294,7 +2294,7 @@
          "debug_file" : "loginsupport",
          "debug_id" : "07F03548C89E3082B1706D03D839B5510",
          "end_addr" : "0x7fff9620b000",
-         "filename" : "loginsupport",
+         "filename" : "/System/Library/PrivateFrameworks/login.framework/Versions/A/Frameworks/loginsupport.framework/Versions/A/loginsupport",
          "version" : "0.1.0.0"
       },
       {
@@ -2303,7 +2303,7 @@
          "debug_file" : "NetFS",
          "debug_id" : "5602F3EB64F63495BEF0988F929742340",
          "end_addr" : "0x7fff9674a000",
-         "filename" : "NetFS",
+         "filename" : "/System/Library/Frameworks/NetFS.framework/Versions/A/NetFS",
          "version" : "0.1.0.0"
       },
       {
@@ -2312,7 +2312,7 @@
          "debug_file" : "DesktopServicesPriv",
          "debug_id" : "76AA21FE0F96366A9B436188FBC29ABE0",
          "end_addr" : "0x7fff96888000",
-         "filename" : "DesktopServicesPriv",
+         "filename" : "/System/Library/PrivateFrameworks/DesktopServicesPriv.framework/Versions/A/DesktopServicesPriv",
          "version" : "0.808.0.0"
       },
       {
@@ -2321,7 +2321,7 @@
          "debug_file" : "libcmph.dylib",
          "debug_id" : "438802509C2D395C90C7CCCE109FF1B20",
          "end_addr" : "0x7fff9689a000",
-         "filename" : "libcmph.dylib",
+         "filename" : "/usr/lib/libcmph.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -2330,7 +2330,7 @@
          "debug_file" : "libsystem_trace.dylib",
          "debug_id" : "E26A91EAAD673FA2A3B679A93DCC716E0",
          "end_addr" : "0x7fff968ac000",
-         "filename" : "libsystem_trace.dylib",
+         "filename" : "/usr/lib/system/libsystem_trace.dylib",
          "version" : "0.200.0.0"
       },
       {
@@ -2339,7 +2339,7 @@
          "debug_file" : "libenergytrace.dylib",
          "debug_id" : "64F779D4219237EC8DB5EC55BAE500580",
          "end_addr" : "0x7fff968c8000",
-         "filename" : "libenergytrace.dylib",
+         "filename" : "/usr/lib/libenergytrace.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -2348,7 +2348,7 @@
          "debug_file" : "Sharing",
          "debug_id" : "10C4A9FA47C937D9A60AC27CC57A25390",
          "end_addr" : "0x7fff968ea000",
-         "filename" : "Sharing",
+         "filename" : "/System/Library/PrivateFrameworks/Sharing.framework/Versions/A/Sharing",
          "version" : "0.438.0.1"
       },
       {
@@ -2357,7 +2357,7 @@
          "debug_file" : "libcups.2.dylib",
          "debug_id" : "FA565876F9B230218E896D665ED01B3D0",
          "end_addr" : "0x7fff9693b000",
-         "filename" : "libcups.2.dylib",
+         "filename" : "/usr/lib/libcups.2.dylib",
          "version" : "0.2.11.0"
       },
       {
@@ -2366,7 +2366,7 @@
          "debug_file" : "libDiagnosticMessagesClient.dylib",
          "debug_id" : "F2D8CFCCA00A36759C01EF0C663F24450",
          "end_addr" : "0x7fff9693d000",
-         "filename" : "libDiagnosticMessagesClient.dylib",
+         "filename" : "/usr/lib/libDiagnosticMessagesClient.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -2375,7 +2375,7 @@
          "debug_file" : "IOKit",
          "debug_id" : "B30239A0B11E36E9AB492C53942A64470",
          "end_addr" : "0x7fff969ca000",
-         "filename" : "IOKit",
+         "filename" : "/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit",
          "version" : "0.275.0.0"
       },
       {
@@ -2384,7 +2384,7 @@
          "debug_file" : "DiskImages",
          "debug_id" : "AF08B107F65D36DD9B94A0C868C300BC0",
          "end_addr" : "0x7fff96abf000",
-         "filename" : "DiskImages",
+         "filename" : "/System/Library/PrivateFrameworks/DiskImages.framework/Versions/A/DiskImages",
          "version" : "0.414.0.0"
       },
       {
@@ -2393,7 +2393,7 @@
          "debug_file" : "CrashReporterSupport",
          "debug_id" : "D0D22E004DA03AEF85220814F90706660",
          "end_addr" : "0x7fff96ae8000",
-         "filename" : "CrashReporterSupport",
+         "filename" : "/System/Library/PrivateFrameworks/CrashReporterSupport.framework/Versions/A/CrashReporterSupport",
          "version" : "0.715.0.0"
       },
       {
@@ -2402,7 +2402,7 @@
          "debug_file" : "DirectoryService",
          "debug_id" : "AE493A5FE11239C4AD7A3E740A21AB420",
          "end_addr" : "0x7fff96b49000",
-         "filename" : "DirectoryService",
+         "filename" : "/System/Library/Frameworks/DirectoryService.framework/Versions/A/DirectoryService",
          "version" : "0.1.0.0"
       },
       {
@@ -2411,7 +2411,7 @@
          "debug_file" : "libsystem_platform.dylib",
          "debug_id" : "3F4D2390E3DE3C24A51595DFAC8671C40",
          "end_addr" : "0x7fff96bbd000",
-         "filename" : "libsystem_platform.dylib",
+         "filename" : "/usr/lib/system/libsystem_platform.dylib",
          "version" : "0.73.1.1"
       },
       {
@@ -2420,7 +2420,7 @@
          "debug_file" : "SecCodeWrapper",
          "debug_id" : "2CAEF3174FB13A88BF83975469C7F2720",
          "end_addr" : "0x7fff96bc0000",
-         "filename" : "SecCodeWrapper",
+         "filename" : "/System/Library/PrivateFrameworks/SecCodeWrapper.framework/Versions/A/SecCodeWrapper",
          "version" : "0.1.0.0"
       },
       {
@@ -2429,7 +2429,7 @@
          "debug_file" : "AppleSRP",
          "debug_id" : "8DBB11A2150A3E708B83DDEDAB15E2C30",
          "end_addr" : "0x7fff96bc9000",
-         "filename" : "AppleSRP",
+         "filename" : "/System/Library/PrivateFrameworks/AppleSRP.framework/Versions/A/AppleSRP",
          "version" : "0.1.0.0"
       },
       {
@@ -2438,7 +2438,7 @@
          "debug_file" : "libRadiance.dylib",
          "debug_id" : "C3F42E9028EC3DB3B9078D403D3B505A0",
          "end_addr" : "0x7fff96c0a000",
-         "filename" : "libRadiance.dylib",
+         "filename" : "/System/Library/Frameworks/ImageIO.framework/Versions/A/Resources/libRadiance.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -2447,7 +2447,7 @@
          "debug_file" : "libLinearAlgebra.dylib",
          "debug_id" : "01BD9187521F3F96B47724511318AECD0",
          "end_addr" : "0x7fff96c21000",
-         "filename" : "libLinearAlgebra.dylib",
+         "filename" : "/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libLinearAlgebra.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -2456,7 +2456,7 @@
          "debug_file" : "libxar.1.dylib",
          "debug_id" : "898402AF0DF3341D83EA4A1B1770E7180",
          "end_addr" : "0x7fff96c40000",
-         "filename" : "libxar.1.dylib",
+         "filename" : "/usr/lib/libxar.1.dylib",
          "version" : "0.1.3.0"
       },
       {
@@ -2465,7 +2465,7 @@
          "debug_file" : "CoreVideo",
          "debug_id" : "FA99D150EFCE3F32ACDF5E91AD97F1760",
          "end_addr" : "0x7fff97081000",
-         "filename" : "CoreVideo",
+         "filename" : "/System/Library/Frameworks/CoreVideo.framework/Versions/A/CoreVideo",
          "version" : "0.1.5.0"
       },
       {
@@ -2474,7 +2474,7 @@
          "debug_file" : "libextension.dylib",
          "debug_id" : "3A674BC18D7E3A6280EFF950B02CB0FF0",
          "end_addr" : "0x7fff9709e000",
-         "filename" : "libextension.dylib",
+         "filename" : "/usr/lib/libextension.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -2483,7 +2483,7 @@
          "debug_file" : "IOSurface",
          "debug_id" : "43D70E5A64F5384AA95E64253538C24F0",
          "end_addr" : "0x7fff970d6000",
-         "filename" : "IOSurface",
+         "filename" : "/System/Library/Frameworks/IOSurface.framework/Versions/A/IOSurface",
          "version" : "0.1.0.0"
       },
       {
@@ -2492,7 +2492,7 @@
          "debug_file" : "libCRFSuite.dylib",
          "debug_id" : "65E4DC91A9943921B5B0696123CE0C1E0",
          "end_addr" : "0x7fff97209000",
-         "filename" : "libCRFSuite.dylib",
+         "filename" : "/usr/lib/libCRFSuite.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -2501,7 +2501,7 @@
          "debug_file" : "ServiceManagement",
          "debug_id" : "0EA1807B4F41317DA6C2E6A23F2012520",
          "end_addr" : "0x7fff9720c000",
-         "filename" : "ServiceManagement",
+         "filename" : "/System/Library/Frameworks/ServiceManagement.framework/Versions/A/ServiceManagement",
          "version" : "0.755.1.19"
       },
       {
@@ -2510,7 +2510,7 @@
          "debug_file" : "SystemAdministration",
          "debug_id" : "F17C889A632F394687F3B797C5F1ED750",
          "end_addr" : "0x7fff97239000",
-         "filename" : "SystemAdministration",
+         "filename" : "/System/Library/PrivateFrameworks/SystemAdministration.framework/Versions/A/SystemAdministration",
          "version" : "0.1.0.0"
       },
       {
@@ -2519,7 +2519,7 @@
          "debug_file" : "libGL.dylib",
          "debug_id" : "C7196A5D3BC1301A9695A9122BC773B30",
          "end_addr" : "0x7fff972ed000",
-         "filename" : "libGL.dylib",
+         "filename" : "/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGL.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -2528,7 +2528,7 @@
          "debug_file" : "OSServices",
          "debug_id" : "FF34E0E4655931028833E93DF21C9A4F0",
          "end_addr" : "0x7fff973cd000",
-         "filename" : "OSServices",
+         "filename" : "/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/OSServices.framework/Versions/A/OSServices",
          "version" : "0.728.4.0"
       },
       {
@@ -2537,7 +2537,7 @@
          "debug_file" : "libGPUSupport.dylib",
          "debug_id" : "9F87A5DFC79F3EB7866F0B6ABB814A090",
          "end_addr" : "0x7fff973d9000",
-         "filename" : "libGPUSupport.dylib",
+         "filename" : "/System/Library/PrivateFrameworks/GPUSupport.framework/Versions/A/Libraries/libGPUSupport.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -2546,7 +2546,7 @@
          "debug_file" : "ATS",
          "debug_id" : "BCFC24A86ACA3B908896019F38A649F60",
          "end_addr" : "0x7fff9744b000",
-         "filename" : "ATS",
+         "filename" : "/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ATS.framework/Versions/A/ATS",
          "version" : "0.236.0.0"
       },
       {
@@ -2555,7 +2555,7 @@
          "debug_file" : "libncurses.5.4.dylib",
          "debug_id" : "766F2188F5233FAAAC1F49447F09E1330",
          "end_addr" : "0x7fff9747d000",
-         "filename" : "libncurses.5.4.dylib",
+         "filename" : "/usr/lib/libncurses.5.4.dylib",
          "version" : "0.5.4.0"
       },
       {
@@ -2564,7 +2564,7 @@
          "debug_file" : "libsystem_coretls.dylib",
          "debug_id" : "21EDACF1D9B33086982160EB75E7F9650",
          "end_addr" : "0x7fff97492000",
-         "filename" : "libsystem_coretls.dylib",
+         "filename" : "/usr/lib/system/libsystem_coretls.dylib",
          "version" : "0.82.0.0"
       },
       {
@@ -2573,7 +2573,7 @@
          "debug_file" : "libSystem.B.dylib",
          "debug_id" : "E48AAE3F370E34AEAECA4CA28F2114790",
          "end_addr" : "0x7fff97494000",
-         "filename" : "libSystem.B.dylib",
+         "filename" : "/usr/lib/libSystem.B.dylib",
          "version" : "0.1225.1.1"
       },
       {
@@ -2582,7 +2582,7 @@
          "debug_file" : "libCGXType.A.dylib",
          "debug_id" : "F52AC9F6BC6738859864CDC00D9DD0AB0",
          "end_addr" : "0x7fff97497000",
-         "filename" : "libCGXType.A.dylib",
+         "filename" : "/System/Library/Frameworks/CoreGraphics.framework/Versions/A/Resources/libCGXType.A.dylib",
          "version" : "0.600.0.0"
       },
       {
@@ -2591,7 +2591,7 @@
          "debug_file" : "libCVMSPluginSupport.dylib",
          "debug_id" : "362384906F3535CAB0B84032ABA7C5370",
          "end_addr" : "0x7fff9749a000",
-         "filename" : "libCVMSPluginSupport.dylib",
+         "filename" : "/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libCVMSPluginSupport.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -2600,7 +2600,7 @@
          "debug_file" : "HelpData",
          "debug_id" : "1729564071FE3D5A887A751D110E06300",
          "end_addr" : "0x7fff977b4000",
-         "filename" : "HelpData",
+         "filename" : "/System/Library/PrivateFrameworks/HelpData.framework/Versions/A/HelpData",
          "version" : "0.1.0.0"
       },
       {
@@ -2609,7 +2609,7 @@
          "debug_file" : "libheimdal-asn1.dylib",
          "debug_id" : "6E9119731E1A3F80B955FA78CF20FBFD0",
          "end_addr" : "0x7fff97984000",
-         "filename" : "libheimdal-asn1.dylib",
+         "filename" : "/usr/lib/libheimdal-asn1.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -2618,7 +2618,7 @@
          "debug_file" : "libquarantine.dylib",
          "debug_id" : "1693C5FEEA0A312285EB7950ECC7435A0",
          "end_addr" : "0x7fff97a01000",
-         "filename" : "libquarantine.dylib",
+         "filename" : "/usr/lib/system/libquarantine.dylib",
          "version" : "0.80.0.0"
       },
       {
@@ -2627,7 +2627,7 @@
          "debug_file" : "libGLProgrammability.dylib",
          "debug_id" : "262333CB088F3375882755FFFF893E790",
          "end_addr" : "0x7fff97bf5000",
-         "filename" : "libGLProgrammability.dylib",
+         "filename" : "/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGLProgrammability.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -2636,7 +2636,7 @@
          "debug_file" : "libcopyfile.dylib",
          "debug_id" : "CA2602ABE8B73CD8A0C5D86E35FDA09F0",
          "end_addr" : "0x7fff97d4b000",
-         "filename" : "libcopyfile.dylib",
+         "filename" : "/usr/lib/system/libcopyfile.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -2645,7 +2645,7 @@
          "debug_file" : "libcurl.4.dylib",
          "debug_id" : "00662A4CB89A3A1793FF950C6DE47F990",
          "end_addr" : "0x7fff980f2000",
-         "filename" : "libcurl.4.dylib",
+         "filename" : "/usr/lib/libcurl.4.dylib",
          "version" : "0.8.0.0"
       },
       {
@@ -2654,7 +2654,7 @@
          "debug_file" : "CoreData",
          "debug_id" : "7934FDB8526E32F4BE2055388DB8CCBF0",
          "end_addr" : "0x7fff983a3000",
-         "filename" : "CoreData",
+         "filename" : "/System/Library/Frameworks/CoreData.framework/Versions/A/CoreData",
          "version" : "0.640.0.0"
       },
       {
@@ -2663,7 +2663,7 @@
          "debug_file" : "libsystem_secinit.dylib",
          "debug_id" : "932ED582E80F39DAB0FAF1BC5F1AD2F80",
          "end_addr" : "0x7fff983a5000",
-         "filename" : "libsystem_secinit.dylib",
+         "filename" : "/usr/lib/system/libsystem_secinit.dylib",
          "version" : "0.20.0.0"
       },
       {
@@ -2672,7 +2672,7 @@
          "debug_file" : "libremovefile.dylib",
          "debug_id" : "C7CFF5F2AFFB3C8DBDB4D66D50E657C00",
          "end_addr" : "0x7fff98479000",
-         "filename" : "libremovefile.dylib",
+         "filename" : "/usr/lib/system/libremovefile.dylib",
          "version" : "0.41.0.0"
       },
       {
@@ -2681,7 +2681,7 @@
          "debug_file" : "libBLAS.dylib",
          "debug_id" : "4A01C32E452C314CB878E301D4998C680",
          "end_addr" : "0x7fff9864f000",
-         "filename" : "libBLAS.dylib",
+         "filename" : "/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libBLAS.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -2690,7 +2690,7 @@
          "debug_file" : "libmetal_timestamp.dylib",
          "debug_id" : "C8548755D695380D991EA94484084B6E0",
          "end_addr" : "0x7fff98650000",
-         "filename" : "libmetal_timestamp.dylib",
+         "filename" : "/System/Library/PrivateFrameworks/GPUCompiler.framework/libmetal_timestamp.dylib",
          "version" : "0.0.0.0"
       },
       {
@@ -2699,7 +2699,7 @@
          "debug_file" : "libsystem_asl.dylib",
          "debug_id" : "97D794DA8CE53676AC5E364F6D172BDA0",
          "end_addr" : "0x7fff98675000",
-         "filename" : "libsystem_asl.dylib",
+         "filename" : "/usr/lib/system/libsystem_asl.dylib",
          "version" : "0.322.0.0"
       },
       {
@@ -2708,7 +2708,7 @@
          "debug_file" : "Carbon",
          "debug_id" : "DF95E7EB1CFC3C83B11460FFEEAE166E0",
          "end_addr" : "0x7fff986b9000",
-         "filename" : "Carbon",
+         "filename" : "/System/Library/Frameworks/Carbon.framework/Versions/A/Carbon",
          "version" : "0.157.0.0"
       },
       {
@@ -2717,7 +2717,7 @@
          "debug_file" : "libmacho.dylib",
          "debug_id" : "A9EC23EC11A03B4FA8ACB990C8267A6E0",
          "end_addr" : "0x7fff986c9000",
-         "filename" : "libmacho.dylib",
+         "filename" : "/usr/lib/system/libmacho.dylib",
          "version" : "0.875.1.0"
       },
       {
@@ -2726,7 +2726,7 @@
          "debug_file" : "libCoreStorage.dylib",
          "debug_id" : "753BB57862C636F8B36672EF7742D42B0",
          "end_addr" : "0x7fff98799000",
-         "filename" : "libCoreStorage.dylib",
+         "filename" : "/usr/lib/libCoreStorage.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -2735,7 +2735,7 @@
          "debug_file" : "Apple80211",
          "debug_id" : "7A0350BD18E038F380F2EABD1643BA2D0",
          "end_addr" : "0x7fff987b9000",
-         "filename" : "Apple80211",
+         "filename" : "/System/Library/PrivateFrameworks/Apple80211.framework/Versions/A/Apple80211",
          "version" : "0.1.0.0"
       },
       {
@@ -2744,7 +2744,7 @@
          "debug_file" : "AppleJPEG",
          "debug_id" : "6230F3A0C89D3A35A896A17B3513E8DB0",
          "end_addr" : "0x7fff9889d000",
-         "filename" : "AppleJPEG",
+         "filename" : "/System/Library/PrivateFrameworks/AppleJPEG.framework/Versions/A/AppleJPEG",
          "version" : "0.1.0.0"
       },
       {
@@ -2753,7 +2753,7 @@
          "debug_file" : "CarbonCore",
          "debug_id" : "9DE930A363C03E21965A132D97D618920",
          "end_addr" : "0x7fff98be9000",
-         "filename" : "CarbonCore",
+         "filename" : "/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/CarbonCore.framework/Versions/A/CarbonCore",
          "version" : "0.1136.0.0"
       },
       {
@@ -2762,7 +2762,7 @@
          "debug_file" : "unorm8_bgra.dylib",
          "debug_id" : "28F838EA19E5372499FFB61132555D090",
          "end_addr" : "0x7fff98cd0000",
-         "filename" : "unorm8_bgra.dylib",
+         "filename" : "/System/Library/Frameworks/OpenCL.framework/Versions/A/Libraries/ImageFormats/unorm8_bgra.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -2771,7 +2771,7 @@
          "debug_file" : "FamilyControls",
          "debug_id" : "941D3CE9826F38C9A5536F44435ADFF60",
          "end_addr" : "0x7fff98d0d000",
-         "filename" : "FamilyControls",
+         "filename" : "/System/Library/PrivateFrameworks/FamilyControls.framework/Versions/A/FamilyControls",
          "version" : "0.1.0.0"
       },
       {
@@ -2780,7 +2780,7 @@
          "debug_file" : "ApplicationServices",
          "debug_id" : "B5326BD2AF173880A8C53C990AE4A1C80",
          "end_addr" : "0x7fff98d0e000",
-         "filename" : "ApplicationServices",
+         "filename" : "/System/Library/Frameworks/ApplicationServices.framework/Versions/A/ApplicationServices",
          "version" : "0.48.0.0"
       },
       {
@@ -2789,7 +2789,7 @@
          "debug_file" : "libScreenReader.dylib",
          "debug_id" : "1DCA43B7C1BA3A17B69D6F0491F648C00",
          "end_addr" : "0x7fff98d12000",
-         "filename" : "libScreenReader.dylib",
+         "filename" : "/usr/lib/libScreenReader.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -2798,7 +2798,7 @@
          "debug_file" : "ColorSync",
          "debug_id" : "AA8AD09817923803926B6A9DAC9CCF9A0",
          "end_addr" : "0x7fff98da9000",
-         "filename" : "ColorSync",
+         "filename" : "/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ColorSync.framework/Versions/A/ColorSync",
          "version" : "0.4.7.0"
       },
       {
@@ -2807,7 +2807,7 @@
          "debug_file" : "libcsfde.dylib",
          "debug_id" : "833409800FC233DCB98B562C4842568E0",
          "end_addr" : "0x7fff98db5000",
-         "filename" : "libcsfde.dylib",
+         "filename" : "/usr/lib/libcsfde.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -2816,7 +2816,7 @@
          "debug_file" : "libauto.dylib",
          "debug_id" : "460B0167C89B37EC823C52F684B31C260",
          "end_addr" : "0x7fff98dfc000",
-         "filename" : "libauto.dylib",
+         "filename" : "/usr/lib/libauto.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -2825,7 +2825,7 @@
          "debug_file" : "SpeechRecognition",
          "debug_id" : "433F8745874A39B3A7C62EDA8C2C6B4A0",
          "end_addr" : "0x7fff9908c000",
-         "filename" : "SpeechRecognition",
+         "filename" : "/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/SpeechRecognition.framework/Versions/A/SpeechRecognition",
          "version" : "0.1.0.0"
       },
       {
@@ -2834,7 +2834,7 @@
          "debug_file" : "DiscRecording",
          "debug_id" : "9E68D2AF72053764B0518F112AFA82080",
          "end_addr" : "0x7fff99179000",
-         "filename" : "DiscRecording",
+         "filename" : "/System/Library/Frameworks/DiscRecording.framework/Versions/A/DiscRecording",
          "version" : "0.1.0.0"
       },
       {
@@ -2843,7 +2843,7 @@
          "debug_file" : "libGFXShared.dylib",
          "debug_id" : "011CCF063F8D3695A60FE67F72FF15830",
          "end_addr" : "0x7fff99182000",
-         "filename" : "libGFXShared.dylib",
+         "filename" : "/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGFXShared.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -2852,7 +2852,7 @@
          "debug_file" : "GLEngine",
          "debug_id" : "371C7E4408C731E5AD27E48281C2755E0",
          "end_addr" : "0x7fff9932e000",
-         "filename" : "GLEngine",
+         "filename" : "/System/Library/Frameworks/OpenGL.framework/Versions/A/Resources/GLEngine.bundle/GLEngine",
          "version" : "0.65535.0.0"
       },
       {
@@ -2861,7 +2861,7 @@
          "debug_file" : "libsystem_m.dylib",
          "debug_id" : "07D5037230ED3B039FA00662BF8F00980",
          "end_addr" : "0x7fff993d8000",
-         "filename" : "libsystem_m.dylib",
+         "filename" : "/usr/lib/system/libsystem_m.dylib",
          "version" : "0.3105.0.0"
       },
       {
@@ -2870,7 +2870,7 @@
          "debug_file" : "CoreFoundation",
          "debug_id" : "A8A44D66A3B23B5DB75BEC2DC968F4BD0",
          "end_addr" : "0x7fff9984d000",
-         "filename" : "CoreFoundation",
+         "filename" : "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
          "missing_symbols" : true,
          "version" : "0.1253.0.0"
       },
@@ -2880,7 +2880,7 @@
          "debug_file" : "Symbolication",
          "debug_id" : "BC1259C8C6713014A9C485BC767EA9620",
          "end_addr" : "0x7fff99932000",
-         "filename" : "Symbolication",
+         "filename" : "/System/Library/PrivateFrameworks/Symbolication.framework/Versions/A/Symbolication",
          "version" : "0.58044.0.0"
       },
       {
@@ -2889,7 +2889,7 @@
          "debug_file" : "QTKit",
          "debug_id" : "C04A69AB93F93BB4BF561CD408183CE70",
          "end_addr" : "0x7fff99a77000",
-         "filename" : "QTKit",
+         "filename" : "/System/Library/Frameworks/QTKit.framework/Versions/A/QTKit",
          "version" : "0.1.0.0"
       },
       {
@@ -2898,7 +2898,7 @@
          "debug_file" : "liblaunch.dylib",
          "debug_id" : "7EC0F29743CC3D11B46B7E72E372648A0",
          "end_addr" : "0x7fff99a7d000",
-         "filename" : "liblaunch.dylib",
+         "filename" : "/usr/lib/system/liblaunch.dylib",
          "version" : "0.755.1.19"
       },
       {
@@ -2907,7 +2907,7 @@
          "debug_file" : "Metal",
          "debug_id" : "9000AE526638309E90A5CB18C83A0A0E0",
          "end_addr" : "0x7fff99ac0000",
-         "filename" : "Metal",
+         "filename" : "/System/Library/Frameworks/Metal.framework/Versions/A/Metal",
          "version" : "0.1.0.0"
       },
       {
@@ -2916,7 +2916,7 @@
          "debug_file" : "ImageCapture",
          "debug_id" : "E53CC0B89D363636B6028AB4CEB4C3130",
          "end_addr" : "0x7fff99ac6000",
-         "filename" : "ImageCapture",
+         "filename" : "/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/ImageCapture.framework/Versions/A/ImageCapture",
          "version" : "0.5.0.0"
       },
       {
@@ -2925,7 +2925,7 @@
          "debug_file" : "Ink",
          "debug_id" : "F1B3B6C9FF8D3E6893EB8CDCEB65171A0",
          "end_addr" : "0x7fff99c90000",
-         "filename" : "Ink",
+         "filename" : "/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/Ink.framework/Versions/A/Ink",
          "version" : "0.214.0.0"
       },
       {
@@ -2934,7 +2934,7 @@
          "debug_file" : "CoreGraphics",
          "debug_id" : "58D776C41455305AA3EC645D418541CC0",
          "end_addr" : "0x7fff9aef5000",
-         "filename" : "CoreGraphics",
+         "filename" : "/System/Library/Frameworks/CoreGraphics.framework/Versions/A/CoreGraphics",
          "missing_symbols" : true,
          "version" : "0.600.0.0"
       },
@@ -2944,7 +2944,7 @@
          "debug_file" : "libsasl2.2.dylib",
          "debug_id" : "D48CE2C5D0C539BDA7DDC999E81CF8850",
          "end_addr" : "0x7fff9af08000",
-         "filename" : "libsasl2.2.dylib",
+         "filename" : "/usr/lib/libsasl2.2.dylib",
          "version" : "0.3.15.0"
       },
       {
@@ -2953,7 +2953,7 @@
          "debug_file" : "CFOpenDirectory",
          "debug_id" : "64C5260319473350819E3A45F90360360",
          "end_addr" : "0x7fff9af22000",
-         "filename" : "CFOpenDirectory",
+         "filename" : "/System/Library/Frameworks/OpenDirectory.framework/Versions/A/Frameworks/CFOpenDirectory.framework/Versions/A/CFOpenDirectory",
          "version" : "0.1.0.0"
       },
       {
@@ -2962,7 +2962,7 @@
          "debug_file" : "libsystem_blocks.dylib",
          "debug_id" : "1B4F1F10823E378181626884D14DF0D60",
          "end_addr" : "0x7fff9af4b000",
-         "filename" : "libsystem_blocks.dylib",
+         "filename" : "/usr/lib/system/libsystem_blocks.dylib",
          "version" : "0.65.0.0"
       },
       {
@@ -2971,7 +2971,7 @@
          "debug_file" : "libtidy.A.dylib",
          "debug_id" : "917B771650603755A1BA435DAC06E7780",
          "end_addr" : "0x7fff9bc86000",
-         "filename" : "libtidy.A.dylib",
+         "filename" : "/usr/lib/libtidy.A.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -2980,7 +2980,7 @@
          "debug_file" : "libvMisc.dylib",
          "debug_id" : "6FA62C6F47223A64811675A2B902989B0",
          "end_addr" : "0x7fff9bda3000",
-         "filename" : "libvMisc.dylib",
+         "filename" : "/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libvMisc.dylib",
          "version" : "0.563.3.0"
       },
       {
@@ -2989,7 +2989,7 @@
          "debug_file" : "LanguageModeling",
          "debug_id" : "C405E993F0DF39E49B74FE310E63DD8E0",
          "end_addr" : "0x7fff9bf93000",
-         "filename" : "LanguageModeling",
+         "filename" : "/System/Library/PrivateFrameworks/LanguageModeling.framework/Versions/A/LanguageModeling",
          "version" : "0.1.0.0"
       },
       {
@@ -2998,7 +2998,7 @@
          "debug_file" : "FSEvents",
          "debug_id" : "79DF16A7E16938A5BF5E2D45F86DE1540",
          "end_addr" : "0x7fff9c008000",
-         "filename" : "FSEvents",
+         "filename" : "/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/FSEvents.framework/Versions/A/FSEvents",
          "version" : "0.1222.1.1"
       },
       {
@@ -3007,7 +3007,7 @@
          "debug_file" : "RemoteViewServices",
          "debug_id" : "8BD12AE2BE9137CF955B62E08551FF830",
          "end_addr" : "0x7fff9c041000",
-         "filename" : "RemoteViewServices",
+         "filename" : "/System/Library/PrivateFrameworks/RemoteViewServices.framework/Versions/A/RemoteViewServices",
          "version" : "0.1.0.0"
       },
       {
@@ -3016,7 +3016,7 @@
          "debug_file" : "libcorecrypto.dylib",
          "debug_id" : "4E1B969F84493B21988051AD58E25AA60",
          "end_addr" : "0x7fff9c0b9000",
-         "filename" : "libcorecrypto.dylib",
+         "filename" : "/usr/lib/system/libcorecrypto.dylib",
          "version" : "0.334.0.0"
       },
       {
@@ -3025,7 +3025,7 @@
          "debug_file" : "SecurityHI",
          "debug_id" : "A46A58CBE0AA3EBDAABFA3B219A18ACF0",
          "end_addr" : "0x7fff9c0bc000",
-         "filename" : "SecurityHI",
+         "filename" : "/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/SecurityHI.framework/Versions/A/SecurityHI",
          "version" : "0.55006.0.0"
       },
       {
@@ -3034,7 +3034,7 @@
          "debug_file" : "libcache.dylib",
          "debug_id" : "4948E2C8867F3E9DAAE72F30F0B345C60",
          "end_addr" : "0x7fff9c0c1000",
-         "filename" : "libcache.dylib",
+         "filename" : "/usr/lib/system/libcache.dylib",
          "version" : "0.75.0.0"
       },
       {
@@ -3043,7 +3043,7 @@
          "debug_file" : "libarchive.2.dylib",
          "debug_id" : "731529D211783742AFE06CA8568FBB190",
          "end_addr" : "0x7fff9c0ed000",
-         "filename" : "libarchive.2.dylib",
+         "filename" : "/usr/lib/libarchive.2.dylib",
          "version" : "0.9.2.0"
       },
       {
@@ -3052,7 +3052,7 @@
          "debug_file" : "libunwind.dylib",
          "debug_id" : "FDA18078A7753BAFA5A68A7B75D6AA990",
          "end_addr" : "0x7fff9c0f3000",
-         "filename" : "libunwind.dylib",
+         "filename" : "/usr/lib/system/libunwind.dylib",
          "version" : "0.35.3.0"
       },
       {
@@ -3061,7 +3061,7 @@
          "debug_file" : "libdispatch.dylib",
          "debug_id" : "6B38497E944834339D6B6223F2A994310",
          "end_addr" : "0x7fff9c121000",
-         "filename" : "libdispatch.dylib",
+         "filename" : "/usr/lib/system/libdispatch.dylib",
          "missing_symbols" : true,
          "version" : "0.500.1.5"
       },
@@ -3071,7 +3071,7 @@
          "debug_file" : "SharedFileList",
          "debug_id" : "072123062DBC303BB0424C02E70F073C0",
          "end_addr" : "0x7fff9c167000",
-         "filename" : "SharedFileList",
+         "filename" : "/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/SharedFileList.framework/Versions/A/SharedFileList",
          "version" : "0.24.2.0"
       },
       {
@@ -3080,7 +3080,7 @@
          "debug_file" : "CoreBluetooth",
          "debug_id" : "A63B8FB0F8B3368DB482733FF03736100",
          "end_addr" : "0x7fff9c1f0000",
-         "filename" : "CoreBluetooth",
+         "filename" : "/System/Library/Frameworks/CoreBluetooth.framework/Versions/A/CoreBluetooth",
          "version" : "0.1.0.0"
       },
       {
@@ -3089,7 +3089,7 @@
          "debug_file" : "libAVFAudio.dylib",
          "debug_id" : "1E0384CEFF8D36EE8A2850CD673D31090",
          "end_addr" : "0x7fff9c254000",
-         "filename" : "libAVFAudio.dylib",
+         "filename" : "/System/Library/Frameworks/AVFoundation.framework/Versions/A/Resources/libAVFAudio.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -3098,7 +3098,7 @@
          "debug_file" : "Accelerate",
          "debug_id" : "C1EABB1D444B3AA5AC39B854E049CB710",
          "end_addr" : "0x7fff9c255000",
-         "filename" : "Accelerate",
+         "filename" : "/System/Library/Frameworks/Accelerate.framework/Versions/A/Accelerate",
          "version" : "0.4.0.0"
       },
       {
@@ -3107,7 +3107,7 @@
          "debug_file" : "MediaToolbox",
          "debug_id" : "BA54842F70173E0798A594E59C4629290",
          "end_addr" : "0x7fff9c7ac000",
-         "filename" : "MediaToolbox",
+         "filename" : "/System/Library/Frameworks/MediaToolbox.framework/Versions/A/MediaToolbox",
          "version" : "0.1.0.0"
       },
       {
@@ -3116,7 +3116,7 @@
          "debug_file" : "libbz2.1.0.dylib",
          "debug_id" : "99C5121D81473B518D7966245C8633380",
          "end_addr" : "0x7fff9c7ed000",
-         "filename" : "libbz2.1.0.dylib",
+         "filename" : "/usr/lib/libbz2.1.0.dylib",
          "version" : "0.1.0.5"
       },
       {
@@ -3125,7 +3125,7 @@
          "debug_file" : "libFosl_dynamic.dylib",
          "debug_id" : "7B19F360858C3C499E6DA95CF3BE21860",
          "end_addr" : "0x7fff9c9f9000",
-         "filename" : "libFosl_dynamic.dylib",
+         "filename" : "/usr/lib/libFosl_dynamic.dylib",
          "version" : "0.0.0.0"
       },
       {
@@ -3134,7 +3134,7 @@
          "debug_file" : "DictionaryServices",
          "debug_id" : "94678AC841FF3D2EA35ED83AD18D7A780",
          "end_addr" : "0x7fff9ca28000",
-         "filename" : "DictionaryServices",
+         "filename" : "/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/DictionaryServices.framework/Versions/A/DictionaryServices",
          "version" : "0.1.0.0"
       },
       {
@@ -3143,7 +3143,7 @@
          "debug_file" : "libcrypto.0.9.8.dylib",
          "debug_id" : "7C4E5457B66C39CABC0E15CA6C051FC00",
          "end_addr" : "0x7fff9ccf8000",
-         "filename" : "libcrypto.0.9.8.dylib",
+         "filename" : "/usr/lib/libcrypto.0.9.8.dylib",
          "version" : "0.0.9.8"
       },
       {
@@ -3152,7 +3152,7 @@
          "debug_file" : "libCGInterfaces.dylib",
          "debug_id" : "3D568317AAF73571A22ED23286BF3A690",
          "end_addr" : "0x7fff9ceb3000",
-         "filename" : "libCGInterfaces.dylib",
+         "filename" : "/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vImage.framework/Versions/A/Libraries/libCGInterfaces.dylib",
          "version" : "0.317.2.0"
       },
       {
@@ -3161,7 +3161,7 @@
          "debug_file" : "AudioToolbox",
          "debug_id" : "7380C7DA7CE834DFBB3DDAFE9406674F0",
          "end_addr" : "0x7fff9d726000",
-         "filename" : "AudioToolbox",
+         "filename" : "/System/Library/Frameworks/AudioToolbox.framework/Versions/A/AudioToolbox",
          "version" : "0.492.0.0"
       },
       {
@@ -3170,7 +3170,7 @@
          "debug_file" : "libsystem_pthread.dylib",
          "debug_id" : "1373D0F1C6CA364EA6BA8BDBD0D346700",
          "end_addr" : "0x7fff9d730000",
-         "filename" : "libsystem_pthread.dylib",
+         "filename" : "/usr/lib/system/libsystem_pthread.dylib",
          "missing_symbols" : true,
          "version" : "0.137.1.1"
       },
@@ -3180,7 +3180,7 @@
          "debug_file" : "CoreText",
          "debug_id" : "2A5DCA97300D36FB9E943041CFF6D6150",
          "end_addr" : "0x7fff9d864000",
-         "filename" : "CoreText",
+         "filename" : "/System/Library/Frameworks/CoreText.framework/Versions/A/CoreText",
          "version" : "0.1.0.0"
       },
       {
@@ -3189,7 +3189,7 @@
          "debug_file" : "libPng.dylib",
          "debug_id" : "62A7834219B93CEA98325DB7F24B8CF90",
          "end_addr" : "0x7fff9d9a2000",
-         "filename" : "libPng.dylib",
+         "filename" : "/System/Library/Frameworks/ImageIO.framework/Versions/A/Resources/libPng.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -3198,7 +3198,7 @@
          "debug_file" : "ProtectedCloudStorage",
          "debug_id" : "EA83603A7C4D37F1A416064CD1B9D34B0",
          "end_addr" : "0x7fff9d9ca000",
-         "filename" : "ProtectedCloudStorage",
+         "filename" : "/System/Library/PrivateFrameworks/ProtectedCloudStorage.framework/Versions/A/ProtectedCloudStorage",
          "version" : "0.1.0.0"
       },
       {
@@ -3207,7 +3207,7 @@
          "debug_file" : "libmarisa.dylib",
          "debug_id" : "4D3AE55BCE77364FB8DEC95CAA48B2910",
          "end_addr" : "0x7fff9d9e2000",
-         "filename" : "libmarisa.dylib",
+         "filename" : "/usr/lib/libmarisa.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -3216,7 +3216,7 @@
          "debug_file" : "OpenScripting",
          "debug_id" : "6AA25650890033C6AD49D0543DB27C160",
          "end_addr" : "0x7fff9d9fc000",
-         "filename" : "OpenScripting",
+         "filename" : "/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/OpenScripting.framework/Versions/A/OpenScripting",
          "version" : "0.1.0.0"
       },
       {
@@ -3225,7 +3225,7 @@
          "debug_file" : "libc++abi.dylib",
          "debug_id" : "F5027B461801344DBD512E6D188C89000",
          "end_addr" : "0x7fff9da40000",
-         "filename" : "libc++abi.dylib",
+         "filename" : "/usr/lib/libc++abi.dylib",
          "version" : "0.125.0.0"
       },
       {
@@ -3234,7 +3234,7 @@
          "debug_file" : "libbsm.0.dylib",
          "debug_id" : "F1E419355C5D3704AE9DAEA1F2BCF8B10",
          "end_addr" : "0x7fff9e15b000",
-         "filename" : "libbsm.0.dylib",
+         "filename" : "/usr/lib/libbsm.0.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -3243,7 +3243,7 @@
          "debug_file" : "libCoreFSCache.dylib",
          "debug_id" : "9BFF447FD5713EE6860E29886F1F913F0",
          "end_addr" : "0x7fff9e15f000",
-         "filename" : "libCoreFSCache.dylib",
+         "filename" : "/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libCoreFSCache.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -3252,7 +3252,7 @@
          "debug_file" : "IOBluetooth",
          "debug_id" : "DA1727B103EE32BE922E43F06C498AFF0",
          "end_addr" : "0x7fff9e228000",
-         "filename" : "IOBluetooth",
+         "filename" : "/System/Library/Frameworks/IOBluetooth.framework/Versions/A/IOBluetooth",
          "version" : "0.1.0.0"
       },
       {
@@ -3261,7 +3261,7 @@
          "debug_file" : "unorm8_rgba.dylib",
          "debug_id" : "49FF2837D97B3CFFB139E57D40700F320",
          "end_addr" : "0x7fff9e309000",
-         "filename" : "unorm8_rgba.dylib",
+         "filename" : "/System/Library/Frameworks/OpenCL.framework/Versions/A/Libraries/ImageFormats/unorm8_rgba.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -3270,7 +3270,7 @@
          "debug_file" : "CommonPanels",
          "debug_id" : "1D76DDD3D45A36798B725EECE6C1ACAC0",
          "end_addr" : "0x7fff9e385000",
-         "filename" : "CommonPanels",
+         "filename" : "/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/CommonPanels.framework/Versions/A/CommonPanels",
          "version" : "0.96.0.0"
       },
       {
@@ -3279,7 +3279,7 @@
          "debug_file" : "libsandbox.1.dylib",
          "debug_id" : "46104D7B2B763C3CA5519DED100A2D8B0",
          "end_addr" : "0x7fff9e3ee000",
-         "filename" : "libsandbox.1.dylib",
+         "filename" : "/usr/lib/libsandbox.1.dylib",
          "version" : "0.1.0.0"
       },
       {
@@ -3288,7 +3288,7 @@
          "debug_file" : "MediaAccessibility",
          "debug_id" : "309526B01A183C2DB425A2BB61EED0050",
          "end_addr" : "0x7fff9e456000",
-         "filename" : "MediaAccessibility",
+         "filename" : "/System/Library/Frameworks/MediaAccessibility.framework/Versions/A/MediaAccessibility",
          "version" : "0.62.0.0"
       },
       {
@@ -3297,7 +3297,7 @@
          "debug_file" : "CommonAuth",
          "debug_id" : "6EF43A6EC07136A38B94694AC6BEF6D30",
          "end_addr" : "0x7fff9e470000",
-         "filename" : "CommonAuth",
+         "filename" : "/System/Library/PrivateFrameworks/CommonAuth.framework/Versions/A/CommonAuth",
          "version" : "0.1.0.0"
       },
       {
@@ -3306,7 +3306,7 @@
          "debug_file" : "libsystem_kernel.dylib",
          "debug_id" : "7DD242A1E2BF39D18787B174046E4F150",
          "end_addr" : "0x7fff9e90b000",
-         "filename" : "libsystem_kernel.dylib",
+         "filename" : "/usr/lib/system/libsystem_kernel.dylib",
          "missing_symbols" : true,
          "version" : "0.3247.1.106"
       }

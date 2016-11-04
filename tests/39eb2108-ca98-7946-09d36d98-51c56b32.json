@@ -138,7 +138,7 @@
          "debug_file" : "Natron-bin",
          "debug_id" : "A5FA4783FE1F87242D54D52F7E39DE730",
          "end_addr" : "0x1628000",
-         "filename" : "Natron-bin",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/bin/Natron-bin",
          "loaded_symbols" : true,
          "version" : ""
       },
@@ -148,7 +148,7 @@
          "debug_file" : ".glzMnLef (deleted)",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x401e0000",
-         "filename" : ".glzMnLef (deleted)",
+         "filename" : "/tmp/.glzMnLef (deleted)",
          "version" : ""
       },
       {
@@ -157,7 +157,7 @@
          "debug_file" : ".glpmlBuM (deleted)",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x40f54000",
-         "filename" : ".glpmlBuM (deleted)",
+         "filename" : "/tmp/.glpmlBuM (deleted)",
          "version" : ""
       },
       {
@@ -166,7 +166,7 @@
          "debug_file" : ".glUkZOAI (deleted)",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x410ff000",
-         "filename" : ".glUkZOAI (deleted)",
+         "filename" : "/tmp/.glUkZOAI (deleted)",
          "version" : ""
       },
       {
@@ -175,7 +175,7 @@
          "debug_file" : ".glOe6ER0 (deleted)",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x41385000",
-         "filename" : ".glOe6ER0 (deleted)",
+         "filename" : "/tmp/.glOe6ER0 (deleted)",
          "version" : ""
       },
       {
@@ -184,7 +184,7 @@
          "debug_file" : ".gle1mVBt (deleted)",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x414cd000",
-         "filename" : ".gle1mVBt (deleted)",
+         "filename" : "/tmp/.gle1mVBt (deleted)",
          "version" : ""
       },
       {
@@ -193,7 +193,7 @@
          "debug_file" : ".glVL5wYj (deleted)",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x41668000",
-         "filename" : ".glVL5wYj (deleted)",
+         "filename" : "/tmp/.glVL5wYj (deleted)",
          "version" : ""
       },
       {
@@ -202,7 +202,7 @@
          "debug_file" : ".glnkXOYJ (deleted)",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x4174f000",
-         "filename" : ".glnkXOYJ (deleted)",
+         "filename" : "/tmp/.glnkXOYJ (deleted)",
          "version" : ""
       },
       {
@@ -211,7 +211,7 @@
          "debug_file" : ".gl46Gxey (deleted)",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x41a3a000",
-         "filename" : ".gl46Gxey (deleted)",
+         "filename" : "/tmp/.gl46Gxey (deleted)",
          "version" : ""
       },
       {
@@ -220,7 +220,7 @@
          "debug_file" : ".gl9JcOxr (deleted)",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x41c60000",
-         "filename" : ".gl9JcOxr (deleted)",
+         "filename" : "/tmp/.gl9JcOxr (deleted)",
          "version" : ""
       },
       {
@@ -229,7 +229,7 @@
          "debug_file" : "SYSV00000000 (deleted)",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f360054a000",
-         "filename" : "SYSV00000000 (deleted)",
+         "filename" : "/SYSV00000000 (deleted)",
          "missing_symbols" : true,
          "version" : ""
       },
@@ -239,7 +239,7 @@
          "debug_file" : "AbyssinicaSIL-R.ttf",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f36005d8000",
-         "filename" : "AbyssinicaSIL-R.ttf",
+         "filename" : "/usr/share/fonts/sil-abyssinica/AbyssinicaSIL-R.ttf",
          "version" : ""
       },
       {
@@ -248,7 +248,7 @@
          "debug_file" : "Lato-Medium.ttf",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f360066e000",
-         "filename" : "Lato-Medium.ttf",
+         "filename" : "/usr/share/fonts/lato/Lato-Medium.ttf",
          "version" : ""
       },
       {
@@ -257,7 +257,7 @@
          "debug_file" : "libqsvgicon.so",
          "debug_id" : "011CFFBAC09AF70F19C84BA3E2CCA3760",
          "end_addr" : "0x7f3600677000",
-         "filename" : "libqsvgicon.so",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/bin/iconengines/libqsvgicon.so",
          "version" : ""
       },
       {
@@ -266,7 +266,7 @@
          "debug_file" : "libopenjpeg.so.1.5.1",
          "debug_id" : "F92F8C002E4F1D56892D5821BF0BB8310",
          "end_addr" : "0x7f3600b9a000",
-         "filename" : "libopenjpeg.so.1.5.1",
+         "filename" : "/usr/lib64/libopenjpeg.so.1.5.1",
          "version" : ""
       },
       {
@@ -275,7 +275,7 @@
          "debug_file" : "libgbm.so.1.0.0",
          "debug_id" : "3AAFA8CF2B116BDCE0C4B2661632FC290",
          "end_addr" : "0x7f3600da6000",
-         "filename" : "libgbm.so.1.0.0",
+         "filename" : "/usr/lib64/libgbm.so.1.0.0",
          "version" : ""
       },
       {
@@ -284,7 +284,7 @@
          "debug_file" : "libpoppler.so.46.0.0",
          "debug_id" : "7B20CC698CCF38269F2CBC3264D9A0FD0",
          "end_addr" : "0x7f36011ee000",
-         "filename" : "libpoppler.so.46.0.0",
+         "filename" : "/usr/lib64/libpoppler.so.46.0.0",
          "version" : ""
       },
       {
@@ -293,7 +293,7 @@
          "debug_file" : "libpoppler-glib.so.18.6.0",
          "debug_id" : "76F10C0302080DE07B215864CEE62FB70",
          "end_addr" : "0x7f360148b000",
-         "filename" : "libpoppler-glib.so.18.6.0",
+         "filename" : "/usr/lib64/libpoppler-glib.so.18.6.0",
          "version" : ""
       },
       {
@@ -302,7 +302,7 @@
          "debug_file" : "libzip.so.2.1.0",
          "debug_id" : "29CC155A1B90A8EA480F229537A57D490",
          "end_addr" : "0x7f360169d000",
-         "filename" : "libzip.so.2.1.0",
+         "filename" : "/usr/lib64/libzip.so.2.1.0",
          "version" : ""
       },
       {
@@ -311,7 +311,7 @@
          "debug_file" : "libicudata.so.50.1.2",
          "debug_id" : "17318104FBA9F230DB02B8C546C4FC380",
          "end_addr" : "0x7f3602c72000",
-         "filename" : "libicudata.so.50.1.2",
+         "filename" : "/usr/lib64/libicudata.so.50.1.2",
          "version" : ""
       },
       {
@@ -320,7 +320,7 @@
          "debug_file" : "libicuuc.so.50.1.2",
          "debug_id" : "B146EAE9EE7EE12A5094650C00B891C00",
          "end_addr" : "0x7f3602fd7000",
-         "filename" : "libicuuc.so.50.1.2",
+         "filename" : "/usr/lib64/libicuuc.so.50.1.2",
          "version" : ""
       },
       {
@@ -329,7 +329,7 @@
          "debug_file" : "libicui18n.so.50.1.2",
          "debug_id" : "1497AA7C3AB38BA116FAFDC88FA431850",
          "end_addr" : "0x7f36033dc000",
-         "filename" : "libicui18n.so.50.1.2",
+         "filename" : "/usr/lib64/libicui18n.so.50.1.2",
          "version" : ""
       },
       {
@@ -338,7 +338,7 @@
          "debug_file" : "libxcb-shape.so.0.0.0",
          "debug_id" : "CC59ADB4E7ED4042116BD6501D7E5E140",
          "end_addr" : "0x7f36035ee000",
-         "filename" : "libxcb-shape.so.0.0.0",
+         "filename" : "/usr/lib64/libxcb-shape.so.0.0.0",
          "version" : ""
       },
       {
@@ -347,7 +347,7 @@
          "debug_file" : "libxcb-sync.so.1.0.0",
          "debug_id" : "EC8E7925E968243E348434CE573971E20",
          "end_addr" : "0x7f36037f4000",
-         "filename" : "libxcb-sync.so.1.0.0",
+         "filename" : "/usr/lib64/libxcb-sync.so.1.0.0",
          "version" : ""
       },
       {
@@ -356,7 +356,7 @@
          "debug_file" : "libxcb-xfixes.so.0.0.0",
          "debug_id" : "1823378E1608C55E7A80F8CD067FE2AA0",
          "end_addr" : "0x7f36039fc000",
-         "filename" : "libxcb-xfixes.so.0.0.0",
+         "filename" : "/usr/lib64/libxcb-xfixes.so.0.0.0",
          "version" : ""
       },
       {
@@ -365,7 +365,7 @@
          "debug_file" : "libxcb-randr.so.0.1.0",
          "debug_id" : "5DEAA7DC59EC902E18605DFE64D609E90",
          "end_addr" : "0x7f3603c0a000",
-         "filename" : "libxcb-randr.so.0.1.0",
+         "filename" : "/usr/lib64/libxcb-randr.so.0.1.0",
          "version" : ""
       },
       {
@@ -374,7 +374,7 @@
          "debug_file" : "libXxf86vm.so.1.0.0",
          "debug_id" : "08CA4534774C68108D5EA6E030134A400",
          "end_addr" : "0x7f3603e11000",
-         "filename" : "libXxf86vm.so.1.0.0",
+         "filename" : "/usr/lib64/libXxf86vm.so.1.0.0",
          "version" : ""
       },
       {
@@ -383,7 +383,7 @@
          "debug_file" : "libxshmfence.so.1.0.0",
          "debug_id" : "39DD2F9A456D8F5C6018E3F8CE9051F60",
          "end_addr" : "0x7f3604013000",
-         "filename" : "libxshmfence.so.1.0.0",
+         "filename" : "/usr/lib64/libxshmfence.so.1.0.0",
          "version" : ""
       },
       {
@@ -392,7 +392,7 @@
          "debug_file" : "libxcb-present.so.0.0.0",
          "debug_id" : "59E1630223B2CC1E4F65EAC43B8D77D90",
          "end_addr" : "0x7f3604217000",
-         "filename" : "libxcb-present.so.0.0.0",
+         "filename" : "/usr/lib64/libxcb-present.so.0.0.0",
          "version" : ""
       },
       {
@@ -401,7 +401,7 @@
          "debug_file" : "libxcb-dri3.so.0.0.0",
          "debug_id" : "F8CB25ADC2B0969ED5EA4E4FC2037DBC0",
          "end_addr" : "0x7f360441a000",
-         "filename" : "libxcb-dri3.so.0.0.0",
+         "filename" : "/usr/lib64/libxcb-dri3.so.0.0.0",
          "version" : ""
       },
       {
@@ -410,7 +410,7 @@
          "debug_file" : "libxcb-dri2.so.0.0.0",
          "debug_id" : "32477D7A104D1A62080606BD39D774F70",
          "end_addr" : "0x7f360461f000",
-         "filename" : "libxcb-dri2.so.0.0.0",
+         "filename" : "/usr/lib64/libxcb-dri2.so.0.0.0",
          "version" : ""
       },
       {
@@ -419,7 +419,7 @@
          "debug_file" : "libxcb-glx.so.0.0.0",
          "debug_id" : "3F3EBC9AF92366BFE822F983CDBF2DF20",
          "end_addr" : "0x7f3604837000",
-         "filename" : "libxcb-glx.so.0.0.0",
+         "filename" : "/usr/lib64/libxcb-glx.so.0.0.0",
          "version" : ""
       },
       {
@@ -428,7 +428,7 @@
          "debug_file" : "libX11-xcb.so.1.0.0",
          "debug_id" : "E4006FAF71C6BF5D821A8DC3421BF4300",
          "end_addr" : "0x7f3604a3b000",
-         "filename" : "libX11-xcb.so.1.0.0",
+         "filename" : "/usr/lib64/libX11-xcb.so.1.0.0",
          "version" : ""
       },
       {
@@ -437,7 +437,7 @@
          "debug_file" : "libXdamage.so.1.1.0",
          "debug_id" : "31DA50B1D5EC4E09AFCBDE76F6D9BA5F0",
          "end_addr" : "0x7f3604c3e000",
-         "filename" : "libXdamage.so.1.1.0",
+         "filename" : "/usr/lib64/libXdamage.so.1.1.0",
          "version" : ""
       },
       {
@@ -446,7 +446,7 @@
          "debug_file" : "libdrm.so.2.4.0",
          "debug_id" : "B783A13E11060C1153E5217B2B1D75C40",
          "end_addr" : "0x7f3604e4b000",
-         "filename" : "libdrm.so.2.4.0",
+         "filename" : "/usr/lib64/libdrm.so.2.4.0",
          "version" : ""
       },
       {
@@ -455,7 +455,7 @@
          "debug_file" : "libEGL.so.1.0.0",
          "debug_id" : "280795EC6190F57DDD8F2047E1747AD10",
          "end_addr" : "0x7f360506c000",
-         "filename" : "libEGL.so.1.0.0",
+         "filename" : "/usr/lib64/libEGL.so.1.0.0",
          "version" : ""
       },
       {
@@ -464,7 +464,7 @@
          "debug_file" : "Extra.ofx",
          "debug_id" : "8E34485E55F15296448EAF752582A88A0",
          "end_addr" : "0x7f3605645000",
-         "filename" : "Extra.ofx",
+         "filename" : "/usr/OFX/Plugins/Extra.ofx.bundle/Contents/Linux-x86-64/Extra.ofx",
          "version" : ""
       },
       {
@@ -473,7 +473,7 @@
          "debug_file" : "fooplug.ofx",
          "debug_id" : "036185D16FF0A82C6ADC1784236CF05F0",
          "end_addr" : "0x7f36058af000",
-         "filename" : "fooplug.ofx",
+         "filename" : "/usr/OFX/Plugins/fooplug.ofx.bundle/Contents/Linux-x86-64/fooplug.ofx",
          "version" : ""
       },
       {
@@ -482,7 +482,7 @@
          "debug_file" : "libfreebl3.so",
          "debug_id" : "DF4C2B8DD5E3C7A8AFDA3EE924B855860",
          "end_addr" : "0x7f3605ab4000",
-         "filename" : "libfreebl3.so",
+         "filename" : "/usr/lib64/libfreebl3.so",
          "version" : ""
       },
       {
@@ -491,7 +491,7 @@
          "debug_file" : "libpcre.so.1.2.0",
          "debug_id" : "7B39FA301901CA7EBC647CBD8E75FDD50",
          "end_addr" : "0x7f3605d15000",
-         "filename" : "libpcre.so.1.2.0",
+         "filename" : "/usr/lib64/libpcre.so.1.2.0",
          "version" : ""
       },
       {
@@ -500,7 +500,7 @@
          "debug_file" : "libcrypt-2.17.so",
          "debug_id" : "B15F85B9138A3858E1FBF0D06E79EBCE0",
          "end_addr" : "0x7f3605f1e000",
-         "filename" : "libcrypt-2.17.so",
+         "filename" : "/usr/lib64/libcrypt-2.17.so",
          "version" : ""
       },
       {
@@ -509,7 +509,7 @@
          "debug_file" : "libselinux.so.1",
          "debug_id" : "186BFF82E4E12528CC2D060F969479AD0",
          "end_addr" : "0x7f360616e000",
-         "filename" : "libselinux.so.1",
+         "filename" : "/usr/lib64/libselinux.so.1",
          "version" : ""
       },
       {
@@ -518,7 +518,7 @@
          "debug_file" : "libsasl2.so.3.0.0",
          "debug_id" : "95B4937F7E43BFEAFC7FB12E87902C520",
          "end_addr" : "0x7f360638e000",
-         "filename" : "libsasl2.so.3.0.0",
+         "filename" : "/usr/lib64/libsasl2.so.3.0.0",
          "version" : ""
       },
       {
@@ -527,7 +527,7 @@
          "debug_file" : "libkeyutils.so.1.5",
          "debug_id" : "ACD5012EC1080D28013AAB96B292AC580",
          "end_addr" : "0x7f3606592000",
-         "filename" : "libkeyutils.so.1.5",
+         "filename" : "/usr/lib64/libkeyutils.so.1.5",
          "version" : ""
       },
       {
@@ -536,7 +536,7 @@
          "debug_file" : "libkrb5support.so.0.1",
          "debug_id" : "D3C3F6AE15C5332F9942041519A106FC0",
          "end_addr" : "0x7f36067a0000",
-         "filename" : "libkrb5support.so.0.1",
+         "filename" : "/usr/lib64/libkrb5support.so.0.1",
          "version" : ""
       },
       {
@@ -545,7 +545,7 @@
          "debug_file" : "libcrypto.so.1.0.1e",
          "debug_id" : "C67D996ACFD270D62B987BF1B4926ABB0",
          "end_addr" : "0x7f3606b60000",
-         "filename" : "libcrypto.so.1.0.1e",
+         "filename" : "/usr/lib64/libcrypto.so.1.0.1e",
          "version" : ""
       },
       {
@@ -554,7 +554,7 @@
          "debug_file" : "libssl.so.1.0.1e",
          "debug_id" : "A0018D47928B253A1D755BB421F3EBAF0",
          "end_addr" : "0x7f3606ded000",
-         "filename" : "libssl.so.1.0.1e",
+         "filename" : "/usr/lib64/libssl.so.1.0.1e",
          "version" : ""
       },
       {
@@ -563,7 +563,7 @@
          "debug_file" : "libldap-2.4.so.2.10.3",
          "debug_id" : "75E328448DBAAA579A2253EDA96F1E390",
          "end_addr" : "0x7f3607047000",
-         "filename" : "libldap-2.4.so.2.10.3",
+         "filename" : "/usr/lib64/libldap-2.4.so.2.10.3",
          "version" : ""
       },
       {
@@ -572,7 +572,7 @@
          "debug_file" : "liblber-2.4.so.2.10.3",
          "debug_id" : "B36B3DAD455E7382E772CED5E00EEE3E0",
          "end_addr" : "0x7f3607258000",
-         "filename" : "liblber-2.4.so.2.10.3",
+         "filename" : "/usr/lib64/liblber-2.4.so.2.10.3",
          "version" : ""
       },
       {
@@ -581,7 +581,7 @@
          "debug_file" : "libcom_err.so.2.1",
          "debug_id" : "7066113A889F0C7449E060731832E3FA0",
          "end_addr" : "0x7f360745c000",
-         "filename" : "libcom_err.so.2.1",
+         "filename" : "/usr/lib64/libcom_err.so.2.1",
          "version" : ""
       },
       {
@@ -590,7 +590,7 @@
          "debug_file" : "libk5crypto.so.3.1",
          "debug_id" : "48A897AA7CDD579EB06EC913E10D420A0",
          "end_addr" : "0x7f360768c000",
-         "filename" : "libk5crypto.so.3.1",
+         "filename" : "/usr/lib64/libk5crypto.so.3.1",
          "version" : ""
       },
       {
@@ -599,7 +599,7 @@
          "debug_file" : "libkrb5.so.3.3",
          "debug_id" : "A036616D95E70B4205854DEF13A10C220",
          "end_addr" : "0x7f3607964000",
-         "filename" : "libkrb5.so.3.3",
+         "filename" : "/usr/lib64/libkrb5.so.3.3",
          "version" : ""
       },
       {
@@ -608,7 +608,7 @@
          "debug_file" : "libgssapi_krb5.so.2.2",
          "debug_id" : "0F236AD44AFF807B8B3CFC213D31FCAC0",
          "end_addr" : "0x7f3607bbd000",
-         "filename" : "libgssapi_krb5.so.2.2",
+         "filename" : "/usr/lib64/libgssapi_krb5.so.2.2",
          "version" : ""
       },
       {
@@ -617,7 +617,7 @@
          "debug_file" : "libnspr4.so",
          "debug_id" : "4F9D540148680C2194911CC5D8C8D7CB0",
          "end_addr" : "0x7f3607df9000",
-         "filename" : "libnspr4.so",
+         "filename" : "/usr/lib64/libnspr4.so",
          "version" : ""
       },
       {
@@ -626,7 +626,7 @@
          "debug_file" : "libplc4.so",
          "debug_id" : "EFFC0A8417AF51121834E13A1333112C0",
          "end_addr" : "0x7f3608002000",
-         "filename" : "libplc4.so",
+         "filename" : "/usr/lib64/libplc4.so",
          "version" : ""
       },
       {
@@ -635,7 +635,7 @@
          "debug_file" : "libplds4.so",
          "debug_id" : "E58A6FE313104B9AD3F17D795DB3FCD30",
          "end_addr" : "0x7f3608206000",
-         "filename" : "libplds4.so",
+         "filename" : "/usr/lib64/libplds4.so",
          "version" : ""
       },
       {
@@ -644,7 +644,7 @@
          "debug_file" : "libnssutil3.so",
          "debug_id" : "D20D7670D6483983D2C198E3EE0CBAB50",
          "end_addr" : "0x7f360842d000",
-         "filename" : "libnssutil3.so",
+         "filename" : "/usr/lib64/libnssutil3.so",
          "version" : ""
       },
       {
@@ -653,7 +653,7 @@
          "debug_file" : "libnss3.so",
          "debug_id" : "D088550B708096CAD86849B5A399FC6F0",
          "end_addr" : "0x7f3608751000",
-         "filename" : "libnss3.so",
+         "filename" : "/usr/lib64/libnss3.so",
          "version" : ""
       },
       {
@@ -662,7 +662,7 @@
          "debug_file" : "libsmime3.so",
          "debug_id" : "618B0C96158E00E64F1DF871D284CA3A0",
          "end_addr" : "0x7f360897d000",
-         "filename" : "libsmime3.so",
+         "filename" : "/usr/lib64/libsmime3.so",
          "version" : ""
       },
       {
@@ -671,7 +671,7 @@
          "debug_file" : "libssl3.so",
          "debug_id" : "72BE1F6C0320C8BAF19347D837DD39D50",
          "end_addr" : "0x7f3608bbd000",
-         "filename" : "libssl3.so",
+         "filename" : "/usr/lib64/libssl3.so",
          "version" : ""
       },
       {
@@ -680,7 +680,7 @@
          "debug_file" : "libssh2.so.1.0.1",
          "debug_id" : "29F9EDC4B42209FE1F9A855C503432880",
          "end_addr" : "0x7f3608dea000",
-         "filename" : "libssh2.so.1.0.1",
+         "filename" : "/usr/lib64/libssh2.so.1.0.1",
          "version" : ""
       },
       {
@@ -689,7 +689,7 @@
          "debug_file" : "libidn.so.11.6.11",
          "debug_id" : "EFBB772B65FF4FE93E0B71A4E89BEB680",
          "end_addr" : "0x7f360901e000",
-         "filename" : "libidn.so.11.6.11",
+         "filename" : "/usr/lib64/libidn.so.11.6.11",
          "version" : ""
       },
       {
@@ -698,7 +698,7 @@
          "debug_file" : "libpng15.so.15.13.0",
          "debug_id" : "AD5401181CEEF0C1393B1953442CF70E0",
          "end_addr" : "0x7f3609248000",
-         "filename" : "libpng15.so.15.13.0",
+         "filename" : "/usr/lib64/libpng15.so.15.13.0",
          "version" : ""
       },
       {
@@ -707,7 +707,7 @@
          "debug_file" : "Community.ofx",
          "debug_id" : "F483E31A0537EEED66F45E6C9E275EEE0",
          "end_addr" : "0x7f3609c38000",
-         "filename" : "Community.ofx",
+         "filename" : "/usr/OFX/Plugins/Community.ofx.bundle/Contents/Linux-x86-64/Community.ofx",
          "version" : ""
       },
       {
@@ -716,7 +716,7 @@
          "debug_file" : "FFmpeg.ofx",
          "debug_id" : "EB5218E9A87F280F50497CBDD57046C30",
          "end_addr" : "0x7f360a080000",
-         "filename" : "FFmpeg.ofx",
+         "filename" : "/usr/OFX/Plugins/FFmpeg.ofx.bundle/Contents/Linux-x86-64/FFmpeg.ofx",
          "version" : ""
       },
       {
@@ -725,7 +725,7 @@
          "debug_file" : "libIlmThread-2_2.so.12.0.0",
          "debug_id" : "5E7418705174887958C12008329D61110",
          "end_addr" : "0x7f360a292000",
-         "filename" : "libIlmThread-2_2.so.12.0.0",
+         "filename" : "/opt/Natron-CY2015/lib/libIlmThread-2_2.so.12.0.0",
          "version" : ""
       },
       {
@@ -734,7 +734,7 @@
          "debug_file" : "libIexMath-2_2.so.12.0.0",
          "debug_id" : "DBC624D90393DD9CAD8DED81D0A4FADA0",
          "end_addr" : "0x7f360a496000",
-         "filename" : "libIexMath-2_2.so.12.0.0",
+         "filename" : "/opt/Natron-CY2015/lib/libIexMath-2_2.so.12.0.0",
          "version" : ""
       },
       {
@@ -743,7 +743,7 @@
          "debug_file" : "libIex-2_2.so.12.0.0",
          "debug_id" : "D1FBF48E5F3027E53B5E557722DF62480",
          "end_addr" : "0x7f360a6b3000",
-         "filename" : "libIex-2_2.so.12.0.0",
+         "filename" : "/opt/Natron-CY2015/lib/libIex-2_2.so.12.0.0",
          "version" : ""
       },
       {
@@ -752,7 +752,7 @@
          "debug_file" : "libHalf.so.12.0.0",
          "debug_id" : "79820654E93C896EB8DEDE3D50C3FEF10",
          "end_addr" : "0x7f360a8fa000",
-         "filename" : "libHalf.so.12.0.0",
+         "filename" : "/opt/Natron-CY2015/lib/libHalf.so.12.0.0",
          "version" : ""
       },
       {
@@ -761,7 +761,7 @@
          "debug_file" : "libImath-2_2.so.12.0.0",
          "debug_id" : "D16212976DE7234ABB99AF63F8D25EEB0",
          "end_addr" : "0x7f360ab0c000",
-         "filename" : "libImath-2_2.so.12.0.0",
+         "filename" : "/opt/Natron-CY2015/lib/libImath-2_2.so.12.0.0",
          "version" : ""
       },
       {
@@ -770,7 +770,7 @@
          "debug_file" : "libIlmImf-2_2.so.22.0.0",
          "debug_id" : "518D17B9F5737556E2EDD8CBF30EC4B70",
          "end_addr" : "0x7f360aeda000",
-         "filename" : "libIlmImf-2_2.so.22.0.0",
+         "filename" : "/opt/Natron-CY2015/lib/libIlmImf-2_2.so.22.0.0",
          "version" : ""
       },
       {
@@ -779,7 +779,7 @@
          "debug_file" : "OIIO.ofx",
          "debug_id" : "85855AAE17D85142FAEE5720F0C2A8F90",
          "end_addr" : "0x7f360b371000",
-         "filename" : "OIIO.ofx",
+         "filename" : "/usr/OFX/Plugins/OIIO.ofx.bundle/Contents/Linux-x86-64/OIIO.ofx",
          "version" : ""
       },
       {
@@ -788,7 +788,7 @@
          "debug_file" : "Glow.ofx",
          "debug_id" : "FF9B2D46C8DC5B480E3D7D4302E89D1D0",
          "end_addr" : "0x7f360b5fd000",
-         "filename" : "Glow.ofx",
+         "filename" : "/usr/OFX/Plugins/Glow.ofx.bundle/Contents/Linux-x86-64/Glow.ofx",
          "version" : ""
       },
       {
@@ -797,7 +797,7 @@
          "debug_file" : "libOpenCL.so.1.0.0",
          "debug_id" : "7963F9DA09C32269683C5516E7D4173C0",
          "end_addr" : "0x7f360b805000",
-         "filename" : "libOpenCL.so.1.0.0",
+         "filename" : "/usr/lib64/nvidia/libOpenCL.so.1.0.0",
          "version" : ""
       },
       {
@@ -806,7 +806,7 @@
          "debug_file" : "Bulge.ofx",
          "debug_id" : "4C13732ECF131DB9F2E550278B5462CA0",
          "end_addr" : "0x7f360bd3c000",
-         "filename" : "Bulge.ofx",
+         "filename" : "/usr/OFX/Plugins/Bulge.ofx.bundle/Contents/Linux-x86-64/Bulge.ofx",
          "version" : ""
       },
       {
@@ -815,7 +815,7 @@
          "debug_file" : "liborc-0.4.so.0",
          "debug_id" : "B891BEB9727FE3AB8CC21762F63B3F000",
          "end_addr" : "0x7f360bfc4000",
-         "filename" : "liborc-0.4.so.0",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/OFX/Natron/IO.ofx.bundle/Libraries/liborc-0.4.so.0",
          "version" : ""
       },
       {
@@ -824,7 +824,7 @@
          "debug_file" : "libraw_r.so.10",
          "debug_id" : "FA6195A81B75F3F24A9603B8940685110",
          "end_addr" : "0x7f360c22c000",
-         "filename" : "libraw_r.so.10",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/OFX/Natron/IO.ofx.bundle/Libraries/libraw_r.so.10",
          "version" : ""
       },
       {
@@ -833,7 +833,7 @@
          "debug_file" : "libgif.so.7",
          "debug_id" : "48E4C86D9FDB86A09726330FCDC3D8180",
          "end_addr" : "0x7f360c47b000",
-         "filename" : "libgif.so.7",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/OFX/Natron/IO.ofx.bundle/Libraries/libgif.so.7",
          "version" : ""
       },
       {
@@ -842,7 +842,7 @@
          "debug_file" : "libboost_thread.so.1.55.0",
          "debug_id" : "CF6456467E1F7CC69FCF3566E51BD57B0",
          "end_addr" : "0x7f360c692000",
-         "filename" : "libboost_thread.so.1.55.0",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/OFX/Natron/IO.ofx.bundle/Libraries/libboost_thread.so.1.55.0",
          "version" : ""
       },
       {
@@ -851,7 +851,7 @@
          "debug_file" : "libboost_system.so.1.55.0",
          "debug_id" : "A05B1F199C4BC11FD016DB517151F3660",
          "end_addr" : "0x7f360c89d000",
-         "filename" : "libboost_system.so.1.55.0",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/OFX/Natron/IO.ofx.bundle/Libraries/libboost_system.so.1.55.0",
          "version" : ""
       },
       {
@@ -860,7 +860,7 @@
          "debug_file" : "libboost_regex.so.1.55.0",
          "debug_id" : "6219DFABA3367E6FAA007805BE2E88030",
          "end_addr" : "0x7f360cb7f000",
-         "filename" : "libboost_regex.so.1.55.0",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/OFX/Natron/IO.ofx.bundle/Libraries/libboost_regex.so.1.55.0",
          "version" : ""
       },
       {
@@ -869,7 +869,7 @@
          "debug_file" : "libboost_filesystem.so.1.55.0",
          "debug_id" : "6EFAF6EFFBE93C770B4B4E674382F1BE0",
          "end_addr" : "0x7f360cdc0000",
-         "filename" : "libboost_filesystem.so.1.55.0",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/OFX/Natron/IO.ofx.bundle/Libraries/libboost_filesystem.so.1.55.0",
          "version" : ""
       },
       {
@@ -878,7 +878,7 @@
          "debug_file" : "libmp3lame.so.0",
          "debug_id" : "283B8CE3EEC5DA73C4208035978C13420",
          "end_addr" : "0x7f360d00b000",
-         "filename" : "libmp3lame.so.0",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/OFX/Natron/IO.ofx.bundle/Libraries/libmp3lame.so.0",
          "version" : ""
       },
       {
@@ -887,7 +887,7 @@
          "debug_file" : "libopus.so.0",
          "debug_id" : "307F0B7F8A334CF20D79CDBBD894D9560",
          "end_addr" : "0x7f360d287000",
-         "filename" : "libopus.so.0",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/OFX/Natron/IO.ofx.bundle/Libraries/libopus.so.0",
          "version" : ""
       },
       {
@@ -896,7 +896,7 @@
          "debug_file" : "libschroedinger-1.0.so.0",
          "debug_id" : "1C6C147E08DFA60073C0F5FBE88A36560",
          "end_addr" : "0x7f360d54b000",
-         "filename" : "libschroedinger-1.0.so.0",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/OFX/Natron/IO.ofx.bundle/Libraries/libschroedinger-1.0.so.0",
          "version" : ""
       },
       {
@@ -905,7 +905,7 @@
          "debug_file" : "libtheoradec.so.1",
          "debug_id" : "2E1932EFD88AC10DE818D2400AA8906E0",
          "end_addr" : "0x7f360d766000",
-         "filename" : "libtheoradec.so.1",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/OFX/Natron/IO.ofx.bundle/Libraries/libtheoradec.so.1",
          "version" : ""
       },
       {
@@ -914,7 +914,7 @@
          "debug_file" : "libtheoraenc.so.1",
          "debug_id" : "9148BFEA5F6CEDDB9F543F0C3D2F3CE80",
          "end_addr" : "0x7f360d9a6000",
-         "filename" : "libtheoraenc.so.1",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/OFX/Natron/IO.ofx.bundle/Libraries/libtheoraenc.so.1",
          "version" : ""
       },
       {
@@ -923,7 +923,7 @@
          "debug_file" : "libogg.so.0",
          "debug_id" : "FAB33A0E9F6BDBB0FACC8D2702BFC3750",
          "end_addr" : "0x7f360dbad000",
-         "filename" : "libogg.so.0",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/OFX/Natron/IO.ofx.bundle/Libraries/libogg.so.0",
          "version" : ""
       },
       {
@@ -932,7 +932,7 @@
          "debug_file" : "libvpx.so.2",
          "debug_id" : "32412D5FBF6ED2274377A1DACFABA9C00",
          "end_addr" : "0x7f360df7a000",
-         "filename" : "libvpx.so.2",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/OFX/Natron/IO.ofx.bundle/Libraries/libvpx.so.2",
          "version" : ""
       },
       {
@@ -941,7 +941,7 @@
          "debug_file" : "libx264.so.146",
          "debug_id" : "F36FDFACA151C8D277F0A38176F71CD90",
          "end_addr" : "0x7f360e27c000",
-         "filename" : "libx264.so.146",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/OFX/Natron/IO.ofx.bundle/Libraries/libx264.so.146",
          "version" : ""
       },
       {
@@ -950,7 +950,7 @@
          "debug_file" : "libxvidcore.so.4",
          "debug_id" : "5F93E933B913F4834BF4443A2840150A0",
          "end_addr" : "0x7f360e5ac000",
-         "filename" : "libxvidcore.so.4",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/OFX/Natron/IO.ofx.bundle/Libraries/libxvidcore.so.4",
          "version" : ""
       },
       {
@@ -959,7 +959,7 @@
          "debug_file" : "libswresample.so.2",
          "debug_id" : "6F4F917C6B3FEE3D1A26DC1A2A22460F0",
          "end_addr" : "0x7f360e83a000",
-         "filename" : "libswresample.so.2",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/OFX/Natron/IO.ofx.bundle/Libraries/libswresample.so.2",
          "version" : ""
       },
       {
@@ -968,7 +968,7 @@
          "debug_file" : "libmodplug.so.1",
          "debug_id" : "92D3BFD170C279051FAB5FA5E6F53B700",
          "end_addr" : "0x7f360ea88000",
-         "filename" : "libmodplug.so.1",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/OFX/Natron/IO.ofx.bundle/Libraries/libmodplug.so.1",
          "version" : ""
       },
       {
@@ -977,7 +977,7 @@
          "debug_file" : "libSeExpr.so",
          "debug_id" : "8EF5CE7896A04969CBAFC1D6921DECFE0",
          "end_addr" : "0x7f360ee0d000",
-         "filename" : "libSeExpr.so",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/OFX/Natron/IO.ofx.bundle/Libraries/libSeExpr.so",
          "version" : ""
       },
       {
@@ -986,7 +986,7 @@
          "debug_file" : "libOpenImageIO.so.1.6",
          "debug_id" : "2B00BB4C8A1EDA7C068C0610911C3E6E0",
          "end_addr" : "0x7f360fb16000",
-         "filename" : "libOpenImageIO.so.1.6",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/OFX/Natron/IO.ofx.bundle/Libraries/libOpenImageIO.so.1.6",
          "version" : ""
       },
       {
@@ -995,7 +995,7 @@
          "debug_file" : "libavutil.so.55",
          "debug_id" : "901A829C0F0DDA87D03BAD0C654657B30",
          "end_addr" : "0x7f360fe89000",
-         "filename" : "libavutil.so.55",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/OFX/Natron/IO.ofx.bundle/Libraries/libavutil.so.55",
          "version" : ""
       },
       {
@@ -1004,7 +1004,7 @@
          "debug_file" : "libswscale.so.4",
          "debug_id" : "900372F11D15CDC2A6A301451C7989AB0",
          "end_addr" : "0x7f361012e000",
-         "filename" : "libswscale.so.4",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/OFX/Natron/IO.ofx.bundle/Libraries/libswscale.so.4",
          "version" : ""
       },
       {
@@ -1013,7 +1013,7 @@
          "debug_file" : "libavcodec.so.57",
          "debug_id" : "4257D92630B1355A5DE0F441EA356F550",
          "end_addr" : "0x7f3610f2e000",
-         "filename" : "libavcodec.so.57",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/OFX/Natron/IO.ofx.bundle/Libraries/libavcodec.so.57",
          "version" : ""
       },
       {
@@ -1022,7 +1022,7 @@
          "debug_file" : "libavformat.so.57",
          "debug_id" : "108FEBBC5F252CD1E1ECDCCEE7DDA2D00",
          "end_addr" : "0x7f3611ad4000",
-         "filename" : "libavformat.so.57",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/OFX/Natron/IO.ofx.bundle/Libraries/libavformat.so.57",
          "version" : ""
       },
       {
@@ -1031,7 +1031,7 @@
          "debug_file" : "IO.ofx",
          "debug_id" : "CDF95EF6155B4F89D2CB0C1A35AB1D250",
          "end_addr" : "0x7f36120cf000",
-         "filename" : "IO.ofx",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/OFX/Natron/IO.ofx.bundle/Contents/Linux-x86-64/IO.ofx",
          "version" : ""
       },
       {
@@ -1040,7 +1040,7 @@
          "debug_file" : "Misc.ofx",
          "debug_id" : "4C11EE3562DE425340E9FD3D3E09D39C0",
          "end_addr" : "0x7f361307a000",
-         "filename" : "Misc.ofx",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/OFX/Natron/Misc.ofx.bundle/Contents/Linux-x86-64/Misc.ofx",
          "version" : ""
       },
       {
@@ -1049,7 +1049,7 @@
          "debug_file" : "libcroco-0.6.so.3",
          "debug_id" : "43204873D40676EFFF2570F6DD48362C0",
          "end_addr" : "0x7f3613317000",
-         "filename" : "libcroco-0.6.so.3",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/OFX/Natron/Arena.ofx.bundle/Libraries/libcroco-0.6.so.3",
          "version" : ""
       },
       {
@@ -1058,7 +1058,7 @@
          "debug_file" : "libpoppler.so.60",
          "debug_id" : "275211DB6078949639E45BC3DADDF2990",
          "end_addr" : "0x7f3613786000",
-         "filename" : "libpoppler.so.60",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/OFX/Natron/Arena.ofx.bundle/Libraries/libpoppler.so.60",
          "version" : ""
       },
       {
@@ -1067,7 +1067,7 @@
          "debug_file" : "libpoppler-glib.so.8",
          "debug_id" : "30B4D13EBCFD4A7ADB084ABD18B1EBBF0",
          "end_addr" : "0x7f3613a23000",
-         "filename" : "libpoppler-glib.so.8",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/OFX/Natron/Arena.ofx.bundle/Libraries/libpoppler-glib.so.8",
          "version" : ""
       },
       {
@@ -1076,7 +1076,7 @@
          "debug_file" : "libcurl.so.4",
          "debug_id" : "F7BE3BF0E57BCF00E0A240416C9640220",
          "end_addr" : "0x7f3613c8a000",
-         "filename" : "libcurl.so.4",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/OFX/Natron/Arena.ofx.bundle/Libraries/libcurl.so.4",
          "version" : ""
       },
       {
@@ -1085,7 +1085,7 @@
          "debug_file" : "libMagickCore-6.Q32HDRI.so.2",
          "debug_id" : "5AC9F5A1B0DA62CA0E265D70E3CEC2990",
          "end_addr" : "0x7f36141c1000",
-         "filename" : "libMagickCore-6.Q32HDRI.so.2",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/OFX/Natron/Arena.ofx.bundle/Libraries/libMagickCore-6.Q32HDRI.so.2",
          "version" : ""
       },
       {
@@ -1094,7 +1094,7 @@
          "debug_file" : "libMagickWand-6.Q32HDRI.so.2",
          "debug_id" : "D2E3EB3140F39AB0B04523B0606EC6A70",
          "end_addr" : "0x7f3614557000",
-         "filename" : "libMagickWand-6.Q32HDRI.so.2",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/OFX/Natron/Arena.ofx.bundle/Libraries/libMagickWand-6.Q32HDRI.so.2",
          "version" : ""
       },
       {
@@ -1103,7 +1103,7 @@
          "debug_file" : "libMagick++-6.Q32HDRI.so.6",
          "debug_id" : "F5AA1E5423FAFB99230687E81F2653780",
          "end_addr" : "0x7f36147db000",
-         "filename" : "libMagick++-6.Q32HDRI.so.6",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/OFX/Natron/Arena.ofx.bundle/Libraries/libMagick++-6.Q32HDRI.so.6",
          "version" : ""
       },
       {
@@ -1112,7 +1112,7 @@
          "debug_file" : "libzip.so.4",
          "debug_id" : "09A09A3DA0C3E8E5DFD9826A5407938A0",
          "end_addr" : "0x7f36149f3000",
-         "filename" : "libzip.so.4",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/OFX/Natron/Arena.ofx.bundle/Libraries/libzip.so.4",
          "version" : ""
       },
       {
@@ -1121,7 +1121,7 @@
          "debug_file" : "librevenge-stream-0.0.so.0",
          "debug_id" : "2510F4CBF3AE24DE35CF61660F4C04890",
          "end_addr" : "0x7f3614c14000",
-         "filename" : "librevenge-stream-0.0.so.0",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/OFX/Natron/Arena.ofx.bundle/Libraries/librevenge-stream-0.0.so.0",
          "version" : ""
       },
       {
@@ -1130,7 +1130,7 @@
          "debug_file" : "librevenge-generators-0.0.so.0",
          "debug_id" : "4F75CB867697F0D60156BF775E9A32AF0",
          "end_addr" : "0x7f3614e85000",
-         "filename" : "librevenge-generators-0.0.so.0",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/OFX/Natron/Arena.ofx.bundle/Libraries/librevenge-generators-0.0.so.0",
          "version" : ""
       },
       {
@@ -1139,7 +1139,7 @@
          "debug_file" : "librevenge-0.0.so.0",
          "debug_id" : "1AE0CA16839D4B4A50796E51190B8F790",
          "end_addr" : "0x7f36150af000",
-         "filename" : "librevenge-0.0.so.0",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/OFX/Natron/Arena.ofx.bundle/Libraries/librevenge-0.0.so.0",
          "version" : ""
       },
       {
@@ -1148,7 +1148,7 @@
          "debug_file" : "libcdr-0.1.so.1",
          "debug_id" : "5674D8A070029F615E0B74202A1F032D0",
          "end_addr" : "0x7f3615350000",
-         "filename" : "libcdr-0.1.so.1",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/OFX/Natron/Arena.ofx.bundle/Libraries/libcdr-0.1.so.1",
          "version" : ""
       },
       {
@@ -1157,7 +1157,7 @@
          "debug_file" : "libgmodule-2.0.so.0",
          "debug_id" : "62941996E49875CEC4B42F50776A48760",
          "end_addr" : "0x7f3615556000",
-         "filename" : "libgmodule-2.0.so.0",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/OFX/Natron/Arena.ofx.bundle/Libraries/libgmodule-2.0.so.0",
          "version" : ""
       },
       {
@@ -1166,7 +1166,7 @@
          "debug_file" : "libgdk_pixbuf-2.0.so.0",
          "debug_id" : "D3A257BBC9C6B154289AEC04BE23D57F0",
          "end_addr" : "0x7f3615777000",
-         "filename" : "libgdk_pixbuf-2.0.so.0",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/OFX/Natron/Arena.ofx.bundle/Libraries/libgdk_pixbuf-2.0.so.0",
          "version" : ""
       },
       {
@@ -1175,7 +1175,7 @@
          "debug_file" : "libgio-2.0.so.0",
          "debug_id" : "A00C5D494EF18DDB4EDA54F0A992A09D0",
          "end_addr" : "0x7f3615ae4000",
-         "filename" : "libgio-2.0.so.0",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/OFX/Natron/Arena.ofx.bundle/Libraries/libgio-2.0.so.0",
          "version" : ""
       },
       {
@@ -1184,7 +1184,7 @@
          "debug_file" : "librsvg-2.so.2",
          "debug_id" : "85077CBD56CA01E060698E4B98D4E7730",
          "end_addr" : "0x7f3615d1f000",
-         "filename" : "librsvg-2.so.2",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/OFX/Natron/Arena.ofx.bundle/Libraries/librsvg-2.so.2",
          "version" : ""
       },
       {
@@ -1193,7 +1193,7 @@
          "debug_file" : "libxcb-render.so.0.0.0",
          "debug_id" : "2FA03094E59EBE0A48A5B30EEC159B4A0",
          "end_addr" : "0x7f3615f29000",
-         "filename" : "libxcb-render.so.0.0.0",
+         "filename" : "/usr/lib64/libxcb-render.so.0.0.0",
          "version" : ""
       },
       {
@@ -1202,7 +1202,7 @@
          "debug_file" : "libxcb-shm.so.0.0.0",
          "debug_id" : "81ED1FD8C3B867F03968812B6D4773020",
          "end_addr" : "0x7f361612c000",
-         "filename" : "libxcb-shm.so.0.0.0",
+         "filename" : "/usr/lib64/libxcb-shm.so.0.0.0",
          "version" : ""
       },
       {
@@ -1211,7 +1211,7 @@
          "debug_file" : "libffi.so.6",
          "debug_id" : "F1F3C6A4FA4F44DF178B8D5ABD9F6F820",
          "end_addr" : "0x7f3616335000",
-         "filename" : "libffi.so.6",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/OFX/Natron/Arena.ofx.bundle/Libraries/libffi.so.6",
          "version" : ""
       },
       {
@@ -1220,7 +1220,7 @@
          "debug_file" : "libgobject-2.0.so.0",
          "debug_id" : "C2196ACB205468076CF5540651A346180",
          "end_addr" : "0x7f3616585000",
-         "filename" : "libgobject-2.0.so.0",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/OFX/Natron/Arena.ofx.bundle/Libraries/libgobject-2.0.so.0",
          "version" : ""
       },
       {
@@ -1229,7 +1229,7 @@
          "debug_file" : "libpango-1.0.so.0",
          "debug_id" : "2A1DECCB31C7B7AECC71B863446912A60",
          "end_addr" : "0x7f36167cf000",
-         "filename" : "libpango-1.0.so.0",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/OFX/Natron/Arena.ofx.bundle/Libraries/libpango-1.0.so.0",
          "version" : ""
       },
       {
@@ -1238,7 +1238,7 @@
          "debug_file" : "libharfbuzz.so.0",
          "debug_id" : "1F9204209874DD0BA6D6373A5001AF480",
          "end_addr" : "0x7f3616a28000",
-         "filename" : "libharfbuzz.so.0",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/OFX/Natron/Arena.ofx.bundle/Libraries/libharfbuzz.so.0",
          "version" : ""
       },
       {
@@ -1247,7 +1247,7 @@
          "debug_file" : "libcairo.so.2",
          "debug_id" : "5E15479A14859C92A2634F61E3FB35050",
          "end_addr" : "0x7f3616d2e000",
-         "filename" : "libcairo.so.2",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/lib/libcairo.so.2",
          "version" : ""
       },
       {
@@ -1256,7 +1256,7 @@
          "debug_file" : "libpangoft2-1.0.so.0",
          "debug_id" : "CA1A207C6ECE2757401F59751F9B077B0",
          "end_addr" : "0x7f3616f47000",
-         "filename" : "libpangoft2-1.0.so.0",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/OFX/Natron/Arena.ofx.bundle/Libraries/libpangoft2-1.0.so.0",
          "version" : ""
       },
       {
@@ -1265,7 +1265,7 @@
          "debug_file" : "libpangocairo-1.0.so.0",
          "debug_id" : "322D53A6CE31BCAE2C302FEA5BBC1CF20",
          "end_addr" : "0x7f3617153000",
-         "filename" : "libpangocairo-1.0.so.0",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/OFX/Natron/Arena.ofx.bundle/Libraries/libpangocairo-1.0.so.0",
          "version" : ""
       },
       {
@@ -1274,7 +1274,7 @@
          "debug_file" : "libOpenColorIO.so.1",
          "debug_id" : "77662EB5238AC152A410061D5B838C300",
          "end_addr" : "0x7f36174ad000",
-         "filename" : "libOpenColorIO.so.1",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/lib/libOpenColorIO.so.1",
          "version" : ""
       },
       {
@@ -1283,7 +1283,7 @@
          "debug_file" : "Arena.ofx",
          "debug_id" : "5C47D83FB1C84F24113F789E686283610",
          "end_addr" : "0x7f36179d2000",
-         "filename" : "Arena.ofx",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/OFX/Natron/Arena.ofx.bundle/Contents/Linux-x86-64/Arena.ofx",
          "version" : ""
       },
       {
@@ -1292,7 +1292,7 @@
          "debug_file" : "CImg.ofx",
          "debug_id" : "0C034CF2EF893AEE16A17CA47E4A59EA0",
          "end_addr" : "0x7f3617df7000",
-         "filename" : "CImg.ofx",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/OFX/Natron/CImg.ofx.bundle/Contents/Linux-x86-64/CImg.ofx",
          "version" : ""
       },
       {
@@ -1301,7 +1301,7 @@
          "debug_file" : "liblcms2.so.2",
          "debug_id" : "DF5BB458D443AA9C91850290BCBDD3BA0",
          "end_addr" : "0x7f361c15d000",
-         "filename" : "liblcms2.so.2",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/lib/liblcms2.so.2",
          "version" : ""
       },
       {
@@ -1310,7 +1310,7 @@
          "debug_file" : "Shadertoy.ofx",
          "debug_id" : "0A9795FB708AB4E33021D3B9F61FBE430",
          "end_addr" : "0x7f361d9d2000",
-         "filename" : "Shadertoy.ofx",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/OFX/Natron/Shadertoy.ofx.bundle/Contents/Linux-x86-64/Shadertoy.ofx",
          "version" : ""
       },
       {
@@ -1319,7 +1319,7 @@
          "debug_file" : "icon-cache.kcache",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f361efbb000",
-         "filename" : "icon-cache.kcache",
+         "filename" : "/var/tmp/kdecache-olear/icon-cache.kcache",
          "version" : ""
       },
       {
@@ -1328,7 +1328,7 @@
          "debug_file" : "kimg_xview.so",
          "debug_id" : "059B6E5FE0AD7BC2694ADDFF937B3C300",
          "end_addr" : "0x7f361efbf000",
-         "filename" : "kimg_xview.so",
+         "filename" : "/usr/lib64/kde4/plugins/imageformats/kimg_xview.so",
          "version" : ""
       },
       {
@@ -1337,7 +1337,7 @@
          "debug_file" : "kimg_xcf.so",
          "debug_id" : "7E8018954ABE1DDF12C546BF5A3463E70",
          "end_addr" : "0x7f361f1cf000",
-         "filename" : "kimg_xcf.so",
+         "filename" : "/usr/lib64/kde4/plugins/imageformats/kimg_xcf.so",
          "version" : ""
       },
       {
@@ -1346,7 +1346,7 @@
          "debug_file" : "kimg_tga.so",
          "debug_id" : "2BD023FB5C4689D5C12D9716353775350",
          "end_addr" : "0x7f361f3d9000",
-         "filename" : "kimg_tga.so",
+         "filename" : "/usr/lib64/kde4/plugins/imageformats/kimg_tga.so",
          "version" : ""
       },
       {
@@ -1355,7 +1355,7 @@
          "debug_file" : "kimg_rgb.so",
          "debug_id" : "9D12FF1AF9AD4DB6DC596C64CFF04FEE0",
          "end_addr" : "0x7f361f5e3000",
-         "filename" : "kimg_rgb.so",
+         "filename" : "/usr/lib64/kde4/plugins/imageformats/kimg_rgb.so",
          "version" : ""
       },
       {
@@ -1364,7 +1364,7 @@
          "debug_file" : "kimg_ras.so",
          "debug_id" : "2F1595A4E9C25616D8C9E2CCB00036010",
          "end_addr" : "0x7f361f7e9000",
-         "filename" : "kimg_ras.so",
+         "filename" : "/usr/lib64/kde4/plugins/imageformats/kimg_ras.so",
          "version" : ""
       },
       {
@@ -1373,7 +1373,7 @@
          "debug_file" : "kimg_psd.so",
          "debug_id" : "D9925F28D879BCEDB025B333421421220",
          "end_addr" : "0x7f361f9f0000",
-         "filename" : "kimg_psd.so",
+         "filename" : "/usr/lib64/kde4/plugins/imageformats/kimg_psd.so",
          "version" : ""
       },
       {
@@ -1382,7 +1382,7 @@
          "debug_file" : "kimg_pic.so",
          "debug_id" : "61FECBBD2C92C4346170C3889B89393C0",
          "end_addr" : "0x7f361fbf6000",
-         "filename" : "kimg_pic.so",
+         "filename" : "/usr/lib64/kde4/plugins/imageformats/kimg_pic.so",
          "version" : ""
       },
       {
@@ -1391,7 +1391,7 @@
          "debug_file" : "kimg_pcx.so",
          "debug_id" : "DB10C75CF53B4BF080359CD5E891C3370",
          "end_addr" : "0x7f361fdfe000",
-         "filename" : "kimg_pcx.so",
+         "filename" : "/usr/lib64/kde4/plugins/imageformats/kimg_pcx.so",
          "version" : ""
       },
       {
@@ -1400,7 +1400,7 @@
          "debug_file" : ".glVL5wYj (deleted)",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f3624006000",
-         "filename" : ".glVL5wYj (deleted)",
+         "filename" : "/tmp/.glVL5wYj (deleted)",
          "version" : ""
       },
       {
@@ -1409,7 +1409,7 @@
          "debug_file" : "SYSV00000000 (deleted)",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f36240f3000",
-         "filename" : "SYSV00000000 (deleted)",
+         "filename" : "/SYSV00000000 (deleted)",
          "missing_symbols" : true,
          "version" : ""
       },
@@ -1419,7 +1419,7 @@
          "debug_file" : "kimg_ora.so",
          "debug_id" : "8837C0001BF6E2332FC6A79FCDC40F5E0",
          "end_addr" : "0x7f362418f000",
-         "filename" : "kimg_ora.so",
+         "filename" : "/usr/lib64/kde4/plugins/imageformats/kimg_ora.so",
          "version" : ""
       },
       {
@@ -1428,7 +1428,7 @@
          "debug_file" : "kimg_kra.so",
          "debug_id" : "90BF83A1773C4D8B2C56DA94B75AFBB80",
          "end_addr" : "0x7f3624394000",
-         "filename" : "kimg_kra.so",
+         "filename" : "/usr/lib64/kde4/plugins/imageformats/kimg_kra.so",
          "version" : ""
       },
       {
@@ -1437,7 +1437,7 @@
          "debug_file" : "libjpeg.so.62.1.0",
          "debug_id" : "B4A3B2CC420CB6423C3169C582FEF7340",
          "end_addr" : "0x7f36245d8000",
-         "filename" : "libjpeg.so.62.1.0",
+         "filename" : "/usr/lib64/libjpeg.so.62.1.0",
          "version" : ""
       },
       {
@@ -1446,7 +1446,7 @@
          "debug_file" : "libjasper.so.1",
          "debug_id" : "E941D1EF1FDE9B6DDB3ACBEE02C088260",
          "end_addr" : "0x7f3624838000",
-         "filename" : "libjasper.so.1",
+         "filename" : "/opt/Natron-CY2015/lib/libjasper.so.1",
          "version" : ""
       },
       {
@@ -1455,7 +1455,7 @@
          "debug_file" : "kimg_jp2.so",
          "debug_id" : "DDE63C9A149AD3D4D39B975EDCD34DC90",
          "end_addr" : "0x7f3624a47000",
-         "filename" : "kimg_jp2.so",
+         "filename" : "/usr/lib64/kde4/plugins/imageformats/kimg_jp2.so",
          "version" : ""
       },
       {
@@ -1464,7 +1464,7 @@
          "debug_file" : "libIexMath.so.6.0.0",
          "debug_id" : "4D6B053316C49C476F233AC9F973B0D40",
          "end_addr" : "0x7f3624c4b000",
-         "filename" : "libIexMath.so.6.0.0",
+         "filename" : "/usr/lib64/libIexMath.so.6.0.0",
          "version" : ""
       },
       {
@@ -1473,7 +1473,7 @@
          "debug_file" : "libIlmThread.so.6.0.0",
          "debug_id" : "FCC9E845B0697D48330C658C52E79C040",
          "end_addr" : "0x7f3624e53000",
-         "filename" : "libIlmThread.so.6.0.0",
+         "filename" : "/usr/lib64/libIlmThread.so.6.0.0",
          "version" : ""
       },
       {
@@ -1482,7 +1482,7 @@
          "debug_file" : "libHalf.so.6.0.0",
          "debug_id" : "5740E2A2A6587D0ACB2DEFAF446F61320",
          "end_addr" : "0x7f3625096000",
-         "filename" : "libHalf.so.6.0.0",
+         "filename" : "/usr/lib64/libHalf.so.6.0.0",
          "version" : ""
       },
       {
@@ -1491,7 +1491,7 @@
          "debug_file" : "libIex.so.6.0.0",
          "debug_id" : "D977E155EF969693076920F63F62DAE70",
          "end_addr" : "0x7f36252b2000",
-         "filename" : "libIex.so.6.0.0",
+         "filename" : "/usr/lib64/libIex.so.6.0.0",
          "version" : ""
       },
       {
@@ -1500,7 +1500,7 @@
          "debug_file" : "libIlmImf.so.7.0.0",
          "debug_id" : "C0EA1D2214016041CB3E94528327E1790",
          "end_addr" : "0x7f362557a000",
-         "filename" : "libIlmImf.so.7.0.0",
+         "filename" : "/usr/lib64/libIlmImf.so.7.0.0",
          "version" : ""
       },
       {
@@ -1509,7 +1509,7 @@
          "debug_file" : "libImath.so.6.0.0",
          "debug_id" : "07B9C017308FA7C7D4545F6C9946E3F40",
          "end_addr" : "0x7f362578f000",
-         "filename" : "libImath.so.6.0.0",
+         "filename" : "/usr/lib64/libImath.so.6.0.0",
          "version" : ""
       },
       {
@@ -1518,7 +1518,7 @@
          "debug_file" : "kimg_exr.so",
          "debug_id" : "8B962BC3AEFF44D96C8DAFAC0E9CF1F30",
          "end_addr" : "0x7f3625995000",
-         "filename" : "kimg_exr.so",
+         "filename" : "/usr/lib64/kde4/plugins/imageformats/kimg_exr.so",
          "version" : ""
       },
       {
@@ -1527,7 +1527,7 @@
          "debug_file" : "kimg_eps.so",
          "debug_id" : "AA0D2B15FF5A2EBFE59AC4A206540DA60",
          "end_addr" : "0x7f3625b9f000",
-         "filename" : "kimg_eps.so",
+         "filename" : "/usr/lib64/kde4/plugins/imageformats/kimg_eps.so",
          "version" : ""
       },
       {
@@ -1536,7 +1536,7 @@
          "debug_file" : "kimg_dds.so",
          "debug_id" : "ED49113C7A0B73E118CC084B2D1B79D90",
          "end_addr" : "0x7f3625da7000",
-         "filename" : "kimg_dds.so",
+         "filename" : "/usr/lib64/kde4/plugins/imageformats/kimg_dds.so",
          "version" : ""
       },
       {
@@ -1545,7 +1545,7 @@
          "debug_file" : "libqtiff.so",
          "debug_id" : "73AD3FF2081F4307F009D6C88D4E1DB40",
          "end_addr" : "0x7f3625faf000",
-         "filename" : "libqtiff.so",
+         "filename" : "/opt/Natron-CY2015/plugins/imageformats/libqtiff.so",
          "version" : ""
       },
       {
@@ -1554,7 +1554,7 @@
          "debug_file" : "libqtga.so",
          "debug_id" : "331D52BDA1F4896331711F188A5E07710",
          "end_addr" : "0x7f36261b4000",
-         "filename" : "libqtga.so",
+         "filename" : "/opt/Natron-CY2015/plugins/imageformats/libqtga.so",
          "version" : ""
       },
       {
@@ -1563,7 +1563,7 @@
          "debug_file" : "libqsvg.so",
          "debug_id" : "B76B60B35F9F31C439EEB4BFE16315930",
          "end_addr" : "0x7f36263b9000",
-         "filename" : "libqsvg.so",
+         "filename" : "/opt/Natron-CY2015/plugins/imageformats/libqsvg.so",
          "version" : ""
       },
       {
@@ -1572,7 +1572,7 @@
          "debug_file" : "libqjpeg.so",
          "debug_id" : "22AB13F8E37F9288E70F0B0FAACE55020",
          "end_addr" : "0x7f36265c1000",
-         "filename" : "libqjpeg.so",
+         "filename" : "/opt/Natron-CY2015/plugins/imageformats/libqjpeg.so",
          "version" : ""
       },
       {
@@ -1581,7 +1581,7 @@
          "debug_file" : "libqico.so",
          "debug_id" : "F07684417B094A8704866A4D13F622D60",
          "end_addr" : "0x7f36267c9000",
-         "filename" : "libqico.so",
+         "filename" : "/opt/Natron-CY2015/plugins/imageformats/libqico.so",
          "version" : ""
       },
       {
@@ -1590,7 +1590,7 @@
          "debug_file" : "libqgif.so",
          "debug_id" : "2BBEA9856812E3BCE3DC77A952A17AF80",
          "end_addr" : "0x7f36269d0000",
-         "filename" : "libqgif.so",
+         "filename" : "/opt/Natron-CY2015/plugins/imageformats/libqgif.so",
          "version" : ""
       },
       {
@@ -1599,7 +1599,7 @@
          "debug_file" : "libtiff.so.5",
          "debug_id" : "48DCDD3840FBB2DAE022B1E578338EFC0",
          "end_addr" : "0x7f3626c3e000",
-         "filename" : "libtiff.so.5",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/lib/libtiff.so.5",
          "version" : ""
       },
       {
@@ -1608,7 +1608,7 @@
          "debug_file" : "libqtiff.so",
          "debug_id" : "73AD3FF2081F4307F009D6C88D4E1DB40",
          "end_addr" : "0x7f3626e49000",
-         "filename" : "libqtiff.so",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/bin/imageformats/libqtiff.so",
          "version" : ""
       },
       {
@@ -1617,7 +1617,7 @@
          "debug_file" : "libqtga.so",
          "debug_id" : "331D52BDA1F4896331711F188A5E07710",
          "end_addr" : "0x7f362704e000",
-         "filename" : "libqtga.so",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/bin/imageformats/libqtga.so",
          "version" : ""
       },
       {
@@ -1626,7 +1626,7 @@
          "debug_file" : "libqsvg.so",
          "debug_id" : "B76B60B35F9F31C439EEB4BFE16315930",
          "end_addr" : "0x7f3627253000",
-         "filename" : "libqsvg.so",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/bin/imageformats/libqsvg.so",
          "version" : ""
       },
       {
@@ -1635,7 +1635,7 @@
          "debug_file" : "libjpeg.so.8",
          "debug_id" : "84208C60BF7C0B30A8FEF700470187960",
          "end_addr" : "0x7f36274bc000",
-         "filename" : "libjpeg.so.8",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/lib/libjpeg.so.8",
          "version" : ""
       },
       {
@@ -1644,7 +1644,7 @@
          "debug_file" : "libqjpeg.so",
          "debug_id" : "22AB13F8E37F9288E70F0B0FAACE55020",
          "end_addr" : "0x7f36276c5000",
-         "filename" : "libqjpeg.so",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/bin/imageformats/libqjpeg.so",
          "version" : ""
       },
       {
@@ -1653,7 +1653,7 @@
          "debug_file" : "libqico.so",
          "debug_id" : "F07684417B094A8704866A4D13F622D60",
          "end_addr" : "0x7f36278cd000",
-         "filename" : "libqico.so",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/bin/imageformats/libqico.so",
          "version" : ""
       },
       {
@@ -1662,7 +1662,7 @@
          "debug_file" : "libqgif.so",
          "debug_id" : "2BBEA9856812E3BCE3DC77A952A17AF80",
          "end_addr" : "0x7f3627ad4000",
-         "filename" : "libqgif.so",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/bin/imageformats/libqgif.so",
          "version" : ""
       },
       {
@@ -1671,7 +1671,7 @@
          "debug_file" : "QtGui.so",
          "debug_id" : "8D69A42C37C0DB6738A2485C4E4885160",
          "end_addr" : "0x7f36291fe000",
-         "filename" : "QtGui.so",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/PySide/QtGui.so",
          "version" : ""
       },
       {
@@ -1680,7 +1680,7 @@
          "debug_file" : "QtCore.so",
          "debug_id" : "3FAA17CF2D8FD5B1696D69C0947927CA0",
          "end_addr" : "0x7f36298ca000",
-         "filename" : "QtCore.so",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/Plugins/PySide/QtCore.so",
          "version" : ""
       },
       {
@@ -1689,7 +1689,7 @@
          "debug_file" : "math.so",
          "debug_id" : "6DA08E4F37895BEAB97334D64019CD760",
          "end_addr" : "0x7f3629b21000",
-         "filename" : "math.so",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/lib/python2.7/lib-dynload/math.so",
          "version" : ""
       },
       {
@@ -1698,7 +1698,7 @@
          "debug_file" : "_locale.so",
          "debug_id" : "9D8356700E469B582773C44C4F6F7A1F0",
          "end_addr" : "0x7f3629d67000",
-         "filename" : "_locale.so",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/lib/python2.7/lib-dynload/_locale.so",
          "version" : ""
       },
       {
@@ -1707,7 +1707,7 @@
          "debug_file" : "zlib.so",
          "debug_id" : "5D703DC7DF563331554BAF2B78E050220",
          "end_addr" : "0x7f362a06e000",
-         "filename" : "zlib.so",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/lib/python2.7/lib-dynload/zlib.so",
          "version" : ""
       },
       {
@@ -1716,7 +1716,7 @@
          "debug_file" : "libdbus-1.so.3.7.4",
          "debug_id" : "AC607AD21D6AEF9934C20BF852DEBE4C0",
          "end_addr" : "0x7f362a376000",
-         "filename" : "libdbus-1.so.3.7.4",
+         "filename" : "/usr/lib64/libdbus-1.so.3.7.4",
          "version" : ""
       },
       {
@@ -1725,7 +1725,7 @@
          "debug_file" : "libXdmcp.so.6.0.0",
          "debug_id" : "136E586A6289E4895C4A4259629AD3FC0",
          "end_addr" : "0x7f362a57d000",
-         "filename" : "libXdmcp.so.6.0.0",
+         "filename" : "/usr/lib64/libXdmcp.so.6.0.0",
          "version" : ""
       },
       {
@@ -1734,7 +1734,7 @@
          "debug_file" : "liboxygenstyle.so.4.14.8",
          "debug_id" : "705F032A51BB3BE4EF1A4834B1A42CDC0",
          "end_addr" : "0x7f362a799000",
-         "filename" : "liboxygenstyle.so.4.14.8",
+         "filename" : "/usr/lib64/liboxygenstyle.so.4.14.8",
          "version" : ""
       },
       {
@@ -1743,7 +1743,7 @@
          "debug_file" : "oxygen.so",
          "debug_id" : "0997C7C219FA56CD8ABB55C612E9F6DF0",
          "end_addr" : "0x7f362aa4e000",
-         "filename" : "oxygen.so",
+         "filename" : "/usr/lib64/kde4/plugins/styles/oxygen.so",
          "version" : ""
       },
       {
@@ -1752,7 +1752,7 @@
          "debug_file" : "libqimsw-multi.so",
          "debug_id" : "591295FF85C58DD0C6DD96195892A0A20",
          "end_addr" : "0x7f362ac5d000",
-         "filename" : "libqimsw-multi.so",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/bin/inputmethods/libqimsw-multi.so",
          "version" : ""
       },
       {
@@ -1761,7 +1761,7 @@
          "debug_file" : "libnss_files-2.17.so",
          "debug_id" : "DB7652179088111525EBE61ED34A2F780",
          "end_addr" : "0x7f362ae69000",
-         "filename" : "libnss_files-2.17.so",
+         "filename" : "/usr/lib64/libnss_files-2.17.so",
          "version" : ""
       },
       {
@@ -1770,7 +1770,7 @@
          "debug_file" : ".gle1mVBt (deleted)",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f362b073000",
-         "filename" : ".gle1mVBt (deleted)",
+         "filename" : "/tmp/.gle1mVBt (deleted)",
          "version" : ""
       },
       {
@@ -1779,7 +1779,7 @@
          "debug_file" : "libelf-0.163.so",
          "debug_id" : "90CCA56B4D629F8CAFBE650831952A6D0",
          "end_addr" : "0x7f362b0b0000",
-         "filename" : "libelf-0.163.so",
+         "filename" : "/usr/lib64/libelf-0.163.so",
          "version" : ""
       },
       {
@@ -1788,7 +1788,7 @@
          "debug_file" : "libdw-0.163.so",
          "debug_id" : "76186D78759332B18BEC7B0452BC43C00",
          "end_addr" : "0x7f362b2f6000",
-         "filename" : "libdw-0.163.so",
+         "filename" : "/usr/lib64/libdw-0.163.so",
          "version" : ""
       },
       {
@@ -1797,7 +1797,7 @@
          "debug_file" : "libcap.so.2.22",
          "debug_id" : "8F659BFE997A7F8C09B070FA55AA3E4A0",
          "end_addr" : "0x7f362b4fc000",
-         "filename" : "libcap.so.2.22",
+         "filename" : "/usr/lib64/libcap.so.2.22",
          "version" : ""
       },
       {
@@ -1806,7 +1806,7 @@
          "debug_file" : "libudev.so.1.6.2",
          "debug_id" : "FDE277686B45BAFC181A6923016218340",
          "end_addr" : "0x7f362b70f000",
-         "filename" : "libudev.so.1.6.2",
+         "filename" : "/usr/lib64/libudev.so.1.6.2",
          "version" : ""
       },
       {
@@ -1815,7 +1815,7 @@
          "debug_file" : "libxml2.so.2",
          "debug_id" : "40AD6185D59B6D5784689D89E8F9190D0",
          "end_addr" : "0x7f362b86c000",
-         "filename" : "libxml2.so.2",
+         "filename" : "/opt/Natron-CY2015/lib/libxml2.so.2",
          "version" : ""
       },
       {
@@ -1824,7 +1824,7 @@
          "debug_file" : "libsopranoclient.so.1.2.0",
          "debug_id" : "E157D4E6622A81FDBC49A6E5BE4A79140",
          "end_addr" : "0x7f362bac0000",
-         "filename" : "libsopranoclient.so.1.2.0",
+         "filename" : "/usr/lib64/libsopranoclient.so.1.2.0",
          "version" : ""
       },
       {
@@ -1833,7 +1833,7 @@
          "debug_file" : "libfam.so.0.0.0",
          "debug_id" : "69B4C39F962E6FA3834404822FD572BF0",
          "end_addr" : "0x7f362bcca000",
-         "filename" : "libfam.so.0.0.0",
+         "filename" : "/usr/lib64/libfam.so.0.0.0",
          "version" : ""
       },
       {
@@ -1842,7 +1842,7 @@
          "debug_file" : "libresolv-2.17.so",
          "debug_id" : "2F8C8E6E4B49B00CB37B082679A701410",
          "end_addr" : "0x7f362bee1000",
-         "filename" : "libresolv-2.17.so",
+         "filename" : "/usr/lib64/libresolv-2.17.so",
          "version" : ""
       },
       {
@@ -1851,7 +1851,7 @@
          "debug_file" : "liblzma.so.5.0.99",
          "debug_id" : "931C13982754BD9A39FD80D4BE5B3EC50",
          "end_addr" : "0x7f362c109000",
-         "filename" : "liblzma.so.5.0.99",
+         "filename" : "/usr/lib64/liblzma.so.5.0.99",
          "version" : ""
       },
       {
@@ -1860,7 +1860,7 @@
          "debug_file" : "libbz2.so.1",
          "debug_id" : "15A159E0B5F100CCF76045038BF2269A0",
          "end_addr" : "0x7f362c319000",
-         "filename" : "libbz2.so.1",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/lib/libbz2.so.1",
          "version" : ""
       },
       {
@@ -1869,7 +1869,7 @@
          "debug_file" : "libXtst.so.6.1.0",
          "debug_id" : "E9308F85DB68C36BE30E48EBD78CC8F70",
          "end_addr" : "0x7f362c520000",
-         "filename" : "libXtst.so.6.1.0",
+         "filename" : "/usr/lib64/libXtst.so.6.1.0",
          "version" : ""
       },
       {
@@ -1878,7 +1878,7 @@
          "debug_file" : "libdbusmenu-qt.so.2.6.0",
          "debug_id" : "B8D93C2FE172F7D93F6BEDBA520A48570",
          "end_addr" : "0x7f362c751000",
-         "filename" : "libdbusmenu-qt.so.2.6.0",
+         "filename" : "/usr/lib64/libdbusmenu-qt.so.2.6.0",
          "version" : ""
       },
       {
@@ -1887,7 +1887,7 @@
          "debug_file" : "libattica.so.0.4.2",
          "debug_id" : "33812024E1C86103CD05AEAFDD589F860",
          "end_addr" : "0x7f362ca46000",
-         "filename" : "libattica.so.0.4.2",
+         "filename" : "/usr/lib64/libattica.so.0.4.2",
          "version" : ""
       },
       {
@@ -1896,7 +1896,7 @@
          "debug_file" : "libqca.so.2.0.3",
          "debug_id" : "4A8C75F7CEAA12722A9D0024A86D725F0",
          "end_addr" : "0x7f362cd59000",
-         "filename" : "libqca.so.2.0.3",
+         "filename" : "/usr/lib64/libqca.so.2.0.3",
          "version" : ""
       },
       {
@@ -1905,7 +1905,7 @@
          "debug_file" : "libsoprano.so.4.3.0",
          "debug_id" : "18631648568891D22080A7A977991D240",
          "end_addr" : "0x7f362d04a000",
-         "filename" : "libsoprano.so.4.3.0",
+         "filename" : "/usr/lib64/libsoprano.so.4.3.0",
          "version" : ""
       },
       {
@@ -1914,7 +1914,7 @@
          "debug_file" : "libattr.so.1.1.0",
          "debug_id" : "D9182CCB5BBE0F70CB32C65D49E4AF9F0",
          "end_addr" : "0x7f362d255000",
-         "filename" : "libattr.so.1.1.0",
+         "filename" : "/usr/lib64/libattr.so.1.1.0",
          "version" : ""
       },
       {
@@ -1923,7 +1923,7 @@
          "debug_file" : "libacl.so.1.1.0",
          "debug_id" : "85579D3AEF15D30EF59518748A0878F40",
          "end_addr" : "0x7f362d45d000",
-         "filename" : "libacl.so.1.1.0",
+         "filename" : "/usr/lib64/libacl.so.1.1.0",
          "version" : ""
       },
       {
@@ -1932,7 +1932,7 @@
          "debug_file" : "libsolid.so.4.14.8",
          "debug_id" : "F7C49736672F8D885A13F18D04B6F1A90",
          "end_addr" : "0x7f362d750000",
-         "filename" : "libsolid.so.4.14.8",
+         "filename" : "/usr/lib64/libsolid.so.4.14.8",
          "version" : ""
       },
       {
@@ -1941,7 +1941,7 @@
          "debug_file" : "libstreams.so.0.7.7",
          "debug_id" : "D0D326C01108BD1067A20D3436B10F8C0",
          "end_addr" : "0x7f362d99c000",
-         "filename" : "libstreams.so.0.7.7",
+         "filename" : "/usr/lib64/libstreams.so.0.7.7",
          "version" : ""
       },
       {
@@ -1950,7 +1950,7 @@
          "debug_file" : "libstreamanalyzer.so.0.7.7",
          "debug_id" : "09796051CBFCB8E298254226E9316C460",
          "end_addr" : "0x7f362dc1d000",
-         "filename" : "libstreamanalyzer.so.0.7.7",
+         "filename" : "/usr/lib64/libstreamanalyzer.so.0.7.7",
          "version" : ""
       },
       {
@@ -1959,7 +1959,7 @@
          "debug_file" : "libXpm.so.4.11.0",
          "debug_id" : "25AD0E233FCBB11FED43723DEEE45DD90",
          "end_addr" : "0x7f362de32000",
-         "filename" : "libXpm.so.4.11.0",
+         "filename" : "/usr/lib64/libXpm.so.4.11.0",
          "version" : ""
       },
       {
@@ -1968,7 +1968,7 @@
          "debug_file" : "libXft.so.2.3.2",
          "debug_id" : "533119676C676503EFE00C85A3AEC5460",
          "end_addr" : "0x7f362e048000",
-         "filename" : "libXft.so.2.3.2",
+         "filename" : "/usr/lib64/libXft.so.2.3.2",
          "version" : ""
       },
       {
@@ -1977,7 +1977,7 @@
          "debug_file" : "libnepomukutils.so.4.14.8",
          "debug_id" : "F4AF4749AD4206904647EA016E1AA1F80",
          "end_addr" : "0x7f362e282000",
-         "filename" : "libnepomukutils.so.4.14.8",
+         "filename" : "/usr/lib64/libnepomukutils.so.4.14.8",
          "version" : ""
       },
       {
@@ -1986,7 +1986,7 @@
          "debug_file" : "libnepomukquery.so.4.14.8",
          "debug_id" : "AA74167A1798DE5193DCCE85D667658D0",
          "end_addr" : "0x7f362e4cd000",
-         "filename" : "libnepomukquery.so.4.14.8",
+         "filename" : "/usr/lib64/libnepomukquery.so.4.14.8",
          "version" : ""
       },
       {
@@ -1995,7 +1995,7 @@
          "debug_file" : "libnepomuk.so.4.14.8",
          "debug_id" : "E9E02A8D4394DEEF874E53EEC76D31DC0",
          "end_addr" : "0x7f362e79f000",
-         "filename" : "libnepomuk.so.4.14.8",
+         "filename" : "/usr/lib64/libnepomuk.so.4.14.8",
          "version" : ""
       },
       {
@@ -2004,7 +2004,7 @@
          "debug_file" : "libQtDBus.so.4",
          "debug_id" : "F02FAD84027E033E6369F209E4A01ADD0",
          "end_addr" : "0x7f362ea22000",
-         "filename" : "libQtDBus.so.4",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/lib/libQtDBus.so.4",
          "version" : ""
       },
       {
@@ -2013,7 +2013,7 @@
          "debug_file" : "libkdecore.so.5.14.8",
          "debug_id" : "A17228606D94B3150DFC3A2D847A0BAE0",
          "end_addr" : "0x7f362eeee000",
-         "filename" : "libkdecore.so.5.14.8",
+         "filename" : "/usr/lib64/libkdecore.so.5.14.8",
          "version" : ""
       },
       {
@@ -2022,7 +2022,7 @@
          "debug_file" : "libQtSvg.so.4",
          "debug_id" : "7AD6C745632186F0F1280015E09D43230",
          "end_addr" : "0x7f362f15d000",
-         "filename" : "libQtSvg.so.4",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/lib/libQtSvg.so.4",
          "version" : ""
       },
       {
@@ -2031,7 +2031,7 @@
          "debug_file" : "libkdeui.so.5.14.8",
          "debug_id" : "E1074883A617B77C08020A71B1845F6C0",
          "end_addr" : "0x7f362f7b1000",
-         "filename" : "libkdeui.so.5.14.8",
+         "filename" : "/usr/lib64/libkdeui.so.5.14.8",
          "version" : ""
       },
       {
@@ -2040,7 +2040,7 @@
          "debug_file" : "libQtXml.so.4",
          "debug_id" : "E424AB3D8FF018BAE49775D0E2B1D6B00",
          "end_addr" : "0x7f362fa2a000",
-         "filename" : "libQtXml.so.4",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/lib/libQtXml.so.4",
          "version" : ""
       },
       {
@@ -2049,7 +2049,7 @@
          "debug_file" : "libkio.so.5.14.8",
          "debug_id" : "AB538BADE76D495C0EC92641B83136CB0",
          "end_addr" : "0x7f362fedd000",
-         "filename" : "libkio.so.5.14.8",
+         "filename" : "/usr/lib64/libkio.so.5.14.8",
          "version" : ""
       },
       {
@@ -2058,7 +2058,7 @@
          "debug_file" : ".gl9JcOxr (deleted)",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f36300f8000",
-         "filename" : ".gl9JcOxr (deleted)",
+         "filename" : "/tmp/.gl9JcOxr (deleted)",
          "version" : ""
       },
       {
@@ -2067,7 +2067,7 @@
          "debug_file" : ".glpmlBuM (deleted)",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f36300fa000",
-         "filename" : ".glpmlBuM (deleted)",
+         "filename" : "/tmp/.glpmlBuM (deleted)",
          "version" : ""
       },
       {
@@ -2076,7 +2076,7 @@
          "debug_file" : ".glOe6ER0 (deleted)",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f36300fc000",
-         "filename" : ".glOe6ER0 (deleted)",
+         "filename" : "/tmp/.glOe6ER0 (deleted)",
          "version" : ""
       },
       {
@@ -2085,7 +2085,7 @@
          "debug_file" : ".glzMnLef (deleted)",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f36300fe000",
-         "filename" : ".glzMnLef (deleted)",
+         "filename" : "/tmp/.glzMnLef (deleted)",
          "version" : ""
       },
       {
@@ -2094,7 +2094,7 @@
          "debug_file" : "libkde.so",
          "debug_id" : "BF8BE5E95B04F91681E9C3243348C6050",
          "end_addr" : "0x7f363012b000",
-         "filename" : "libkde.so",
+         "filename" : "/usr/lib64/kde4/plugins/gui_platform/libkde.so",
          "version" : ""
       },
       {
@@ -2103,7 +2103,7 @@
          "debug_file" : "87f5e051180a7a75f16eb6fe7dbd3749-le64.cache-3",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f363032e000",
-         "filename" : "87f5e051180a7a75f16eb6fe7dbd3749-le64.cache-3",
+         "filename" : "/home/olear/.cache/fontconfig/87f5e051180a7a75f16eb6fe7dbd3749-le64.cache-3",
          "version" : ""
       },
       {
@@ -2112,7 +2112,7 @@
          "debug_file" : "b79f3aaa7d385a141ab53ec885cc22a8-le64.cache-3",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f3630337000",
-         "filename" : "b79f3aaa7d385a141ab53ec885cc22a8-le64.cache-3",
+         "filename" : "/home/olear/.cache/fontconfig/b79f3aaa7d385a141ab53ec885cc22a8-le64.cache-3",
          "version" : ""
       },
       {
@@ -2121,7 +2121,7 @@
          "debug_file" : "0b1bcc92b4d25cc154d77dafe3bceaa0-le64.cache-3",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f363033a000",
-         "filename" : "0b1bcc92b4d25cc154d77dafe3bceaa0-le64.cache-3",
+         "filename" : "/home/olear/.cache/fontconfig/0b1bcc92b4d25cc154d77dafe3bceaa0-le64.cache-3",
          "version" : ""
       },
       {
@@ -2130,7 +2130,7 @@
          "debug_file" : "711dae798b6bff4224ea2776edcb5c93-le64.cache-3",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f363033c000",
-         "filename" : "711dae798b6bff4224ea2776edcb5c93-le64.cache-3",
+         "filename" : "/home/olear/.cache/fontconfig/711dae798b6bff4224ea2776edcb5c93-le64.cache-3",
          "version" : ""
       },
       {
@@ -2139,7 +2139,7 @@
          "debug_file" : "2e1514a9fdd499050989183bb65136db-le64.cache-3",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f363033e000",
-         "filename" : "2e1514a9fdd499050989183bb65136db-le64.cache-3",
+         "filename" : "/home/olear/.cache/fontconfig/2e1514a9fdd499050989183bb65136db-le64.cache-3",
          "version" : ""
       },
       {
@@ -2148,7 +2148,7 @@
          "debug_file" : "75726aeed9fe8691fd29315754d820cc-le64.cache-3",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f3630347000",
-         "filename" : "75726aeed9fe8691fd29315754d820cc-le64.cache-3",
+         "filename" : "/home/olear/.cache/fontconfig/75726aeed9fe8691fd29315754d820cc-le64.cache-3",
          "version" : ""
       },
       {
@@ -2157,7 +2157,7 @@
          "debug_file" : "3f821257dd33660ba7bbb45c32deb84c-le64.cache-3",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f3630349000",
-         "filename" : "3f821257dd33660ba7bbb45c32deb84c-le64.cache-3",
+         "filename" : "/home/olear/.cache/fontconfig/3f821257dd33660ba7bbb45c32deb84c-le64.cache-3",
          "version" : ""
       },
       {
@@ -2166,7 +2166,7 @@
          "debug_file" : "830f035fa84a65ce80e050178dbb630d-le64.cache-3",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f363034b000",
-         "filename" : "830f035fa84a65ce80e050178dbb630d-le64.cache-3",
+         "filename" : "/home/olear/.cache/fontconfig/830f035fa84a65ce80e050178dbb630d-le64.cache-3",
          "version" : ""
       },
       {
@@ -2175,7 +2175,7 @@
          "debug_file" : "81a173283b451552b599cfaafd6236bd-le64.cache-3",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f363034c000",
-         "filename" : "81a173283b451552b599cfaafd6236bd-le64.cache-3",
+         "filename" : "/home/olear/.cache/fontconfig/81a173283b451552b599cfaafd6236bd-le64.cache-3",
          "version" : ""
       },
       {
@@ -2184,7 +2184,7 @@
          "debug_file" : "ac68f755438cc3dc5a526084839fc7ca-le64.cache-3",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f363034d000",
-         "filename" : "ac68f755438cc3dc5a526084839fc7ca-le64.cache-3",
+         "filename" : "/home/olear/.cache/fontconfig/ac68f755438cc3dc5a526084839fc7ca-le64.cache-3",
          "version" : ""
       },
       {
@@ -2193,7 +2193,7 @@
          "debug_file" : "f951a6bc01c50d58ac4af16a0108457e-le64.cache-3",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f363034e000",
-         "filename" : "f951a6bc01c50d58ac4af16a0108457e-le64.cache-3",
+         "filename" : "/home/olear/.cache/fontconfig/f951a6bc01c50d58ac4af16a0108457e-le64.cache-3",
          "version" : ""
       },
       {
@@ -2202,7 +2202,7 @@
          "debug_file" : "12513961c6e7090f8648812f9eaf65d6-le64.cache-3",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f363034f000",
-         "filename" : "12513961c6e7090f8648812f9eaf65d6-le64.cache-3",
+         "filename" : "/home/olear/.cache/fontconfig/12513961c6e7090f8648812f9eaf65d6-le64.cache-3",
          "version" : ""
       },
       {
@@ -2211,7 +2211,7 @@
          "debug_file" : "e26bf336397aae6fcef4d3803472adec-le64.cache-3",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f3630351000",
-         "filename" : "e26bf336397aae6fcef4d3803472adec-le64.cache-3",
+         "filename" : "/home/olear/.cache/fontconfig/e26bf336397aae6fcef4d3803472adec-le64.cache-3",
          "version" : ""
       },
       {
@@ -2220,7 +2220,7 @@
          "debug_file" : "f132fa2327207a6ac3298c0518879731-le64.cache-3",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f3630352000",
-         "filename" : "f132fa2327207a6ac3298c0518879731-le64.cache-3",
+         "filename" : "/home/olear/.cache/fontconfig/f132fa2327207a6ac3298c0518879731-le64.cache-3",
          "version" : ""
       },
       {
@@ -2229,7 +2229,7 @@
          "debug_file" : "0fef740e1edd47736fa2cccff935ab7c-le64.cache-3",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f3630353000",
-         "filename" : "0fef740e1edd47736fa2cccff935ab7c-le64.cache-3",
+         "filename" : "/home/olear/.cache/fontconfig/0fef740e1edd47736fa2cccff935ab7c-le64.cache-3",
          "version" : ""
       },
       {
@@ -2238,7 +2238,7 @@
          "debug_file" : "6fcb01a03a016cc71057b587cdea6709-le64.cache-3",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f3630354000",
-         "filename" : "6fcb01a03a016cc71057b587cdea6709-le64.cache-3",
+         "filename" : "/home/olear/.cache/fontconfig/6fcb01a03a016cc71057b587cdea6709-le64.cache-3",
          "version" : ""
       },
       {
@@ -2247,7 +2247,7 @@
          "debug_file" : "29c8f5b6bf15d25ebb2e963855ab41be-le64.cache-3",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f3630358000",
-         "filename" : "29c8f5b6bf15d25ebb2e963855ab41be-le64.cache-3",
+         "filename" : "/home/olear/.cache/fontconfig/29c8f5b6bf15d25ebb2e963855ab41be-le64.cache-3",
          "version" : ""
       },
       {
@@ -2256,7 +2256,7 @@
          "debug_file" : "e0636055caa850f70f1a6db008fc4729-le64.cache-3",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f363035b000",
-         "filename" : "e0636055caa850f70f1a6db008fc4729-le64.cache-3",
+         "filename" : "/home/olear/.cache/fontconfig/e0636055caa850f70f1a6db008fc4729-le64.cache-3",
          "version" : ""
       },
       {
@@ -2265,7 +2265,7 @@
          "debug_file" : "46d51d90fe9d963f6f4186edb936a931-le64.cache-3",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f363035c000",
-         "filename" : "46d51d90fe9d963f6f4186edb936a931-le64.cache-3",
+         "filename" : "/home/olear/.cache/fontconfig/46d51d90fe9d963f6f4186edb936a931-le64.cache-3",
          "version" : ""
       },
       {
@@ -2274,7 +2274,7 @@
          "debug_file" : "cfde08ab28ad1d91784abb10973575e3-le64.cache-3",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f3630360000",
-         "filename" : "cfde08ab28ad1d91784abb10973575e3-le64.cache-3",
+         "filename" : "/home/olear/.cache/fontconfig/cfde08ab28ad1d91784abb10973575e3-le64.cache-3",
          "version" : ""
       },
       {
@@ -2283,7 +2283,7 @@
          "debug_file" : "b887eea8f1b96e1d899b44ed6681fc27-le64.cache-3",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f3630361000",
-         "filename" : "b887eea8f1b96e1d899b44ed6681fc27-le64.cache-3",
+         "filename" : "/home/olear/.cache/fontconfig/b887eea8f1b96e1d899b44ed6681fc27-le64.cache-3",
          "version" : ""
       },
       {
@@ -2292,7 +2292,7 @@
          "debug_file" : "860639f272b8b4b3094f9e399e41bccd-le64.cache-3",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f3630362000",
-         "filename" : "860639f272b8b4b3094f9e399e41bccd-le64.cache-3",
+         "filename" : "/home/olear/.cache/fontconfig/860639f272b8b4b3094f9e399e41bccd-le64.cache-3",
          "version" : ""
       },
       {
@@ -2301,7 +2301,7 @@
          "debug_file" : "211368abcb0ff835c229ff05c9ec01dc-le64.cache-3",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f3630363000",
-         "filename" : "211368abcb0ff835c229ff05c9ec01dc-le64.cache-3",
+         "filename" : "/home/olear/.cache/fontconfig/211368abcb0ff835c229ff05c9ec01dc-le64.cache-3",
          "version" : ""
       },
       {
@@ -2310,7 +2310,7 @@
          "debug_file" : "c46020d7221988a13df853d2b46304fc-le64.cache-3",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f3630364000",
-         "filename" : "c46020d7221988a13df853d2b46304fc-le64.cache-3",
+         "filename" : "/home/olear/.cache/fontconfig/c46020d7221988a13df853d2b46304fc-le64.cache-3",
          "version" : ""
       },
       {
@@ -2319,7 +2319,7 @@
          "debug_file" : "d759ee9cd048e494517a1be23d25a662-le64.cache-3",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f3630365000",
-         "filename" : "d759ee9cd048e494517a1be23d25a662-le64.cache-3",
+         "filename" : "/home/olear/.cache/fontconfig/d759ee9cd048e494517a1be23d25a662-le64.cache-3",
          "version" : ""
       },
       {
@@ -2328,7 +2328,7 @@
          "debug_file" : "d290456e58f67f52b0f8f224126f9ea8-le64.cache-3",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f3630366000",
-         "filename" : "d290456e58f67f52b0f8f224126f9ea8-le64.cache-3",
+         "filename" : "/home/olear/.cache/fontconfig/d290456e58f67f52b0f8f224126f9ea8-le64.cache-3",
          "version" : ""
       },
       {
@@ -2337,7 +2337,7 @@
          "debug_file" : "fa2b533b7056bdadb961f088bc0a978b-le64.cache-3",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f3630367000",
-         "filename" : "fa2b533b7056bdadb961f088bc0a978b-le64.cache-3",
+         "filename" : "/home/olear/.cache/fontconfig/fa2b533b7056bdadb961f088bc0a978b-le64.cache-3",
          "version" : ""
       },
       {
@@ -2346,7 +2346,7 @@
          "debug_file" : "df893b4576ad6107f9397134092c4059-le64.cache-3",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f3630368000",
-         "filename" : "df893b4576ad6107f9397134092c4059-le64.cache-3",
+         "filename" : "/home/olear/.cache/fontconfig/df893b4576ad6107f9397134092c4059-le64.cache-3",
          "version" : ""
       },
       {
@@ -2355,7 +2355,7 @@
          "debug_file" : "900402270e15d763a6e008bb2d4c7686-le64.cache-3",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f3630369000",
-         "filename" : "900402270e15d763a6e008bb2d4c7686-le64.cache-3",
+         "filename" : "/home/olear/.cache/fontconfig/900402270e15d763a6e008bb2d4c7686-le64.cache-3",
          "version" : ""
       },
       {
@@ -2364,7 +2364,7 @@
          "debug_file" : "47f48679023f44a4d1e44699a69464f6-le64.cache-3",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f363036a000",
-         "filename" : "47f48679023f44a4d1e44699a69464f6-le64.cache-3",
+         "filename" : "/home/olear/.cache/fontconfig/47f48679023f44a4d1e44699a69464f6-le64.cache-3",
          "version" : ""
       },
       {
@@ -2373,7 +2373,7 @@
          "debug_file" : "2881ed3fd21ca306ddad6f9b0dd3189f-le64.cache-3",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f363036b000",
-         "filename" : "2881ed3fd21ca306ddad6f9b0dd3189f-le64.cache-3",
+         "filename" : "/home/olear/.cache/fontconfig/2881ed3fd21ca306ddad6f9b0dd3189f-le64.cache-3",
          "version" : ""
       },
       {
@@ -2382,7 +2382,7 @@
          "debug_file" : "3c3fb04d32a5211b073874b125d29701-le64.cache-3",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f363036c000",
-         "filename" : "3c3fb04d32a5211b073874b125d29701-le64.cache-3",
+         "filename" : "/home/olear/.cache/fontconfig/3c3fb04d32a5211b073874b125d29701-le64.cache-3",
          "version" : ""
       },
       {
@@ -2391,7 +2391,7 @@
          "debug_file" : "e61abf8156cc476151baa07d67337cae-le64.cache-3",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f363036d000",
-         "filename" : "e61abf8156cc476151baa07d67337cae-le64.cache-3",
+         "filename" : "/home/olear/.cache/fontconfig/e61abf8156cc476151baa07d67337cae-le64.cache-3",
          "version" : ""
       },
       {
@@ -2400,7 +2400,7 @@
          "debug_file" : "b67b32625a2bb51b023d3814a918f351-le64.cache-3",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f3630371000",
-         "filename" : "b67b32625a2bb51b023d3814a918f351-le64.cache-3",
+         "filename" : "/home/olear/.cache/fontconfig/b67b32625a2bb51b023d3814a918f351-le64.cache-3",
          "version" : ""
       },
       {
@@ -2409,7 +2409,7 @@
          "debug_file" : "fc3b2af7b38f296247b7fcc731836117-le64.cache-3",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f3630377000",
-         "filename" : "fc3b2af7b38f296247b7fcc731836117-le64.cache-3",
+         "filename" : "/home/olear/.cache/fontconfig/fc3b2af7b38f296247b7fcc731836117-le64.cache-3",
          "version" : ""
       },
       {
@@ -2418,7 +2418,7 @@
          "debug_file" : "d3379abda271c4acd2ad0c01f565d0b0-le64.cache-3",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f3630379000",
-         "filename" : "d3379abda271c4acd2ad0c01f565d0b0-le64.cache-3",
+         "filename" : "/home/olear/.cache/fontconfig/d3379abda271c4acd2ad0c01f565d0b0-le64.cache-3",
          "version" : ""
       },
       {
@@ -2427,7 +2427,7 @@
          "debug_file" : "b4d0b56f766d89640448751fcd18ec1e-le64.cache-3",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f363037a000",
-         "filename" : "b4d0b56f766d89640448751fcd18ec1e-le64.cache-3",
+         "filename" : "/home/olear/.cache/fontconfig/b4d0b56f766d89640448751fcd18ec1e-le64.cache-3",
          "version" : ""
       },
       {
@@ -2436,7 +2436,7 @@
          "debug_file" : "99a1ce9f8b6a0434aadb01d3779b0780-le64.cache-3",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f363037c000",
-         "filename" : "99a1ce9f8b6a0434aadb01d3779b0780-le64.cache-3",
+         "filename" : "/home/olear/.cache/fontconfig/99a1ce9f8b6a0434aadb01d3779b0780-le64.cache-3",
          "version" : ""
       },
       {
@@ -2445,7 +2445,7 @@
          "debug_file" : "f9d379b867d7c69c85310a4f24e5228f-le64.cache-3",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f363037e000",
-         "filename" : "f9d379b867d7c69c85310a4f24e5228f-le64.cache-3",
+         "filename" : "/home/olear/.cache/fontconfig/f9d379b867d7c69c85310a4f24e5228f-le64.cache-3",
          "version" : ""
       },
       {
@@ -2454,7 +2454,7 @@
          "debug_file" : "614d1caaa4d7914789410f6367de37ca-le64.cache-3",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f363038f000",
-         "filename" : "614d1caaa4d7914789410f6367de37ca-le64.cache-3",
+         "filename" : "/home/olear/.cache/fontconfig/614d1caaa4d7914789410f6367de37ca-le64.cache-3",
          "version" : ""
       },
       {
@@ -2463,7 +2463,7 @@
          "debug_file" : "12b26b760a24f8b4feb03ad48a333a72-le64.cache-3",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f3630398000",
-         "filename" : "12b26b760a24f8b4feb03ad48a333a72-le64.cache-3",
+         "filename" : "/home/olear/.cache/fontconfig/12b26b760a24f8b4feb03ad48a333a72-le64.cache-3",
          "version" : ""
       },
       {
@@ -2472,7 +2472,7 @@
          "debug_file" : "928306c3ad40271d946e41014a49fc28-le64.cache-3",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f363039f000",
-         "filename" : "928306c3ad40271d946e41014a49fc28-le64.cache-3",
+         "filename" : "/home/olear/.cache/fontconfig/928306c3ad40271d946e41014a49fc28-le64.cache-3",
          "version" : ""
       },
       {
@@ -2481,7 +2481,7 @@
          "debug_file" : "8839436aaf7443ce013847a8a3ef9ded-le64.cache-3",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f36303a1000",
-         "filename" : "8839436aaf7443ce013847a8a3ef9ded-le64.cache-3",
+         "filename" : "/home/olear/.cache/fontconfig/8839436aaf7443ce013847a8a3ef9ded-le64.cache-3",
          "version" : ""
       },
       {
@@ -2490,7 +2490,7 @@
          "debug_file" : ".glnkXOYJ (deleted)",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f36303a3000",
-         "filename" : ".glnkXOYJ (deleted)",
+         "filename" : "/tmp/.glnkXOYJ (deleted)",
          "version" : ""
       },
       {
@@ -2499,7 +2499,7 @@
          "debug_file" : "libicudata.so.55",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f36321ba000",
-         "filename" : "libicudata.so.55",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/lib/libicudata.so.55",
          "version" : ""
       },
       {
@@ -2508,7 +2508,7 @@
          "debug_file" : "libicuuc.so.55",
          "debug_id" : "147AE775D9B06F82A670F898DEDE46C60",
          "end_addr" : "0x7f3632334000",
-         "filename" : "libicuuc.so.55",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/lib/libicuuc.so.55",
          "version" : ""
       },
       {
@@ -2517,7 +2517,7 @@
          "debug_file" : "libicui18n.so.55",
          "debug_id" : "120A472381C4EE8692B581184C57451C0",
          "end_addr" : "0x7f36327b1000",
-         "filename" : "libicui18n.so.55",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/lib/libicui18n.so.55",
          "version" : ""
       },
       {
@@ -2526,7 +2526,7 @@
          "debug_file" : "UTF-16.so",
          "debug_id" : "0ED070F5FBA4396D01676F7AD0057D860",
          "end_addr" : "0x7f3632a1e000",
-         "filename" : "UTF-16.so",
+         "filename" : "/usr/lib64/gconv/UTF-16.so",
          "version" : ""
       },
       {
@@ -2535,7 +2535,7 @@
          "debug_file" : "locale-archive",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f3639147000",
-         "filename" : "locale-archive",
+         "filename" : "/usr/lib/locale/locale-archive",
          "version" : ""
       },
       {
@@ -2544,7 +2544,7 @@
          "debug_file" : "libuuid.so.1.3.0",
          "debug_id" : "F0E6DF2E3A22DC3C2927617F1FBBAD420",
          "end_addr" : "0x7f363914b000",
-         "filename" : "libuuid.so.1.3.0",
+         "filename" : "/usr/lib64/libuuid.so.1.3.0",
          "version" : ""
       },
       {
@@ -2553,7 +2553,7 @@
          "debug_file" : "libXau.so.6.0.0",
          "debug_id" : "0B39AF3116E6CBB73E805B5FB014BD090",
          "end_addr" : "0x7f363934e000",
-         "filename" : "libXau.so.6.0.0",
+         "filename" : "/usr/lib64/libXau.so.6.0.0",
          "version" : ""
       },
       {
@@ -2562,7 +2562,7 @@
          "debug_file" : "libnvidia-glcore.so.361.28",
          "debug_id" : "2BFAD1B0695FE180B78DD22640DAFD3B0",
          "end_addr" : "0x7f363abfe000",
-         "filename" : "libnvidia-glcore.so.361.28",
+         "filename" : "/usr/lib64/nvidia/libnvidia-glcore.so.361.28",
          "version" : ""
       },
       {
@@ -2571,7 +2571,7 @@
          "debug_file" : "libnvidia-tls.so.361.28",
          "debug_id" : "D30748A7D0545D16A01C9E083DB834440",
          "end_addr" : "0x7f363b1e1000",
-         "filename" : "libnvidia-tls.so.361.28",
+         "filename" : "/usr/lib64/nvidia/tls/libnvidia-tls.so.361.28",
          "missing_symbols" : true,
          "version" : ""
       },
@@ -2581,7 +2581,7 @@
          "debug_file" : "libcrypto.so.1.0.0",
          "debug_id" : "EFAD4194FE2725FD769DD2032E36B7960",
          "end_addr" : "0x7f363b5f5000",
-         "filename" : "libcrypto.so.1.0.0",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/lib/libcrypto.so.1.0.0",
          "version" : ""
       },
       {
@@ -2590,7 +2590,7 @@
          "debug_file" : "libssl.so.1.0.0",
          "debug_id" : "A229CD1340C47C15ECE27671658A342A0",
          "end_addr" : "0x7f363b89b000",
-         "filename" : "libssl.so.1.0.0",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/lib/libssl.so.1.0.0",
          "version" : ""
       },
       {
@@ -2599,7 +2599,7 @@
          "debug_file" : "libICE.so.6.3.0",
          "debug_id" : "85EEB3840DD8DF3C78DC0495796A33980",
          "end_addr" : "0x7f363bac1000",
-         "filename" : "libICE.so.6.3.0",
+         "filename" : "/usr/lib64/libICE.so.6.3.0",
          "version" : ""
       },
       {
@@ -2608,7 +2608,7 @@
          "debug_file" : "libSM.so.6.0.1",
          "debug_id" : "ABB832C550B85EE6FBB74C83ACD64C4A0",
          "end_addr" : "0x7f363bccd000",
-         "filename" : "libSM.so.6.0.1",
+         "filename" : "/usr/lib64/libSM.so.6.0.1",
          "version" : ""
       },
       {
@@ -2617,7 +2617,7 @@
          "debug_file" : "libpng16.so.16",
          "debug_id" : "6331D0D14B6D46D1613ABC30434AAEB80",
          "end_addr" : "0x7f363beff000",
-         "filename" : "libpng16.so.16",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/lib/libpng16.so.16",
          "version" : ""
       },
       {
@@ -2626,7 +2626,7 @@
          "debug_file" : "libglib-2.0.so.0",
          "debug_id" : "C230C532FFBAB77AC6EEF814AF1BDDB70",
          "end_addr" : "0x7f363c234000",
-         "filename" : "libglib-2.0.so.0",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/lib/libglib-2.0.so.0",
          "missing_symbols" : true,
          "version" : ""
       },
@@ -2636,7 +2636,7 @@
          "debug_file" : "libgthread-2.0.so.0",
          "debug_id" : "99FCB1AD76C574B1C2C607AF38E600CD0",
          "end_addr" : "0x7f363c440000",
-         "filename" : "libgthread-2.0.so.0",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/lib/libgthread-2.0.so.0",
          "version" : ""
       },
       {
@@ -2645,7 +2645,7 @@
          "debug_file" : "libXext.so.6.4.0",
          "debug_id" : "54D3A40C8C8BE8E8DE86040B1380E47E0",
          "end_addr" : "0x7f363c651000",
-         "filename" : "libXext.so.6.4.0",
+         "filename" : "/usr/lib64/libXext.so.6.4.0",
          "version" : ""
       },
       {
@@ -2654,7 +2654,7 @@
          "debug_file" : "libXinerama.so.1.0.0",
          "debug_id" : "E0D69DFCA0AE9E336C7295CAEEFD49FF0",
          "end_addr" : "0x7f363c854000",
-         "filename" : "libXinerama.so.1.0.0",
+         "filename" : "/usr/lib64/libXinerama.so.1.0.0",
          "version" : ""
       },
       {
@@ -2663,7 +2663,7 @@
          "debug_file" : "libXcursor.so.1.0.2",
          "debug_id" : "99AA3D001DA350ABCE01E6EFF10505870",
          "end_addr" : "0x7f363ca5f000",
-         "filename" : "libXcursor.so.1.0.2",
+         "filename" : "/usr/lib64/libXcursor.so.1.0.2",
          "version" : ""
       },
       {
@@ -2672,7 +2672,7 @@
          "debug_file" : "libXfixes.so.3.1.0",
          "debug_id" : "8FE1A49780F842F5605A454DF63B521B0",
          "end_addr" : "0x7f363cc65000",
-         "filename" : "libXfixes.so.3.1.0",
+         "filename" : "/usr/lib64/libXfixes.so.3.1.0",
          "version" : ""
       },
       {
@@ -2681,7 +2681,7 @@
          "debug_file" : "libXrandr.so.2.2.0",
          "debug_id" : "30E087177CBB7838DFDA2F910A4CCC560",
          "end_addr" : "0x7f363ce6f000",
-         "filename" : "libXrandr.so.2.2.0",
+         "filename" : "/usr/lib64/libXrandr.so.2.2.0",
          "version" : ""
       },
       {
@@ -2690,7 +2690,7 @@
          "debug_file" : "libXrender.so.1.3.0",
          "debug_id" : "DD1DAF95D4EF9E906EAAFDCDE31E0CBC0",
          "end_addr" : "0x7f363d079000",
-         "filename" : "libXrender.so.1.3.0",
+         "filename" : "/usr/lib64/libXrender.so.1.3.0",
          "version" : ""
       },
       {
@@ -2699,7 +2699,7 @@
          "debug_file" : "libXi.so.6.1.0",
          "debug_id" : "ED052F8800784C7CCCB7D411CB8DACE00",
          "end_addr" : "0x7f363d289000",
-         "filename" : "libXi.so.6.1.0",
+         "filename" : "/usr/lib64/libXi.so.6.1.0",
          "version" : ""
       },
       {
@@ -2708,7 +2708,7 @@
          "debug_file" : "libz.so.1",
          "debug_id" : "252FEE4D0B53418A632C055ED6F0973C0",
          "end_addr" : "0x7f363d49f000",
-         "filename" : "libz.so.1",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/lib/libz.so.1",
          "version" : ""
       },
       {
@@ -2717,7 +2717,7 @@
          "debug_file" : "librt-2.17.so",
          "debug_id" : "9F2C0DCBDB293CD147E7D2EEFB94B3580",
          "end_addr" : "0x7f363d6a7000",
-         "filename" : "librt-2.17.so",
+         "filename" : "/usr/lib64/librt-2.17.so",
          "version" : ""
       },
       {
@@ -2726,7 +2726,7 @@
          "debug_file" : "libxcb.so.1.1.0",
          "debug_id" : "95DD22537C4886C52A91EA8942C418940",
          "end_addr" : "0x7f363d8c9000",
-         "filename" : "libxcb.so.1.1.0",
+         "filename" : "/usr/lib64/libxcb.so.1.1.0",
          "missing_symbols" : true,
          "version" : ""
       },
@@ -2736,7 +2736,7 @@
          "debug_file" : "libc-2.17.so",
          "debug_id" : "55646CE31CB2B61C8020709A8D5466DC0",
          "end_addr" : "0x7f363dc80000",
-         "filename" : "libc-2.17.so",
+         "filename" : "/usr/lib64/libc-2.17.so",
          "missing_symbols" : true,
          "version" : ""
       },
@@ -2746,7 +2746,7 @@
          "debug_file" : "libgcc_s-4.8.5-20150702.so.1",
          "debug_id" : "C4DCA16A7FDE3618344949857FC201720",
          "end_addr" : "0x7f363dea0000",
-         "filename" : "libgcc_s-4.8.5-20150702.so.1",
+         "filename" : "/usr/lib64/libgcc_s-4.8.5-20150702.so.1",
          "version" : ""
       },
       {
@@ -2755,7 +2755,7 @@
          "debug_file" : "libgomp.so.1.0.0",
          "debug_id" : "106D79BBC6972A885A188C67F95BC1880",
          "end_addr" : "0x7f363e0b7000",
-         "filename" : "libgomp.so.1.0.0",
+         "filename" : "/usr/lib64/libgomp.so.1.0.0",
          "version" : ""
       },
       {
@@ -2764,7 +2764,7 @@
          "debug_file" : "libm-2.17.so",
          "debug_id" : "4F29DFF902B754439DCB643F1322BB200",
          "end_addr" : "0x7f363e3b9000",
-         "filename" : "libm-2.17.so",
+         "filename" : "/usr/lib64/libm-2.17.so",
          "version" : ""
       },
       {
@@ -2773,7 +2773,7 @@
          "debug_file" : "libstdc++.so.6.0.19",
          "debug_id" : "8B884189EEF8ED9C585599BE5397A3850",
          "end_addr" : "0x7f363e6a3000",
-         "filename" : "libstdc++.so.6.0.19",
+         "filename" : "/usr/lib64/libstdc++.so.6.0.19",
          "version" : ""
       },
       {
@@ -2782,7 +2782,7 @@
          "debug_file" : "libpthread-2.17.so",
          "debug_id" : "C70A3F72F85E778E8940AE8A8BC301410",
          "end_addr" : "0x7f363e8d8000",
-         "filename" : "libpthread-2.17.so",
+         "filename" : "/usr/lib64/libpthread-2.17.so",
          "missing_symbols" : true,
          "version" : ""
       },
@@ -2792,7 +2792,7 @@
          "debug_file" : "libGL.so.361.28",
          "debug_id" : "D79D978FA58DFEE9AF6E12E9E7A05A0C0",
          "end_addr" : "0x7f363ebea000",
-         "filename" : "libGL.so.361.28",
+         "filename" : "/usr/lib64/nvidia/libGL.so.361.28",
          "missing_symbols" : true,
          "version" : ""
       },
@@ -2802,7 +2802,7 @@
          "debug_file" : "libQtCore.so.4",
          "debug_id" : "3D00BC9FB8FAF157BFDA33A29CCB634A0",
          "end_addr" : "0x7f363f100000",
-         "filename" : "libQtCore.so.4",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/lib/libQtCore.so.4",
          "missing_symbols" : true,
          "version" : ""
       },
@@ -2812,7 +2812,7 @@
          "debug_file" : "libQtNetwork.so.4",
          "debug_id" : "25EF2B9D8C6629009C6F2BDD6FAFC4E60",
          "end_addr" : "0x7f363f44f000",
-         "filename" : "libQtNetwork.so.4",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/lib/libQtNetwork.so.4",
          "version" : ""
       },
       {
@@ -2821,7 +2821,7 @@
          "debug_file" : "libQtGui.so.4",
          "debug_id" : "1CE4B83F8D88ED510F9BF5CC5111A9600",
          "end_addr" : "0x7f36400c4000",
-         "filename" : "libQtGui.so.4",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/lib/libQtGui.so.4",
          "missing_symbols" : true,
          "version" : ""
       },
@@ -2831,7 +2831,7 @@
          "debug_file" : "libQtOpenGL.so.4",
          "debug_id" : "D658BF2228BAE3D0360601AFE9A800730",
          "end_addr" : "0x7f3640412000",
-         "filename" : "libQtOpenGL.so.4",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/lib/libQtOpenGL.so.4",
          "version" : ""
       },
       {
@@ -2840,7 +2840,7 @@
          "debug_file" : "libfontconfig.so.1",
          "debug_id" : "6B709494DCD437D7CDF4BD3B8F43FECA0",
          "end_addr" : "0x7f3640652000",
-         "filename" : "libfontconfig.so.1",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/lib/libfontconfig.so.1",
          "version" : ""
       },
       {
@@ -2849,7 +2849,7 @@
          "debug_file" : "libfreetype.so.6",
          "debug_id" : "0E4364C593BB365F699EF0DADA659B730",
          "end_addr" : "0x7f36408dc000",
-         "filename" : "libfreetype.so.6",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/lib/libfreetype.so.6",
          "version" : ""
       },
       {
@@ -2858,7 +2858,7 @@
          "debug_file" : "libpixman-1.so.0",
          "debug_id" : "531F5E76BD57C5FD07FC479087F4FBCA0",
          "end_addr" : "0x7f3640b81000",
-         "filename" : "libpixman-1.so.0",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/lib/libpixman-1.so.0",
          "version" : ""
       },
       {
@@ -2867,7 +2867,7 @@
          "debug_file" : "libGLU.so.1.3.1",
          "debug_id" : "6E5DDADB651B642CB1FDFCBF152423470",
          "end_addr" : "0x7f3640e09000",
-         "filename" : "libGLU.so.1.3.1",
+         "filename" : "/usr/lib64/libGLU.so.1.3.1",
          "version" : ""
       },
       {
@@ -2876,7 +2876,7 @@
          "debug_file" : "libshiboken-python2.7.so.1.2",
          "debug_id" : "EDFAAD69C2FF7B2488441056D706BEF90",
          "end_addr" : "0x7f3641037000",
-         "filename" : "libshiboken-python2.7.so.1.2",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/lib/libshiboken-python2.7.so.1.2",
          "version" : ""
       },
       {
@@ -2885,7 +2885,7 @@
          "debug_file" : "libpyside-python2.7.so.1.2",
          "debug_id" : "6C133272492A9B2AFC9EED399B3D36870",
          "end_addr" : "0x7f3641265000",
-         "filename" : "libpyside-python2.7.so.1.2",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/lib/libpyside-python2.7.so.1.2",
          "version" : ""
       },
       {
@@ -2894,7 +2894,7 @@
          "debug_file" : "libexpat.so.1",
          "debug_id" : "B5E2DE24795B1F03695E8BC8469EF47B0",
          "end_addr" : "0x7f3641492000",
-         "filename" : "libexpat.so.1",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/lib/libexpat.so.1",
          "version" : ""
       },
       {
@@ -2903,7 +2903,7 @@
          "debug_file" : "libboost_serialization.so.1.55.0",
          "debug_id" : "40AB608401FA7ED28454E0252D8830F50",
          "end_addr" : "0x7f36416fc000",
-         "filename" : "libboost_serialization.so.1.55.0",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/lib/libboost_serialization.so.1.55.0",
          "version" : ""
       },
       {
@@ -2912,7 +2912,7 @@
          "debug_file" : "libutil-2.17.so",
          "debug_id" : "DEB7295C01FDE087232D4D60728F97030",
          "end_addr" : "0x7f364192a000",
-         "filename" : "libutil-2.17.so",
+         "filename" : "/usr/lib64/libutil-2.17.so",
          "version" : ""
       },
       {
@@ -2921,7 +2921,7 @@
          "debug_file" : "libdl-2.17.so",
          "debug_id" : "A1601009E763A2ED5572F3B1BAF2E8F80",
          "end_addr" : "0x7f3641b2e000",
-         "filename" : "libdl-2.17.so",
+         "filename" : "/usr/lib64/libdl-2.17.so",
          "version" : ""
       },
       {
@@ -2930,7 +2930,7 @@
          "debug_file" : "libpython2.7.so.1.0",
          "debug_id" : "42AEE7D12FFAA3CC7DA7788B79E7EC860",
          "end_addr" : "0x7f3641eed000",
-         "filename" : "libpython2.7.so.1.0",
+         "filename" : "/home/olear/Work/stackwalker/tests/Natron-2.1.7-Linux-x86_64bit/lib/libpython2.7.so.1.0",
          "version" : ""
       },
       {
@@ -2939,7 +2939,7 @@
          "debug_file" : "libX11.so.6.3.0",
          "debug_id" : "1A07E3D06947ADEAEAE092FFE41D8CF70",
          "end_addr" : "0x7f364227b000",
-         "filename" : "libX11.so.6.3.0",
+         "filename" : "/usr/lib64/libX11.so.6.3.0",
          "missing_symbols" : true,
          "version" : ""
       },
@@ -2949,7 +2949,7 @@
          "debug_file" : "ld-2.17.so",
          "debug_id" : "4DBBE1094C036372810A4110064706880",
          "end_addr" : "0x7f36424a2000",
-         "filename" : "ld-2.17.so",
+         "filename" : "/usr/lib64/ld-2.17.so",
          "missing_symbols" : true,
          "version" : ""
       },
@@ -2959,7 +2959,7 @@
          "debug_file" : "019629eead7fd8624feacc17e1c76e56-le64.cache-3",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f36424a3000",
-         "filename" : "019629eead7fd8624feacc17e1c76e56-le64.cache-3",
+         "filename" : "/home/olear/.cache/fontconfig/019629eead7fd8624feacc17e1c76e56-le64.cache-3",
          "version" : ""
       },
       {
@@ -2968,7 +2968,7 @@
          "debug_file" : ".glUkZOAI (deleted)",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f36424a5000",
-         "filename" : ".glUkZOAI (deleted)",
+         "filename" : "/tmp/.glUkZOAI (deleted)",
          "version" : ""
       },
       {
@@ -2977,7 +2977,7 @@
          "debug_file" : ".gl46Gxey (deleted)",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f36424a7000",
-         "filename" : ".gl46Gxey (deleted)",
+         "filename" : "/tmp/.gl46Gxey (deleted)",
          "version" : ""
       },
       {
@@ -2986,7 +2986,7 @@
          "debug_file" : "3640555adad8a8f6978400293cfce7ab-le64.cache-3",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f3642677000",
-         "filename" : "3640555adad8a8f6978400293cfce7ab-le64.cache-3",
+         "filename" : "/home/olear/.cache/fontconfig/3640555adad8a8f6978400293cfce7ab-le64.cache-3",
          "version" : ""
       },
       {
@@ -2995,7 +2995,7 @@
          "debug_file" : "gconv-modules.cache",
          "debug_id" : "000000000000000000000000000000000",
          "end_addr" : "0x7f3642691000",
-         "filename" : "gconv-modules.cache",
+         "filename" : "/usr/lib64/gconv/gconv-modules.cache",
          "version" : ""
       },
       {
