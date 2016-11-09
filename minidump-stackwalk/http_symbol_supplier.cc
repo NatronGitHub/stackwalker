@@ -272,7 +272,7 @@ HTTPSymbolSupplier::GetRelativeURLAndPathToSymbolFile(const CodeModule* module,
     debug_file_name = debug_file_name.substr(0, debug_file_name.size() - 4);
   }
 
-  debug_file_name += ".sym";
+  debug_file_name += ".sym.zip";
   out_path = JoinPath(path, debug_file_name);
   out_url = JoinURL(curl_, url, debug_file_name);
   return true;
