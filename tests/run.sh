@@ -5,7 +5,7 @@ DUMPS="39eb2108-ca98-7946-09d36d98-51c56b32 6537E627-678E-44B3-9116-36323C0BA4CC
 for i in $DUMPS;do
   echo "Testing $i"
   rm -f $i.tmp || true
-  $SW --pretty $i.dmp $SYM > $i.tmp
+  $SW --pretty --symbols-url http://fxarena.net/natron/symbols --symbols-cache /tmp $i.dmp > $i.tmp
   DIFF=`diff $i.json $i.tmp`
   if [ ! -z "$DIFF" ]; then
     echo "$i: FAILED"
