@@ -1,7 +1,7 @@
 Summary: Parse crash reports
 Name: stackwalker
 
-Version: 2016.11
+Version: 2016.11r1
 Release: 1%{?dist}
 License: BSD
 
@@ -25,14 +25,11 @@ cd breakpad
 ./configure
 make %{?_smp_mflags}
 cd ..
-cd minidump-stackwalk
-make
-cd ..
+make -C minidump-stackwalk
 head -n32 minidump-stackwalk/stackwalker.cc > LICENSE
 
 %install
 mkdir -p %{buildroot}/usr/bin
-strip -s minidump-stackwalk/stackwalker
 cp minidump-stackwalk/stackwalker %{buildroot}/usr/bin/
 
 %clean
