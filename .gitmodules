@@ -1,6 +1,6 @@
 [submodule "breakpad"]
 	path = breakpad
-	url = https://github.com/olear/breakpad
+	url = https://github.com/NatronGitHub/breakpad
 [submodule "jsoncpp"]
 	path = jsoncpp
 	url = https://github.com/open-source-parsers/jsoncpp.git

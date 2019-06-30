@@ -16,5 +16,3 @@ script:
   - make -j2
   - cd ../minidump-stackwalk
   - make
-  - cd ../tests
-  - sh run.sh

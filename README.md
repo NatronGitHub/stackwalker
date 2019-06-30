@@ -1,4 +1,4 @@
-Stackwalker [![Build Status](https://travis-ci.org/olear/stackwalker.svg)](https://travis-ci.org/olear/stackwalker)
+Stackwalker [![Build Status](https://travis-ci.org/NatronGitHub/stackwalker.svg)](https://travis-ci.org/NatronGitHub/stackwalker)
 -----------
 
-Parse crash reports from clients using Breakpad.
+Parse crash reports from Natron.
