@@ -5,53 +5,36 @@ BREAKPAD_LIBS := \
   $(BREAKPAD_SRCDIR)/third_party/libdisasm//libdisasm.a \
   $(NULL)
 
-JSON_DIR := ../jsoncpp
-JSON_SRCDIR := $(JSON_DIR)/src/lib_json
-JSON_INCLUDEDIR := $(JSON_DIR)/include
-
 BINS := \
   stackwalker \
-#  dumplookup \
-#  get-minidump-instructions \
-#  jit-crash-categorize \
   $(NULL)
 
 all: $(BINS)
-
-stackwalker_OBJS := \
-  json_reader.o \
-  json_value.o \
-  json_writer.o \
-  $(NULL)
 
 EXTRA_OBJS := \
   http_symbol_supplier.o \
   $(NULL)
 
-VPATH += $(JSON_SRCDIR)
-
-OS := $(shell uname -s)
-ifeq ($(OS),Linux)
 CURL_CFLAGS := $(shell pkg-config libcurl --cflags)
 CURL_LIBS := $(shell pkg-config libcurl --libs)
+LIBZIP_CFLAGS := $(shell pkg-config libzip --cflags)
 LIBZIP_LIBS := $(shell pkg-config libzip --libs)
+JSON_CFLAGS := $(shell pkg-config jsoncpp --cflags)
+JSON_LIBS := $(shell pkg-config jsoncpp --libs)
 # Don't -Werror everywhere, some compilers are too picky.
-WERROR := -Werror
-else
-CURL_LIBS := -lcurl
-LIBZIP_LIBS := -lzip -lz
-endif
+#WERROR := -Werror
 
 CXXFLAGS += \
   -I$(BREAKPAD_SRCDIR) \
-  -I$(JSON_INCLUDEDIR) \
   -D__STDC_FORMAT_MACROS=1 \
   -std=gnu++0x \
   -Wno-format \
   $(WERROR) \
+  $(JSON_CFLAGS) \
   $(CURL_CFLAGS) \
+  $(LIBZIP_CFLAGS) \
   $(NULL)
-LIBS := $(CURL_LIBS) $(LIBZIP_LIBS)
+LIBS := $(JSON_LIBS) $(CURL_LIBS) $(LIBZIP_LIBS)
 
 .SECONDEXPANSION:
 $(BINS): %: %.cc $(BREAKPAD_LIBS) $(EXTRA_OBJS) $$($$*_OBJS)
