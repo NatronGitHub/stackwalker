@@ -1,0 +1,2101 @@
+{
+   "crash_info" : {
+      "address" : "0x0",
+      "crashing_thread" : 0,
+      "type" : "SIGSEGV /0x00000000"
+   },
+   "crashing_thread" : {
+      "frames" : [
+         {
+            "file" : "/home/olear/Development/build-Project-Qt4-Debug/Engine/../../Natron/Engine/Settings.cpp",
+            "frame" : 0,
+            "function" : "Natron::crash_application()",
+            "function_offset" : "0x3f",
+            "line" : 2228,
+            "module" : "Natron-bin",
+            "module_offset" : "0x1ddb0f2",
+            "offset" : "0x21db0f2",
+            "registers" : {
+               "r10" : "0x00007f505d8f0290",
+               "r11" : "0x0000000000000000",
+               "r12" : "0x0000000000000000",
+               "r13" : "0x0000000000000000",
+               "r14" : "0x0000000000000001",
+               "r15" : "0x000000000ca3f710",
+               "r8" : "0x00007f50590f3770",
+               "r9" : "0x00007f505d8ef980",
+               "rax" : "0x0000000000000000",
+               "rbp" : "0x00007fff2cf450b0",
+               "rbx" : "0x0000000004d19c80",
+               "rcx" : "0x00007f505d8ef7d0",
+               "rdi" : "0x00007f50590f2540",
+               "rdx" : "0x0000000000000000",
+               "rip" : "0x00000000021db0f2",
+               "rsi" : "0x00007f50590f3770",
+               "rsp" : "0x00007fff2cf450a0"
+            },
+            "trust" : "context"
+         },
+         {
+            "file" : "/home/olear/Development/build-Project-Qt4-Debug/Engine/../../Natron/Engine/Settings.cpp",
+            "frame" : 1,
+            "function" : "Natron::Settings::onKnobValueChanged(Natron::KnobI*, Natron::ValueChangedReasonEnum, double, Natron::ViewSpec, bool)",
+            "function_offset" : "0x159d",
+            "line" : 2360,
+            "module" : "Natron-bin",
+            "module_offset" : "0x1dd26c1",
+            "offset" : "0x21d26c1",
+            "trust" : "cfi"
+         },
+         {
+            "file" : "/home/olear/Development/build-Project-Qt4-Debug/Engine/../../Natron/Engine/Knob.cpp",
+            "frame" : 2,
+            "function" : "Natron::KnobHolder::onKnobValueChanged_public(Natron::KnobI*, Natron::ValueChangedReasonEnum, double, Natron::ViewSpec, bool)",
+            "function_offset" : "0xc6",
+            "line" : 5996,
+            "module" : "Natron-bin",
+            "module_offset" : "0x1ae042e",
+            "offset" : "0x1ee042e",
+            "trust" : "cfi"
+         },
+         {
+            "file" : "/home/olear/Development/build-Project-Qt4-Debug/Engine/../../Natron/Engine/Knob.cpp",
+            "frame" : 3,
+            "function" : "Natron::KnobHolder::endChanges(bool)",
+            "function_offset" : "0x86a",
+            "line" : 5567,
+            "module" : "Natron-bin",
+            "module_offset" : "0x1ade546",
+            "offset" : "0x1ede546",
+            "trust" : "cfi"
+         },
+         {
+            "file" : "/home/olear/Development/build-Project-Qt4-Debug/Engine/../../Natron/Engine/Knob.cpp",
+            "frame" : 4,
+            "function" : "Natron::KnobHelper::evaluateValueChangeInternal(int, double, Natron::ViewSpec, Natron::ValueChangedReasonEnum, Natron::ValueChangedReasonEnum)",
+            "function_offset" : "0x2ca",
+            "line" : 1700,
+            "module" : "Natron-bin",
+            "module_offset" : "0x1aca3d2",
+            "offset" : "0x1eca3d2",
+            "trust" : "cfi"
+         },
+         {
+            "file" : "/home/olear/Development/build-Project-Qt4-Debug/Engine/../../Natron/Engine/Knob.cpp",
+            "frame" : 5,
+            "function" : "Natron::KnobHelper::evaluateValueChange(int, double, Natron::ViewSpec, Natron::ValueChangedReasonEnum)",
+            "function_offset" : "0x3f",
+            "line" : 1724,
+            "module" : "Natron-bin",
+            "module_offset" : "0x1aca5a3",
+            "offset" : "0x1eca5a3",
+            "trust" : "cfi"
+         },
+         {
+            "file" : "/home/olear/Development/build-Project-Qt4-Debug/Engine/../../Natron/Engine/KnobTypes.cpp",
+            "frame" : 6,
+            "function" : "Natron::KnobButton::trigger()",
+            "function_offset" : "0x5c",
+            "line" : 499,
+            "module" : "Natron-bin",
+            "module_offset" : "0x1b43ac6",
+            "offset" : "0x1f43ac6",
+            "trust" : "cfi"
+         },
+         {
+            "file" : "/home/olear/Development/build-Project-Qt4-Debug/Gui/../../Natron/Gui/KnobGuiButton.cpp",
+            "frame" : 7,
+            "function" : "Natron::KnobGuiButton::emitValueChanged(bool)",
+            "function_offset" : "0x15d",
+            "line" : 188,
+            "module" : "Natron-bin",
+            "module_offset" : "0x15ce2b1",
+            "offset" : "0x19ce2b1",
+            "trust" : "cfi"
+         },
+         {
+            "file" : "/home/olear/Development/build-Project-Qt4-Debug/Gui/./moc_KnobGuiButton.cpp",
+            "frame" : 8,
+            "function" : "Natron::KnobGuiButton::qt_static_metacall(QObject*, QMetaObject::Call, int, void**)",
+            "function_offset" : "0x85",
+            "line" : 48,
+            "module" : "Natron-bin",
+            "module_offset" : "0x15ce6e9",
+            "offset" : "0x19ce6e9",
+            "trust" : "cfi"
+         },
+         {
+            "frame" : 9,
+            "missing_symbols" : true,
+            "module" : "libQtCore.so.4.8.7",
+            "module_offset" : "0x1a28f1",
+            "offset" : "0x7f505a1dc8f1",
+            "trust" : "cfi"
+         }
+      ],
+      "threads_index" : 0,
+      "total_frames" : 59
+   },
+   "main_module" : 0,
+   "modules" : [
+      {
+         "base_addr" : "0x400000",
+         "code_id" : "1aa0cd69230f7c6f71cd19e5a20a21ac",
+         "debug_file" : "Natron-bin",
+         "debug_id" : "69CDA01A0F236F7C71CD19E5A20A21AC0",
+         "end_addr" : "0x3179000",
+         "filename" : "/home/olear/Development/build-Project-Qt4-Debug/App/Natron-bin",
+         "loaded_symbols" : true,
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f50459a0000",
+         "code_id" : "id",
+         "debug_file" : "SYSV00000000 (deleted)",
+         "debug_id" : "000000000000000000000000000000000",
+         "end_addr" : "0x7f5045f4d000",
+         "filename" : "/SYSV00000000 (deleted)",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f5045f4d000",
+         "code_id" : "d4c22ec8732a6258453c0b934550eb1a",
+         "debug_file" : "im-scim.so",
+         "debug_id" : "C82EC2D42A735862453C0B934550EB1A0",
+         "end_addr" : "0x7f5045f69000",
+         "filename" : "/usr/lib64/qt/plugins/inputmethods/im-scim.so",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f504616a000",
+         "code_id" : "4708a0a0b3816614892281320bdfd1d7",
+         "debug_file" : "libqimsw-multi.so",
+         "debug_id" : "A0A0084781B31466892281320BDFD1D70",
+         "end_addr" : "0x7f5046170000",
+         "filename" : "/usr/lib64/qt/plugins/inputmethods/libqimsw-multi.so",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f5046371000",
+         "code_id" : "414c47e55ae5039d60e444559f498a29",
+         "debug_file" : "libnss_files-2.23.so",
+         "debug_id" : "E5474C41E55A9D0360E444559F498A290",
+         "end_addr" : "0x7f504637c000",
+         "filename" : "/lib64/libnss_files-2.23.so",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f5046583000",
+         "code_id" : "47c9b1c2062749925d4e2b53d0af37c3",
+         "debug_file" : "libnss_nis-2.23.so",
+         "debug_id" : "C2B1C947270692495D4E2B53D0AF37C30",
+         "end_addr" : "0x7f504658e000",
+         "filename" : "/lib64/libnss_nis-2.23.so",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f504678f000",
+         "code_id" : "38b4e8d91456985cf619d737ac232082",
+         "debug_file" : "libnsl-2.23.so",
+         "debug_id" : "D9E8B43856145C98F619D737AC2320820",
+         "end_addr" : "0x7f50467a5000",
+         "filename" : "/lib64/libnsl-2.23.so",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f50469a9000",
+         "code_id" : "3df960ec26d46b4265dafc7972094d98",
+         "debug_file" : "libnss_compat-2.23.so",
+         "debug_id" : "EC60F93DD426426B65DAFC7972094D980",
+         "end_addr" : "0x7f50469b1000",
+         "filename" : "/lib64/libnss_compat-2.23.so",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f5047510000",
+         "code_id" : "01c3b0df141dcb125bd0f192aed253bd",
+         "debug_file" : "liblzma.so.5.2.2",
+         "debug_id" : "DFB0C3011D1412CB5BD0F192AED253BD0",
+         "end_addr" : "0x7f5047534000",
+         "filename" : "/lib64/liblzma.so.5.2.2",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f5047735000",
+         "code_id" : "98491e5a7ab74ca908714d25aa5acd3e",
+         "debug_file" : "libtiff.so.5.4.0",
+         "debug_id" : "5A1E4998B77AA94C08714D25AA5ACD3E0",
+         "end_addr" : "0x7f50477a8000",
+         "filename" : "/usr/lib64/libtiff.so.5.4.0",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f50479ac000",
+         "code_id" : "58385239ab159a3ae372bf009ac8f5f8",
+         "debug_file" : "libqtiff.so",
+         "debug_id" : "3952385815AB3A9AE372BF009AC8F5F80",
+         "end_addr" : "0x7f50479b3000",
+         "filename" : "/usr/lib64/qt/plugins/imageformats/libqtiff.so",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f5047bb4000",
+         "code_id" : "d076fe752564fb174e417871af6f3894",
+         "debug_file" : "libqtga.so",
+         "debug_id" : "75FE76D0642517FB4E417871AF6F38940",
+         "end_addr" : "0x7f5047bb9000",
+         "filename" : "/usr/lib64/qt/plugins/imageformats/libqtga.so",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f5047dba000",
+         "code_id" : "7a9e995c66d36654d5b66a8ef5a821f3",
+         "debug_file" : "libQtXml.so.4.8.7",
+         "debug_id" : "5C999E7AD3665466D5B66A8EF5A821F30",
+         "end_addr" : "0x7f5047dfd000",
+         "filename" : "/usr/lib64/qt/lib/libQtXml.so.4.8.7",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f504c06b000",
+         "code_id" : "00000000000000000000000000000000",
+         "debug_file" : "DejaVuSans.ttf",
+         "debug_id" : "000000000000000000000000000000000",
+         "end_addr" : "0x7f504c121000",
+         "filename" : "/usr/share/fonts/TTF/DejaVuSans.ttf",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f504c121000",
+         "code_id" : "cfd88cde81f15a766f373b57ed94a30f",
+         "debug_file" : "libQtSvg.so.4.8.7",
+         "debug_id" : "DE8CD8CFF181765A6F373B57ED94A30F0",
+         "end_addr" : "0x7f504c178000",
+         "filename" : "/usr/lib64/qt/lib/libQtSvg.so.4.8.7",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f504cdfb000",
+         "code_id" : "aaa15f8479aedb1a6b7ef2a4cd5d1be8",
+         "debug_file" : "QtGui.so",
+         "debug_id" : "845FA1AAAE791ADB6B7EF2A4CD5D1BE80",
+         "end_addr" : "0x7f504d6ec000",
+         "filename" : "/usr/lib64/python2.7/site-packages/PySide/QtGui.so",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f504db6e000",
+         "code_id" : "d014969a0f626ab8dbf290a1755610df",
+         "debug_file" : "QtCore.so",
+         "debug_id" : "9A9614D0620FB86ADBF290A1755610DF0",
+         "end_addr" : "0x7f504dd84000",
+         "filename" : "/usr/lib64/python2.7/site-packages/PySide/QtCore.so",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f504dffb000",
+         "code_id" : "5528c4668178b16a92f642d39c892ad3",
+         "debug_file" : "math.so",
+         "debug_id" : "66C4285578816AB192F642D39C892AD30",
+         "end_addr" : "0x7f504e005000",
+         "filename" : "/usr/lib64/python2.7/lib-dynload/math.so",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f504e207000",
+         "code_id" : "fe9656df76b3cb10d5f64d20e9335ac6",
+         "debug_file" : "strop.so",
+         "debug_id" : "DF5696FEB37610CBD5F64D20E9335AC60",
+         "end_addr" : "0x7f504e20d000",
+         "filename" : "/usr/lib64/python2.7/lib-dynload/strop.so",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f504e48f000",
+         "code_id" : "d09aca81849f68ab643d87b04cca2175",
+         "debug_file" : "_locale.so",
+         "debug_id" : "81CA9AD09F84AB68643D87B04CCA21750",
+         "end_addr" : "0x7f504e493000",
+         "filename" : "/usr/lib64/python2.7/lib-dynload/_locale.so",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f504e794000",
+         "code_id" : "09c77f17215784fa550c7a9408636f38",
+         "debug_file" : "libXi.so.6.1.0",
+         "debug_id" : "177FC7095721FA84550C7A9408636F380",
+         "end_addr" : "0x7f504e7a3000",
+         "filename" : "/usr/lib64/libXi.so.6.1.0",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f504e9a4000",
+         "code_id" : "af7bb235b9f4e3a29103068acaadddcc",
+         "debug_file" : "libXinerama.so.1.0.0",
+         "debug_id" : "35B27BAFF4B9A2E39103068ACAADDDCC0",
+         "end_addr" : "0x7f504e9a6000",
+         "filename" : "/usr/lib64/libXinerama.so.1.0.0",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f504eba6000",
+         "code_id" : "cb8fc6be6204ff1b6f01be7f1a63244e",
+         "debug_file" : "libXcursor.so.1.0.2",
+         "debug_id" : "BEC68FCB04621BFF6F01BE7F1A63244E0",
+         "end_addr" : "0x7f504ebaf000",
+         "filename" : "/usr/lib64/libXcursor.so.1.0.2",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f504edb1000",
+         "code_id" : "3f491792c2674226bd06e23b27a292ee",
+         "debug_file" : "libXrandr.so.2.2.0",
+         "debug_id" : "9217493F67C22642BD06E23B27A292EE0",
+         "end_addr" : "0x7f504edbb000",
+         "filename" : "/usr/lib64/libXrandr.so.2.2.0",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f504eff8000",
+         "code_id" : "00000000000000000000000000000000",
+         "debug_file" : "8839436aaf7443ce013847a8a3ef9ded-le64.cache-4",
+         "debug_id" : "000000000000000000000000000000000",
+         "end_addr" : "0x7f504f3d1000",
+         "filename" : "/home/olear/.cache/fontconfig/8839436aaf7443ce013847a8a3ef9ded-le64.cache-4",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f504f3d1000",
+         "code_id" : "00000000000000000000000000000000",
+         "debug_file" : "8d4af663993b81a124ee82e610bb31f9-le64.cache-4",
+         "debug_id" : "000000000000000000000000000000000",
+         "end_addr" : "0x7f504f3f4000",
+         "filename" : "/var/cache/fontconfig/8d4af663993b81a124ee82e610bb31f9-le64.cache-4",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f504f3f4000",
+         "code_id" : "d20c81bfa3e26947515d18efe883dad0",
+         "debug_file" : "ISO8859-1.so",
+         "debug_id" : "BF810CD2E2A34769515D18EFE883DAD00",
+         "end_addr" : "0x7f504f3f6000",
+         "filename" : "/usr/lib64/gconv/ISO8859-1.so",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f504f5f7000",
+         "code_id" : "00000000000000000000000000000000",
+         "debug_file" : "LC_CTYPE",
+         "debug_id" : "000000000000000000000000000000000",
+         "end_addr" : "0x7f504f63a000",
+         "filename" : "/usr/lib64/locale/en_US/LC_CTYPE",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f504f6c1000",
+         "code_id" : "00000000000000000000000000000000",
+         "debug_file" : "LiberationMono-Regular.ttf",
+         "debug_id" : "000000000000000000000000000000000",
+         "end_addr" : "0x7f504f6dc000",
+         "filename" : "/usr/share/fonts/TTF/LiberationMono-Regular.ttf",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f504f6dc000",
+         "code_id" : "034c894ae8addb24ecbe2f149fb04138",
+         "debug_file" : "libqsvg.so",
+         "debug_id" : "4A894C03ADE824DBECBE2F149FB041380",
+         "end_addr" : "0x7f504f6e1000",
+         "filename" : "/usr/lib64/qt/plugins/imageformats/libqsvg.so",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f504f8e2000",
+         "code_id" : "a6968377cdbd94ece1dd6a2942cd3eb4",
+         "debug_file" : "liblcms2.so.2.0.7",
+         "debug_id" : "778396A6BDCDEC94E1DD6A2942CD3EB40",
+         "end_addr" : "0x7f504f935000",
+         "filename" : "/usr/lib64/liblcms2.so.2.0.7",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f504fb3a000",
+         "code_id" : "a8462e000a5c80252615745996679ec0",
+         "debug_file" : "libmng.so.2.0.2",
+         "debug_id" : "002E46A85C0A25802615745996679EC00",
+         "end_addr" : "0x7f504fba7000",
+         "filename" : "/usr/lib64/libmng.so.2.0.2",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f504fdab000",
+         "code_id" : "230940e875899cd90bed86518edcefc9",
+         "debug_file" : "libqmng.so",
+         "debug_id" : "E84009238975D99C0BED86518EDCEFC90",
+         "end_addr" : "0x7f504fdb1000",
+         "filename" : "/usr/lib64/qt/plugins/imageformats/libqmng.so",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f504ffb2000",
+         "code_id" : "fa52d6d53c960c51e0afbcc9dc28d8dc",
+         "debug_file" : "libjpeg.so.62.2.0",
+         "debug_id" : "D5D652FA963C510CE0AFBCC9DC28D8DC0",
+         "end_addr" : "0x7f505001a000",
+         "filename" : "/usr/lib64/libjpeg.so.62.2.0",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f5050223000",
+         "code_id" : "id",
+         "debug_file" : "SYSV00000000 (deleted)",
+         "debug_id" : "000000000000000000000000000000000",
+         "end_addr" : "0x7f5050227000",
+         "filename" : "/SYSV00000000 (deleted)",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f5050227000",
+         "code_id" : "00000000000000000000000000000000",
+         "debug_file" : "f6b893a7224233d96cb72fd88691c0b4-le64.cache-4",
+         "debug_id" : "000000000000000000000000000000000",
+         "end_addr" : "0x7f5050258000",
+         "filename" : "/home/olear/.cache/fontconfig/f6b893a7224233d96cb72fd88691c0b4-le64.cache-4",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f5050258000",
+         "code_id" : "cc5cecf4222a84c4fa557fae9a1164e9",
+         "debug_file" : "libqjpeg.so",
+         "debug_id" : "F4EC5CCC2A22C484FA557FAE9A1164E90",
+         "end_addr" : "0x7f505025f000",
+         "filename" : "/usr/lib64/qt/plugins/imageformats/libqjpeg.so",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f5050460000",
+         "code_id" : "228000798812ad9014d695b57ced1e2e",
+         "debug_file" : "libqico.so",
+         "debug_id" : "79008022128890AD14D695B57CED1E2E0",
+         "end_addr" : "0x7f5050467000",
+         "filename" : "/usr/lib64/qt/plugins/imageformats/libqico.so",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f5050668000",
+         "code_id" : "58418df52830190e7525c42171c52552",
+         "debug_file" : "libqgif.so",
+         "debug_id" : "F58D415830280E197525C42171C525520",
+         "end_addr" : "0x7f505066f000",
+         "filename" : "/usr/lib64/qt/plugins/imageformats/libqgif.so",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f5050870000",
+         "code_id" : "c94fb5fbae671fc42689860f8502a4d1",
+         "debug_file" : "libdrm_radeon.so.1.0.1",
+         "debug_id" : "FBB54FC967AEC41F2689860F8502A4D10",
+         "end_addr" : "0x7f505087b000",
+         "filename" : "/usr/lib64/libdrm_radeon.so.1.0.1",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f5050a7c000",
+         "code_id" : "583f2b3eb4d04da7056fa98a74835fbd",
+         "debug_file" : "libdrm_nouveau.so.2.0.0",
+         "debug_id" : "3E2B3F58D0B4A74D056FA98A74835FBD0",
+         "end_addr" : "0x7f5050a83000",
+         "filename" : "/usr/lib64/libdrm_nouveau.so.2.0.0",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f5050c84000",
+         "code_id" : "f62e025cf51d6039c77e7d9e55453bfb",
+         "debug_file" : "libpciaccess.so.0.11.1",
+         "debug_id" : "5C022EF61DF53960C77E7D9E55453BFB0",
+         "end_addr" : "0x7f5050c8c000",
+         "filename" : "/usr/lib64/libpciaccess.so.0.11.1",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f5050e8c000",
+         "code_id" : "4882b20ecf0b88a52d45c955bb6d82fe",
+         "debug_file" : "libdrm_intel.so.1.0.0",
+         "debug_id" : "0EB282480BCFA5882D45C955BB6D82FE0",
+         "end_addr" : "0x7f5050eab000",
+         "filename" : "/usr/lib64/libdrm_intel.so.1.0.0",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f50510ac000",
+         "code_id" : "efd1b49946e3a4f4d43293d3f32a6692",
+         "debug_file" : "libnettle.so.6.5",
+         "debug_id" : "99B4D1EFE346F4A4D43293D3F32A66920",
+         "end_addr" : "0x7f50510e1000",
+         "filename" : "/usr/lib64/libnettle.so.6.5",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f50512e3000",
+         "code_id" : "e33842870bf067f70a9367045d2e25ad",
+         "debug_file" : "i965_dri.so",
+         "debug_id" : "874238E3F00BF7670A9367045D2E25AD0",
+         "end_addr" : "0x7f50518d6000",
+         "filename" : "/usr/lib64/xorg/modules/dri/i965_dri.so",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f5051b1b000",
+         "code_id" : "cadb105efdf35723ace413f1593c328d",
+         "debug_file" : "libudev.so.1.6.3",
+         "debug_id" : "5E10DBCAF3FD2357ACE413F1593C328D0",
+         "end_addr" : "0x7f5051b3f000",
+         "filename" : "/lib64/libudev.so.1.6.3",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f5051d40000",
+         "code_id" : "00000000000000000000000000000000",
+         "debug_file" : "libicudata.so.56.1",
+         "debug_id" : "000000000000000000000000000000000",
+         "end_addr" : "0x7f5053723000",
+         "filename" : "/usr/lib64/libicudata.so.56.1",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f5053723000",
+         "code_id" : "9ff5926e7f142987064573955079cd64",
+         "debug_file" : "libicuuc.so.56.1",
+         "debug_id" : "6E92F59F147F8729064573955079CD640",
+         "end_addr" : "0x7f50538a9000",
+         "filename" : "/usr/lib64/libicuuc.so.56.1",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f5053abb000",
+         "code_id" : "f021414aca3b2b9b2cef2ffab838aeba",
+         "debug_file" : "libicui18n.so.56.1",
+         "debug_id" : "4A4121F03BCA9B2B2CEF2FFAB838AEBA0",
+         "end_addr" : "0x7f5053d3c000",
+         "filename" : "/usr/lib64/libicui18n.so.56.1",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f5053f51000",
+         "code_id" : "id",
+         "debug_file" : "drm mm object (deleted)",
+         "debug_id" : "000000000000000000000000000000000",
+         "end_addr" : "0x7f5053f55000",
+         "filename" : "/drm mm object (deleted)",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f5053f57000",
+         "code_id" : "00000000000000000000000000000000",
+         "debug_file" : "f6b893a7224233d96cb72fd88691c0b4-le64.cache-4",
+         "debug_id" : "000000000000000000000000000000000",
+         "end_addr" : "0x7f5053f88000",
+         "filename" : "/var/cache/fontconfig/f6b893a7224233d96cb72fd88691c0b4-le64.cache-4",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f5053f88000",
+         "code_id" : "4f6463fec99340a63cb945342fad16ff",
+         "debug_file" : "UTF-16.so",
+         "debug_id" : "FE63644F93C9A6403CB945342FAD16FF0",
+         "end_addr" : "0x7f5053f8b000",
+         "filename" : "/usr/lib64/gconv/UTF-16.so",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505418c000",
+         "code_id" : "a8ac7164322d4a5a818e1799fbe1085b",
+         "debug_file" : "libuuid.so.1.3.0",
+         "debug_id" : "6471ACA82D325A4A818E1799FBE1085B0",
+         "end_addr" : "0x7f505418f000",
+         "filename" : "/lib64/libuuid.so.1.3.0",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f5054390000",
+         "code_id" : "4a09a67d9487688ec69e066c881f46f9",
+         "debug_file" : "libffi.so.6.0.4",
+         "debug_id" : "7DA6094A87948E68C69E066C881F46F90",
+         "end_addr" : "0x7f5054397000",
+         "filename" : "/usr/lib64/libffi.so.6.0.4",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f5054598000",
+         "code_id" : "b861294af7f2fc1f78320fc09791b215",
+         "debug_file" : "libgbm.so.1.0.0",
+         "debug_id" : "4A2961B8F2F71FFC78320FC09791B2150",
+         "end_addr" : "0x7f50545a3000",
+         "filename" : "/usr/lib64/libgbm.so.1.0.0",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f50547a4000",
+         "code_id" : "168aa4d251f0254775af0ef88498a912",
+         "debug_file" : "libdrm.so.2.4.0",
+         "debug_id" : "D2A48A16F051472575AF0EF88498A9120",
+         "end_addr" : "0x7f50547b1000",
+         "filename" : "/usr/lib64/libdrm.so.2.4.0",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f50549b2000",
+         "code_id" : "a2daaf232a7fbf4ae0e3a3f29327f4f9",
+         "debug_file" : "libXdmcp.so.6.0.0",
+         "debug_id" : "23AFDAA27F2A4ABFE0E3A3F29327F4F90",
+         "end_addr" : "0x7f50549b7000",
+         "filename" : "/usr/lib64/libXdmcp.so.6.0.0",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f5054bb7000",
+         "code_id" : "f0927d43d90872479c3d624d41cfd9bc",
+         "debug_file" : "libXau.so.6.0.0",
+         "debug_id" : "437D92F008D947729C3D624D41CFD9BC0",
+         "end_addr" : "0x7f5054bb9000",
+         "filename" : "/usr/lib64/libXau.so.6.0.0",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f5054dba000",
+         "code_id" : "6cde2790cce14eefcede88e4b992aeef",
+         "debug_file" : "libXxf86vm.so.1.0.0",
+         "debug_id" : "9027DE6CE1CCEF4ECEDE88E4B992AEEF0",
+         "end_addr" : "0x7f5054dbf000",
+         "filename" : "/usr/lib64/libXxf86vm.so.1.0.0",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f5054fbf000",
+         "code_id" : "148f9d204f0769d9470ba1e7cf3e9fe6",
+         "debug_file" : "libxcb-dri2.so.0.0.0",
+         "debug_id" : "209D8F14074FD969470BA1E7CF3E9FE60",
+         "end_addr" : "0x7f5054fc2000",
+         "filename" : "/usr/lib64/libxcb-dri2.so.0.0.0",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f50551c3000",
+         "code_id" : "bfe676b7f8d995528447a3587ef834bf",
+         "debug_file" : "libxcb-glx.so.0.0.0",
+         "debug_id" : "B776E6BFD9F852958447A3587EF834BF0",
+         "end_addr" : "0x7f50551d7000",
+         "filename" : "/usr/lib64/libxcb-glx.so.0.0.0",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f50553d9000",
+         "code_id" : "fc11c229cc9e5f4e37b2d90f2bf387d3",
+         "debug_file" : "libX11-xcb.so.1.0.0",
+         "debug_id" : "29C211FC9ECC4E5F37B2D90F2BF387D30",
+         "end_addr" : "0x7f50553da000",
+         "filename" : "/usr/lib64/libX11-xcb.so.1.0.0",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f50555db000",
+         "code_id" : "3b5ff733e0b705bac78774532641c253",
+         "debug_file" : "libXfixes.so.3.1.0",
+         "debug_id" : "33F75F3BB7E0BA05C78774532641C2530",
+         "end_addr" : "0x7f50555e0000",
+         "filename" : "/usr/lib64/libXfixes.so.3.1.0",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f50557e1000",
+         "code_id" : "5ad4f8c2208281737c99cd5002fcf666",
+         "debug_file" : "libXdamage.so.1.1.0",
+         "debug_id" : "C2F8D45A822073817C99CD5002FCF6660",
+         "end_addr" : "0x7f50557e3000",
+         "filename" : "/usr/lib64/libXdamage.so.1.1.0",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f50559e3000",
+         "code_id" : "944228ed5e39b53655b72bf99cb1a004",
+         "debug_file" : "libglapi.so.0.0.0",
+         "debug_id" : "ED284294395E36B555B72BF99CB1A0040",
+         "end_addr" : "0x7f5055a0c000",
+         "filename" : "/usr/lib64/libglapi.so.0.0.0",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f5055c11000",
+         "code_id" : "8300566c0674d112ca843978dae5101a",
+         "debug_file" : "libxshmfence.so.1.0.0",
+         "debug_id" : "6C560083740612D1CA843978DAE5101A0",
+         "end_addr" : "0x7f5055c12000",
+         "filename" : "/usr/lib64/libxshmfence.so.1.0.0",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f5055e13000",
+         "code_id" : "1ed2a1e6224eff042e585d19a53a7606",
+         "debug_file" : "libxcb-sync.so.1.0.0",
+         "debug_id" : "E6A1D21E4E2204FF2E585D19A53A76060",
+         "end_addr" : "0x7f5055e18000",
+         "filename" : "/usr/lib64/libxcb-sync.so.1.0.0",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f5056018000",
+         "code_id" : "b0abb656c14cd479a7468d6398c16dfa",
+         "debug_file" : "libxcb-shape.so.0.0.0",
+         "debug_id" : "56B6ABB04CC179D4A7468D6398C16DFA0",
+         "end_addr" : "0x7f505601a000",
+         "filename" : "/usr/lib64/libxcb-shape.so.0.0.0",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505621b000",
+         "code_id" : "4c0bf578001d1afbef1b89abb050f94a",
+         "debug_file" : "libxcb-xfixes.so.0.0.0",
+         "debug_id" : "78F50B4C1D00FB1AEF1B89ABB050F94A0",
+         "end_addr" : "0x7f5056220000",
+         "filename" : "/usr/lib64/libxcb-xfixes.so.0.0.0",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f5056421000",
+         "code_id" : "0d36621d49ac482194c823b5461df633",
+         "debug_file" : "libxcb-randr.so.0.1.0",
+         "debug_id" : "1D62360DAC49214894C823B5461DF6330",
+         "end_addr" : "0x7f505642c000",
+         "filename" : "/usr/lib64/libxcb-randr.so.0.1.0",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505662d000",
+         "code_id" : "5f4d97105348057a3c158a5429dd159b",
+         "debug_file" : "libxcb-present.so.0.0.0",
+         "debug_id" : "10974D5F48537A053C158A5429DD159B0",
+         "end_addr" : "0x7f505662f000",
+         "filename" : "/usr/lib64/libxcb-present.so.0.0.0",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505682f000",
+         "code_id" : "5d33c5e8477518b5dd80336e31c8f580",
+         "debug_file" : "libxcb-dri3.so.0.0.0",
+         "debug_id" : "E8C5335D7547B518DD80336E31C8F5800",
+         "end_addr" : "0x7f5056831000",
+         "filename" : "/usr/lib64/libxcb-dri3.so.0.0.0",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f5056a31000",
+         "code_id" : "2f0e2ee96ee3fc987d847e1061fbcd0e",
+         "debug_file" : "libICE.so.6.3.0",
+         "debug_id" : "E92E0E2FE36E98FC7D847E1061FBCD0E0",
+         "end_addr" : "0x7f5056a48000",
+         "filename" : "/usr/lib64/libICE.so.6.3.0",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f5056c4c000",
+         "code_id" : "84f46b44a9929209e2853ebb02ea4757",
+         "debug_file" : "libSM.so.6.0.1",
+         "debug_id" : "446BF48492A90992E2853EBB02EA47570",
+         "end_addr" : "0x7f5056c53000",
+         "filename" : "/usr/lib64/libSM.so.6.0.1",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f5056e53000",
+         "code_id" : "07b246583181dd7fc377cfc418f0fed0",
+         "debug_file" : "libgobject-2.0.so.0.4600.2",
+         "debug_id" : "5846B20781317FDDC377CFC418F0FED00",
+         "end_addr" : "0x7f5056ea3000",
+         "filename" : "/usr/lib64/libgobject-2.0.so.0.4600.2",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f50570a4000",
+         "code_id" : "64189b4fe57c1d465bcedfde7bab9aff",
+         "debug_file" : "libgthread-2.0.so.0.4600.2",
+         "debug_id" : "4F9B18647CE5461D5BCEDFDE7BAB9AFF0",
+         "end_addr" : "0x7f50570a5000",
+         "filename" : "/usr/lib64/libgthread-2.0.so.0.4600.2",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f50572a6000",
+         "code_id" : "e8cdf989e6b018e2b4d40b33cdb7fdc4",
+         "debug_file" : "libXext.so.6.4.0",
+         "debug_id" : "89F9CDE8B0E6E218B4D40B33CDB7FDC40",
+         "end_addr" : "0x7f50572b7000",
+         "filename" : "/usr/lib64/libXext.so.6.4.0",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f50574b8000",
+         "code_id" : "bf1e901d488ea6babaa875a0aac201b8",
+         "debug_file" : "libXrender.so.1.3.0",
+         "debug_id" : "1D901EBF8E48BAA6BAA875A0AAC201B80",
+         "end_addr" : "0x7f50574c1000",
+         "filename" : "/usr/lib64/libXrender.so.1.3.0",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f50576c2000",
+         "code_id" : "22d307b1b39c6f55aa82faa361821b4d",
+         "debug_file" : "libxcb-render.so.0.0.0",
+         "debug_id" : "B107D3229CB3556FAA82FAA361821B4D0",
+         "end_addr" : "0x7f50576ca000",
+         "filename" : "/usr/lib64/libxcb-render.so.0.0.0",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f50578cb000",
+         "code_id" : "cd6a05a657e77cf9d67f2d869650ed57",
+         "debug_file" : "libxcb-shm.so.0.0.0",
+         "debug_id" : "A6056ACDE757F97CD67F2D869650ED570",
+         "end_addr" : "0x7f50578cd000",
+         "filename" : "/usr/lib64/libxcb-shm.so.0.0.0",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f5057acd000",
+         "code_id" : "3cc732037d6e62f80be7affe8eaeafb9",
+         "debug_file" : "libEGL.so.1.0.0",
+         "debug_id" : "0332C73C6E7DF8620BE7AFFE8EAEAFB90",
+         "end_addr" : "0x7f5057af6000",
+         "filename" : "/usr/lib64/libEGL.so.1.0.0",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f5057cf8000",
+         "code_id" : "a568cb709b2aacc2db4e5af66909e838",
+         "debug_file" : "libz.so.1.2.11",
+         "debug_id" : "70CB68A52A9BC2ACDB4E5AF66909E8380",
+         "end_addr" : "0x7f5057d0e000",
+         "filename" : "/lib64/libz.so.1.2.11",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f5057f0f000",
+         "code_id" : "2edbf09e40b7d63b2efef8319baea8f9",
+         "debug_file" : "libpng16.so.16.37.0",
+         "debug_id" : "9EF0DB2EB7403BD62EFEF8319BAEA8F90",
+         "end_addr" : "0x7f5057f41000",
+         "filename" : "/usr/lib64/libpng16.so.16.37.0",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f5058142000",
+         "code_id" : "7cf034dbd0da4cf87ec5af8cfa88cc17",
+         "debug_file" : "libbz2.so.1.0.6",
+         "debug_id" : "DB34F07CDAD0F84C7EC5AF8CFA88CC170",
+         "end_addr" : "0x7f5058151000",
+         "filename" : "/lib64/libbz2.so.1.0.6",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f5058352000",
+         "code_id" : "0e130006d519da71b084c4a8e3344b15",
+         "debug_file" : "libglib-2.0.so.0.4600.2",
+         "debug_id" : "0600130E19D571DAB084C4A8E3344B150",
+         "end_addr" : "0x7f5058487000",
+         "filename" : "/usr/lib64/libglib-2.0.so.0.4600.2",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f5058689000",
+         "code_id" : "777777b76768fa2c1fcfdfb1285f0870",
+         "debug_file" : "libharfbuzz.so.0.10200.7",
+         "debug_id" : "B777777768672CFA1FCFDFB1285F08700",
+         "end_addr" : "0x7f5058705000",
+         "filename" : "/usr/lib64/libharfbuzz.so.0.10200.7",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f5058907000",
+         "code_id" : "46c2122f019ffbc5cbc92e47304c092c",
+         "debug_file" : "librt-2.23.so",
+         "debug_id" : "2F12C2469F01C5FBCBC92E47304C092C0",
+         "end_addr" : "0x7f505890e000",
+         "filename" : "/lib64/librt-2.23.so",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f5058b0f000",
+         "code_id" : "0babf660c69ca1dd74aade6a533b17c3",
+         "debug_file" : "libxcb.so.1.1.0",
+         "debug_id" : "60F6AB0B9CC6DDA174AADE6A533B17C30",
+         "end_addr" : "0x7f5058b2d000",
+         "filename" : "/usr/lib64/libxcb.so.1.1.0",
+         "missing_symbols" : true,
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f5058d2e000",
+         "code_id" : "b06d4746ebfc7a01421bd17a05c0331f",
+         "debug_file" : "libc-2.23.so",
+         "debug_id" : "46476DB0FCEB017A421BD17A05C0331F0",
+         "end_addr" : "0x7f5058eee000",
+         "filename" : "/lib64/libc-2.23.so",
+         "missing_symbols" : true,
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f50590f7000",
+         "code_id" : "e7d2c2a9a6398bad806d46a25ed5444e",
+         "debug_file" : "libgcc_s.so.1",
+         "debug_id" : "A9C2D2E739A6AD8B806D46A25ED5444E0",
+         "end_addr" : "0x7f505910d000",
+         "filename" : "/usr/lib64/libgcc_s.so.1",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505930e000",
+         "code_id" : "caa7360a85927fb192e6b7dd95ab008c",
+         "debug_file" : "libgomp.so.1.0.0",
+         "debug_id" : "0A36A7CA9285B17F92E6B7DD95AB008C0",
+         "end_addr" : "0x7f505932e000",
+         "filename" : "/usr/lib64/libgomp.so.1.0.0",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f5059530000",
+         "code_id" : "4f9c904cc96832f90ce46711b1a0e01f",
+         "debug_file" : "libm-2.23.so",
+         "debug_id" : "4C909C4F68C9F9320CE46711B1A0E01F0",
+         "end_addr" : "0x7f5059638000",
+         "filename" : "/lib64/libm-2.23.so",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f5059839000",
+         "code_id" : "c9dec257622670082a715385a45c5bb5",
+         "debug_file" : "libstdc++.so.6.0.21",
+         "debug_id" : "57C2DEC9266208702A715385A45C5BB50",
+         "end_addr" : "0x7f50599a5000",
+         "filename" : "/usr/lib64/libstdc++.so.6.0.21",
+         "missing_symbols" : true,
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f5059bb5000",
+         "code_id" : "a2ca2e4c185e9b5acd01eadc6cbef32e",
+         "debug_file" : "libpthread-2.23.so",
+         "debug_id" : "4C2ECAA25E185A9BCD01EADC6CBEF32E0",
+         "end_addr" : "0x7f5059bcd000",
+         "filename" : "/lib64/libpthread-2.23.so",
+         "missing_symbols" : true,
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f5059dd2000",
+         "code_id" : "7f07664faee82d765620c02f8ed2c519",
+         "debug_file" : "libGL.so.1.2.0",
+         "debug_id" : "4F66077FE8AE762D5620C02F8ED2C5190",
+         "end_addr" : "0x7f5059e36000",
+         "filename" : "/usr/lib64/libGL.so.1.2.0",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505a03a000",
+         "code_id" : "dae9552c120246daffe10f4ea635443b",
+         "debug_file" : "libQtCore.so.4.8.7",
+         "debug_id" : "2C55E9DA0212DA46FFE10F4EA635443B0",
+         "end_addr" : "0x7f505a324000",
+         "filename" : "/usr/lib64/qt/lib/libQtCore.so.4.8.7",
+         "missing_symbols" : true,
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505a534000",
+         "code_id" : "ba4aca452b62c258d7467885f551481c",
+         "debug_file" : "libQtNetwork.so.4.8.7",
+         "debug_id" : "45CA4ABA622B58C2D7467885F551481C0",
+         "end_addr" : "0x7f505a67d000",
+         "filename" : "/usr/lib64/qt/lib/libQtNetwork.so.4.8.7",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505a885000",
+         "code_id" : "9fcea1e6fa35d107276b4efa38c3f372",
+         "debug_file" : "libQtGui.so.4.8.7",
+         "debug_id" : "E6A1CE9F35FA07D1276B4EFA38C3F3720",
+         "end_addr" : "0x7f505b32a000",
+         "filename" : "/usr/lib64/qt/lib/libQtGui.so.4.8.7",
+         "missing_symbols" : true,
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505b57e000",
+         "code_id" : "8fe9d03b0fd4c27806eab906638b4830",
+         "debug_file" : "libQtOpenGL.so.4.8.7",
+         "debug_id" : "3BD0E98FD40F78C206EAB906638B48300",
+         "end_addr" : "0x7f505b676000",
+         "filename" : "/usr/lib64/qt/lib/libQtOpenGL.so.4.8.7",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505b87f000",
+         "code_id" : "2d3f6d896cb5ff384e8590000c42729a",
+         "debug_file" : "libcairo.so.2.11400.6",
+         "debug_id" : "896D3F2DB56C38FF4E8590000C42729A0",
+         "end_addr" : "0x7f505b99e000",
+         "filename" : "/usr/lib64/libcairo.so.2.11400.6",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505bba4000",
+         "code_id" : "fd7fc57e48ef7dc8104a665ef2c944d1",
+         "debug_file" : "libshiboken-python2.7.so.1.2.2",
+         "debug_id" : "7EC57FFDEF48C87D104A665EF2C944D10",
+         "end_addr" : "0x7f505bbc0000",
+         "filename" : "/usr/lib64/libshiboken-python2.7.so.1.2.2",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505bdc2000",
+         "code_id" : "925df287747fd75103058b843438373e",
+         "debug_file" : "libpyside-python2.7.so.1.2.2",
+         "debug_id" : "87F25D927F7451D703058B843438373E0",
+         "end_addr" : "0x7f505bde0000",
+         "filename" : "/usr/lib64/libpyside-python2.7.so.1.2.2",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505bfe3000",
+         "code_id" : "3e3ce36e75bb7ef492eefdf96d5d356d",
+         "debug_file" : "libfreetype.so.6.12.3",
+         "debug_id" : "6EE33C3EBB75F47E92EEFDF96D5D356D0",
+         "end_addr" : "0x7f505c079000",
+         "filename" : "/usr/lib64/libfreetype.so.6.12.3",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505c27f000",
+         "code_id" : "6cca75e15c077d64bb6ba32fbe604dac",
+         "debug_file" : "libfontconfig.so.1.8.0",
+         "debug_id" : "E175CA6C075C647DBB6BA32FBE604DAC0",
+         "end_addr" : "0x7f505c2ba000",
+         "filename" : "/usr/lib64/libfontconfig.so.1.8.0",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505c4bb000",
+         "code_id" : "6feb426dfaef36e23395a2686425fb4f",
+         "debug_file" : "libpixman-1.so.0.34.0",
+         "debug_id" : "6D42EB6FEFFAE2363395A2686425FB4F0",
+         "end_addr" : "0x7f505c558000",
+         "filename" : "/usr/lib64/libpixman-1.so.0.34.0",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505c760000",
+         "code_id" : "4da4e918c728c78fbfbeb4285d26cb13",
+         "debug_file" : "libexpat.so.1.6.4",
+         "debug_id" : "18E9A44D28C78FC7BFBEB4285D26CB130",
+         "end_addr" : "0x7f505c787000",
+         "filename" : "/usr/lib64/libexpat.so.1.6.4",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505c98a000",
+         "code_id" : "9e2869656ab22773e94a6202ee894b67",
+         "debug_file" : "libboost_serialization.so.1.59.0",
+         "debug_id" : "6569289EB26A7327E94A6202EE894B670",
+         "end_addr" : "0x7f505c9c2000",
+         "filename" : "/usr/lib64/libboost_serialization.so.1.59.0",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505cbc5000",
+         "code_id" : "0204249a76ce79c750490be92b6dc062",
+         "debug_file" : "libutil-2.23.so",
+         "debug_id" : "9A240402CE76C77950490BE92B6DC0620",
+         "end_addr" : "0x7f505cbc7000",
+         "filename" : "/lib64/libutil-2.23.so",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505cdc8000",
+         "code_id" : "7e09b921fe8d0e126fc336de33f79e8d",
+         "debug_file" : "libdl-2.23.so",
+         "debug_id" : "21B9097E8DFE120E6FC336DE33F79E8D0",
+         "end_addr" : "0x7f505cdcb000",
+         "filename" : "/lib64/libdl-2.23.so",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505cfcc000",
+         "code_id" : "ac2868fc2e9ceb6d14e033149ccaea78",
+         "debug_file" : "libpython2.7.so.1.0",
+         "debug_id" : "FC6828AC9C2E6DEB14E033149CCAEA780",
+         "end_addr" : "0x7f505d186000",
+         "filename" : "/usr/lib64/libpython2.7.so.1.0",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505d3e7000",
+         "code_id" : "be0bc1515000a8594af82e5b6c3bfef2",
+         "debug_file" : "libX11.so.6.3.0",
+         "debug_id" : "51C10BBE005059A84AF82E5B6C3BFEF20",
+         "end_addr" : "0x7f505d51c000",
+         "filename" : "/usr/lib64/libX11.so.6.3.0",
+         "missing_symbols" : true,
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505d722000",
+         "code_id" : "afa987bbc2308e77dec1b4f3ab9ff26b",
+         "debug_file" : "ld-2.23.so",
+         "debug_id" : "BB87A9AF30C2778EDEC1B4F3AB9FF26B0",
+         "end_addr" : "0x7f505d747000",
+         "filename" : "/lib64/ld-2.23.so",
+         "missing_symbols" : true,
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505d74a000",
+         "code_id" : "id",
+         "debug_file" : "drm mm object (deleted)",
+         "debug_id" : "000000000000000000000000000000000",
+         "end_addr" : "0x7f505d74c000",
+         "filename" : "/drm mm object (deleted)",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505d74d000",
+         "code_id" : "id",
+         "debug_file" : "drm mm object (deleted)",
+         "debug_id" : "000000000000000000000000000000000",
+         "end_addr" : "0x7f505d755000",
+         "filename" : "/drm mm object (deleted)",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505d755000",
+         "code_id" : "00000000000000000000000000000000",
+         "debug_file" : "d62e99ef547d1d24cdb1bd22ec1a2976-le64.cache-4",
+         "debug_id" : "000000000000000000000000000000000",
+         "end_addr" : "0x7f505d767000",
+         "filename" : "/var/cache/fontconfig/d62e99ef547d1d24cdb1bd22ec1a2976-le64.cache-4",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505d767000",
+         "code_id" : "00000000000000000000000000000000",
+         "debug_file" : "f349e9996a5320f6dd491cedd2b1f964-le64.cache-4",
+         "debug_id" : "000000000000000000000000000000000",
+         "end_addr" : "0x7f505d770000",
+         "filename" : "/var/cache/fontconfig/f349e9996a5320f6dd491cedd2b1f964-le64.cache-4",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505d770000",
+         "code_id" : "00000000000000000000000000000000",
+         "debug_file" : "LC_COLLATE",
+         "debug_id" : "000000000000000000000000000000000",
+         "end_addr" : "0x7f505d8a0000",
+         "filename" : "/usr/lib64/locale/en_US.utf8/LC_COLLATE",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505d8a0000",
+         "code_id" : "00000000000000000000000000000000",
+         "debug_file" : "LC_CTYPE",
+         "debug_id" : "000000000000000000000000000000000",
+         "end_addr" : "0x7f505d8ee000",
+         "filename" : "/usr/lib64/locale/en_US.utf8/LC_CTYPE",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505d90a000",
+         "code_id" : "id",
+         "debug_file" : "drm mm object (deleted)",
+         "debug_id" : "000000000000000000000000000000000",
+         "end_addr" : "0x7f505d90b000",
+         "filename" : "/drm mm object (deleted)",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505d90b000",
+         "code_id" : "00000000000000000000000000000000",
+         "debug_file" : "LC_NUMERIC",
+         "debug_id" : "000000000000000000000000000000000",
+         "end_addr" : "0x7f505d90c000",
+         "filename" : "/usr/lib64/locale/en_US/LC_NUMERIC",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505d90c000",
+         "code_id" : "00000000000000000000000000000000",
+         "debug_file" : "LC_TIME",
+         "debug_id" : "000000000000000000000000000000000",
+         "end_addr" : "0x7f505d90d000",
+         "filename" : "/usr/lib64/locale/en_US/LC_TIME",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505d90d000",
+         "code_id" : "00000000000000000000000000000000",
+         "debug_file" : "LC_MONETARY",
+         "debug_id" : "000000000000000000000000000000000",
+         "end_addr" : "0x7f505d90e000",
+         "filename" : "/usr/lib64/locale/en_US/LC_MONETARY",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505d90e000",
+         "code_id" : "00000000000000000000000000000000",
+         "debug_file" : "SYS_LC_MESSAGES",
+         "debug_id" : "000000000000000000000000000000000",
+         "end_addr" : "0x7f505d90f000",
+         "filename" : "/usr/lib64/locale/en_US/LC_MESSAGES/SYS_LC_MESSAGES",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505d90f000",
+         "code_id" : "00000000000000000000000000000000",
+         "debug_file" : "LC_PAPER",
+         "debug_id" : "000000000000000000000000000000000",
+         "end_addr" : "0x7f505d910000",
+         "filename" : "/usr/lib64/locale/en_US/LC_PAPER",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505d910000",
+         "code_id" : "00000000000000000000000000000000",
+         "debug_file" : "LC_NAME",
+         "debug_id" : "000000000000000000000000000000000",
+         "end_addr" : "0x7f505d911000",
+         "filename" : "/usr/lib64/locale/en_US/LC_NAME",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505d911000",
+         "code_id" : "00000000000000000000000000000000",
+         "debug_file" : "LC_ADDRESS",
+         "debug_id" : "000000000000000000000000000000000",
+         "end_addr" : "0x7f505d912000",
+         "filename" : "/usr/lib64/locale/en_US/LC_ADDRESS",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505d912000",
+         "code_id" : "00000000000000000000000000000000",
+         "debug_file" : "LC_TELEPHONE",
+         "debug_id" : "000000000000000000000000000000000",
+         "end_addr" : "0x7f505d913000",
+         "filename" : "/usr/lib64/locale/en_US/LC_TELEPHONE",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505d913000",
+         "code_id" : "00000000000000000000000000000000",
+         "debug_file" : "LC_MEASUREMENT",
+         "debug_id" : "000000000000000000000000000000000",
+         "end_addr" : "0x7f505d914000",
+         "filename" : "/usr/lib64/locale/en_US/LC_MEASUREMENT",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505d914000",
+         "code_id" : "00000000000000000000000000000000",
+         "debug_file" : "LC_IDENTIFICATION",
+         "debug_id" : "000000000000000000000000000000000",
+         "end_addr" : "0x7f505d915000",
+         "filename" : "/usr/lib64/locale/en_US/LC_IDENTIFICATION",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505d915000",
+         "code_id" : "id",
+         "debug_file" : "drm mm object (deleted)",
+         "debug_id" : "000000000000000000000000000000000",
+         "end_addr" : "0x7f505d91e000",
+         "filename" : "/drm mm object (deleted)",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505d91e000",
+         "code_id" : "00000000000000000000000000000000",
+         "debug_file" : "d62e99ef547d1d24cdb1bd22ec1a2976-le64.cache-4",
+         "debug_id" : "000000000000000000000000000000000",
+         "end_addr" : "0x7f505d930000",
+         "filename" : "/home/olear/.cache/fontconfig/d62e99ef547d1d24cdb1bd22ec1a2976-le64.cache-4",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505d930000",
+         "code_id" : "00000000000000000000000000000000",
+         "debug_file" : "7f984e21d59cc4c4a85b338460464565-le64.cache-4",
+         "debug_id" : "000000000000000000000000000000000",
+         "end_addr" : "0x7f505d933000",
+         "filename" : "/home/olear/.cache/fontconfig/7f984e21d59cc4c4a85b338460464565-le64.cache-4",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505d933000",
+         "code_id" : "00000000000000000000000000000000",
+         "debug_file" : "f349e9996a5320f6dd491cedd2b1f964-le64.cache-4",
+         "debug_id" : "000000000000000000000000000000000",
+         "end_addr" : "0x7f505d93c000",
+         "filename" : "/home/olear/.cache/fontconfig/f349e9996a5320f6dd491cedd2b1f964-le64.cache-4",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505d93c000",
+         "code_id" : "00000000000000000000000000000000",
+         "debug_file" : "LC_IDENTIFICATION",
+         "debug_id" : "000000000000000000000000000000000",
+         "end_addr" : "0x7f505d93d000",
+         "filename" : "/usr/lib64/locale/en_US.utf8/LC_IDENTIFICATION",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505d93d000",
+         "code_id" : "00000000000000000000000000000000",
+         "debug_file" : "LC_MEASUREMENT",
+         "debug_id" : "000000000000000000000000000000000",
+         "end_addr" : "0x7f505d93e000",
+         "filename" : "/usr/lib64/locale/en_US.utf8/LC_MEASUREMENT",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505d93e000",
+         "code_id" : "00000000000000000000000000000000",
+         "debug_file" : "LC_TELEPHONE",
+         "debug_id" : "000000000000000000000000000000000",
+         "end_addr" : "0x7f505d93f000",
+         "filename" : "/usr/lib64/locale/en_US.utf8/LC_TELEPHONE",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505d93f000",
+         "code_id" : "00000000000000000000000000000000",
+         "debug_file" : "LC_ADDRESS",
+         "debug_id" : "000000000000000000000000000000000",
+         "end_addr" : "0x7f505d940000",
+         "filename" : "/usr/lib64/locale/en_US.utf8/LC_ADDRESS",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505d940000",
+         "code_id" : "00000000000000000000000000000000",
+         "debug_file" : "LC_NAME",
+         "debug_id" : "000000000000000000000000000000000",
+         "end_addr" : "0x7f505d941000",
+         "filename" : "/usr/lib64/locale/en_US.utf8/LC_NAME",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505d941000",
+         "code_id" : "00000000000000000000000000000000",
+         "debug_file" : "LC_PAPER",
+         "debug_id" : "000000000000000000000000000000000",
+         "end_addr" : "0x7f505d942000",
+         "filename" : "/usr/lib64/locale/en_US.utf8/LC_PAPER",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505d942000",
+         "code_id" : "00000000000000000000000000000000",
+         "debug_file" : "SYS_LC_MESSAGES",
+         "debug_id" : "000000000000000000000000000000000",
+         "end_addr" : "0x7f505d943000",
+         "filename" : "/usr/lib64/locale/en_US.utf8/LC_MESSAGES/SYS_LC_MESSAGES",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505d943000",
+         "code_id" : "00000000000000000000000000000000",
+         "debug_file" : "LC_MONETARY",
+         "debug_id" : "000000000000000000000000000000000",
+         "end_addr" : "0x7f505d944000",
+         "filename" : "/usr/lib64/locale/en_US.utf8/LC_MONETARY",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505d944000",
+         "code_id" : "00000000000000000000000000000000",
+         "debug_file" : "LC_TIME",
+         "debug_id" : "000000000000000000000000000000000",
+         "end_addr" : "0x7f505d945000",
+         "filename" : "/usr/lib64/locale/en_US.utf8/LC_TIME",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7f505d945000",
+         "code_id" : "00000000000000000000000000000000",
+         "debug_file" : "LC_NUMERIC",
+         "debug_id" : "000000000000000000000000000000000",
+         "end_addr" : "0x7f505d946000",
+         "filename" : "/usr/lib64/locale/en_US.utf8/LC_NUMERIC",
+         "version" : ""
+      },
+      {
+         "base_addr" : "0x7fff2cfca000",
+         "code_id" : "7d560820f2b7ea15983c315b36f1bcf5c3c6d279",
+         "debug_file" : "linux-gate.so",
+         "debug_id" : "2008567DB7F215EA983C315B36F1BCF50",
+         "end_addr" : "0x7fff2cfcc000",
+         "filename" : "linux-gate.so",
+         "version" : ""
+      }
+   ],
+   "sensitive" : {
+      "exploitability" : "interesting"
+   },
+   "status" : "OK",
+   "system_info" : {
+      "cpu_arch" : "amd64",
+      "cpu_count" : 4,
+      "cpu_info" : "family 6 model 37 stepping 5",
+      "cpu_microcode_version" : 2,
+      "os" : "Linux",
+      "os_ver" : "0.0.0 Linux 4.4.172 #2 SMP Wed Jan 30 17:11:07 CST 2019 x86_64"
+   },
+   "thread_count" : 3,
+   "threads" : [
+      {
+         "frame_count" : 59,
+         "frames" : [
+            {
+               "file" : "/home/olear/Development/build-Project-Qt4-Debug/Engine/../../Natron/Engine/Settings.cpp",
+               "frame" : 0,
+               "function" : "Natron::crash_application()",
+               "function_offset" : "0x3f",
+               "line" : 2228,
+               "module" : "Natron-bin",
+               "module_offset" : "0x1ddb0f2",
+               "offset" : "0x21db0f2",
+               "trust" : "context"
+            },
+            {
+               "file" : "/home/olear/Development/build-Project-Qt4-Debug/Engine/../../Natron/Engine/Settings.cpp",
+               "frame" : 1,
+               "function" : "Natron::Settings::onKnobValueChanged(Natron::KnobI*, Natron::ValueChangedReasonEnum, double, Natron::ViewSpec, bool)",
+               "function_offset" : "0x159d",
+               "line" : 2360,
+               "module" : "Natron-bin",
+               "module_offset" : "0x1dd26c1",
+               "offset" : "0x21d26c1",
+               "trust" : "cfi"
+            },
+            {
+               "file" : "/home/olear/Development/build-Project-Qt4-Debug/Engine/../../Natron/Engine/Knob.cpp",
+               "frame" : 2,
+               "function" : "Natron::KnobHolder::onKnobValueChanged_public(Natron::KnobI*, Natron::ValueChangedReasonEnum, double, Natron::ViewSpec, bool)",
+               "function_offset" : "0xc6",
+               "line" : 5996,
+               "module" : "Natron-bin",
+               "module_offset" : "0x1ae042e",
+               "offset" : "0x1ee042e",
+               "trust" : "cfi"
+            },
+            {
+               "file" : "/home/olear/Development/build-Project-Qt4-Debug/Engine/../../Natron/Engine/Knob.cpp",
+               "frame" : 3,
+               "function" : "Natron::KnobHolder::endChanges(bool)",
+               "function_offset" : "0x86a",
+               "line" : 5567,
+               "module" : "Natron-bin",
+               "module_offset" : "0x1ade546",
+               "offset" : "0x1ede546",
+               "trust" : "cfi"
+            },
+            {
+               "file" : "/home/olear/Development/build-Project-Qt4-Debug/Engine/../../Natron/Engine/Knob.cpp",
+               "frame" : 4,
+               "function" : "Natron::KnobHelper::evaluateValueChangeInternal(int, double, Natron::ViewSpec, Natron::ValueChangedReasonEnum, Natron::ValueChangedReasonEnum)",
+               "function_offset" : "0x2ca",
+               "line" : 1700,
+               "module" : "Natron-bin",
+               "module_offset" : "0x1aca3d2",
+               "offset" : "0x1eca3d2",
+               "trust" : "cfi"
+            },
+            {
+               "file" : "/home/olear/Development/build-Project-Qt4-Debug/Engine/../../Natron/Engine/Knob.cpp",
+               "frame" : 5,
+               "function" : "Natron::KnobHelper::evaluateValueChange(int, double, Natron::ViewSpec, Natron::ValueChangedReasonEnum)",
+               "function_offset" : "0x3f",
+               "line" : 1724,
+               "module" : "Natron-bin",
+               "module_offset" : "0x1aca5a3",
+               "offset" : "0x1eca5a3",
+               "trust" : "cfi"
+            },
+            {
+               "file" : "/home/olear/Development/build-Project-Qt4-Debug/Engine/../../Natron/Engine/KnobTypes.cpp",
+               "frame" : 6,
+               "function" : "Natron::KnobButton::trigger()",
+               "function_offset" : "0x5c",
+               "line" : 499,
+               "module" : "Natron-bin",
+               "module_offset" : "0x1b43ac6",
+               "offset" : "0x1f43ac6",
+               "trust" : "cfi"
+            },
+            {
+               "file" : "/home/olear/Development/build-Project-Qt4-Debug/Gui/../../Natron/Gui/KnobGuiButton.cpp",
+               "frame" : 7,
+               "function" : "Natron::KnobGuiButton::emitValueChanged(bool)",
+               "function_offset" : "0x15d",
+               "line" : 188,
+               "module" : "Natron-bin",
+               "module_offset" : "0x15ce2b1",
+               "offset" : "0x19ce2b1",
+               "trust" : "cfi"
+            },
+            {
+               "file" : "/home/olear/Development/build-Project-Qt4-Debug/Gui/./moc_KnobGuiButton.cpp",
+               "frame" : 8,
+               "function" : "Natron::KnobGuiButton::qt_static_metacall(QObject*, QMetaObject::Call, int, void**)",
+               "function_offset" : "0x85",
+               "line" : 48,
+               "module" : "Natron-bin",
+               "module_offset" : "0x15ce6e9",
+               "offset" : "0x19ce6e9",
+               "trust" : "cfi"
+            },
+            {
+               "frame" : 9,
+               "missing_symbols" : true,
+               "module" : "libQtCore.so.4.8.7",
+               "module_offset" : "0x1a28f1",
+               "offset" : "0x7f505a1dc8f1",
+               "trust" : "cfi"
+            },
+            {
+               "frame" : 10,
+               "missing_symbols" : true,
+               "module" : "libQtGui.so.4.8.7",
+               "module_offset" : "0x85d061",
+               "offset" : "0x7f505b0e2061",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 11,
+               "missing_symbols" : true,
+               "module" : "libQtGui.so.4.8.7",
+               "module_offset" : "0x5b5b65",
+               "offset" : "0x7f505ae3ab65",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 12,
+               "missing_symbols" : true,
+               "module" : "libQtGui.so.4.8.7",
+               "module_offset" : "0x5b6d99",
+               "offset" : "0x7f505ae3bd99",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 13,
+               "missing_symbols" : true,
+               "module" : "libQtGui.so.4.8.7",
+               "module_offset" : "0x5b6e93",
+               "offset" : "0x7f505ae3be93",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 14,
+               "missing_symbols" : true,
+               "module" : "libQtGui.so.4.8.7",
+               "module_offset" : "0x25230f",
+               "offset" : "0x7f505aad730f",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 15,
+               "missing_symbols" : true,
+               "module" : "libc-2.23.so",
+               "module_offset" : "0x83863",
+               "offset" : "0x7f5058db1863",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 16,
+               "missing_symbols" : true,
+               "module" : "libQtGui.so.4.8.7",
+               "module_offset" : "0x2489b4",
+               "offset" : "0x7f505aacd9b4",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 17,
+               "missing_symbols" : true,
+               "module" : "libQtGui.so.4.8.7",
+               "module_offset" : "0x214020",
+               "offset" : "0x7f505aa99020",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 18,
+               "missing_symbols" : true,
+               "module" : "libQtGui.so.4.8.7",
+               "module_offset" : "0x1ff5bb",
+               "offset" : "0x7f505aa845bb",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 19,
+               "missing_symbols" : true,
+               "module" : "libQtGui.so.4.8.7",
+               "module_offset" : "0x206192",
+               "offset" : "0x7f505aa8b192",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 20,
+               "missing_symbols" : true,
+               "module" : "libQtGui.so.4.8.7",
+               "module_offset" : "0x28fb00",
+               "offset" : "0x7f505ab14b00",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 21,
+               "missing_symbols" : true,
+               "module" : "libQtCore.so.4.8.7",
+               "module_offset" : "0x81d42",
+               "offset" : "0x7f505a0bbd42",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 22,
+               "missing_symbols" : true,
+               "module" : "libQtCore.so.4.8.7",
+               "module_offset" : "0x18f79c",
+               "offset" : "0x7f505a1c979c",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 23,
+               "missing_symbols" : true,
+               "module" : "libQtCore.so.4.8.7",
+               "module_offset" : "0x1a79fa",
+               "offset" : "0x7f505a1e19fa",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 24,
+               "missing_symbols" : true,
+               "module" : "libQtGui.so.4.8.7",
+               "module_offset" : "0x205829",
+               "offset" : "0x7f505aa8a829",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 25,
+               "missing_symbols" : true,
+               "module" : "libQtGui.so.4.8.7",
+               "module_offset" : "0x27c728",
+               "offset" : "0x7f505ab01728",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 26,
+               "missing_symbols" : true,
+               "module" : "libQtGui.so.4.8.7",
+               "module_offset" : "0x27c63f",
+               "offset" : "0x7f505ab0163f",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 27,
+               "missing_symbols" : true,
+               "module" : "libQtGui.so.4.8.7",
+               "module_offset" : "0x1ff5bb",
+               "offset" : "0x7f505aa845bb",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 28,
+               "missing_symbols" : true,
+               "module" : "libQtGui.so.4.8.7",
+               "module_offset" : "0x20602b",
+               "offset" : "0x7f505aa8b02b",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 29,
+               "missing_symbols" : true,
+               "module" : "libxcb.so.1.1.0",
+               "module_offset" : "0xbf3c",
+               "offset" : "0x7f5058b1af3c",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 30,
+               "missing_symbols" : true,
+               "module" : "libc-2.23.so",
+               "module_offset" : "0x83863",
+               "offset" : "0x7f5058db1863",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 31,
+               "missing_symbols" : true,
+               "module" : "libpthread-2.23.so",
+               "module_offset" : "0x10978",
+               "offset" : "0x7f5059bc5978",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 32,
+               "missing_symbols" : true,
+               "module" : "libxcb.so.1.1.0",
+               "module_offset" : "0xc890",
+               "offset" : "0x7f5058b1b890",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 33,
+               "missing_symbols" : true,
+               "module" : "libQtGui.so.4.8.7",
+               "module_offset" : "0x2699bf",
+               "offset" : "0x7f505aaee9bf",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 34,
+               "missing_symbols" : true,
+               "module" : "libQtGui.so.4.8.7",
+               "module_offset" : "0x27aa24",
+               "offset" : "0x7f505aaffa24",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 35,
+               "function" : "_fini",
+               "function_offset" : "0x2907",
+               "module" : "Natron-bin",
+               "module_offset" : "0x23276ef",
+               "offset" : "0x27276ef",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 36,
+               "missing_symbols" : true,
+               "module" : "libc-2.23.so",
+               "module_offset" : "0x83c1b",
+               "offset" : "0x7f5058db1c1b",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 37,
+               "missing_symbols" : true,
+               "module" : "libc-2.23.so",
+               "module_offset" : "0x115385",
+               "offset" : "0x7f5058e43385",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 38,
+               "function" : "_fini",
+               "function_offset" : "0x2907",
+               "module" : "Natron-bin",
+               "module_offset" : "0x23276ef",
+               "offset" : "0x27276ef",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 39,
+               "missing_symbols" : true,
+               "module" : "libxcb.so.1.1.0",
+               "module_offset" : "0xc999",
+               "offset" : "0x7f5058b1b999",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 40,
+               "missing_symbols" : true,
+               "module" : "libX11.so.6.3.0",
+               "module_offset" : "0x40a78",
+               "offset" : "0x7f505d427a78",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 41,
+               "function" : "_fini",
+               "function_offset" : "0x2907",
+               "module" : "Natron-bin",
+               "module_offset" : "0x23276ef",
+               "offset" : "0x27276ef",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 42,
+               "missing_symbols" : true,
+               "module" : "libX11.so.6.3.0",
+               "module_offset" : "0x40bcd",
+               "offset" : "0x7f505d427bcd",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 43,
+               "missing_symbols" : true,
+               "module" : "libX11.so.6.3.0",
+               "module_offset" : "0x43580",
+               "offset" : "0x7f505d42a580",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 44,
+               "function" : "_fini",
+               "function_offset" : "0x2907",
+               "module" : "Natron-bin",
+               "module_offset" : "0x23276ef",
+               "offset" : "0x27276ef",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 45,
+               "missing_symbols" : true,
+               "module" : "libQtGui.so.4.8.7",
+               "module_offset" : "0x2a2bae",
+               "offset" : "0x7f505ab27bae",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 46,
+               "module" : "Natron-bin",
+               "module_offset" : "0x135db8d",
+               "offset" : "0x175db8d",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 47,
+               "missing_symbols" : true,
+               "module" : "libQtCore.so.4.8.7",
+               "module_offset" : "0x1e197",
+               "offset" : "0x7f505a058197",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 48,
+               "missing_symbols" : true,
+               "module" : "ld-2.23.so",
+               "module_offset" : "0x17e2e",
+               "offset" : "0x7f505d739e2e",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 49,
+               "function" : "_fini",
+               "function_offset" : "0x2907",
+               "module" : "Natron-bin",
+               "module_offset" : "0x23276ef",
+               "offset" : "0x27276ef",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 50,
+               "missing_symbols" : true,
+               "module" : "libQtCore.so.4.8.7",
+               "module_offset" : "0x18e1b3",
+               "offset" : "0x7f505a1c81b3",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 51,
+               "missing_symbols" : true,
+               "module" : "libQtCore.so.4.8.7",
+               "module_offset" : "0x18e4cd",
+               "offset" : "0x7f505a1c84cd",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 52,
+               "module" : "Natron-bin",
+               "module_offset" : "0x135db8d",
+               "offset" : "0x175db8d",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 53,
+               "function" : "_fini",
+               "function_offset" : "0x2957",
+               "module" : "Natron-bin",
+               "module_offset" : "0x232773f",
+               "offset" : "0x272773f",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 54,
+               "missing_symbols" : true,
+               "module" : "libQtCore.so.4.8.7",
+               "module_offset" : "0x193a4b",
+               "offset" : "0x7f505a1cda4b",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 55,
+               "module" : "Natron-bin",
+               "module_offset" : "0x135db8d",
+               "offset" : "0x175db8d",
+               "trust" : "scan"
+            },
+            {
+               "file" : "/home/olear/Development/build-Project-Qt4-Debug/Engine/../../Natron/Engine/AppManager.cpp",
+               "frame" : 56,
+               "function" : "Natron::AppManager::exec()",
+               "function_offset" : "0x27",
+               "line" : 2716,
+               "module" : "Natron-bin",
+               "module_offset" : "0x18114e9",
+               "offset" : "0x1c114e9",
+               "trust" : "scan"
+            },
+            {
+               "file" : "/home/olear/Development/build-Project-Qt4-Debug/Gui/../../Natron/Gui/GuiApplicationManager.cpp",
+               "frame" : 57,
+               "function" : "Natron::GuiApplicationManager::initGui(Natron::CLArgs const&)",
+               "function_offset" : "0x111c",
+               "line" : 965,
+               "module" : "Natron-bin",
+               "module_offset" : "0x132f6a2",
+               "offset" : "0x172f6a2",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 58,
+               "missing_symbols" : true,
+               "module" : "libstdc++.so.6.0.21",
+               "module_offset" : "0xc400f",
+               "offset" : "0x7f50598fd00f",
+               "trust" : "scan"
+            }
+         ]
+      },
+      {
+         "frame_count" : 7,
+         "frames" : [
+            {
+               "frame" : 0,
+               "missing_symbols" : true,
+               "module" : "libpthread-2.23.so",
+               "module_offset" : "0xd718",
+               "offset" : "0x7f5059bc2718",
+               "trust" : "context"
+            },
+            {
+               "frame" : 1,
+               "missing_symbols" : true,
+               "module" : "libQtCore.so.4.8.7",
+               "module_offset" : "0x8a0c9",
+               "offset" : "0x7f505a0c40c9",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 2,
+               "missing_symbols" : true,
+               "module" : "libQtCore.so.4.8.7",
+               "module_offset" : "0x8a9fc",
+               "offset" : "0x7f505a0c49fc",
+               "trust" : "scan"
+            },
+            {
+               "file" : "/home/olear/Development/build-Project-Qt4-Debug/Engine/../../Natron/Engine/ExistenceCheckThread.cpp",
+               "frame" : 3,
+               "function" : "Natron::ExistenceCheckerThread::run()",
+               "function_offset" : "0x1fb",
+               "line" : 135,
+               "module" : "Natron-bin",
+               "module_offset" : "0x19249f9",
+               "offset" : "0x1d249f9",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 4,
+               "missing_symbols" : true,
+               "module" : "libQtCore.so.4.8.7",
+               "module_offset" : "0x8b5db",
+               "offset" : "0x7f505a0c55db",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 5,
+               "missing_symbols" : true,
+               "module" : "libpthread-2.23.so",
+               "module_offset" : "0x7683",
+               "offset" : "0x7f5059bbc683",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 6,
+               "missing_symbols" : true,
+               "module" : "libc-2.23.so",
+               "module_offset" : "0x106eec",
+               "offset" : "0x7f5058e34eec",
+               "trust" : "scan"
+            }
+         ]
+      },
+      {
+         "frame_count" : 7,
+         "frames" : [
+            {
+               "frame" : 0,
+               "missing_symbols" : true,
+               "module" : "libpthread-2.23.so",
+               "module_offset" : "0xd36f",
+               "offset" : "0x7f5059bc236f",
+               "trust" : "context"
+            },
+            {
+               "frame" : 1,
+               "missing_symbols" : true,
+               "module" : "libQtCore.so.4.8.7",
+               "module_offset" : "0x8baf3",
+               "offset" : "0x7f505a0c5af3",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 2,
+               "missing_symbols" : true,
+               "module" : "libQtCore.so.4.8.7",
+               "module_offset" : "0x803cc",
+               "offset" : "0x7f505a0ba3cc",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 3,
+               "missing_symbols" : true,
+               "module" : "libQtCore.so.4.8.7",
+               "module_offset" : "0x7f1cb",
+               "offset" : "0x7f505a0b91cb",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 4,
+               "missing_symbols" : true,
+               "module" : "libQtCore.so.4.8.7",
+               "module_offset" : "0x8b5db",
+               "offset" : "0x7f505a0c55db",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 5,
+               "missing_symbols" : true,
+               "module" : "libpthread-2.23.so",
+               "module_offset" : "0x7683",
+               "offset" : "0x7f5059bbc683",
+               "trust" : "scan"
+            },
+            {
+               "frame" : 6,
+               "missing_symbols" : true,
+               "module" : "libc-2.23.so",
+               "module_offset" : "0x106eec",
+               "offset" : "0x7f5058e34eec",
+               "trust" : "scan"
+            }
+         ]
+      }
+   ]
+}
+
