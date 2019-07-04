@@ -1,7 +1,7 @@
 # Stackwalker [![Build Status](https://travis-ci.org/NatronGitHub/stackwalker.svg)](https://travis-ci.org/NatronGitHub/stackwalker)
 
 
-Stackwalker is used to dump symbols and process crash reports for MINGW, Linux and macOS.
+Stackwalker is used to process crash reports from MINGW, Linux and macOS.
 
 *This is a fork of Google Breakpad and Mozilla Socorro with additional features/changes maintained for Natron.*
 
@@ -12,7 +12,7 @@ Stackwalker is used to dump symbols and process crash reports for MINGW, Linux a
 * libzip
 * jsoncpp
 
-## Build
+## Build (on Linux)
 
 ```
 git submodule update -i --recursive
@@ -22,10 +22,7 @@ cd ..
 make -C minidump-stackwalk
 ```
 
-This will create two binaries:
-
-* ``breakpad/src/tools/<OS>/dump_syms``
-* ``minidump-stackwalk/stackwalker``
+The binary is located in the ``minidump-stackwalk`` folder.
 
 ## Usage
 
