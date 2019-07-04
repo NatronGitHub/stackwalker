@@ -33,10 +33,12 @@
 #include <algorithm>
 #include <fstream>
 #include <iostream>
+#include <map>
 #include <ostream>
 #include <vector>
 #include <set>
 #include <cstdlib>
+#include <stdexcept>
 
 #include <errno.h>
 #include <getopt.h>
@@ -96,6 +98,7 @@ using google_breakpad::SymbolSupplier;
 using google_breakpad::SystemInfo;
 using breakpad_extra::HTTPSymbolSupplier;
 
+using std::map;
 using std::string;
 using std::vector;
 using std::ifstream;
@@ -133,10 +136,12 @@ public:
     : StackFrameSymbolizer(supplier, resolver) {}
 
   virtual SymbolizerResult FillSourceLineInfo(const CodeModules* modules,
+                                              const CodeModules* unloaded_modules,
                                               const SystemInfo* system_info,
                                               StackFrame* stack_frame) {
     SymbolizerResult res =
       StackFrameSymbolizer::FillSourceLineInfo(modules,
+                                               unloaded_modules,
                                                system_info,
                                                stack_frame);
     RecordResult(stack_frame->module, res);
@@ -515,8 +520,9 @@ bool ConvertStackToJSON(const ProcessState& process_state,
       if (ContainsModule(modules_with_corrupt_symbols, frame->module)) {
         frame_data["corrupt_symbols"] = true;
       }
-      assert(!frame->module->code_file().empty());
-      frame_data["module"] = PathnameStripper::File(frame->module->code_file());
+      if (!frame->module->code_file().empty()) {
+        frame_data["module"] = PathnameStripper::File(frame->module->code_file());
+      }
 
       if (!frame->function_name.empty()) {
         frame_data["function"] = frame->function_name;
@@ -633,10 +639,13 @@ static string ExploitabilityString(ExploitabilityRating exploitability) {
   return str;
 }
 
+static map<uint32_t, string> GetThreadIdNameMap(const Json::Value& raw_root);
+
 static void ConvertProcessStateToJSON(const ProcessState& process_state,
                                       const StackFrameSymbolizerForward& symbolizer,
                                       const HTTPSymbolSupplier* supplier,
-                                      Json::Value& root) {
+                                      Json::Value& root,
+                                      const Json::Value& raw_root) {
   // OS and CPU information.
   Json::Value system_info;
   system_info["os"] = process_state.system_info()->os;
@@ -672,6 +681,8 @@ static void ConvertProcessStateToJSON(const ProcessState& process_state,
     root["main_module"] = main_module;
   root["modules"] = modules;
 
+  auto thread_id_name_map = std::move(GetThreadIdNameMap(raw_root));
+
   Json::Value threads(Json::arrayValue);
   int thread_count = process_state.threads()->size();
   root["thread_count"] = thread_count;
@@ -686,6 +697,10 @@ static void ConvertProcessStateToJSON(const ProcessState& process_state,
     }
     thread["frames"] = stack;
     thread["frame_count"] = stack.size();
+    auto thread_name = thread_id_name_map[raw_stack->tid()];
+    if (!thread_name.empty()) {
+      thread["thread_name"] = thread_name;
+    }
     threads.append(thread);
   }
   root["threads"] = threads;
@@ -703,6 +718,10 @@ static void ConvertProcessStateToJSON(const ProcessState& process_state,
     crashing_thread["frames"] = stack;
     crashing_thread["total_frames"] =
       static_cast<Json::UInt>(crashing_stack->frames()->size());
+    auto thread_name = thread_id_name_map[crashing_stack->tid()];
+    if (!thread_name.empty()) {
+      crashing_thread["thread_name"] = thread_name;
+    }
     root["crashing_thread"] = crashing_thread;
   }
 
@@ -796,6 +815,35 @@ static string stripquotes(const string& s) {
   return s;
 }
 
+static string trim(const string& s) {
+  size_t first = s.find_first_not_of(" \t");
+  if (first == string::npos) {
+    first = 0;
+  }
+
+  size_t last = s.find_last_not_of(" \t");
+  if (last == string::npos) {
+    last = s.length();
+  }
+
+  return s.substr(first, last);
+}
+
+static void ConvertCPUInfoToJSON(const string& cpuinfo,
+                                 Json::Value& root) {
+  for (string& line : split(cpuinfo, '\n')) {
+    vector<string> bits = split(line, ':');
+    if (bits.size() != 2 || !startswith(bits[0], "microcode")) {
+        continue;
+    }
+
+    try {
+        root["system_info"]["cpu_microcode_version"] = static_cast<Json::UInt>(std::stoul(trim(bits[1]), nullptr, 16));
+        break;
+    } catch (const std::invalid_argument& e) {}
+  }
+}
+
 static void ConvertLSBReleaseToJSON(const string& lsb_release,
                                     Json::Value& root) {
   Json::Value lsb(Json::objectValue);
@@ -840,6 +888,34 @@ static string ResultString(ProcessResult result) {
     break;
   }
   return str;
+}
+
+// Parse crash annotation "ThreadIdNameMapping" and return a map of
+// thread id -> thread name.
+static map<uint32_t, string> GetThreadIdNameMap(const Json::Value& raw_root)
+{
+  map<uint32_t, string> result {};
+
+  // Sample input: 23534:"Timer",23535:"Link Monitor",
+  string input = raw_root.get("ThreadIdNameMapping", "").asString();
+  if (input.empty()) {
+    return result;
+  }
+
+  for (string& map_item : split(input, ',')) {
+    // Sample map_item: 23534:"Timer"
+    vector<string> id_and_name = split(map_item, ':');
+    if (id_and_name.size() != 2) {
+      continue;
+    }
+
+    uint32_t thread_id = strtoul(id_and_name[0].c_str(), NULL, 10);
+    const string thread_name = stripquotes(id_and_name[1]);
+
+    result[thread_id] = thread_name;
+  }
+
+  return result;
 }
 
 //*** This code copy-pasted from minidump_stackwalk.cc ***
@@ -1159,7 +1235,7 @@ int main(int argc, char** argv)
   root["sensitive"] = Json::Value(Json::objectValue);
   if (result == google_breakpad::PROCESS_OK) {
     ConvertProcessStateToJSON(process_state, symbolizer,
-                              http_symbol_supplier, root);
+                              http_symbol_supplier, root, raw_root);
   }
   ConvertMemoryInfoToJSON(minidump, raw_root, root);
 
@@ -1168,6 +1244,17 @@ int main(int argc, char** argv)
   if (misc_info && misc_info->misc_info() &&
       (misc_info->misc_info()->flags1 & MD_MISCINFO_FLAGS1_PROCESS_ID)) {
     root["pid"] = misc_info->misc_info()->process_id;
+  }
+
+  // See if this is a Linux dump with /proc/cpuinfo in it
+  uint32_t cpuinfo_length = 0;
+  if (process_state.system_info()->os == "Linux" &&
+      minidump.SeekToStreamType(MD_LINUX_CPU_INFO, &cpuinfo_length)) {
+    string contents;
+    contents.resize(cpuinfo_length);
+    if (minidump.ReadBytes(const_cast<char*>(contents.data()), cpuinfo_length)) {
+      ConvertCPUInfoToJSON(contents, root);
+    }
   }
 
   // See if this is a Linux dump with /etc/lsb-release in it

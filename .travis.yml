@@ -7,12 +7,14 @@ compiler:
   - gcc
 
 install:
-  - sudo apt-get install -y libzip-dev libcurl4-openssl-dev
+  - sudo apt-get install -y libzip-dev libcurl4-openssl-dev libjsoncpp-dev
 
 script:
   - git submodule update -i --recursive
   - cd breakpad
-  - LIBS="-lzip -lz" ./configure
+  - ./configure
   - make -j2
   - cd ../minidump-stackwalk
   - make
+  - cd ../tests
+  - sh run.sh

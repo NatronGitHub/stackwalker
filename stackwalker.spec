@@ -1,21 +1,21 @@
-Summary: Parse crash reports
+Summary: Parse crash reports from Natron
 Name: stackwalker
 
-Version: 2016.12
+Version: 2019.07
 Release: 1%{?dist}
 License: BSD
 
 Group: System Environment/Base
-URL: https://github.com/olear/stackwalker
+URL: https://github.com/NatronGitHub/stackwalker
 
 Source: %{name}-%{version}.tar.xz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
-BuildRequires: libcurl-devel libzip-devel
-Requires: libcurl libzip
+BuildRequires: libcurl-devel libzip-devel jsoncpp-devel
+Requires: libcurl libzip jsoncpp
 
 %description
-Parse crash reports from clients using Breakpad.
+Parse crash reports from Natron.
 
 %prep
 %setup
