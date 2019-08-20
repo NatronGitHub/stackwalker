@@ -33,6 +33,7 @@
 #include <QMimeDatabase>
 #include <QMimeType>
 #include <QDebug>
+#include <QtConcurrent/QtConcurrent>
 
 #include "stackwalker.h"
 
@@ -41,7 +42,8 @@ BreakDown::BreakDown(QWidget *parent) :
     ui(new Ui::BreakDown)
 {
     ui->setupUi(this);
-    setWindowTitle(QString("Breakdown"));
+    setWindowTitle(QString("Breakdown %1")
+                   .arg(BREAKDOWN_VERSION));
 
     setupWidgets();
     loadSettings();
@@ -87,6 +89,11 @@ void BreakDown::setupWidgets()
     ui->GLvendor->setReadOnly(true);
     ui->GLShader->setReadOnly(true);
     ui->GLext->setReadOnly(true);
+
+    connect(this,
+            SIGNAL(parseDumpFinished(QString,QString,bool)),
+            this,
+            SLOT(handleParseDumFinished(QString,QString,bool)));
 }
 
 void BreakDown::setLineEditCursorPosition()
@@ -152,6 +159,9 @@ void BreakDown::openJsonFile(const QString &file)
 
 void BreakDown::openJsonString(const QString json, const QString customID)
 {
+    ui->actionOpen->setDisabled(false);
+    ui->statusBar->showMessage(tr("Done"));
+
     if (json.isEmpty()) { return; }
     QJsonDocument doc(QJsonDocument::fromJson(json.toUtf8()));
     if (doc.isEmpty() || doc.isNull()) { return; }
@@ -355,9 +365,7 @@ void BreakDown::openDumpFile(const QString &file)
 
     if (result != google_breakpad::PROCESS_OK) {
         string failed = ResultString(result);
-        QMessageBox::warning(this,
-                             tr("Failed to process minidump"),
-                             QString::fromStdString(failed));
+        emit parseDumpFinished(QString::fromStdString(failed), file, true);
         return;
     }
 
@@ -371,10 +379,6 @@ void BreakDown::openDumpFile(const QString &file)
                                   http_symbol_supplier,
                                   root,
                                   raw_root);
-    } else {
-        QMessageBox::warning(this,
-                             tr("Failed to process minidump"),
-                             QString::fromStdString(ResultString(result)));
     }
     ConvertMemoryInfoToJSON(minidump, raw_root, root);
 
@@ -416,7 +420,8 @@ void BreakDown::openDumpFile(const QString &file)
 
     if (!json.empty()) {
         QFileInfo info(file);
-        openJsonString(QString::fromStdString(json), info.baseName());
+        //openJsonString(QString::fromStdString(json), info.baseName());
+        emit parseDumpFinished(QString::fromStdString(json), info.baseName(), false);
     }
 }
 
@@ -436,10 +441,12 @@ void BreakDown::on_actionOpen_triggered()
     QMimeDatabase db;
     QMimeType type = db.mimeTypeForFile(file);
 
+    ui->actionOpen->setDisabled(true);
+    ui->statusBar->showMessage(tr("Parsing minidump, this might take a while ..."), -1);
     if (type.name() == "application/json") {
         openJsonFile(file);
     } else {
-        openDumpFile(file);
+        QtConcurrent::run(this, &BreakDown::openDumpFile, file);
     }
 }
 
@@ -454,7 +461,18 @@ void BreakDown::on_actionAbout_triggered()
 {
     QMessageBox::about(this,
                        QString("%1 Breakdown").arg(tr("About")),
-                       QString("<h3>Breakdown</h3>"
+                       QString("<h3>Breakdown %1</h3>"
                        "<p>Parse crash reports from Breakpad.<p>"
-                       "<p>Copyright &copy;2019 <a href=\"https://github.com/rodlie\">Ole-André Rodlie</a>.</p>"));
+                       "<p>Copyright &copy;2019 <a href=\"https://github.com/rodlie\">Ole-André Rodlie</a>.</p>")
+                       .arg(BREAKDOWN_VERSION));
+}
+
+void BreakDown::handleParseDumFinished(const QString json,
+                                       const QString uuid,
+                                       bool failed)
+{
+    ui->actionOpen->setDisabled(false);
+    ui->statusBar->showMessage(tr("Done"));
+    if (failed) { return; }
+    openJsonString(json, uuid);
 }

@@ -1,5 +1,4 @@
 #
-# Breakdown <https://github.com/NatronGitHub/stackwalker>
 # Copyright (C) 2019 Ole-André Rodlie
 #
 # This program is free software; you can redistribute it and/or modify
@@ -27,12 +26,15 @@ set(BREAKPAD_SRC ${CMAKE_CURRENT_SOURCE_DIR}/breakpad)
 set(BREAKPAD_BIN ${CMAKE_BINARY_DIR}/breakpad)
 set(STACKWALKER ${CMAKE_CURRENT_SOURCE_DIR}/minidump-stackwalk)
 set(BREAKDOWN ${CMAKE_CURRENT_SOURCE_DIR}/breakdown)
+set(BREAKDOWN_URL "https://stackwalker.000webhostapp.com/reports")
 
 file(MAKE_DIRECTORY ${BREAKPAD_BIN})
 
 find_package(Qt5Core REQUIRED)
 find_package(Qt5Gui REQUIRED)
 find_package(Qt5Widgets REQUIRED)
+find_package(Qt5Concurrent REQUIRED)
+find_package(Qt5Test REQUIRED)
 find_package(PkgConfig REQUIRED)
 find_package(Git QUIET)
 
@@ -52,7 +54,7 @@ endif()
 if(NOT EXISTS ${BREAKPAD_BIN}/src/libbreakpad.a)
     message("-- MISSING BREAKPAD (will try to build)")
     execute_process(
-        COMMAND ${CMAKE_CURRENT_SOURCE_DIR}/breakpad.sh ${BREAKPAD_SRC}
+        COMMAND ${CMAKE_CURRENT_SOURCE_DIR}/scripts/build_breakpad.sh ${BREAKPAD_SRC}
         WORKING_DIRECTORY ${BREAKPAD_BIN}
     )
 endif()
@@ -64,6 +66,8 @@ else()
 endif()
 add_compile_options(-Wall -Wextra)
 add_definitions(-D__STDC_FORMAT_MACROS=1 -Wno-format)
+add_definitions(-DBREAKDOWN_URL=${BREAKDOWN_URL})
+add_definitions(-DBREAKDOWN_VERSION=${PROJECT_VERSION})
 
 include_directories(
     ${CMAKE_CURRENT_SOURCE_DIR}
@@ -94,6 +98,7 @@ target_link_libraries(
     Qt5::Core
     Qt5::Gui
     Qt5::Widgets
+    Qt5::Concurrent
     ${BREAKPAD_BIN}/src/libbreakpad.a
     ${BREAKPAD_BIN}/src/third_party/libdisasm/libdisasm.a
     ${CURL_LIBRARIES}

@@ -36,6 +36,9 @@ public:
     explicit BreakDown(QWidget *parent = nullptr);
     ~BreakDown();
 
+signals:
+    void parseDumpFinished(const QString json, const QString uuid, bool failed);
+
 private slots:
     void loadSettings();
     void saveSettings();
@@ -49,6 +52,8 @@ private slots:
     void on_actionOpen_triggered();
     void on_reportInfoCrashTree_itemDoubleClicked(QTreeWidgetItem *item, int column);
     void on_actionAbout_triggered();
+    void handleParseDumFinished(const QString json, const QString uuid, bool failed);
+
 
 private:
     Ui::BreakDown *ui;
