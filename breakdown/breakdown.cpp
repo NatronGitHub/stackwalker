@@ -90,6 +90,27 @@ void BreakDown::setupWidgets()
     ui->GLShader->setReadOnly(true);
     ui->GLext->setReadOnly(true);
 
+    // we don't need to show these
+    ui->reportGitCommit->setHidden(true);
+    ui->reportGitCommitIO->setHidden(true);
+    ui->reportGitCommitMisc->setHidden(true);
+    ui->reportGitCommitArena->setHidden(true);
+    ui->reportGitCommitGmic->setHidden(true);
+    ui->reportGitBranch->setHidden(true);
+    ui->reportClientIP->setHidden(true);
+    ui->reportCpuArch->setHidden(true);
+    ui->reportTimestamp->setHidden(true);
+
+    ui->commitLabel->setHidden(true);
+    ui->ioLabel->setHidden(true);
+    ui->miscLabel->setHidden(true);
+    ui->arenaLabel->setHidden(true);
+    ui->gmicLabel->setHidden(true);
+    ui->branchLabel->setHidden(true);
+    ui->locationLabel->setHidden(true);
+    ui->cpuLabel->setHidden(true);
+    ui->timeLabel->setHidden(true);
+
     connect(this,
             SIGNAL(parseDumpFinished(QString,QString,bool)),
             this,
