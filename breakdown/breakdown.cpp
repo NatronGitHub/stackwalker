@@ -326,6 +326,9 @@ void BreakDown::openDumpFile(const QString &file)
     vector<string> symbol_paths;
 
     // TODO: settings (also remember cache and tmp!!!)
+
+    //server_path.push_back("https://sourceforge.net/projects/natron/files/symbols");
+    server_path.push_back("https://sourceforge.net/projects/openfx-arena/files/symbols");
     server_path.push_back("https://stackwalker.000webhostapp.com/symbols");
 
     Minidump minidump(file.toStdString());
