@@ -43,6 +43,8 @@ private slots:
     void setLineEditCursorPosition();
     void clearReport();
     void openJsonFile(const QString &file);
+    void openJsonString(const QString json, const QString customID = QString());
+    void openDumpFile(const QString &file);
     void on_actionQuit_triggered();
     void on_actionOpen_triggered();
     void on_reportInfoCrashTree_itemDoubleClicked(QTreeWidgetItem *item, int column);

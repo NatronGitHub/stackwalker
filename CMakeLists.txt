@@ -83,11 +83,11 @@ add_executable(
     ${BREAKDOWN}/breakdown.cpp
     ${BREAKDOWN}/breakdown.ui
 )
-add_executable(
-    stackwalker
-    ${STACKWALKER}/http_symbol_supplier.cc
-    ${STACKWALKER}/stackwalker.cc
-)
+#add_executable(
+#    stackwalker
+#    ${STACKWALKER}/http_symbol_supplier.cc
+#    ${STACKWALKER}/stackwalker.cc
+#)
 
 target_link_libraries(
     breakdown
@@ -101,11 +101,11 @@ target_link_libraries(
     ${JSON_LIBRARIES}
 )
 
-target_link_libraries(
-    stackwalker
-    ${BREAKPAD_BIN}/src/libbreakpad.a
-    ${BREAKPAD_BIN}/src/third_party/libdisasm/libdisasm.a
-    ${CURL_LIBRARIES}
-    ${ZIP_LIBRARIES}
-    ${JSON_LIBRARIES}
-)
+#target_link_libraries(
+#    stackwalker
+#    ${BREAKPAD_BIN}/src/libbreakpad.a
+#    ${BREAKPAD_BIN}/src/third_party/libdisasm/libdisasm.a
+#    ${CURL_LIBRARIES}
+#    ${ZIP_LIBRARIES}
+#    ${JSON_LIBRARIES}
+#)

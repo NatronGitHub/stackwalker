@@ -30,6 +30,11 @@
 #include <QDesktopServices>
 #include <QMessageBox>
 #include <QSettings>
+#include <QMimeDatabase>
+#include <QMimeType>
+#include <QDebug>
+
+#include "stackwalker.h"
 
 BreakDown::BreakDown(QWidget *parent) :
     QMainWindow(parent),
@@ -142,8 +147,13 @@ void BreakDown::openJsonFile(const QString &file)
     if (!jsonFile.open(QIODevice::ReadOnly|QIODevice::Text)) { return; }
     QString rawJson = jsonFile.readAll();
     jsonFile.close();
+    if (!rawJson.isEmpty()) { openJsonString(rawJson); }
+}
 
-    QJsonDocument doc(QJsonDocument::fromJson(rawJson.toUtf8()));
+void BreakDown::openJsonString(const QString json, const QString customID)
+{
+    if (json.isEmpty()) { return; }
+    QJsonDocument doc(QJsonDocument::fromJson(json.toUtf8()));
     if (doc.isEmpty() || doc.isNull()) { return; }
     QJsonObject obj = doc.object();
 
@@ -157,6 +167,7 @@ void BreakDown::openJsonFile(const QString &file)
     QJsonObject system_info_item = system_info.toObject();
 
     QString uuid = obj.value(QString("uuid")).toString();
+    if (uuid.isEmpty() && !customID.isEmpty()) { uuid = customID; }
     QString timestamp = obj.value(QString("submitted_timestamp")).toString();
     QString comment = obj.value(QString("Comments")).toString();
     QString git_commit = obj.value(QString("git_commit")).toString();
@@ -309,6 +320,103 @@ void BreakDown::openJsonFile(const QString &file)
     }
 }
 
+void BreakDown::openDumpFile(const QString &file)
+{
+    vector<string> server_path;
+    vector<string> symbol_paths;
+
+    // TODO: settings (also remember cache and tmp!!!)
+    server_path.push_back("https://stackwalker.000webhostapp.com/symbols");
+
+    Minidump minidump(file.toStdString());
+    minidump.Read();
+
+    Json::Value root;
+    scoped_ptr<SymbolSupplier> symbol_supplier;
+    HTTPSymbolSupplier* http_symbol_supplier = nullptr;
+    if (!server_path.empty()) {
+        http_symbol_supplier = new HTTPSymbolSupplier(server_path,
+                                                      QDir::tempPath().toStdString(),
+                                                      symbol_paths,
+                                                      QDir::tempPath().toStdString());
+        symbol_supplier.reset(http_symbol_supplier);
+    } else if (!symbol_paths.empty()) {
+        symbol_supplier.reset(new SimpleSymbolSupplier(symbol_paths));
+    }
+
+    BasicSourceLineResolver resolver;
+    StackFrameSymbolizerForward symbolizer(symbol_supplier.get(), &resolver);
+    MinidumpProcessor minidump_processor(&symbolizer, true);
+    ProcessState process_state;
+    ProcessResult result = minidump_processor.Process(&minidump, &process_state);
+
+    if (result != google_breakpad::PROCESS_OK) {
+        string failed = ResultString(result);
+        QMessageBox::warning(this,
+                             tr("Failed to process minidump"),
+                             QString::fromStdString(failed));
+        return;
+    }
+
+    Json::Value raw_root(Json::objectValue);
+
+    root["status"] = ResultString(result);
+    root["sensitive"] = Json::Value(Json::objectValue);
+    if (result == google_breakpad::PROCESS_OK) {
+        ConvertProcessStateToJSON(process_state,
+                                  symbolizer,
+                                  http_symbol_supplier,
+                                  root,
+                                  raw_root);
+    } else {
+        QMessageBox::warning(this,
+                             tr("Failed to process minidump"),
+                             QString::fromStdString(ResultString(result)));
+    }
+    ConvertMemoryInfoToJSON(minidump, raw_root, root);
+
+    // Get the PID.
+    MinidumpMiscInfo* misc_info = minidump.GetMiscInfo();
+    if (misc_info && misc_info->misc_info() &&
+        (misc_info->misc_info()->flags1 & MD_MISCINFO_FLAGS1_PROCESS_ID))
+    {
+        root["pid"] = misc_info->misc_info()->process_id;
+    }
+
+    // See if this is a Linux dump with /proc/cpuinfo in it
+    uint32_t cpuinfo_length = 0;
+    if (process_state.system_info()->os == "Linux" &&
+        minidump.SeekToStreamType(MD_LINUX_CPU_INFO, &cpuinfo_length))
+    {
+        string contents;
+        contents.resize(cpuinfo_length);
+        if (minidump.ReadBytes(const_cast<char*>(contents.data()), cpuinfo_length)) {
+            ConvertCPUInfoToJSON(contents, root);
+        }
+    }
+
+    // See if this is a Linux dump with /etc/lsb-release in it
+    uint32_t length = 0;
+    if (process_state.system_info()->os == "Linux" &&
+        minidump.SeekToStreamType(MD_LINUX_LSB_RELEASE, &length))
+    {
+        string contents;
+        contents.resize(length);
+        if (minidump.ReadBytes(const_cast<char*>(contents.data()), length)) {
+            ConvertLSBReleaseToJSON(contents, root);
+        }
+    }
+
+    scoped_ptr<Json::Writer> writer;
+    writer.reset(new Json::StyledWriter());
+    string json = writer->write(root);
+
+    if (!json.empty()) {
+        QFileInfo info(file);
+        openJsonString(QString::fromStdString(json), info.baseName());
+    }
+}
+
 void BreakDown::on_actionQuit_triggered()
 {
     qApp->quit();
@@ -316,11 +424,20 @@ void BreakDown::on_actionQuit_triggered()
 
 void BreakDown::on_actionOpen_triggered()
 {
-    QString jsonFile = QFileDialog::getOpenFileName(this,
-                                                    tr("Open Stackwalker JSON or DMP"),
-                                                    QDir::homePath());
-    if (jsonFile.isEmpty()) { return; }
-    openJsonFile(jsonFile);
+    QString file = QFileDialog::getOpenFileName(this,
+                                                tr("Open Stackwalker JSON or Breakpad DMP"),
+                                                QDir::homePath(),
+                                                "*.json *.dmp");
+    if (file.isEmpty()) { return; }
+
+    QMimeDatabase db;
+    QMimeType type = db.mimeTypeForFile(file);
+
+    if (type.name() == "application/json") {
+        openJsonFile(file);
+    } else {
+        openDumpFile(file);
+    }
 }
 
 void BreakDown::on_reportInfoCrashTree_itemDoubleClicked(QTreeWidgetItem *item, int column)
@@ -335,6 +452,6 @@ void BreakDown::on_actionAbout_triggered()
     QMessageBox::about(this,
                        QString("%1 Breakdown").arg(tr("About")),
                        QString("<h3>Breakdown</h3>"
-                       "<p>Parse crash reports from Stackwalker, designed for use with Natron.<p>"
-                       "<p>Copyright &copy; 2019 <a href=\"https://github.com/rodlie\">Ole-André Rodlie</a>.</p>"));
+                       "<p>Parse crash reports from Breakpad.<p>"
+                       "<p>Copyright &copy;2019 <a href=\"https://github.com/rodlie\">Ole-André Rodlie</a>.</p>"));
 }
