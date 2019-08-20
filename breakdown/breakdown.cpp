@@ -329,7 +329,7 @@ void BreakDown::openDumpFile(const QString &file)
 
     //server_path.push_back("https://sourceforge.net/projects/natron/files/symbols");
     server_path.push_back("https://sourceforge.net/projects/openfx-arena/files/symbols");
-    server_path.push_back("https://stackwalker.000webhostapp.com/symbols");
+    //server_path.push_back("https://stackwalker.000webhostapp.com/symbols");
 
     Minidump minidump(file.toStdString());
     minidump.Read();

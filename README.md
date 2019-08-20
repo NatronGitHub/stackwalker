@@ -1,7 +1,7 @@
 # Stackwalker [![Build Status](https://travis-ci.org/NatronGitHub/stackwalker.svg)](https://travis-ci.org/NatronGitHub/stackwalker)
 
 
-Stackwalker is used to process crash reports from MINGW, Linux and macOS.
+Stackwalker and Breakdown is used to process crash reports from Breakpad.
 
 *This is a fork of Google Breakpad and Mozilla Socorro with additional features/changes maintained for Natron.*
 
@@ -11,31 +11,28 @@ Stackwalker is used to process crash reports from MINGW, Linux and macOS.
 * libcurl
 * libzip
 * jsoncpp
+* qtbase
+* cmake
+* php
 
-## Build (on Linux)
-
-```
-git submodule update -i --recursive
-cd breakpad
-./configure && make
-cd ..
-make -C minidump-stackwalk
-```
-
-The binary is located in the ``minidump-stackwalk`` folder.
+Only tested on Linux.
 
 ## Usage
 
-``dump_syms`` is used to create a symbol file for a given (not stripped) binary. Example:
+``dump_syms`` is used to create a symbol file for a given (not stripped) binary.
+
+Example:
 
 ```
 dump_syms Natron-bin > Natron-bin.sym
 ```
 
-``stackwalker`` is used to parse crash report dumps against symbols generated from ``dump_syms``. Example:
+``stackwalker`` or ``breakdown`` is used to parse crash report dumps against symbols generated from ``dump_syms``.
+
+Example:
 
 ```
-stackwalker CRASH.dmp <LOCAL_OR_REMOTE_SYMBOLS_DIR> > CRASH.json
+stackwalker CRASH.dmp LOCAL_OR_REMOTE_PATH_TO_SYMBOLS_DIR > CRASH.json
 ```
 
 ## Symbols Storage
@@ -48,4 +45,4 @@ Symbols are stored using the following directory structure:
 
 Filename and ID must match line 1 in the symbol file.
 
-**Note that Stackwalker only supports zipped symbols (filename.sym.zip)**
+**Note that Stackwalker/Breakdown only supports zipped symbols (filename.sym.zip)**
