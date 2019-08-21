@@ -54,7 +54,7 @@ endif()
 if(NOT EXISTS ${BREAKPAD_BIN}/src/libbreakpad.a)
     message("-- MISSING BREAKPAD (will try to build)")
     execute_process(
-        COMMAND ${CMAKE_CURRENT_SOURCE_DIR}/scripts/build_breakpad.sh ${BREAKPAD_SRC}
+        COMMAND bash ${CMAKE_CURRENT_SOURCE_DIR}/scripts/build_breakpad.sh ${BREAKPAD_SRC}
         WORKING_DIRECTORY ${BREAKPAD_BIN}
     )
 endif()
