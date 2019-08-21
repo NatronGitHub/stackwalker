@@ -42,6 +42,11 @@ pkg_search_module(CURL REQUIRED libcurl)
 pkg_search_module(ZIP REQUIRED libzip)
 pkg_search_module(JSON REQUIRED jsoncpp)
 
+option(MXE32_STATIC "Build using MXE i686 static" OFF)
+option(MXE64_STATIC "Build using MXE x86_64 static" OFF)
+option(MXE32_SHARED "Build using MXE i686 shared" OFF)
+option(MXE64_SHARED "Build using MXE x86_64 shared" OFF)
+
 if(NOT EXISTS ${BREAKPAD_SRC}/configure)
     execute_process(COMMAND ${GIT_EXECUTABLE} submodule update --init --recursive
                     WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
@@ -53,8 +58,17 @@ endif()
 
 if(NOT EXISTS ${BREAKPAD_BIN}/src/libbreakpad.a)
     message("-- MISSING BREAKPAD (will try to build)")
+    if(MXE32_STATIC)
+        set(BREAKPAD_OPTIONS "--host=i686-w64-mingw32.static")
+    elseif(MXE64_STATIC)
+        set(BREAKPAD_OPTIONS "--host=x86_64-w64-mingw32.static")
+    elseif(MXE32_SHARED)
+        set(BREAKPAD_OPTIONS "--host=i686-w64-mingw32.shared")
+    elseif(MXE64_SHARED)
+        set(BREAKPAD_OPTIONS "--host=x86_64-w64-mingw32.shared")
+    endif()
     execute_process(
-        COMMAND bash ${CMAKE_CURRENT_SOURCE_DIR}/scripts/build_breakpad.sh ${BREAKPAD_SRC}
+        COMMAND bash ${CMAKE_CURRENT_SOURCE_DIR}/scripts/build_breakpad.sh ${BREAKPAD_SRC} ${BREAKPAD_OPTIONS}
         WORKING_DIRECTORY ${BREAKPAD_BIN}
     )
 endif()
@@ -64,7 +78,7 @@ if(CMAKE_BUILD_TYPE MATCHES "^(release|Release|RELEASE)$")
 else()
     message("-- DEBUG BUILD")
 endif()
-add_compile_options(-Wall -Wextra)
+add_compile_options(-Wall -Wextra ${CURL_CFLAGS})
 add_definitions(-D__STDC_FORMAT_MACROS=1 -Wno-format)
 add_definitions(-DBREAKDOWN_URL=${BREAKDOWN_URL})
 add_definitions(-DBREAKDOWN_VERSION=${PROJECT_VERSION})
@@ -101,16 +115,16 @@ target_link_libraries(
     Qt5::Concurrent
     ${BREAKPAD_BIN}/src/libbreakpad.a
     ${BREAKPAD_BIN}/src/third_party/libdisasm/libdisasm.a
-    ${CURL_LIBRARIES}
-    ${ZIP_LIBRARIES}
-    ${JSON_LIBRARIES}
+    ${CURL_STATIC_LIBRARIES}
+    ${ZIP_STATIC_LIBRARIES}
+    ${JSON_STATIC_LIBRARIES}
 )
 
 target_link_libraries(
     stackwalker
     ${BREAKPAD_BIN}/src/libbreakpad.a
     ${BREAKPAD_BIN}/src/third_party/libdisasm/libdisasm.a
-    ${CURL_LIBRARIES}
-    ${ZIP_LIBRARIES}
-    ${JSON_LIBRARIES}
+    ${CURL_STATIC_LIBRARIES}
+    ${ZIP_STATIC_LIBRARIES}
+    ${JSON_STATIC_LIBRARIES}
 )
