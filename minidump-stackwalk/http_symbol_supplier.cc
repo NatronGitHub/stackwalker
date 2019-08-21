@@ -74,7 +74,11 @@ static bool mkdirs(const string& file) {
     dir = new_dir;
   }
   for (auto d = dirs.rbegin(); d != dirs.rend(); ++d) {
+#ifdef _WIN32
+    if (mkdir(d->c_str()) != 0) {
+#else
     if (mkdir(d->c_str(), 0755) != 0) {
+#endif
       BPLOG(ERROR) << "Error creating " << *d << ": " << errno;
       return false;
     }
