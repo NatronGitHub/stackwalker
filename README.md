@@ -1,9 +1,6 @@
 # Stackwalker [![Build Status](https://travis-ci.org/NatronGitHub/stackwalker.svg)](https://travis-ci.org/NatronGitHub/stackwalker)
 
-
-Stackwalker and Breakdown is used to process crash reports from Breakpad.
-
-*This is a fork of Google Breakpad and Mozilla Socorro with additional features/changes maintained for Natron.*
+The stackwalker project includes applications used to process crash reports from Breakpad.
 
 ## Requirements
 
@@ -11,11 +8,51 @@ Stackwalker and Breakdown is used to process crash reports from Breakpad.
 * libcurl
 * libzip
 * jsoncpp
-* qtbase
+* qtbase (Breakdown)
 * cmake
-* php
+* php (server-side)
 
-Only tested on Linux.
+### MSYS2
+
+Add the required dependencies:
+```
+pacman -S tar git make mingw-w64-x86_64-{toolchain,cmake,curl,libzip,jsoncpp,qt5}
+```
+
+### MXE
+
+Add the required dependencies:
+```
+make cc cmake jsoncpp curl libzip qtbase
+```
+
+## Applications
+
+The stackwalker project contains the following applications:
+
+### Breakdown
+
+TODO.
+
+### Stackwalker
+
+Commandline application that parses mindumps against symbols and outputs a JSON.
+
+### dump_syms
+
+WIN32 TODO. Need to port from Natron google-breakpad fork.
+
+## Build
+
+```
+mkdir build && cd build
+cmake ..
+make
+```
+
+Use ``cmake -G"MSYS Makefiles" .. `` on MSYS2.
+
+Tested on Linux and MXE/MSYS2 (MinGW).
 
 ## Usage
 
