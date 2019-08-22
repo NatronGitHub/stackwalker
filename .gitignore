@@ -1,4 +1,10 @@
 # exclude config overrides to prevent accidental check-ins
+*.user
+Natron*
+htaccess
+htpasswd
+.htaccess
+.htpasswd
 socorro/unittest/config/*.py
 *.py[co]
 *.sw[po]
