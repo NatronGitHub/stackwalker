@@ -34,6 +34,7 @@
 #include <QMimeType>
 #include <QDebug>
 #include <QtConcurrent/QtConcurrent>
+#include <QIcon>
 
 #include "stackwalker.h"
 
@@ -42,8 +43,8 @@ BreakDown::BreakDown(QWidget *parent) :
     ui(new Ui::BreakDown)
 {
     ui->setupUi(this);
-    setWindowTitle(QString("Breakdown %1")
-                   .arg(BREAKDOWN_VERSION));
+    setWindowTitle(QString("Breakdown"));
+    setWindowIcon(QIcon(":/breakdown.png"));
 
     setupWidgets();
     loadSettings();
@@ -114,7 +115,7 @@ void BreakDown::setupWidgets()
     connect(this,
             SIGNAL(parseDumpFinished(QString,QString,bool)),
             this,
-            SLOT(handleParseDumFinished(QString,QString,bool)));
+            SLOT(handleParseDumpFinished(QString,QString,bool)));
 }
 
 void BreakDown::setLineEditCursorPosition()
@@ -181,7 +182,7 @@ void BreakDown::openJsonFile(const QString &file)
 void BreakDown::openJsonString(const QString json, const QString customID)
 {
     ui->actionOpen->setDisabled(false);
-    ui->statusBar->showMessage(tr("Done"));
+    ui->statusBar->showMessage(tr("Done"), 500);
 
     if (json.isEmpty()) { return; }
     QJsonDocument doc(QJsonDocument::fromJson(json.toUtf8()));
@@ -488,12 +489,23 @@ void BreakDown::on_actionAbout_triggered()
                        .arg(BREAKDOWN_VERSION));
 }
 
-void BreakDown::handleParseDumFinished(const QString json,
+void BreakDown::handleParseDumpFinished(const QString json,
                                        const QString uuid,
                                        bool failed)
 {
     ui->actionOpen->setDisabled(false);
-    ui->statusBar->showMessage(tr("Done"));
+    ui->statusBar->showMessage(tr("Done"), 500);
     if (failed) { return; }
     openJsonString(json, uuid);
 }
+
+/*void BreakDown::downloadReportXML(const QUrl &url)
+{
+    qDebug() << "download xml from" << url;
+    if (url.isEmpty()) { return; }
+}
+
+void BreakDown::downloadReportXMLFinished()
+{
+
+}*/

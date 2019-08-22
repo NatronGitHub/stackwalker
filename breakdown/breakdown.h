@@ -23,6 +23,7 @@
 #include <QMainWindow>
 #include <QTreeWidgetItem>
 #include <QString>
+#include <QUrl>
 
 namespace Ui {
 class BreakDown;
@@ -52,8 +53,9 @@ private slots:
     void on_actionOpen_triggered();
     void on_reportInfoCrashTree_itemDoubleClicked(QTreeWidgetItem *item, int column);
     void on_actionAbout_triggered();
-    void handleParseDumFinished(const QString json, const QString uuid, bool failed);
-
+    void handleParseDumpFinished(const QString json, const QString uuid, bool failed);
+    //void downloadReportXML(const QUrl &url);
+    //void downloadReportXMLFinished();
 
 private:
     Ui::BreakDown *ui;

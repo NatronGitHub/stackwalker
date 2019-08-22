@@ -16,7 +16,11 @@
 #
 
 cmake_minimum_required(VERSION 3.0)
-project(stackwalker VERSION 2019)
+project(stackwalker VERSION 20190823)
+
+if(NOT PROJECT_VERSION_TWEAK)
+    set(PROJECT_VERSION_TWEAK 0)
+endif()
 
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_AUTOMOC ON)
@@ -26,15 +30,19 @@ set(BREAKPAD_SRC ${CMAKE_CURRENT_SOURCE_DIR}/breakpad)
 set(BREAKPAD_BIN ${CMAKE_BINARY_DIR}/breakpad)
 set(STACKWALKER ${CMAKE_CURRENT_SOURCE_DIR}/minidump-stackwalk)
 set(BREAKDOWN ${CMAKE_CURRENT_SOURCE_DIR}/breakdown)
-set(BREAKDOWN_URL "https://stackwalker.000webhostapp.com/reports")
+set(BREAKDOWN_URL "https://stackwalker.000webhostapp.com")
+set(COMPANY "FxArena")
+set(COPYRIGHT "Copyright Ole-Andre Rodlie, FxArena. All rights reserved.")
+set(IDENTIFIER "net.fxarena.breakdown")
 
 file(MAKE_DIRECTORY ${BREAKPAD_BIN})
 
 find_package(Qt5Core REQUIRED)
 find_package(Qt5Gui REQUIRED)
 find_package(Qt5Widgets REQUIRED)
+find_package(Qt5Network REQUIRED)
 find_package(Qt5Concurrent REQUIRED)
-find_package(Qt5Test REQUIRED)
+#find_package(Qt5Test REQUIRED)
 find_package(PkgConfig REQUIRED)
 find_package(Git QUIET)
 
@@ -46,6 +54,10 @@ option(MXE32_STATIC "Build using MXE i686 static" OFF)
 option(MXE64_STATIC "Build using MXE x86_64 static" OFF)
 option(MXE32_SHARED "Build using MXE i686 shared" OFF)
 option(MXE64_SHARED "Build using MXE x86_64 shared" OFF)
+
+if(WIN32)
+    set(ICON_FILE ${BREAKDOWN}/breakdown.ico)
+endif()
 
 if(NOT EXISTS ${BREAKPAD_SRC}/configure)
     execute_process(COMMAND ${GIT_EXECUTABLE} submodule update --init --recursive
@@ -81,7 +93,7 @@ endif()
 add_compile_options(-Wall -Wextra ${CURL_CFLAGS})
 add_definitions(-D__STDC_FORMAT_MACROS=1 -Wno-format)
 add_definitions(-DBREAKDOWN_URL=${BREAKDOWN_URL})
-add_definitions(-DBREAKDOWN_VERSION=${PROJECT_VERSION})
+add_definitions(-DBREAKDOWN_VERSION="${PROJECT_VERSION}")
 
 include_directories(
     ${CMAKE_CURRENT_SOURCE_DIR}
@@ -100,6 +112,7 @@ add_executable(
     ${BREAKDOWN}/main.cpp
     ${BREAKDOWN}/breakdown.cpp
     ${BREAKDOWN}/breakdown.ui
+    ${BREAKDOWN}/breakdown.qrc
 )
 add_executable(
     stackwalker
@@ -112,6 +125,7 @@ target_link_libraries(
     Qt5::Core
     Qt5::Gui
     Qt5::Widgets
+    Qt5::Network
     Qt5::Concurrent
     ${BREAKPAD_BIN}/src/libbreakpad.a
     ${BREAKPAD_BIN}/src/third_party/libdisasm/libdisasm.a
@@ -128,3 +142,11 @@ target_link_libraries(
     ${ZIP_STATIC_LIBRARIES}
     ${JSON_STATIC_LIBRARIES}
 )
+
+if(UNIX AND NOT APPLE)
+    include(GNUInstallDirs)
+    install(TARGETS breakdown stackwalker DESTINATION ${CMAKE_INSTALL_BINDIR})
+    #install(DIRECTORY ${RESOURCE_FOLDER}/hicolor DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/icons)
+    #install(FILES ${RESOURCE_FOLDER}/breakdown.desktop DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/applications)
+    install(FILES COPYING README.md DESTINATION ${CMAKE_INSTALL_DOCDIR}-${PROJECT_VERSION})
+endif()
