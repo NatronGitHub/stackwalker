@@ -37,23 +37,29 @@ set(IDENTIFIER "net.fxarena.breakdown")
 
 file(MAKE_DIRECTORY ${BREAKPAD_BIN})
 
-find_package(Qt5Core REQUIRED)
-find_package(Qt5Gui REQUIRED)
-find_package(Qt5Widgets REQUIRED)
-find_package(Qt5Network REQUIRED)
-find_package(Qt5Concurrent REQUIRED)
-#find_package(Qt5Test REQUIRED)
+option(MXE32_STATIC "Build using MXE i686 static" OFF)
+option(MXE64_STATIC "Build using MXE x86_64 static" OFF)
+option(MXE32_SHARED "Build using MXE i686 shared" OFF)
+option(MXE64_SHARED "Build using MXE x86_64 shared" OFF)
+option(USE_QT4 "Build using Qt4" OFF)
+
+if(USE_QT4)
+    find_package(Qt4 REQUIRED QtCore QtGui QtNetwork)
+else()
+    find_package(Qt5Core REQUIRED)
+    find_package(Qt5Gui REQUIRED)
+    find_package(Qt5Widgets REQUIRED)
+    find_package(Qt5Network REQUIRED)
+    find_package(Qt5Concurrent REQUIRED)
+    #find_package(Qt5Test REQUIRED)
+endif()
+
 find_package(PkgConfig REQUIRED)
 find_package(Git QUIET)
 
 pkg_search_module(CURL REQUIRED libcurl)
 pkg_search_module(ZIP REQUIRED libzip)
 pkg_search_module(JSON REQUIRED jsoncpp)
-
-option(MXE32_STATIC "Build using MXE i686 static" OFF)
-option(MXE64_STATIC "Build using MXE x86_64 static" OFF)
-option(MXE32_SHARED "Build using MXE i686 shared" OFF)
-option(MXE64_SHARED "Build using MXE x86_64 shared" OFF)
 
 if(WIN32)
     set(ICON_FILE ${BREAKDOWN}/breakdown.ico)
@@ -104,35 +110,69 @@ include_directories(
     ${CURL_INCLUDE_DIRS}
     ${ZIP_INCLUDE_DIRS}
     ${JSON_INCLUDE_DIRS}
+    ${CMAKE_CURRENT_SOURCE_DIR}/qjson4
 )
 
-add_executable(
-    breakdown
-    ${STACKWALKER}/http_symbol_supplier.cc
-    ${BREAKDOWN}/main.cpp
-    ${BREAKDOWN}/breakdown.cpp
-    ${BREAKDOWN}/breakdown.ui
-    ${BREAKDOWN}/breakdown.qrc
-)
+if(USE_QT4)
+    add_executable(
+        breakdown
+        ${CMAKE_CURRENT_SOURCE_DIR}/qjson4/QJsonArray.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/qjson4/QJsonDocument.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/qjson4/QJsonObject.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/qjson4/QJsonParseError.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/qjson4/QJsonValue.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/qjson4/QJsonValueRef.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/qjson4/QJsonParser.cpp
+        ${STACKWALKER}/http_symbol_supplier.cc
+        ${BREAKDOWN}/main.cpp
+        ${BREAKDOWN}/breakdown.cpp
+        ${BREAKDOWN}/breakdown.ui
+        ${BREAKDOWN}/breakdown.qrc
+    )
+else()
+    add_executable(
+        breakdown
+        ${STACKWALKER}/http_symbol_supplier.cc
+        ${BREAKDOWN}/main.cpp
+        ${BREAKDOWN}/breakdown.cpp
+        ${BREAKDOWN}/breakdown.ui
+        ${BREAKDOWN}/breakdown.qrc
+    )
+endif()
+
 add_executable(
     stackwalker
     ${STACKWALKER}/http_symbol_supplier.cc
     ${STACKWALKER}/stackwalker.cc
 )
 
-target_link_libraries(
-    breakdown
-    Qt5::Core
-    Qt5::Gui
-    Qt5::Widgets
-    Qt5::Network
-    Qt5::Concurrent
-    ${BREAKPAD_BIN}/src/libbreakpad.a
-    ${BREAKPAD_BIN}/src/third_party/libdisasm/libdisasm.a
-    ${CURL_STATIC_LIBRARIES}
-    ${ZIP_STATIC_LIBRARIES}
-    ${JSON_STATIC_LIBRARIES}
-)
+if(USE_QT4)
+    target_link_libraries(
+        breakdown
+        Qt4::QtCore
+        Qt4::QtGui
+        Qt4::QtNetwork
+        ${BREAKPAD_BIN}/src/libbreakpad.a
+        ${BREAKPAD_BIN}/src/third_party/libdisasm/libdisasm.a
+        ${CURL_STATIC_LIBRARIES}
+        ${ZIP_STATIC_LIBRARIES}
+        ${JSON_STATIC_LIBRARIES}
+    )
+else()
+    target_link_libraries(
+        breakdown
+        Qt5::Core
+        Qt5::Gui
+        Qt5::Widgets
+        Qt5::Network
+        Qt5::Concurrent
+        ${BREAKPAD_BIN}/src/libbreakpad.a
+        ${BREAKPAD_BIN}/src/third_party/libdisasm/libdisasm.a
+        ${CURL_STATIC_LIBRARIES}
+        ${ZIP_STATIC_LIBRARIES}
+        ${JSON_STATIC_LIBRARIES}
+    )
+endif()
 
 target_link_libraries(
     stackwalker
@@ -145,8 +185,26 @@ target_link_libraries(
 
 if(UNIX AND NOT APPLE)
     include(GNUInstallDirs)
-    install(TARGETS breakdown stackwalker DESTINATION ${CMAKE_INSTALL_BINDIR})
+    install(
+        TARGETS
+        breakdown
+        stackwalker
+        DESTINATION
+        ${CMAKE_INSTALL_BINDIR}
+    )
+    install(
+        FILES
+        ${BREAKPAD_BIN}/src/tools/linux/dump_syms/dump_syms
+        DESTINATION
+        ${CMAKE_INSTALL_BINDIR}
+    )
     #install(DIRECTORY ${RESOURCE_FOLDER}/hicolor DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/icons)
     #install(FILES ${RESOURCE_FOLDER}/breakdown.desktop DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/applications)
-    install(FILES COPYING README.md DESTINATION ${CMAKE_INSTALL_DOCDIR}-${PROJECT_VERSION})
+    install(
+        FILES
+        COPYING
+        README.md
+        DESTINATION
+        ${CMAKE_INSTALL_DOCDIR}-${PROJECT_VERSION}
+    )
 endif()

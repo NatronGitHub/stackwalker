@@ -1,3 +1,6 @@
 [submodule "breakpad"]
 	path = breakpad
 	url = https://github.com/NatronGitHub/breakpad
+[submodule "qjson4"]
+	path = qjson4
+	url = https://github.com/eteran/qjson4

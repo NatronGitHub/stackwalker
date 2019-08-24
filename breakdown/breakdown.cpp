@@ -23,18 +23,27 @@
 #include <QFile>
 #include <QDir>
 #include <QFileDialog>
+#include <QDesktopServices>
+#include <QMessageBox>
+#include <QSettings>
+#include <QDebug>
+#include <QIcon>
+
+#if QT_VERSION >= 0x050000
+#include <QtConcurrent/QtConcurrentRun>
+#include <QMimeDatabase>
+#include <QMimeType>
 #include <QJsonDocument>
 #include <QJsonObject>
 #include <QJsonValue>
 #include <QJsonArray>
-#include <QDesktopServices>
-#include <QMessageBox>
-#include <QSettings>
-#include <QMimeDatabase>
-#include <QMimeType>
-#include <QDebug>
-#include <QtConcurrent/QtConcurrent>
-#include <QIcon>
+#else
+#include <QtCore/QtConcurrentRun>
+#include "QJsonDocument.h"
+#include "QJsonObject.h"
+#include "QJsonValue.h"
+#include "QJsonArray.h"
+#endif
 
 #include "stackwalker.h"
 
@@ -460,12 +469,18 @@ void BreakDown::on_actionOpen_triggered()
                                                 "*.json *.dmp");
     if (file.isEmpty()) { return; }
 
+#if QT_VERSION >= 0x050000
     QMimeDatabase db;
     QMimeType type = db.mimeTypeForFile(file);
+#endif
 
     ui->actionOpen->setDisabled(true);
     ui->statusBar->showMessage(tr("Parsing minidump, this might take a while ..."), -1);
+#if QT_VERSION >= 0x050000
     if (type.name() == "application/json") {
+#else
+    if (file.endsWith(".json", Qt::CaseInsensitive)) {
+#endif
         openJsonFile(file);
     } else {
         QtConcurrent::run(this, &BreakDown::openDumpFile, file);
