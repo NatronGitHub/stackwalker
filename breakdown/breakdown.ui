@@ -366,12 +366,12 @@
                <widget class="QLabel" name="contactLabel">
                 <property name="minimumSize">
                  <size>
-                  <width>100</width>
+                  <width>0</width>
                   <height>0</height>
                  </size>
                 </property>
                 <property name="text">
-                 <string>Client Contact</string>
+                 <string>Client</string>
                 </property>
                </widget>
               </item>
@@ -391,6 +391,22 @@
                  <string>Reply</string>
                 </property>
                </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_23">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>Severity</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="reportSeverity"/>
               </item>
              </layout>
             </item>
@@ -415,24 +431,7 @@
              </layout>
             </item>
             <item>
-             <layout class="QHBoxLayout" name="horizontalLayout_24">
-              <item>
-               <widget class="QLabel" name="label_23">
-                <property name="minimumSize">
-                 <size>
-                  <width>100</width>
-                  <height>0</height>
-                 </size>
-                </property>
-                <property name="text">
-                 <string>Client Severity</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLineEdit" name="reportSeverity"/>
-              </item>
-             </layout>
+             <layout class="QHBoxLayout" name="horizontalLayout_24"/>
             </item>
             <item>
              <widget class="QPlainTextEdit" name="reportComment"/>
@@ -832,6 +831,8 @@
     </property>
     <addaction name="separator"/>
     <addaction name="actionOpen"/>
+    <addaction name="actionClear"/>
+    <addaction name="separator"/>
     <addaction name="actionQuit"/>
    </widget>
    <widget class="QMenu" name="menuHelp">
@@ -839,6 +840,7 @@
      <string>Help</string>
     </property>
     <addaction name="actionAbout"/>
+    <addaction name="actionAbout_Qt"/>
    </widget>
    <addaction name="menuFile"/>
    <addaction name="menuHelp"/>
@@ -868,7 +870,20 @@
   </action>
   <action name="actionAbout">
    <property name="text">
-    <string>About</string>
+    <string>About Breakdown</string>
+   </property>
+  </action>
+  <action name="actionClear">
+   <property name="text">
+    <string>Clear</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="actionAbout_Qt">
+   <property name="text">
+    <string>About Qt</string>
    </property>
   </action>
  </widget>

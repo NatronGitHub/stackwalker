@@ -57,6 +57,10 @@ private slots:
     //void downloadReportXML(const QUrl &url);
     //void downloadReportXMLFinished();
 
+    void on_actionClear_triggered();
+
+    void on_actionAbout_Qt_triggered();
+
 private:
     Ui::BreakDown *ui;
 };

@@ -121,6 +121,8 @@ void BreakDown::setupWidgets()
     ui->cpuLabel->setHidden(true);
     ui->timeLabel->setHidden(true);
 
+    ui->actionAbout->setIcon(QIcon(":/breakdown.png"));
+
     connect(this,
             SIGNAL(parseDumpFinished(QString,QString,bool)),
             this,
@@ -472,10 +474,10 @@ void BreakDown::on_actionOpen_triggered()
 #if QT_VERSION >= 0x050000
     QMimeDatabase db;
     QMimeType type = db.mimeTypeForFile(file);
+    qDebug() << "mime type?" << type.name();
 #endif
 
     ui->actionOpen->setDisabled(true);
-    ui->statusBar->showMessage(tr("Parsing minidump, this might take a while ..."), -1);
 #if QT_VERSION >= 0x050000
     if (type.name() == "application/json") {
 #else
@@ -483,6 +485,7 @@ void BreakDown::on_actionOpen_triggered()
 #endif
         openJsonFile(file);
     } else {
+        ui->statusBar->showMessage(tr("Parsing minidump, this might take a while ..."), -1);
         QtConcurrent::run(this, &BreakDown::openDumpFile, file);
     }
 }
@@ -500,7 +503,7 @@ void BreakDown::on_actionAbout_triggered()
                        QString("%1 Breakdown").arg(tr("About")),
                        QString("<h3>Breakdown %1</h3>"
                        "<p>Parse crash reports from Breakpad.<p>"
-                       "<p>Copyright &copy;2019 <a href=\"https://github.com/rodlie\">Ole-André Rodlie</a>.</p>")
+                       "<p>Copyright &copy;2019 <a href=\"https://github.com/rodlie\">Ole-Andr&eacute; Rodlie</a>.</p>")
                        .arg(BREAKDOWN_VERSION));
 }
 
@@ -524,3 +527,13 @@ void BreakDown::downloadReportXMLFinished()
 {
 
 }*/
+
+void BreakDown::on_actionClear_triggered()
+{
+    clearReport();
+}
+
+void BreakDown::on_actionAbout_Qt_triggered()
+{
+    QMessageBox::aboutQt(this, tr("About Qt"));
+}
