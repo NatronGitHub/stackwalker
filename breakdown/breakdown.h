@@ -24,6 +24,8 @@
 #include <QTreeWidgetItem>
 #include <QString>
 #include <QUrl>
+#include <QNetworkReply>
+#include <QAuthenticator>
 
 namespace Ui {
 class BreakDown;
@@ -38,7 +40,7 @@ public:
     ~BreakDown();
 
 signals:
-    void parseDumpFinished(const QString json, const QString uuid, bool failed);
+    void parseDumpFinished(const QString &json, const QString &uuid, bool failed);
 
 private slots:
     void loadSettings();
@@ -47,19 +49,25 @@ private slots:
     void setLineEditCursorPosition();
     void clearReport();
     void openJsonFile(const QString &file);
-    void openJsonString(const QString json, const QString customID = QString());
+    void openJsonString(const QString &json, const QString &customID = QString());
     void openDumpFile(const QString &file);
     void on_actionQuit_triggered();
     void on_actionOpen_triggered();
     void on_reportInfoCrashTree_itemDoubleClicked(QTreeWidgetItem *item, int column);
     void on_actionAbout_triggered();
-    void handleParseDumpFinished(const QString json, const QString uuid, bool failed);
-    //void downloadReportXML(const QUrl &url);
-    //void downloadReportXMLFinished();
+    void handleParseDumpFinished(const QString &json, const QString &uuid, bool failed);
+    void downloadReportXML(const QUrl &url);
+    void downloadReportXMLFinished(QNetworkReply *reply);
+    void parseReportsXML(const QString &xml);
+    void handleAuthenticationRequired(QNetworkReply *reply, QAuthenticator *authenticator);
 
     void on_actionClear_triggered();
 
     void on_actionAbout_Qt_triggered();
+
+    void on_reportsTree_itemDoubleClicked(QTreeWidgetItem *item, int column);
+
+    void on_actionUpdate_triggered();
 
 private:
     Ui::BreakDown *ui;

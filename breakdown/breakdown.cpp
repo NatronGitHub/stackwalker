@@ -28,6 +28,7 @@
 #include <QSettings>
 #include <QDebug>
 #include <QIcon>
+#include <QNetworkAccessManager>
 
 #if QT_VERSION >= 0x050000
 #include <QtConcurrent/QtConcurrentRun>
@@ -46,6 +47,12 @@
 #endif
 
 #include "stackwalker.h"
+#include "authdialog.h"
+
+#define REPORTS_TREE_UUID Qt::UserRole+1
+#define REPORTS_TREE_TXT Qt::UserRole+2
+#define REPORTS_TREE_DMP Qt::UserRole+3
+#define REPORTS_TREE_DATE Qt::UserRole+4
 
 BreakDown::BreakDown(QWidget *parent) :
     QMainWindow(parent),
@@ -101,22 +108,22 @@ void BreakDown::setupWidgets()
     ui->GLext->setReadOnly(true);
 
     // we don't need to show these
-    ui->reportGitCommit->setHidden(true);
+    //ui->reportGitCommit->setHidden(true);
     ui->reportGitCommitIO->setHidden(true);
     ui->reportGitCommitMisc->setHidden(true);
     ui->reportGitCommitArena->setHidden(true);
     ui->reportGitCommitGmic->setHidden(true);
-    ui->reportGitBranch->setHidden(true);
+    //ui->reportGitBranch->setHidden(true);
     ui->reportClientIP->setHidden(true);
     ui->reportCpuArch->setHidden(true);
     ui->reportTimestamp->setHidden(true);
 
-    ui->commitLabel->setHidden(true);
+    //ui->commitLabel->setHidden(true);
     ui->ioLabel->setHidden(true);
     ui->miscLabel->setHidden(true);
     ui->arenaLabel->setHidden(true);
     ui->gmicLabel->setHidden(true);
-    ui->branchLabel->setHidden(true);
+    //ui->branchLabel->setHidden(true);
     ui->locationLabel->setHidden(true);
     ui->cpuLabel->setHidden(true);
     ui->timeLabel->setHidden(true);
@@ -190,7 +197,7 @@ void BreakDown::openJsonFile(const QString &file)
     if (!rawJson.isEmpty()) { openJsonString(rawJson); }
 }
 
-void BreakDown::openJsonString(const QString json, const QString customID)
+void BreakDown::openJsonString(const QString &json, const QString &customID)
 {
     ui->actionOpen->setDisabled(false);
     ui->statusBar->showMessage(tr("Done"), 500);
@@ -292,6 +299,7 @@ void BreakDown::openJsonString(const QString json, const QString customID)
         QString fileName = output["file"].toString();
         QStringList splitFile;
         QString fileUrl;
+        // TODO:
         if (fileName.contains("../..")) {
             splitFile = fileName.split("../..");
 
@@ -301,14 +309,17 @@ void BreakDown::openJsonString(const QString json, const QString customID)
         if (splitFile.count()==2) {
             fileName = splitFile.at(1);
         }
-        if (fileName.startsWith("/Natron/")) { // gen url to Natron git repo
-            fileName = fileName.replace("/Natron/", "");
-            fileUrl = QString("https://github.com/NatronGitHub/Natron/blob/%1/%2#L%3")
-                      .arg(git_commit.isEmpty()?"RB-2.3":git_commit) // RB-2.3 is fallback
-                      .arg(fileName)
-                      .arg(QString::number(output["line"].toInt()));
+        if (output["module"].toString().startsWith("Natron")) {
+            if (fileName.startsWith("/Natron/")) { // gen url to Natron git repo
+                fileName = fileName.replace("/Natron/", "");
+                fileUrl = QString("https://github.com/NatronGitHub/Natron/blob/%1/%2#L%3")
+                          .arg(git_commit.isEmpty()?"RB-2.3":git_commit) // RB-2.3 is fallback
+                          .arg(fileName)
+                          .arg(QString::number(output["line"].toInt()));
 
+            }
         }
+
         if (!fileName.isEmpty()) {
             fileName.append(QString(":%1").arg(QString::number(output["line"].toInt())));
         }
@@ -453,8 +464,9 @@ void BreakDown::openDumpFile(const QString &file)
 
     if (!json.empty()) {
         QFileInfo info(file);
-        //openJsonString(QString::fromStdString(json), info.baseName());
-        emit parseDumpFinished(QString::fromStdString(json), info.baseName(), false);
+        emit parseDumpFinished(QString::fromStdString(json),
+                               info.baseName(),
+                               false);
     }
 }
 
@@ -466,7 +478,7 @@ void BreakDown::on_actionQuit_triggered()
 void BreakDown::on_actionOpen_triggered()
 {
     QString file = QFileDialog::getOpenFileName(this,
-                                                tr("Open Stackwalker JSON or Breakpad DMP"),
+                                                tr("Open Json or minidump"),
                                                 QDir::homePath(),
                                                 "*.json *.dmp");
     if (file.isEmpty()) { return; }
@@ -485,12 +497,13 @@ void BreakDown::on_actionOpen_triggered()
 #endif
         openJsonFile(file);
     } else {
-        ui->statusBar->showMessage(tr("Parsing minidump, this might take a while ..."), -1);
+        ui->statusBar->showMessage(tr("Parsing minidump ..."), -1);
         QtConcurrent::run(this, &BreakDown::openDumpFile, file);
     }
 }
 
-void BreakDown::on_reportInfoCrashTree_itemDoubleClicked(QTreeWidgetItem *item, int column)
+void BreakDown::on_reportInfoCrashTree_itemDoubleClicked(QTreeWidgetItem *item,
+                                                         int column)
 {
     Q_UNUSED(column)
     if (item->data(7, Qt::ToolTipRole).isNull()) { return; }
@@ -503,13 +516,14 @@ void BreakDown::on_actionAbout_triggered()
                        QString("%1 Breakdown").arg(tr("About")),
                        QString("<h3>Breakdown %1</h3>"
                        "<p>Parse crash reports from Breakpad.<p>"
-                       "<p>Copyright &copy;2019 <a href=\"https://github.com/rodlie\">Ole-Andr&eacute; Rodlie</a>.</p>")
+                       "<p>Copyright &copy;2019 <a href=\"https://github.com/rodlie\">"
+                       "Ole-Andr&eacute; Rodlie</a>.</p>")
                        .arg(BREAKDOWN_VERSION));
 }
 
-void BreakDown::handleParseDumpFinished(const QString json,
-                                       const QString uuid,
-                                       bool failed)
+void BreakDown::handleParseDumpFinished(const QString &json,
+                                        const QString &uuid,
+                                        bool failed)
 {
     ui->actionOpen->setDisabled(false);
     ui->statusBar->showMessage(tr("Done"), 500);
@@ -517,16 +531,93 @@ void BreakDown::handleParseDumpFinished(const QString json,
     openJsonString(json, uuid);
 }
 
-/*void BreakDown::downloadReportXML(const QUrl &url)
+void BreakDown::downloadReportXML(const QUrl &url)
 {
     qDebug() << "download xml from" << url;
     if (url.isEmpty()) { return; }
+
+    ui->statusBar->showMessage(tr("Downloading XML ..."), -1);
+
+    QNetworkAccessManager *nam = new QNetworkAccessManager();
+    connect(nam,
+            SIGNAL(finished(QNetworkReply*)),
+            this,
+            SLOT(downloadReportXMLFinished(QNetworkReply*)));
+    connect(nam,
+            SIGNAL(authenticationRequired(QNetworkReply*,QAuthenticator*)),
+            this,
+            SLOT(handleAuthenticationRequired(QNetworkReply*,QAuthenticator*)));
+
+    QNetworkRequest request;
+    request.setUrl(url);
+    nam->get(request);
 }
 
-void BreakDown::downloadReportXMLFinished()
+void BreakDown::downloadReportXMLFinished(QNetworkReply *reply)
 {
+    QNetworkAccessManager *nam = qobject_cast<QNetworkAccessManager*>(sender());
+    QByteArray xml = reply->readAll();
 
-}*/
+    ui->statusBar->showMessage(tr("Done"), 500);
+
+    if ((reply->error() != QNetworkReply::NoError &&
+         reply->error() != QNetworkReply::UnknownServerError) &&
+        !reply->errorString().isEmpty())
+    {
+        ui->statusBar->showMessage(reply->errorString(), -1);
+    }
+    qDebug() << "remote reply" << xml;
+
+    reply->deleteLater();
+    if (nam) { nam->deleteLater(); }
+}
+
+void BreakDown::parseReportsXML(const QString &xml)
+{
+    qDebug() << "parse xml" << xml;
+    if (xml.isEmpty()) { return; }
+}
+
+void BreakDown::handleAuthenticationRequired(QNetworkReply *reply,
+                                             QAuthenticator *authenticator)
+{
+    Q_UNUSED(reply)
+
+    QSettings settings;
+    QString authUsername;
+    QString authPassword;
+    settings.beginGroup("auth");
+    if (settings.value("user").isValid()) {
+        authUsername = settings.value("user").toString();
+    }
+    if (settings.value("passwd").isValid()) {
+        authPassword = settings.value("passwd").toString();
+    }
+    settings.endGroup();
+
+    if (authUsername.isEmpty() && authPassword.isEmpty()) {
+        AuthDialog dialog;
+        dialog.setWindowTitle(tr("Authentication is required"));
+        dialog.setWindowIcon(QIcon(":/breakdown.png"));
+        dialog.exec();
+        authUsername = dialog.getUsername();
+        authPassword = dialog.getPassword();
+        if (dialog.saveAuth() &&
+            !authUsername.isEmpty() &&
+            !authPassword.isEmpty())
+        {
+            settings.beginGroup("auth");
+            settings.setValue("user", authUsername);
+            settings.setValue("passwd", authPassword);
+            settings.endGroup();
+        }
+    }
+
+    if (!authUsername.isEmpty() && !authPassword.isEmpty()) {
+        authenticator->setUser(authUsername);
+        authenticator->setPassword(authPassword);
+    }
+}
 
 void BreakDown::on_actionClear_triggered()
 {
@@ -536,4 +627,30 @@ void BreakDown::on_actionClear_triggered()
 void BreakDown::on_actionAbout_Qt_triggered()
 {
     QMessageBox::aboutQt(this, tr("About Qt"));
+}
+
+void BreakDown::on_reportsTree_itemDoubleClicked(QTreeWidgetItem *item,
+                                                 int column)
+{
+    Q_UNUSED(column);
+    QString uuid = item->data(0, REPORTS_TREE_UUID).toString();
+    qDebug() << "item uuid?" << uuid;
+    if (uuid.isEmpty()) { return; }
+}
+
+void BreakDown::on_actionUpdate_triggered()
+{
+    qDebug() << "update reports!";
+    QString server;
+    QSettings settings;
+    settings.beginGroup("auth");
+    if (settings.value("server").isValid()) {
+        server = settings.value("server").toString();
+    } else {
+        server.append(BREAKDOWN_URL);
+        server.append("/reports/index.xml");
+    }
+    settings.endGroup();
+
+    downloadReportXML(QUrl::fromUserInput(server));
 }

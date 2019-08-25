@@ -98,7 +98,7 @@ else()
 endif()
 add_compile_options(-Wall -Wextra ${CURL_CFLAGS})
 add_definitions(-D__STDC_FORMAT_MACROS=1 -Wno-format)
-add_definitions(-DBREAKDOWN_URL=${BREAKDOWN_URL})
+add_definitions(-DBREAKDOWN_URL="${BREAKDOWN_URL}")
 add_definitions(-DBREAKDOWN_VERSION="${PROJECT_VERSION}")
 
 include_directories(
@@ -126,6 +126,7 @@ if(USE_QT4)
         ${STACKWALKER}/http_symbol_supplier.cc
         ${BREAKDOWN}/main.cpp
         ${BREAKDOWN}/breakdown.cpp
+        ${BREAKDOWN}/authdialog.cpp
         ${BREAKDOWN}/breakdown.ui
         ${BREAKDOWN}/breakdown.qrc
     )
@@ -135,6 +136,7 @@ else()
         ${STACKWALKER}/http_symbol_supplier.cc
         ${BREAKDOWN}/main.cpp
         ${BREAKDOWN}/breakdown.cpp
+        ${BREAKDOWN}/authdialog.cpp
         ${BREAKDOWN}/breakdown.ui
         ${BREAKDOWN}/breakdown.qrc
     )
