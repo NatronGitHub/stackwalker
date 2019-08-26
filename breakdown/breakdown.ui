@@ -860,16 +860,11 @@
      <item>
       <widget class="QTreeWidget" name="reportsTree">
        <attribute name="headerVisible">
-        <bool>false</bool>
+        <bool>true</bool>
        </attribute>
        <column>
         <property name="text">
          <string>UUID</string>
-        </property>
-       </column>
-       <column>
-        <property name="text">
-         <string>Timestamp</string>
         </property>
        </column>
       </widget>
@@ -914,6 +909,9 @@
   <action name="actionUpdate">
    <property name="text">
     <string>Update</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+U</string>
    </property>
   </action>
  </widget>

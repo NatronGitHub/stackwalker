@@ -26,6 +26,7 @@
 #include <QUrl>
 #include <QNetworkReply>
 #include <QAuthenticator>
+#include <QVector>
 
 namespace Ui {
 class BreakDown;
@@ -41,6 +42,7 @@ public:
 
 signals:
     void parseDumpFinished(const QString &json, const QString &uuid, bool failed);
+    void parseReportsXMLFinished(QVector<QStringList> reports);
 
 private slots:
     void loadSettings();
@@ -60,6 +62,7 @@ private slots:
     void downloadReportXMLFinished(QNetworkReply *reply);
     void parseReportsXML(const QString &xml);
     void handleAuthenticationRequired(QNetworkReply *reply, QAuthenticator *authenticator);
+    void populateReportsTree(QVector<QStringList> reports);
 
     void on_actionClear_triggered();
 

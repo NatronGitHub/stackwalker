@@ -29,6 +29,7 @@
 #include <QDebug>
 #include <QIcon>
 #include <QNetworkAccessManager>
+#include <QXmlStreamReader>
 
 #if QT_VERSION >= 0x050000
 #include <QtConcurrent/QtConcurrentRun>
@@ -134,6 +135,11 @@ void BreakDown::setupWidgets()
             SIGNAL(parseDumpFinished(QString,QString,bool)),
             this,
             SLOT(handleParseDumpFinished(QString,QString,bool)));
+
+    connect(this,
+            SIGNAL(parseReportsXMLFinished(QVector<QStringList>)),
+            this,
+            SLOT(populateReportsTree(QVector<QStringList>)));
 }
 
 void BreakDown::setLineEditCursorPosition()
@@ -533,7 +539,6 @@ void BreakDown::handleParseDumpFinished(const QString &json,
 
 void BreakDown::downloadReportXML(const QUrl &url)
 {
-    qDebug() << "download xml from" << url;
     if (url.isEmpty()) { return; }
 
     ui->statusBar->showMessage(tr("Downloading XML ..."), -1);
@@ -565,8 +570,9 @@ void BreakDown::downloadReportXMLFinished(QNetworkReply *reply)
         !reply->errorString().isEmpty())
     {
         ui->statusBar->showMessage(reply->errorString(), -1);
+    } else {
+        parseReportsXML(xml);
     }
-    qDebug() << "remote reply" << xml;
 
     reply->deleteLater();
     if (nam) { nam->deleteLater(); }
@@ -576,6 +582,31 @@ void BreakDown::parseReportsXML(const QString &xml)
 {
     qDebug() << "parse xml" << xml;
     if (xml.isEmpty()) { return; }
+
+    QXmlStreamReader reader(xml);
+    if (reader.hasError()) {
+        qDebug() << "BAD XML!";
+        return;
+    }
+
+    QVector<QStringList> reports;
+    while (!reader.atEnd() && !reader.hasError()) {
+        if (reader.readNext() == QXmlStreamReader::StartElement &&
+           reader.name() == "report")
+        {
+            QStringList report;
+            while (reader.readNextStartElement()) {
+                if (reader.name() == "uuid") { report << reader.readElementText(); }
+                else if (reader.name() == "dmp") { report << reader.readElementText(); }
+                else if (reader.name() == "txt") { report  << reader.readElementText(); }
+                else { reader.skipCurrentElement(); }
+            }
+            if (report.size()==3) { reports.append(report); }
+        }
+    }
+    if (reports.size()>0) {
+        emit parseReportsXMLFinished(reports);
+    }
 }
 
 void BreakDown::handleAuthenticationRequired(QNetworkReply *reply,
@@ -619,6 +650,21 @@ void BreakDown::handleAuthenticationRequired(QNetworkReply *reply,
     }
 }
 
+void BreakDown::populateReportsTree(QVector<QStringList> reports)
+{
+    if (reports.size()==0) { return; }
+    ui->reportsTree->clear();
+    for (int i = 0; i < reports.size(); ++i) {
+        if (reports.at(i).size()!=3) { continue; }
+        QTreeWidgetItem *item = new QTreeWidgetItem(ui->reportsTree);
+        item->setText(0, reports.at(i).at(0));
+        item->setData(0, REPORTS_TREE_UUID, reports.at(i).at(0));
+        item->setData(0, REPORTS_TREE_DMP, reports.at(i).at(1));
+        item->setData(0, REPORTS_TREE_TXT, reports.at(i).at(2));
+        ui->reportsTree->addTopLevelItem(item);
+    }
+}
+
 void BreakDown::on_actionClear_triggered()
 {
     clearReport();
@@ -640,7 +686,6 @@ void BreakDown::on_reportsTree_itemDoubleClicked(QTreeWidgetItem *item,
 
 void BreakDown::on_actionUpdate_triggered()
 {
-    qDebug() << "update reports!";
     QString server;
     QSettings settings;
     settings.beginGroup("auth");
