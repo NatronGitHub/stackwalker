@@ -143,11 +143,11 @@ const struct option kHTTPCommandLineOptions[] = {
   kHTTPCommandLineOptions[2],
 
 // For inserting into usage()
-void http_commandline_usage() {
+/*void http_commandline_usage() {
   fprintf(stderr, "\t--symbols-url\tA base URL from which URLs to symbol files can be constructed\n");
   fprintf(stderr, "\t--symbols-cache\tA directory in which downloaded symbols can be stored\n");
   fprintf(stderr, "\t--symbols-tmp\tA directory to use as temp space for downloading symbols. Must be on the same filesystem as symbols-cache.\n");
-}
+}*/
 
 // For inserting into the switch handling for getopt_long
 #define HANDLE_HTTP_COMMANDLINE_OPTIONS \

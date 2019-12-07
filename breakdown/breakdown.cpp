@@ -565,9 +565,12 @@ void BreakDown::downloadReportXMLFinished(QNetworkReply *reply)
 
     ui->statusBar->showMessage(tr("Done"), 500);
 
-    if ((reply->error() != QNetworkReply::NoError &&
-         reply->error() != QNetworkReply::UnknownServerError) &&
-        !reply->errorString().isEmpty())
+#if QT_VERSION >= 0x050000
+    if ((reply->error() != QNetworkReply::NoError && reply->error() != QNetworkReply::UnknownServerError)
+#else
+    if ((reply->error() != QNetworkReply::NoError)
+#endif
+            && !reply->errorString().isEmpty())
     {
         ui->statusBar->showMessage(reply->errorString(), -1);
     } else {
