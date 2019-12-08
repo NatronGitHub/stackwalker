@@ -85,6 +85,7 @@ void BreakDown::saveSettings()
 
 void BreakDown::setupWidgets()
 {
+    ui->log->setHidden(true);
     ui->contactReply->setHidden(true);
     ui->reportUuid->setReadOnly(true);
     ui->reportTimestamp->setReadOnly(true);
@@ -132,9 +133,9 @@ void BreakDown::setupWidgets()
     ui->actionAbout->setIcon(QIcon(":/breakdown.png"));
 
     connect(this,
-            SIGNAL(parseDumpFinished(QString,QString,bool)),
+            SIGNAL(parseDumpFinished(QString,QString,QString,bool)),
             this,
-            SLOT(handleParseDumpFinished(QString,QString,bool)));
+            SLOT(handleParseDumpFinished(QString,QString,QString,bool)));
 
     connect(this,
             SIGNAL(parseReportsXMLFinished(QVector<QStringList>)),
@@ -200,11 +201,13 @@ void BreakDown::openJsonFile(const QString &file)
     if (!jsonFile.open(QIODevice::ReadOnly|QIODevice::Text)) { return; }
     QString rawJson = jsonFile.readAll();
     jsonFile.close();
-    if (!rawJson.isEmpty()) { openJsonString(rawJson); }
+    if (!rawJson.isEmpty()) { openJsonString(rawJson, ""); }
 }
 
-void BreakDown::openJsonString(const QString &json, const QString &customID)
+void BreakDown::openJsonString(const QString &json, const QString &extra, const QString &customID)
 {
+    Q_UNUSED(extra)
+
     ui->actionOpen->setDisabled(false);
     ui->statusBar->showMessage(tr("Done"), 500);
 
@@ -213,41 +216,100 @@ void BreakDown::openJsonString(const QString &json, const QString &customID)
     if (doc.isEmpty() || doc.isNull()) { return; }
     QJsonObject obj = doc.object();
 
+
+
     // clear old info
     clearReport();
 
+    // extra
+    QString timestamp;
+    QString comment;
+    QString git_commit;
+    QString io_commit;
+    QString misc_commit;
+    QString arena_commit;
+    QString git_branch;
+    QString linux_distro;
+    QString product;
+    QString product_version;
+    QString client_ip;
+    QString user_contact;
+    QString user_severity;
+    QString gl_renderer;
+    QString gl_version;
+    QString gl_vendor;
+    QString gl_shader;
+    QString gl_ext;
+    //QString features = obj.value(QString("features")).toString();
+
     // basic info
+    QString uuid = obj.value(QString("uuid")).toString();
+    if (uuid.isEmpty() && !customID.isEmpty()) { uuid = customID; }
     QJsonValue crash_info = obj.value(QString("crash_info"));
     QJsonObject crash_info_item = crash_info.toObject();
     QJsonValue system_info = obj.value(QString("system_info"));
     QJsonObject system_info_item = system_info.toObject();
-
-    QString uuid = obj.value(QString("uuid")).toString();
-    if (uuid.isEmpty() && !customID.isEmpty()) { uuid = customID; }
-    QString timestamp = obj.value(QString("submitted_timestamp")).toString();
-    QString comment = obj.value(QString("Comments")).toString();
-    QString git_commit = obj.value(QString("git_commit")).toString();
-    QString io_commit = obj.value(QString("io_commit")).toString();
-    QString misc_commit = obj.value(QString("misc_commit")).toString();
-    QString arena_commit = obj.value(QString("arena_commit")).toString();
-    QString git_branch = obj.value(QString("git_branch")).toString();
-    QString linux_distro = obj.value(QString("linux_distro")).toString();
-    QString product = obj.value(QString("ProductName")).toString();
-    QString product_version = obj.value(QString("Version")).toString();
     QString crash_type = crash_info_item["type"].toString();
     QString cpu_arch = system_info_item["cpu_arch"].toString();
     QString cpu_info = system_info_item["cpu_info"].toString();
     QString crash_os = system_info_item["os"].toString();
     QString os_version = system_info_item["os_ver"].toString();
-    QString client_ip = obj.value(QString("client_ip")).toString();
-    QString user_contact = obj.value(QString("user_contact")).toString();
-    QString user_severity = obj.value(QString("user_severity")).toString();
-    QString gl_renderer = obj.value(QString("gl_renderer")).toString();
-    QString gl_version = obj.value(QString("gl_version")).toString();
-    QString gl_vendor = obj.value(QString("gl_vendor")).toString();
-    QString gl_shader = obj.value(QString("gl_shader")).toString();
-    QString gl_ext = obj.value(QString("gl_ext")).toString();
-    //QString features = obj.value(QString("features")).toString();
+
+
+    bool hasExtra = false;
+    if (!extra.isEmpty()) {
+        QJsonDocument edoc(QJsonDocument::fromJson(extra.toUtf8()));
+        if (!edoc.isEmpty() && !edoc.isNull()) {
+            QJsonObject eobj = edoc.object();
+            if (!eobj.isEmpty()) {
+                hasExtra = true;
+                timestamp = eobj.value(QString("submitted_timestamp")).toString();
+                comment = eobj.value(QString("Comments")).toString();
+                git_commit = eobj.value(QString("git_commit")).toString();
+                io_commit = eobj.value(QString("io_commit")).toString();
+                misc_commit = eobj.value(QString("misc_commit")).toString();
+                arena_commit = eobj.value(QString("arena_commit")).toString();
+                git_branch = eobj.value(QString("git_branch")).toString();
+                linux_distro = eobj.value(QString("linux_distro")).toString();
+                product = eobj.value(QString("ProductName")).toString();
+                product_version = eobj.value(QString("Version")).toString();
+                client_ip = eobj.value(QString("client_ip")).toString();
+                user_contact = eobj.value(QString("user_contact")).toString();
+                user_severity = eobj.value(QString("user_severity")).toString();
+                gl_renderer = eobj.value(QString("gl_renderer")).toString();
+                gl_version = eobj.value(QString("gl_version")).toString();
+                gl_vendor = eobj.value(QString("gl_vendor")).toString();
+                gl_shader = eobj.value(QString("gl_shader")).toString();
+                gl_ext = eobj.value(QString("gl_ext")).toString();
+            }
+        }
+
+    }
+
+    if (!hasExtra) {
+        timestamp = obj.value(QString("submitted_timestamp")).toString();
+        comment = obj.value(QString("Comments")).toString();
+        git_commit = obj.value(QString("git_commit")).toString();
+        io_commit = obj.value(QString("io_commit")).toString();
+        misc_commit = obj.value(QString("misc_commit")).toString();
+        arena_commit = obj.value(QString("arena_commit")).toString();
+        git_branch = obj.value(QString("git_branch")).toString();
+        linux_distro = obj.value(QString("linux_distro")).toString();
+        product = obj.value(QString("ProductName")).toString();
+        product_version = obj.value(QString("Version")).toString();
+        client_ip = obj.value(QString("client_ip")).toString();
+        user_contact = obj.value(QString("user_contact")).toString();
+        user_severity = obj.value(QString("user_severity")).toString();
+        gl_renderer = obj.value(QString("gl_renderer")).toString();
+        gl_version = obj.value(QString("gl_version")).toString();
+        gl_vendor = obj.value(QString("gl_vendor")).toString();
+        gl_shader = obj.value(QString("gl_shader")).toString();
+        gl_ext = obj.value(QString("gl_ext")).toString();
+    }
+
+
+
+
 
     ui->reportUuid->setText(uuid);
     ui->reportTimestamp->setText(timestamp);
@@ -380,7 +442,7 @@ void BreakDown::openJsonString(const QString &json, const QString &customID)
     }
 }
 
-void BreakDown::openDumpFile(const QString &file)
+void BreakDown::openDumpFile(const QString &file, const QString &txt)
 {
     vector<string> server_path;
     vector<string> symbol_paths;
@@ -389,7 +451,9 @@ void BreakDown::openDumpFile(const QString &file)
 
     //server_path.push_back("https://sourceforge.net/projects/natron/files/symbols");
     server_path.push_back("https://sourceforge.net/projects/openfx-arena/files/symbols");
-    //server_path.push_back("https://stackwalker.000webhostapp.com/symbols");
+    server_path.push_back("https://stackwalker.000webhostapp.com/symbols");
+
+    symbol_paths.push_back(localSymbolsPath().toStdString());
 
     Minidump minidump(file.toStdString());
     minidump.Read();
@@ -399,9 +463,9 @@ void BreakDown::openDumpFile(const QString &file)
     HTTPSymbolSupplier* http_symbol_supplier = nullptr;
     if (!server_path.empty()) {
         http_symbol_supplier = new HTTPSymbolSupplier(server_path,
-                                                      QDir::tempPath().toStdString(),
+                                                      localCachePath().toStdString(),
                                                       symbol_paths,
-                                                      QDir::tempPath().toStdString());
+                                                      localCachePath().toStdString());
         symbol_supplier.reset(http_symbol_supplier);
     } else if (!symbol_paths.empty()) {
         symbol_supplier.reset(new SimpleSymbolSupplier(symbol_paths));
@@ -415,7 +479,8 @@ void BreakDown::openDumpFile(const QString &file)
 
     if (result != google_breakpad::PROCESS_OK) {
         string failed = ResultString(result);
-        emit parseDumpFinished(QString::fromStdString(failed), file, true);
+        ui->statusBar->showMessage(QString::fromStdString(failed));
+        emit parseDumpFinished(QString::fromStdString(failed), "", file, true);
         return;
     }
 
@@ -468,9 +533,19 @@ void BreakDown::openDumpFile(const QString &file)
     writer.reset(new Json::StyledWriter());
     string json = writer->write(root);
 
+    QString extra;
+    if (QFile::exists(txt)) {
+        QFile file(txt);
+        if (file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+            extra = file.readAll();
+            file.close();
+        }
+    }
+
     if (!json.empty()) {
         QFileInfo info(file);
         emit parseDumpFinished(QString::fromStdString(json),
+                               extra,
                                info.baseName(),
                                false);
     }
@@ -504,7 +579,7 @@ void BreakDown::on_actionOpen_triggered()
         openJsonFile(file);
     } else {
         ui->statusBar->showMessage(tr("Parsing minidump ..."), -1);
-        QtConcurrent::run(this, &BreakDown::openDumpFile, file);
+        QtConcurrent::run(this, &BreakDown::openDumpFile, file, QString());
     }
 }
 
@@ -521,20 +596,20 @@ void BreakDown::on_actionAbout_triggered()
     QMessageBox::about(this,
                        QString("%1 Breakdown").arg(tr("About")),
                        QString("<h3>Breakdown %1</h3>"
-                       "<p>Parse crash reports from Breakpad.<p>"
+                       "<p>Breakdown crash reports from Breakpad.<p>"
                        "<p>Copyright &copy;2019 <a href=\"https://github.com/rodlie\">"
                        "Ole-Andr&eacute; Rodlie</a>.</p>")
                        .arg(BREAKDOWN_VERSION));
 }
 
-void BreakDown::handleParseDumpFinished(const QString &json,
+void BreakDown::handleParseDumpFinished(const QString &json, const QString &extra,
                                         const QString &uuid,
                                         bool failed)
 {
     ui->actionOpen->setDisabled(false);
     ui->statusBar->showMessage(tr("Done"), 500);
     if (failed) { return; }
-    openJsonString(json, uuid);
+    openJsonString(json, extra, uuid);
 }
 
 void BreakDown::downloadReportXML(const QUrl &url)
@@ -685,6 +760,32 @@ void BreakDown::on_reportsTree_itemDoubleClicked(QTreeWidgetItem *item,
     QString uuid = item->data(0, REPORTS_TREE_UUID).toString();
     qDebug() << "item uuid?" << uuid;
     if (uuid.isEmpty()) { return; }
+
+    QString report = QString("%1/%2.json").arg(localReportPath()).arg(uuid);
+    QString dmp = QString("%1/%2.dmp").arg(localDumpPath()).arg(uuid);
+    QString txt = QString("%1/%2.txt").arg(localDumpPath()).arg(uuid);
+
+    if (QFile::exists(report)) {
+        openJsonFile(report);
+        return;
+    }
+
+    /*if (QFile::exists(dmp) && !QFile::exists(txt)) {
+        openDumpFile(dmp);
+        return;
+    }*/ else if(QFile::exists(dmp) && QFile::exists(txt)) {
+        openDumpFile(dmp, txt);
+        return;
+    }
+
+    if (!QFile::exists(txt)) {
+        downloadReportTXT(QUrl::fromUserInput(QString("%1/reports/%2.txt")
+                                              .arg(BREAKDOWN_URL).arg(uuid)));
+    }
+    if (!QFile::exists(dmp)) {
+        downloadReportDMP(QUrl::fromUserInput(QString("%1/reports/%2.dmp")
+                                              .arg(BREAKDOWN_URL).arg(uuid)));
+    }
 }
 
 void BreakDown::on_actionUpdate_triggered()
@@ -701,4 +802,171 @@ void BreakDown::on_actionUpdate_triggered()
     settings.endGroup();
 
     downloadReportXML(QUrl::fromUserInput(server));
+}
+
+const QString BreakDown::localCachePath()
+{
+    QString path = QString("%1/.config/FxArena/breakdown/cache").arg(QDir::homePath());
+    if (!QFile::exists(path)) {
+        QDir dir(path);
+        dir.mkpath(path);
+    }
+    return path;
+}
+
+const QString BreakDown::localReportPath()
+{
+    QString path = QString("%1/.config/FxArena/breakdown/reports").arg(QDir::homePath());
+    if (!QFile::exists(path)) {
+        QDir dir(path);
+        dir.mkpath(path);
+    }
+    return path;
+}
+
+const QString BreakDown::localDumpPath()
+{
+    QString path = QString("%1/.config/FxArena/breakdown/dumps").arg(QDir::homePath());
+    if (!QFile::exists(path)) {
+        QDir dir(path);
+        dir.mkpath(path);
+    }
+    return path;
+}
+
+const QString BreakDown::localSymbolsPath()
+{
+    QString path = QString("%1/.config/FxArena/breakdown/symbols").arg(QDir::homePath());
+    if (!QFile::exists(path)) {
+        QDir dir(path);
+        dir.mkpath(path);
+    }
+    return path;
+}
+
+void BreakDown::downloadReportDMP(const QUrl &url)
+{
+    if (url.isEmpty()) { return; }
+
+    ui->statusBar->showMessage(tr("Downloading DMP ..."), -1);
+
+    QNetworkAccessManager *nam = new QNetworkAccessManager();
+    connect(nam,
+            SIGNAL(finished(QNetworkReply*)),
+            this,
+            SLOT(downloadReportDMPFinished(QNetworkReply*)));
+    connect(nam,
+            SIGNAL(authenticationRequired(QNetworkReply*,QAuthenticator*)),
+            this,
+            SLOT(handleAuthenticationRequired(QNetworkReply*,QAuthenticator*)));
+
+    QNetworkRequest request;
+    request.setUrl(url);
+    nam->get(request);
+}
+
+void BreakDown::downloadReportDMPFinished(QNetworkReply *reply)
+{
+    QNetworkAccessManager *nam = qobject_cast<QNetworkAccessManager*>(sender());
+    QByteArray dmp = reply->readAll();
+    QUrl url = reply->url();
+    QString uuid = url.toString().split("/").takeLast();
+
+    ui->statusBar->showMessage(tr("Done"), 500);
+
+#if QT_VERSION >= 0x050000
+    if ((reply->error() != QNetworkReply::NoError && reply->error() != QNetworkReply::UnknownServerError)
+#else
+    if ((reply->error() != QNetworkReply::NoError)
+#endif
+            && !reply->errorString().isEmpty())
+    {
+        ui->statusBar->showMessage(reply->errorString(), -1);
+    } else {
+        QString path = QString("%1/%2").arg(localDumpPath()).arg(uuid);
+        if (!QFile::exists(path)) {
+            QFile file(path);
+            if (file.open(QIODevice::WriteOnly)) {
+                file.write(dmp);
+                file.close();
+            } else {
+                ui->statusBar->showMessage(tr("Failed to write DMP to file"), -1);
+            }
+        }
+    }
+
+    reply->deleteLater();
+    if (nam) { nam->deleteLater(); }
+
+    QString file = QString("%1/%2.dmp").arg(localDumpPath()).arg(uuid);
+    QString txt = QString("%1/%2.txt").arg(localDumpPath()).arg(uuid);
+    if (QFile::exists(file) && QFile::exists(txt)) {
+        QtConcurrent::run(this, &BreakDown::openDumpFile, file, txt);
+    }
+}
+
+void BreakDown::downloadReportTXT(const QUrl &url)
+{
+    if (url.isEmpty()) { return; }
+
+    ui->statusBar->showMessage(tr("Downloading TXT ..."), -1);
+
+    QNetworkAccessManager *nam = new QNetworkAccessManager();
+    connect(nam,
+            SIGNAL(finished(QNetworkReply*)),
+            this,
+            SLOT(downloadReportTXTFinished(QNetworkReply*)));
+    connect(nam,
+            SIGNAL(authenticationRequired(QNetworkReply*,QAuthenticator*)),
+            this,
+            SLOT(handleAuthenticationRequired(QNetworkReply*,QAuthenticator*)));
+
+    QNetworkRequest request;
+    request.setUrl(url);
+    nam->get(request);
+}
+
+void BreakDown::downloadReportTXTFinished(QNetworkReply *reply)
+{
+    QNetworkAccessManager *nam = qobject_cast<QNetworkAccessManager*>(sender());
+    QByteArray dmp = reply->readAll();
+    QUrl url = reply->url();
+    QString uuid = url.toString().split("/").takeLast();
+
+    ui->statusBar->showMessage(tr("Done"), 500);
+
+#if QT_VERSION >= 0x050000
+    if ((reply->error() != QNetworkReply::NoError && reply->error() != QNetworkReply::UnknownServerError)
+#else
+    if ((reply->error() != QNetworkReply::NoError)
+#endif
+            && !reply->errorString().isEmpty())
+    {
+        ui->statusBar->showMessage(reply->errorString(), -1);
+    } else {
+        QString path = QString("%1/%2").arg(localDumpPath()).arg(uuid);
+        if (!QFile::exists(path)) {
+            QFile file(path);
+            if (file.open(QIODevice::WriteOnly)) {
+                file.write(dmp);
+                file.close();
+            } else {
+                ui->statusBar->showMessage(tr("Failed to write TXT to file"), -1);
+            }
+        }
+    }
+
+    reply->deleteLater();
+    if (nam) { nam->deleteLater(); }
+
+    QString file = QString("%1/%2.dmp").arg(localDumpPath()).arg(uuid);
+    QString txt = QString("%1/%2.txt").arg(localDumpPath()).arg(uuid);
+    if (QFile::exists(file) && QFile::exists(txt)) {
+        QtConcurrent::run(this, &BreakDown::openDumpFile, file, txt);
+    }
+}
+
+void BreakDown::handleLog(const QString &message)
+{
+    ui->log->appendPlainText(message);
 }

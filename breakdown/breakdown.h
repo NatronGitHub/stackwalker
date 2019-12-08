@@ -41,7 +41,7 @@ public:
     ~BreakDown();
 
 signals:
-    void parseDumpFinished(const QString &json, const QString &uuid, bool failed);
+    void parseDumpFinished(const QString &json, const QString &extra, const QString &uuid, bool failed);
     void parseReportsXMLFinished(QVector<QStringList> reports);
 
 private slots:
@@ -51,13 +51,13 @@ private slots:
     void setLineEditCursorPosition();
     void clearReport();
     void openJsonFile(const QString &file);
-    void openJsonString(const QString &json, const QString &customID = QString());
-    void openDumpFile(const QString &file);
+    void openJsonString(const QString &json, const QString &extra, const QString &customID = QString());
+    void openDumpFile(const QString &file, const QString &txt = QString());
     void on_actionQuit_triggered();
     void on_actionOpen_triggered();
     void on_reportInfoCrashTree_itemDoubleClicked(QTreeWidgetItem *item, int column);
     void on_actionAbout_triggered();
-    void handleParseDumpFinished(const QString &json, const QString &uuid, bool failed);
+    void handleParseDumpFinished(const QString &json, const QString &extra, const QString &uuid, bool failed);
     void downloadReportXML(const QUrl &url);
     void downloadReportXMLFinished(QNetworkReply *reply);
     void parseReportsXML(const QString &xml);
@@ -65,12 +65,23 @@ private slots:
     void populateReportsTree(QVector<QStringList> reports);
 
     void on_actionClear_triggered();
-
     void on_actionAbout_Qt_triggered();
-
     void on_reportsTree_itemDoubleClicked(QTreeWidgetItem *item, int column);
-
     void on_actionUpdate_triggered();
+
+
+    const QString localCachePath();
+    const QString localReportPath();
+    const QString localDumpPath();
+    const QString localSymbolsPath();
+
+    void downloadReportDMP(const QUrl &url);
+    void downloadReportDMPFinished(QNetworkReply *reply);
+    void downloadReportTXT(const QUrl &url);
+    void downloadReportTXTFinished(QNetworkReply *reply);
+
+
+    void handleLog(const QString &message);
 
 private:
     Ui::BreakDown *ui;
