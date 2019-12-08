@@ -32,7 +32,7 @@ class BreakDownCommon
 public:
     static const QString localPath(const QString &folder)
     {
-        QString path = QString("%1/.config/FxArena/breakdown/%2").arg(QDir::homePath().arg(folder));
+        QString path = QString("%1/.config/FxArena/breakdown/%2").arg(QDir::homePath()).arg(folder);
         if (!QFile::exists(path)) {
             QDir dir(path);
             dir.mkpath(path);
