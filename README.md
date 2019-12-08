@@ -32,7 +32,7 @@ The stackwalker project contains the following applications:
 
 ### Breakdown
 
-TODO.
+GUI and commandline application that can parse local and remote minidumps.
 
 ### Stackwalker
 
@@ -71,6 +71,12 @@ Example:
 ```
 stackwalker CRASH.dmp LOCAL_OR_REMOTE_PATH_TO_SYMBOLS_DIR > CRASH.json
 ```
+
+```
+breakdown CRASH.dmp > CRASH.json
+```
+
+Or open ``breakdown`` and view the report in a GUI.
 
 ## Symbols Storage
 

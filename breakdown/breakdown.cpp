@@ -20,6 +20,7 @@
 #include "breakdown.h"
 #include "ui_breakdown.h"
 #include "libbreakdown.h"
+#include "common.h"
 
 #include <QFile>
 #include <QDir>
@@ -690,42 +691,22 @@ void BreakDown::on_actionUpdate_triggered()
 
 const QString BreakDown::localCachePath()
 {
-    QString path = QString("%1/.config/FxArena/breakdown/cache").arg(QDir::homePath());
-    if (!QFile::exists(path)) {
-        QDir dir(path);
-        dir.mkpath(path);
-    }
-    return path;
+    return BreakDownCommon::localPath("cache");
 }
 
 const QString BreakDown::localReportPath()
 {
-    QString path = QString("%1/.config/FxArena/breakdown/reports").arg(QDir::homePath());
-    if (!QFile::exists(path)) {
-        QDir dir(path);
-        dir.mkpath(path);
-    }
-    return path;
+    return BreakDownCommon::localPath("reports");
 }
 
 const QString BreakDown::localDumpPath()
 {
-    QString path = QString("%1/.config/FxArena/breakdown/dumps").arg(QDir::homePath());
-    if (!QFile::exists(path)) {
-        QDir dir(path);
-        dir.mkpath(path);
-    }
-    return path;
+    return BreakDownCommon::localPath("dumps");
 }
 
 const QString BreakDown::localSymbolsPath()
 {
-    QString path = QString("%1/.config/FxArena/breakdown/symbols").arg(QDir::homePath());
-    if (!QFile::exists(path)) {
-        QDir dir(path);
-        dir.mkpath(path);
-    }
-    return path;
+    return BreakDownCommon::localPath("symbols");
 }
 
 void BreakDown::downloadReportDMP(const QUrl &url)

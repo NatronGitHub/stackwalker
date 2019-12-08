@@ -19,12 +19,33 @@
 
 #include "breakdown.h"
 #include <QApplication>
+#include <QStringList>
+#include <QFile>
+#include "libbreakdown.h"
+#include "common.h"
+
+#include <iostream>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     QApplication::setApplicationName("breakdown");
     QApplication::setOrganizationName("FxArena");
+
+    QStringList args = a.arguments();
+
+    if (args.size()==2) {
+        QString filename = args.at(1);
+        if (QFile::exists(filename)) {
+            std::string result = LibBreakDown::parseDumpFile(filename.toStdString(),
+                                                             BreakDownCommon::localStorage(),
+                                                             BreakDownCommon::remoteStorage(),
+                                                             BreakDownCommon::cacheStorage());
+            std::cout << result << std::endl;
+            return 0;
+        }
+    }
+
     BreakDown w;
     w.show();
 
