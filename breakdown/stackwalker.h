@@ -161,13 +161,13 @@ const struct option kHTTPCommandLineOptions[] = {
       symbols_tmp = optarg; \
       break;
 
-bool same_filesystem(const char* a, const char* b) {
+/*bool same_filesystem(const char* a, const char* b) {
   struct stat sta, stb;
   return stat(a, &sta) == 0 && stat(b, &stb) == 0
     && sta.st_dev == stb.st_dev;
-}
+}*/
 
-bool check_http_commandline_options(
+/*bool check_http_commandline_options(
     const std::vector<char*>& symbols_urls,
     const char* symbols_cache,
     const char* symbols_tmp) {
@@ -184,7 +184,7 @@ bool check_http_commandline_options(
     return false;
   }
   return true;
-}
+}*/
 
 // If a thread contains more frames than this, frames will
 // be truncated.

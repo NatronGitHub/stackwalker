@@ -133,9 +133,9 @@ void BreakDown::setupWidgets()
     ui->actionAbout->setIcon(QIcon(":/breakdown.png"));
 
     connect(this,
-            SIGNAL(parseDumpFinished(QString,QString,QString,bool)),
+            SIGNAL(parseDumpFinished(QString,QString,bool)),
             this,
-            SLOT(handleParseDumpFinished(QString,QString,QString,bool)));
+            SLOT(handleParseDumpFinished(QString,QString,bool)));
 
     connect(this,
             SIGNAL(parseReportsXMLFinished(QVector<QStringList>)),
@@ -204,9 +204,8 @@ void BreakDown::openJsonFile(const QString &file)
     if (!rawJson.isEmpty()) { openJsonString(rawJson, ""); }
 }
 
-void BreakDown::openJsonString(const QString &json, const QString &extra, const QString &customID)
+void BreakDown::openJsonString(const QString &json, const QString &customID)
 {
-    Q_UNUSED(extra)
 
     ui->actionOpen->setDisabled(false);
     ui->statusBar->showMessage(tr("Done"), 500);
@@ -216,31 +215,8 @@ void BreakDown::openJsonString(const QString &json, const QString &extra, const 
     if (doc.isEmpty() || doc.isNull()) { return; }
     QJsonObject obj = doc.object();
 
-
-
     // clear old info
     clearReport();
-
-    // extra
-    QString timestamp;
-    QString comment;
-    QString git_commit;
-    QString io_commit;
-    QString misc_commit;
-    QString arena_commit;
-    QString git_branch;
-    QString linux_distro;
-    QString product;
-    QString product_version;
-    QString client_ip;
-    QString user_contact;
-    QString user_severity;
-    QString gl_renderer;
-    QString gl_version;
-    QString gl_vendor;
-    QString gl_shader;
-    QString gl_ext;
-    //QString features = obj.value(QString("features")).toString();
 
     // basic info
     QString uuid = obj.value(QString("uuid")).toString();
@@ -254,62 +230,25 @@ void BreakDown::openJsonString(const QString &json, const QString &extra, const 
     QString cpu_info = system_info_item["cpu_info"].toString();
     QString crash_os = system_info_item["os"].toString();
     QString os_version = system_info_item["os_ver"].toString();
-
-
-    bool hasExtra = false;
-    if (!extra.isEmpty()) {
-        QJsonDocument edoc(QJsonDocument::fromJson(extra.toUtf8()));
-        if (!edoc.isEmpty() && !edoc.isNull()) {
-            QJsonObject eobj = edoc.object();
-            if (!eobj.isEmpty()) {
-                hasExtra = true;
-                timestamp = eobj.value(QString("submitted_timestamp")).toString();
-                comment = eobj.value(QString("Comments")).toString();
-                git_commit = eobj.value(QString("git_commit")).toString();
-                io_commit = eobj.value(QString("io_commit")).toString();
-                misc_commit = eobj.value(QString("misc_commit")).toString();
-                arena_commit = eobj.value(QString("arena_commit")).toString();
-                git_branch = eobj.value(QString("git_branch")).toString();
-                linux_distro = eobj.value(QString("linux_distro")).toString();
-                product = eobj.value(QString("ProductName")).toString();
-                product_version = eobj.value(QString("Version")).toString();
-                client_ip = eobj.value(QString("client_ip")).toString();
-                user_contact = eobj.value(QString("user_contact")).toString();
-                user_severity = eobj.value(QString("user_severity")).toString();
-                gl_renderer = eobj.value(QString("gl_renderer")).toString();
-                gl_version = eobj.value(QString("gl_version")).toString();
-                gl_vendor = eobj.value(QString("gl_vendor")).toString();
-                gl_shader = eobj.value(QString("gl_shader")).toString();
-                gl_ext = eobj.value(QString("gl_ext")).toString();
-            }
-        }
-
-    }
-
-    if (!hasExtra) {
-        timestamp = obj.value(QString("submitted_timestamp")).toString();
-        comment = obj.value(QString("Comments")).toString();
-        git_commit = obj.value(QString("git_commit")).toString();
-        io_commit = obj.value(QString("io_commit")).toString();
-        misc_commit = obj.value(QString("misc_commit")).toString();
-        arena_commit = obj.value(QString("arena_commit")).toString();
-        git_branch = obj.value(QString("git_branch")).toString();
-        linux_distro = obj.value(QString("linux_distro")).toString();
-        product = obj.value(QString("ProductName")).toString();
-        product_version = obj.value(QString("Version")).toString();
-        client_ip = obj.value(QString("client_ip")).toString();
-        user_contact = obj.value(QString("user_contact")).toString();
-        user_severity = obj.value(QString("user_severity")).toString();
-        gl_renderer = obj.value(QString("gl_renderer")).toString();
-        gl_version = obj.value(QString("gl_version")).toString();
-        gl_vendor = obj.value(QString("gl_vendor")).toString();
-        gl_shader = obj.value(QString("gl_shader")).toString();
-        gl_ext = obj.value(QString("gl_ext")).toString();
-    }
-
-
-
-
+    QString timestamp = obj.value(QString("submitted_timestamp")).toString();
+    QString comment = obj.value(QString("Comments")).toString();
+    QString git_commit = obj.value(QString("git_commit")).toString();
+    QString io_commit = obj.value(QString("io_commit")).toString();
+    QString misc_commit = obj.value(QString("misc_commit")).toString();
+    QString arena_commit = obj.value(QString("arena_commit")).toString();
+    QString git_branch = obj.value(QString("git_branch")).toString();
+    QString linux_distro = obj.value(QString("linux_distro")).toString();
+    QString product = obj.value(QString("ProductName")).toString();
+    QString product_version = obj.value(QString("Version")).toString();
+    QString client_ip = obj.value(QString("client_ip")).toString();
+    QString user_contact = obj.value(QString("user_contact")).toString();
+    QString user_severity = obj.value(QString("user_severity")).toString();
+    QString gl_renderer = obj.value(QString("gl_renderer")).toString();
+    QString gl_version = obj.value(QString("gl_version")).toString();
+    QString gl_vendor = obj.value(QString("gl_vendor")).toString();
+    QString gl_shader = obj.value(QString("gl_shader")).toString();
+    QString gl_ext = obj.value(QString("gl_ext")).toString();
+    //QString features = obj.value(QString("features")).toString();
 
     ui->reportUuid->setText(uuid);
     ui->reportTimestamp->setText(timestamp);
@@ -365,10 +304,10 @@ void BreakDown::openJsonString(const QString &json, const QString &extra, const 
         item->setText(6, output["trust"].toString());
 
         QString fileName = output["file"].toString();
-        QStringList splitFile;
+        //QStringList splitFile;
         QString fileUrl;
         // TODO:
-        if (fileName.contains("../..")) {
+        /*if (fileName.contains("../..")) {
             splitFile = fileName.split("../..");
 
         } else if (fileName.contains("..\\..")) {
@@ -386,12 +325,14 @@ void BreakDown::openJsonString(const QString &json, const QString &extra, const 
                           .arg(QString::number(output["line"].toInt()));
 
             }
-        }
+        }*/
 
         if (!fileName.isEmpty()) {
             fileName.append(QString(":%1").arg(QString::number(output["line"].toInt())));
         }
         item->setText(7, fileName);
+        item->setData(7, Qt::ToolTipRole, fileName);
+
         if (!fileUrl.isEmpty()) {
             item->setData(7, Qt::ToolTipRole, fileUrl);
         }
@@ -450,10 +391,11 @@ void BreakDown::openDumpFile(const QString &file, const QString &txt)
     // TODO: settings (also remember cache and tmp!!!)
 
     //server_path.push_back("https://sourceforge.net/projects/natron/files/symbols");
-    server_path.push_back("https://sourceforge.net/projects/openfx-arena/files/symbols");
-    server_path.push_back("https://stackwalker.000webhostapp.com/symbols");
+    //server_path.push_back("https://sourceforge.net/projects/openfx-arena/files/symbols");
+    //server_path.push_back("https://stackwalker.000webhostapp.com/symbols");
 
     symbol_paths.push_back(localSymbolsPath().toStdString());
+    symbol_paths.push_back(localCachePath().toStdString());
 
     Minidump minidump(file.toStdString());
     minidump.Read();
@@ -480,7 +422,7 @@ void BreakDown::openDumpFile(const QString &file, const QString &txt)
     if (result != google_breakpad::PROCESS_OK) {
         string failed = ResultString(result);
         ui->statusBar->showMessage(QString::fromStdString(failed));
-        emit parseDumpFinished(QString::fromStdString(failed), "", file, true);
+        emit parseDumpFinished(QString::fromStdString(failed), file, true);
         return;
     }
 
@@ -533,19 +475,25 @@ void BreakDown::openDumpFile(const QString &file, const QString &txt)
     writer.reset(new Json::StyledWriter());
     string json = writer->write(root);
 
-    QString extra;
     if (QFile::exists(txt)) {
+        QString extra;
         QFile file(txt);
         if (file.open(QIODevice::ReadOnly | QIODevice::Text)) {
             extra = file.readAll();
             file.close();
         }
+
+        QString rawJson1 = QString::fromStdString(json);
+        QString rawJson2 = extra;
+        QString output;
+        output.append(QString("%1,").arg(rawJson2.left(rawJson2.length()-1)));
+        output.append(rawJson1.remove(0, 1));
+        json = output.toStdString();
     }
 
     if (!json.empty()) {
         QFileInfo info(file);
         emit parseDumpFinished(QString::fromStdString(json),
-                               extra,
                                info.baseName(),
                                false);
     }
@@ -602,14 +550,22 @@ void BreakDown::on_actionAbout_triggered()
                        .arg(BREAKDOWN_VERSION));
 }
 
-void BreakDown::handleParseDumpFinished(const QString &json, const QString &extra,
+void BreakDown::handleParseDumpFinished(const QString &json,
                                         const QString &uuid,
                                         bool failed)
 {
     ui->actionOpen->setDisabled(false);
     ui->statusBar->showMessage(tr("Done"), 500);
     if (failed) { return; }
-    openJsonString(json, extra, uuid);
+    QString report = QString("%1/%2.json").arg(localReportPath()).arg(uuid);
+    if (!QFile::exists(report)) {
+        QFile file(report);
+        if (file.open(QIODevice::WriteOnly|QIODevice::Text)) {
+            file.write(json.toUtf8());
+            file.close();
+        }
+    }
+    openJsonString(json, uuid);
 }
 
 void BreakDown::downloadReportXML(const QUrl &url)
