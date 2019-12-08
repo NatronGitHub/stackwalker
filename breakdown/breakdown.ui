@@ -857,7 +857,7 @@
   <widget class="QStatusBar" name="statusBar"/>
   <widget class="QDockWidget" name="reportsDock">
    <property name="windowTitle">
-    <string>Remote Reports</string>
+    <string>Reports</string>
    </property>
    <attribute name="dockWidgetArea">
     <number>2</number>
@@ -867,7 +867,7 @@
      <item>
       <widget class="QTreeWidget" name="reportsTree">
        <attribute name="headerVisible">
-        <bool>false</bool>
+        <bool>true</bool>
        </attribute>
        <column>
         <property name="text">
@@ -915,7 +915,7 @@
   </action>
   <action name="actionUpdate">
    <property name="text">
-    <string>Update</string>
+    <string>Sync</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+U</string>
