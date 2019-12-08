@@ -19,6 +19,7 @@
 
 #include "breakdown.h"
 #include "ui_breakdown.h"
+#include "libbreakdown.h"
 
 #include <QFile>
 #include <QDir>
@@ -47,7 +48,6 @@
 #include "QJsonArray.h"
 #endif
 
-#include "stackwalker.h"
 #include "authdialog.h"
 
 #define REPORTS_TREE_UUID Qt::UserRole+1
@@ -385,95 +385,23 @@ void BreakDown::openJsonString(const QString &json, const QString &customID)
 
 void BreakDown::openDumpFile(const QString &file, const QString &txt)
 {
-    vector<string> server_path;
-    vector<string> symbol_paths;
+    std::vector<std::string> server_path;
+    std::vector<std::string> symbol_paths;
 
     // TODO: settings (also remember cache and tmp!!!)
 
     //server_path.push_back("https://sourceforge.net/projects/natron/files/symbols");
     //server_path.push_back("https://sourceforge.net/projects/openfx-arena/files/symbols");
-    //server_path.push_back("https://stackwalker.000webhostapp.com/symbols");
+    server_path.push_back("https://stackwalker.000webhostapp.com/symbols");
 
     symbol_paths.push_back(localSymbolsPath().toStdString());
     symbol_paths.push_back(localCachePath().toStdString());
 
-    Minidump minidump(file.toStdString());
-    minidump.Read();
 
-    Json::Value root;
-    scoped_ptr<SymbolSupplier> symbol_supplier;
-    HTTPSymbolSupplier* http_symbol_supplier = nullptr;
-    if (!server_path.empty()) {
-        http_symbol_supplier = new HTTPSymbolSupplier(server_path,
-                                                      localCachePath().toStdString(),
-                                                      symbol_paths,
-                                                      localCachePath().toStdString());
-        symbol_supplier.reset(http_symbol_supplier);
-    } else if (!symbol_paths.empty()) {
-        symbol_supplier.reset(new SimpleSymbolSupplier(symbol_paths));
-    }
-
-    BasicSourceLineResolver resolver;
-    StackFrameSymbolizerForward symbolizer(symbol_supplier.get(), &resolver);
-    MinidumpProcessor minidump_processor(&symbolizer, true);
-    ProcessState process_state;
-    ProcessResult result = minidump_processor.Process(&minidump, &process_state);
-
-    if (result != google_breakpad::PROCESS_OK) {
-        string failed = ResultString(result);
-        ui->statusBar->showMessage(QString::fromStdString(failed));
-        emit parseDumpFinished(QString::fromStdString(failed), file, true);
-        return;
-    }
-
-    Json::Value raw_root(Json::objectValue);
-
-    root["status"] = ResultString(result);
-    root["sensitive"] = Json::Value(Json::objectValue);
-    if (result == google_breakpad::PROCESS_OK) {
-        ConvertProcessStateToJSON(process_state,
-                                  symbolizer,
-                                  http_symbol_supplier,
-                                  root,
-                                  raw_root);
-    }
-    ConvertMemoryInfoToJSON(minidump, raw_root, root);
-
-    // Get the PID.
-    MinidumpMiscInfo* misc_info = minidump.GetMiscInfo();
-    if (misc_info && misc_info->misc_info() &&
-        (misc_info->misc_info()->flags1 & MD_MISCINFO_FLAGS1_PROCESS_ID))
-    {
-        root["pid"] = misc_info->misc_info()->process_id;
-    }
-
-    // See if this is a Linux dump with /proc/cpuinfo in it
-    uint32_t cpuinfo_length = 0;
-    if (process_state.system_info()->os == "Linux" &&
-        minidump.SeekToStreamType(MD_LINUX_CPU_INFO, &cpuinfo_length))
-    {
-        string contents;
-        contents.resize(cpuinfo_length);
-        if (minidump.ReadBytes(const_cast<char*>(contents.data()), cpuinfo_length)) {
-            ConvertCPUInfoToJSON(contents, root);
-        }
-    }
-
-    // See if this is a Linux dump with /etc/lsb-release in it
-    uint32_t length = 0;
-    if (process_state.system_info()->os == "Linux" &&
-        minidump.SeekToStreamType(MD_LINUX_LSB_RELEASE, &length))
-    {
-        string contents;
-        contents.resize(length);
-        if (minidump.ReadBytes(const_cast<char*>(contents.data()), length)) {
-            ConvertLSBReleaseToJSON(contents, root);
-        }
-    }
-
-    scoped_ptr<Json::Writer> writer;
-    writer.reset(new Json::StyledWriter());
-    string json = writer->write(root);
+    std::string json = LibBreakDown::parseDumpFile(file.toStdString(),
+                                                   symbol_paths,
+                                                   server_path,
+                                                   localCachePath().toStdString());
 
     if (QFile::exists(txt)) {
         QString extra;

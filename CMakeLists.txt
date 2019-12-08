@@ -16,7 +16,7 @@
 #
 
 cmake_minimum_required(VERSION 3.0)
-project(stackwalker VERSION 20190823)
+project(stackwalker VERSION 20191208)
 
 if(NOT PROJECT_VERSION_TWEAK)
     set(PROJECT_VERSION_TWEAK 0)
@@ -126,6 +126,7 @@ if(USE_QT4)
         ${STACKWALKER}/http_symbol_supplier.cc
         ${BREAKDOWN}/main.cpp
         ${BREAKDOWN}/breakdown.cpp
+        ${BREAKDOWN}/libbreakdown.cpp
         ${BREAKDOWN}/authdialog.cpp
         ${BREAKDOWN}/breakdown.ui
         ${BREAKDOWN}/breakdown.qrc
@@ -146,6 +147,22 @@ add_executable(
     stackwalker
     ${STACKWALKER}/http_symbol_supplier.cc
     ${STACKWALKER}/stackwalker.cc
+)
+
+add_library(
+    Breakdown
+    SHARED
+    ${STACKWALKER}/http_symbol_supplier.cc
+    ${BREAKDOWN}/libbreakdown.cpp
+)
+
+target_link_libraries(
+    Breakdown
+    ${BREAKPAD_BIN}/src/libbreakpad.a
+    ${BREAKPAD_BIN}/src/third_party/libdisasm/libdisasm.a
+    ${CURL_STATIC_LIBRARIES}
+    ${ZIP_STATIC_LIBRARIES}
+    ${JSON_STATIC_LIBRARIES}
 )
 
 if(USE_QT4)
