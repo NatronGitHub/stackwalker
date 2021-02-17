@@ -1,3 +1,5 @@
+# Project EOL, see https://github.com/rodlie/breakdown for future development
+
 # Stackwalker [![Build Status](https://travis-ci.org/NatronGitHub/stackwalker.svg)](https://travis-ci.org/NatronGitHub/stackwalker)
 
 The stackwalker project includes applications used to process crash reports from Breakpad.
